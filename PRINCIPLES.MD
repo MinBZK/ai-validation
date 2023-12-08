@@ -1,9 +1,10 @@
 Principes: Zo Werken Wij
 
-1. De burger en samenleving staan centraal in alles wat we doen
-1. We werken vanuit publieke waarden
-1. We hergebruiken kennis, beleid én best practices
-1. We kiezen voor Open Source
-1. Bij alles wat we doen zijn we zo open en transparant mogelijk
-1. We gaan respectvol met elkaar om
-1. We werken samen met publieke én private partijen
+1. Ons diep vertrouwen in de overheid en in de toewijding van de mensen op alle niveaus binnen de overheidsorganisatie vormt de basis van ons handelen.
+1. De belangen van de burger en de samenleving staan voorop in al onze activiteiten.
+1. Kennis, beleid en beproefde methoden worden actief hergebruikt en gedeeld.
+1. We streven naar maximale openheid en transparantie in al onze processen.
+1. Onze voorkeur gaat uit naar het gebruik en de ontwikkeling van Open Source Software.
+1. Wij hanteren een respectvolle benadering in al onze interacties.
+1. Samenwerking met zowel publieke als private partners is essentieel voor ons succes.
+1. Leren en kennisdeling staan centraal: wij moedigen teamleden aan om taken op zich te nemen die nieuw of minder bekend voor hen zijn, om zo continue groei en ontwikkeling te bevorderen.
