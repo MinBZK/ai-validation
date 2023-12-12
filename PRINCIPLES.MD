@@ -6,5 +6,5 @@
 1. We streven naar maximale openheid en transparantie in al onze processen.
 1. Onze voorkeur gaat uit naar het gebruik en de ontwikkeling van Open Source Software.
 1. We gaan respectvol met elkaar om.
-1. Samenwerking met zowel publieke als private partners is essentieel voor ons succes.
+1. Samenwerking is essentieel voor ons succes, we zoeken samenwerking actief op met zowel publieke als private partners.
 1. Leren en kennisdeling staan centraal: wij moedigen teamleden aan om taken op zich te nemen die nieuw of minder bekend voor hen zijn, om zo continue groei en ontwikkeling te bevorderen.
