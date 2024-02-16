@@ -5,56 +5,55 @@ site_description: Documenting the processes of the AI Validation Team at the Min
 
 ### theme settings ###
 theme:
-    name: mkdocs-material-adr
-    language: en
-    palette:
-        primary: deep orange
-        scheme: slate
-    features:
-        - navigation.indexes
-        - navigation.tabs
-        - navigation.tabs.sticky
-        - navigation.path
-        - navigation.top
-        - navigation.tracking
-        - navigation.instant
-        - search.highlight
-        - search.suggest
-        - content.action.edit
-    icon:
-        logo: fontawesome/solid/house
-        annotation: fontawesome/solid/circle-info
+  name: mkdocs-material-adr
+  language: en
+  palette:
+    primary: deep orange
+    scheme: slate
+  features:
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.top
+    - navigation.tracking
+    - navigation.instant
+    - search.highlight
+    - search.suggest
+    - content.action.edit
+  icon:
+    logo: fontawesome/solid/house
+    annotation: fontawesome/solid/circle-info
 
 markdown_extensions:
-    - pymdownx.tabbed:
-        alternate_style: true
-    - pymdownx.superfences
-    - pymdownx.details
-    - admonition
-    - attr_list
-    - abbr
-    - md_in_html
-    - pymdownx.tasklist:
-        custom_checkbox: true
-    - pymdownx.emoji:
-        emoji_index: !!python/name:material.extensions.emoji.twemoji
-        emoji_generator: !!python/name:material.extensions.emoji.to_svg
-    - pymdownx.snippets:
-        auto_append:
-            - includes/abbreviations.md
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+  - attr_list
+  - abbr
+  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
 
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/MinBZK/ai-validation
 
-
 plugins:
-    - mkdocs-material-adr/adr
-    - glightbox
-    - search
-    - git-revision-date-localized:
-        enable_creation_date: true
+  - mkdocs-material-adr/adr
+  - glightbox
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
 
 repo_url: https://github.com/MinBZK/ai-validation
 edit_uri: edit/main/docs/
