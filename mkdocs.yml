@@ -5,10 +5,11 @@ site_description: Documenting the processes of the AI Validation Team at the Min
 
 ### theme settings ###
 theme:
-    name: material
+    name: mkdocs-material-adr
     language: en
     palette:
-        primary: blue
+        primary: deep orange
+        scheme: slate
     features:
         - navigation.indexes
         - navigation.tabs
@@ -16,19 +17,13 @@ theme:
         - navigation.path
         - navigation.top
         - navigation.tracking
-        # - navigation.footer
+        - navigation.instant
         - search.highlight
         - search.suggest
         - content.action.edit
     icon:
         logo: fontawesome/solid/house
         annotation: fontawesome/solid/circle-info
-
-# Navigation for the site
-nav:
-    - Home: index.md
-    - Way of Working:
-        - wow/principles.md
 
 markdown_extensions:
     - pymdownx.tabbed:
@@ -55,6 +50,7 @@ extra:
 
 
 plugins:
+    - mkdocs-material-adr/adr
     - glightbox
     - search
     - git-revision-date-localized:
