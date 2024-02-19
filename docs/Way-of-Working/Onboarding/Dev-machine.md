@@ -46,6 +46,8 @@ brew install --cask sourcetree
 brew install pyenv
 ```
 
+- [pyenv virtualenv](https://github.com/pyenv/pyenv-virtualenv)
+
 ```shell
 xcode-select --install
 ```
