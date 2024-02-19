@@ -43,3 +43,5 @@ brew install pyenv
 ```shell
 xcode-select --install
 ```
+
+- [Sign commits using SSH](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key#telling-git-about-your-ssh-key)
