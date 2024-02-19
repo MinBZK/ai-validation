@@ -7,7 +7,7 @@ We are assuming your dev machine is a mac.
 - [Mattermost](https://mattermost.com/apps/)
 - [Webex](https://www.webex.com/downloads.html)
 
-## Things that should default on mac
+## Things that should have been default on mac
 
 - [Screen resize](https://rectangleapp.com/)
 - [Keep awake](https://apps.apple.com/us/app/amphetamine/id937984704)
@@ -20,7 +20,6 @@ We are assuming your dev machine is a mac.
 - [Oh my zsh](https://ohmyz.sh/)
 
 ```shell
-
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 ```
 
@@ -29,7 +28,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/p
 ## Coding
 
 - [Diff tool: Sourcetree](https://www.sourcetreeapp.com/)
--
 
 ```shell
 brew install pyenv
