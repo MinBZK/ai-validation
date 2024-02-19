@@ -31,7 +31,13 @@ brew install --cask iterm2
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 ```
 
-[Touch id in terminal](https://apple.stackexchange.com/questions/259093/can-touch-id-on-mac-authenticate-sudo-in-terminal)
+- [Touch id in terminal](https://apple.stackexchange.com/questions/259093/can-touch-id-on-mac-authenticate-sudo-in-terminal)
+
+Add [plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) to your shell in `~/.zshrc`
+
+```ini
+plugins = (... kubectl pyenv z)
+```
 
 ## Coding
 
