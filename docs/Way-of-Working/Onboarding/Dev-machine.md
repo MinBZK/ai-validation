@@ -2,21 +2,29 @@
 
 We are assuming your dev machine is a mac.
 
-## Communication
-
-- [Mattermost](https://mattermost.com/apps/)
-- [Webex](https://www.webex.com/downloads.html)
-
 ## Things that should have been default on mac
 
-- [Screen resize](https://rectangleapp.com/)
 - [Keep awake](https://apps.apple.com/us/app/amphetamine/id937984704)
 - [Office screen driver](https://www.synaptics.com/products/displaylink-graphics/downloads/macos)
 - [Package manager](https://brew.sh/)
 
+```shell
+brew install --cask rectangle
+```
+
+## Communication
+
+```shell
+brew install --cask webex
+brew install --cask mattermost
+```
+
 ## Terminal and shell
 
-- [Iterm2](https://iterm2.com/)
+```shell
+brew install --cask iterm2
+```
+
 - [Oh my zsh](https://ohmyz.sh/)
 
 ```shell
@@ -27,9 +35,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/p
 
 ## Coding
 
-- [Diff tool: Sourcetree](https://www.sourcetreeapp.com/)
-
 ```shell
+brew install --cask sourcetree
 brew install pyenv
 ```
 
