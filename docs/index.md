@@ -8,7 +8,7 @@ Here we are documenting the processes of the AI Validation Team at the Ministry 
 
 !!! info "Disclaimer"
 
-    This documention is under development
+    This documentation is under development
 
 ## Contribute?
 
