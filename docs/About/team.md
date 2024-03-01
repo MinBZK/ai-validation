@@ -42,9 +42,10 @@
 
     ![Berry den Hartog](../img/berry.jpeg){: .round }
 
-    Berry is a  software engineer passionate about problem-solving and system optimization, with expertise in Go, Python,
-    and C++. Specialized in architecting high-volume data processing systems and implementing Lean-Agile and DevOps
-    practices. Experienced in managing end-to-end processes from hardware provisioning to software deployment and release.
+    Berry is a software engineer passionate about problem-solving and system optimization, with expertise in Go,
+    Python, and C++. Specialized in architecting high-volume data processing systems and implementing Lean-Agile and
+    DevOps practices. Experienced in managing end-to-end processes from hardware provisioning to software deployment
+    and release.
 
     [:fontawesome-brands-github: berrydenhartog](https://github.com/berrydenhartog)
 
@@ -73,9 +74,11 @@
 
     ----
 
-    ![Lucas Willy Tadema](../img/willy.png){: .round }
+    ![Willy Tadema](../img/willy.png){: .round }
 
-    Willy is
+    Willy specializes in data science, ethics-by-design, XAI, fairness in machine learning, ML model risk management,
+    ML architecture, and MLOps. He's also skilled in R development, data integration, quality management, and geographic
+    information systems (GIS).
 
     [:fontawesome-brands-github: FrieseWoudloper](https://github.com/FrieseWoudloper)
 
@@ -89,7 +92,11 @@
 
     ![Robbert Uittenbroek](../img/robbert_uittenbroek.jpeg){: .round }
 
-    Robbert is...
+    Robbert is a highly enthusiastic full-stack engineer with a Bachelor's degree in Computer Science from the Hanze
+    University of Applied Sciences in Groningen. He is passionate about building secure, compliant, and ethical
+    solutions, and thrives in collaborative environments. Robbert is eager to leverage his skills and knowledge to
+    help shape and propel the future of IT within the government.
+
 
     [:fontawesome-brands-github: uittenbroekrobbert](https://github.com/uittenbroekrobbert)
 
@@ -103,7 +110,9 @@
 
     ![Laurens Weijs](../img/laurens.jpeg){: .round }
 
-    Laurens is ...
+    Laurens is a passionate guy with a love for innovation and doing things differently. With a background in
+    Econometrics and Computer Science he loves to tackle the IT challenges of the Government by helping other people
+    through extensive knowledge sharing on stage, building neural networks himself, or building a strong community.
 
     [:fontawesome-brands-github: laurensWe](https://github.com/laurensWe)
 
