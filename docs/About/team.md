@@ -39,7 +39,9 @@
 
     ![Berry den Hartog](/img/berry.jpeg){: .round }
 
-    Berry is ...
+    Berry is a  software engineer passionate about problem-solving and system optimization, with expertise in Go, Python,
+    and C++. Specialized in architecting high-volume data processing systems and implementing Lean-Agile and DevOps
+    practices. Experienced in managing end-to-end processes from hardware provisioning to software deployment and release.
 
     [:fontawesome-brands-github: berrydenhartog](https://github.com/berrydenhartog)
 
