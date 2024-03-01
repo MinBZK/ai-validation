@@ -22,6 +22,7 @@ theme:
         - search.suggest
         - content.action.edit
         - content.code.copy
+
     icon:
         logo: fontawesome/solid/house
         annotation: fontawesome/solid/circle-info
