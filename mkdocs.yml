@@ -50,13 +50,15 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/MinBZK/ai-validation
 
+extra_css:
+    - stylesheets/extra.css
 
 plugins:
     - mkdocs-material-adr/adr
     - glightbox
-    - search
     - git-revision-date-localized:
         enable_creation_date: true
+    - search
 
 repo_url: https://github.com/MinBZK/ai-validation
 edit_uri: edit/main/docs/
