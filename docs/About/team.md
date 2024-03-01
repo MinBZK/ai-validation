@@ -10,7 +10,10 @@
 
     ![Robbert Bos](../img/robbert_bos.jpeg){: .round }
 
-    Robbert is....
+    Robbert has been on a mission for over 15 years to enhance the transparency and collaboration within AI projects.
+    Before joining this team, he founded several data science and tech companies (partly) dedicated to this cause.
+    Robbert is passionate about solving complex problems where he connects business needs with technology and involves
+    others in how these solutions can improve their work.
 
     [:fontawesome-brands-github: robbertbos](https://github.com/robbertbos)
 
