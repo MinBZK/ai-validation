@@ -6,11 +6,11 @@ This document contains a checklist with requirements for tools we could use to h
 The requirements are based on:
 
 - **ISO 25010 standard:** This standard defines the eight quality characteristics and provides a framework for evaluating software quality.
-- **Industry best practices:** This includes a broad range of recommendations and guidelines for IT tool development and implementation
+- **Industry best practices:** This includes a broad range of recommendations and guidelines for IT tool development and implementation.
 - **Common IT tool requirements:** This information was gathered by analyzing various sources, such as documentation from popular IT tools, user reviews, and articles from reputable tech publications that discuss essential features and functionalities expected from different types of IT tools.
 - **Internal discussion and common sense**: While above sources are already exhaustive, we also used team discussions and our own knowledge.
 
-The requirements have been given a priority based on the MoSCoW scale to allow for tool comparison.
+The requirements have been given a priority based on the [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method) scale to allow for tool comparison.
 
 | ID   | Group                  | Requirement                                                  | Priority |
 | ---- | ---------------------- | ------------------------------------------------------------ | -------- |
