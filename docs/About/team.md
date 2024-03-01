@@ -1,5 +1,7 @@
 # Our Team
 
+<!-- markdownlint-disable MD030 MD033 -->
+
 <div class="grid cards" markdown>
 
 -   ## Robbert Bos
@@ -96,7 +98,6 @@
     University of Applied Sciences in Groningen. He is passionate about building secure, compliant, and ethical
     solutions, and thrives in collaborative environments. Robbert is eager to leverage his skills and knowledge to
     help shape and propel the future of IT within the government.
-
 
     [:fontawesome-brands-github: uittenbroekrobbert](https://github.com/uittenbroekrobbert)
 
