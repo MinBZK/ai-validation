@@ -8,7 +8,7 @@
 
     ----
 
-    ![Robbert Bos](/img/robbert_bos.jpeg){: .round }
+    ![Robbert Bos](../img/robbert_bos.jpeg){: .round }
 
     Robbert is....
 
@@ -22,7 +22,7 @@
 
     ----
 
-    ![Lucas Haitsma](/img/lucas.jpeg){: .round }
+    ![Lucas Haitsma](../img/lucas.jpeg){: .round }
 
     Lucas is PhD candidate conducting research into the regulation and governance of algorithmic discrimination by
     supervision and enforcement organizations.
@@ -37,7 +37,7 @@
 
     ----
 
-    ![Berry den Hartog](/img/berry.jpeg){: .round }
+    ![Berry den Hartog](../img/berry.jpeg){: .round }
 
     Berry is a  software engineer passionate about problem-solving and system optimization, with expertise in Go, Python,
     and C++. Specialized in architecting high-volume data processing systems and implementing Lean-Agile and DevOps
@@ -53,7 +53,7 @@
 
     ----
 
-    ![Anne Schuth](/img/anne.png){: .round }
+    ![Anne Schuth](../img/anne.png){: .round }
 
     Anne used to be a Machine Learning Engineering Manager at Spotify and previously held roles at DPG Media, Blendle,
     and Google AI. He holds a PhD from the University of Amsterdam.
@@ -70,7 +70,7 @@
 
     ----
 
-    ![Lucas Willy Tadema](/img/willy.png){: .round }
+    ![Lucas Willy Tadema](../img/willy.png){: .round }
 
     Willy is
 
@@ -84,7 +84,7 @@
 
     ----
 
-    ![Robbert Uittenbroek](/img/robbert_uittenbroek.jpeg){: .round }
+    ![Robbert Uittenbroek](../img/robbert_uittenbroek.jpeg){: .round }
 
     Robbert is...
 
@@ -98,7 +98,7 @@
 
     ----
 
-    ![Laurens Weijs](/img/laurens.jpeg){: .round }
+    ![Laurens Weijs](../img/laurens.jpeg){: .round }
 
     Laurens is ...
 

@@ -6,4 +6,4 @@ Then create your accounts:
 
 - [Accounts](Accounts.md)
 
-Finally, add yourself to our [team page](/About/team).
+Finally, add yourself to our [team page](../../About/team.md).
