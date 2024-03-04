@@ -7,6 +7,7 @@ Make sure you have installed [Mattermost](Dev-machine.md), then follow these ste
 - [Register](https://realisatieibds.pleio.nl/register) on Pleio with your @rijksoverheid/@minbzk.nl email address.
 - [Login](https://digilab.overheid.nl/chat/login)-> Gitlab -> Pleio.
 - Ask a team member to add you to the RIG and AI Validation team.
+- Make sure to add a recognizable profile picture
 
 ## Webex
 
@@ -20,6 +21,8 @@ Make sure you have installed [Webex](Dev-machine.md), then follow these steps.
 Create or use your existing Github account.
 
 - Add your @rijksoverheid/@minbzk.nl email address to your account.
+- Or create a new account (anonymous if you want, see our [Principles](../Principles.md))
+- Make sure to add a profile picture
 - Ask a team member to add you to the [MinBZK Org](https://github.com/orgs/MinBZK).
 - Ask a team member to add to you to the [AI Validation Team](https://github.com/orgs/MinBZK/teams/ai-validation-team).
 
