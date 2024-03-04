@@ -14,9 +14,11 @@ by both people and machine, and we want to have version control on our diagrams.
 
 ## Decision
 
-We will write our architectural diagrams in Markdown in the [Mermaid Syntax](https://mermaid.js.org/intro/syntax-reference.html)
+We will write our architectural diagrams in Markdown-like (.mmmd) in the [Mermaid Syntax](https://mermaid.js.org/intro/syntax-reference.html)
 to edit these diagrams one can use the various [plugins](https://mermaid.js.org/ecosystem/integrations-community.html).
-For each project where it is needed, we will add the diagrams in the repository of the subject.
+For each project where it is needed, we will add the diagrams in the repository of the subject. The level of detail we
+will provide in the diagrams is according to the [C4-model](http://mermaid.js.org/syntax/c4.html) metamodel on
+architecture diagramming.
 
 ## Consequences
 
