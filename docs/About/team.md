@@ -94,9 +94,7 @@
 
     ![Willy Tadema](../img/willy.png){: .round }
 
-    Willy specializes in data science, ethics-by-design, XAI, fairness in machine learning, ML model risk management,
-    ML architecture, and MLOps. She's also skilled in R development, data integration, quality management, and geographic
-    information systems (GIS).
+    Willy specializes in AI governance, AI risk management, AI assurance and ethics-by-design. She is an advocate of AI standards and a member of several ethics committees.
 
     [:fontawesome-brands-github: FrieseWoudloper](https://github.com/FrieseWoudloper)
 
