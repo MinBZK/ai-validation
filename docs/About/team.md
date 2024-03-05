@@ -76,7 +76,7 @@
 
     ----
 
-    ![Christopher Spelt](../img/christopher.png){: .round }
+    ![Christopher Spelt](../img/christopher.jpeg){: .round }
 
     After graduating in pure mathematics Christopher transitioned into machine learning. He is passionate about solving complex problems, especially those that have a societal impact. My expertise lies in math, machine learning theory and i'm skilled in Python.
 
