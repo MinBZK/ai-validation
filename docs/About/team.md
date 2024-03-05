@@ -94,7 +94,8 @@
 
     ![Willy Tadema](../img/willy.png){: .round }
 
-    Willy specializes in AI governance, AI risk management, AI assurance and ethics-by-design. She is an advocate of AI standards and a member of several ethics committees.
+    Willy specializes in AI governance, AI risk management, AI assurance and ethics-by-design.
+    She is an advocate of AI standards and a member of several ethics committees.
 
     [:fontawesome-brands-github: FrieseWoudloper](https://github.com/FrieseWoudloper)
 
