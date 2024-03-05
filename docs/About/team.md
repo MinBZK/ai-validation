@@ -70,6 +70,21 @@
 
     [:octicons-link-24: anneschuth.nl](https://anneschuth.nl)
 
+-   ## Christopher Spelt
+
+    Engineer
+
+    ----
+
+    ![Christopher Spelt](../img/christopher.png){: .round }
+
+    After graduating in pure mathematics Christopher transitioned into machine learning. He is passionate about solving complex problems, especially those that have a societal impact. My expertise lies in math, machine learning theory and i'm skilled in Python.
+
+    [:fontawesome-brands-github: ChristopherSpelt](https://github.com/ChristopherSpelt)
+
+    [:fontawesome-brands-linkedin: Christopher Spelt](https://www.linkedin.com/in/christopher-spelt-27b39357/)
+
+
 -   ## Willy Tadema
 
     AI Ethics Lead
