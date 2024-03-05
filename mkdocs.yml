@@ -2,14 +2,15 @@
 
 site_name: AI Validation
 site_description: Documenting the processes of the AI Validation Team at the Ministry of the Interior and Kingdom Relations (Min BZK) in The Netherlands.
+site_url: https://minbzk.github.io/ai-validation/
 
 ### theme settings ###
 theme:
-    name: mkdocs-material-adr
+    name: material
     language: en
     palette:
-        primary: deep orange
-        scheme: slate
+       primary: deep orange
+       scheme: slate
     features:
         - navigation.indexes
         - navigation.tabs
@@ -22,6 +23,8 @@ theme:
         - search.suggest
         - content.action.edit
         - content.code.copy
+    custom_dir: overrides
+
 
     icon:
         logo: fontawesome/solid/house
@@ -62,3 +65,5 @@ plugins:
 
 repo_url: https://github.com/MinBZK/ai-validation
 edit_uri: edit/main/docs/
+
+strict: true
