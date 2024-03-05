@@ -78,12 +78,13 @@
 
     ![Christopher Spelt](../img/christopher.jpeg){: .round }
 
-    After graduating in pure mathematics Christopher transitioned into machine learning. He is passionate about solving complex problems, especially those that have a societal impact. My expertise lies in math, machine learning theory and i'm skilled in Python.
+    After graduating in pure mathematics, Christopher transitioned into machine learning. He is passionate about
+    solving complex problems, especially those that have a societal impact. My expertise lies in math, machine
+    learning theory and I'm skilled in Python.
 
     [:fontawesome-brands-github: ChristopherSpelt](https://github.com/ChristopherSpelt)
 
     [:fontawesome-brands-linkedin: Christopher Spelt](https://www.linkedin.com/in/christopher-spelt-27b39357/)
-
 
 -   ## Willy Tadema
 
