@@ -3,7 +3,6 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      # Check for updates to GitHub Actions every week
       interval: "weekly"
       day: "monday"
       time: "08:00"
@@ -16,7 +15,6 @@ updates:
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
-      # Check for updates to GitHub Actions every week
       interval: "weekly"
       day: "monday"
       time: "08:00"
@@ -24,4 +22,16 @@ updates:
     open-pull-requests-limit: 5
     labels:
       - "pip"
+      - "dependencies"
+
+  - package-ecosystem: "devcontainers"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "08:00"
+      timezone: "Europe/Amsterdam"
+    open-pull-requests-limit: 5
+    labels:
+      - "devcontainers"
       - "dependencies"
