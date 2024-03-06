@@ -16,6 +16,8 @@ The requirements have been given a priority based on the [MoSCoW](https://en.wik
 | ---- | ---------------------- | ------------------------------------------------------------ | -------- |
 | 1... | Functionality          | The tool allows users to perform technical tests on an algorithm or model. | M        |
 |      | Functionality          | The tool allows users to choose which tests to perform.      | M        |
+|      | Functionality          | The tool allows users to fill out questionnaires to conduct impact assessments for AI. For example IAMA or ALTAI. | M        |
+|      | Functionality          | The tool offers options to discuss and document conversations. For example, to converse about technical tests or to collaborate on impact assessments. | C        |
 |      | Functionality          | The tool supports plugin functionality so additional tests can be added easily. | S        |
 |      | Functionality          | The tool can generate a human readable report.               | M        |
 |      | Functionality          | The tool can generate a machine readable report.             | S        |
