@@ -1,12 +1,4 @@
----
-    title: ADR-0007 Commit convention
----
-
-|     |                  |
-| ---     | --- |
-| Author  | Berry den Hartog |
-| Created | 28-Feb-2024      |
-| Status  | Accepted         |
+# ADR-0007 Commit convention
 
 ## Context
 
