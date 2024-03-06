@@ -1,10 +1,12 @@
 ---
-    title: 0004 Software hosting platform
-    adr:
-        author: Berry den Hartog
-        created: 28-Feb-2024
-        status:  accepted
+    title: ADR-0004 Software hosting platform
 ---
+
+|     |                  |
+| ---     | --- |
+| Author  | Berry den Hartog |
+| Created | 28-Feb-2024      |
+| Status  | Accepted         |
 
 ## Context
 

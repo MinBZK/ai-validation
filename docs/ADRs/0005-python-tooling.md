@@ -1,10 +1,12 @@
 ---
-    title: 0005 Python coding standard and tools
-    adr:
-        author: Berry den Hartog
-        created: 28-Feb-2024
-        status:  accepted
+    title: ADR-0005 Python coding standard and tools
 ---
+
+|     |                  |
+| ---     | --- |
+| Author  | Berry den Hartog |
+| Created | 28-Feb-2024      |
+| Status  | Accepted         |
 
 ## Context
 
