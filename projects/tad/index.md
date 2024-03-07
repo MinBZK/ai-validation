@@ -24,7 +24,7 @@ The requirements have been given a priority based on the [MoSCoW](https://en.wik
 |      | Functionality          | It is possible to add custom components for reports.         | S        |
 |      | Functionality          | The tool provides logging.                                   | S        |
 |      | Functionality          | The tool can be used on an isolated system without an internet connection. | S        |
-|      | Functionality          | The tool does not share any data or logging to anyone or anywhere. | C        |
+|      | Functionality          | The tool operates with complete data privacy; it does not share any data or logging information. | C        |
 |      | Functionality          | The tool can be integrated in a CI/CD flow.                  | C        |
 |      | Functionality          | The tool can be offered as a (cloud) service where no local installation is required. | C        |
 |      | Reliability            | The tool can operate consistently and reliably.              | M        |
