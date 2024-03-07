@@ -27,17 +27,17 @@ scale to allow for tool comparison.
 | The tool allows users to perform technical tests on an algorithm or model.                                                                             | M        |
 | The tool allows users to choose which tests to perform.                                                                                                | M        |
 | The tool allows users to fill out questionnaires to conduct impact assessments for AI. For example IAMA or ALTAI.                                      | M        |
-| The tool offers options to discuss and document conversations. For example, to converse about technical tests or to collaborate on impact assessments. | C        |
-| The tool supports plugin functionality so additional tests can be added easily.                                                                        | S        |
 | The tool can generate a human readable report.                                                                                                         | M        |
 | The tools works with a standardized report format, that it can read, write, and update.                                                                | M        |
-| The tool allows extension of report formats functionality.                                                                                             | C        |
+| The tool supports plugin functionality so additional tests can be added easily.                                                                        | S        |
 | The tool supports plugin functionality so additional tests can be added easily.                                                                        | S        |
 | The tool allows to create custom reports based on components.                                                                                          | S        |
 | It is possible to add custom components for reports.                                                                                                   | S        |
 | The tool provides logging.                                                                                                                             | S        |
-| The tool can be used on an isolated system without an internet connection.                                                                             | S        |
 | The tool supports saving progress.                                                                                                                     | S        |
+| The tool can be used on an isolated system without an internet connection.                                                                             | S        |
+| The tool allows extension of report formats functionality.                                                                                             | C        |
+| The tool offers options to discuss and document conversations. For example, to converse about technical tests or to collaborate on impact assessments. | C        |
 | The tool operates with complete data privacy; it does not share any data or logging information.                                                       | C        |
 | The tool allows extension of report formats functionality.                                                                                             | C        |
 | The tool can be integrated in a CI/CD flow.                                                                                                            | C        |
