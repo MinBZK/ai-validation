@@ -1,5 +1,5 @@
 {
-  "name": "Mkdocs",
+  "name": "MkDocs",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
   "forwardPorts": [8000],
   "postCreateCommand": "pip install -r requirements-dev.txt",
@@ -7,8 +7,11 @@
   "customizations": {
     "vscode": {
       "extensions": [
+        "editorconfig.editorconfig",
+        "streetsidesoftware.code-spell-checker",
         "davidanson.vscode-markdownlint",
-        "streetsidesoftware.code-spell-checker"
+        "yzhang.markdown-all-in-one",
+        "takumii.markdowntable"
       ]
     }
   }
