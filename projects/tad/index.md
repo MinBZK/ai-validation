@@ -29,7 +29,7 @@ The requirements have been given a priority based on the [MoSCoW](https://en.wik
 |      | Functionality          | The tool can be offered as a (cloud) service where no local installation is required. | C        |
 |      | Reliability            | The tool operates consistently and reliably, meaning it delivers the same expected results every time you use it.             | M        |
 |      | Reliability            | The tool recovers automatically from common failures.     | S        |
-|      | Reliability            | The tool recovers from failures quickly and minimizes data loss. | S        |
+|      | Reliability            | The tool recovers from failures quickly, minimizing data loss, for example by automatically saving intermediate test progress results. | S        |
 |      | Reliability            | The tool handles errors gracefully and informs users of any issues. | S        |
 |      | Reliability            | The tool provides clear error messages and instructions for troubleshooting. | S        |
 |      | Usability              | The tool possess a clean, intuitive, and visually appealing UI that follows industry standards. | S        |
