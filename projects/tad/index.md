@@ -19,7 +19,7 @@ The requirements have been given a priority based on the [MoSCoW](https://en.wik
 |      | Functionality          | The tool supports plugin functionality so additional tests can be added easily. | S        |
 |      | Functionality          | The tool can generate a human readable report.               | M        |
 |      | Functionality          | The tools works with a standardized report format, that it can read, write, and update.             | M        |
-|      | Functionality          | The tool allows various formats for reports, like PDF, JSON, MD. | C        |
+|      | Functionality          | The tool allows extension of report formats functionality. | C        |
 |      | Functionality          | The tool allows to create custom reports based on components. | S        |
 |      | Functionality          | It is possible to add custom components for reports.         | S        |
 |      | Functionality          | The tool provides logging.                                   | S        |
