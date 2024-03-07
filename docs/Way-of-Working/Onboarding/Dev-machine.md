@@ -1,6 +1,8 @@
 # Setting up your Dev Machine
 
-We are assuming your dev machine is a Mac.
+We are assuming your dev machine is a Mac. 
+This guide is rather opinionated, feel free to have your own opinion, and feel free to contribute!
+Contributing can be done by clicking "edit" top right and by making a pull request on this repository.
 
 ## Things that should have been default on Mac
 
