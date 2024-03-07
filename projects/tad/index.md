@@ -5,7 +5,7 @@ This document contains a checklist with requirements for tools we could use to h
 
 The requirements are based on:
 
-- **ISO 25010 standard:** This standard defines the eight quality characteristics and provides a framework for evaluating software quality.
+- **ISO 25010 standard:** This standard defines the eight quality characteristics and provides a framework for evaluating software quality ([source](https://www.iso.org/standard/35733.html)).
 - **Industry best practices:** This includes a broad range of recommendations and guidelines for IT tool development and implementation.
 - **Common IT tool requirements:** This information was gathered by analyzing various sources, such as documentation from popular IT tools, user reviews, and articles from reputable tech publications that discuss essential features and functionalities expected from different types of IT tools.
 - **Internal discussion and common sense**: While above sources are already exhaustive, we also used team discussions and our own knowledge.
