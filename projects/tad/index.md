@@ -27,7 +27,7 @@ The requirements have been given a priority based on the [MoSCoW](https://en.wik
 |      | Functionality          | The tool operates with complete data privacy; it does not share any data or logging information. | C        |
 |      | Functionality          | The tool can be integrated in a CI/CD flow.                  | C        |
 |      | Functionality          | The tool can be offered as a (cloud) service where no local installation is required. | C        |
-|      | Reliability            | The tool can operate consistently and reliably.              | M        |
+|      | Reliability            | The tool operates consistently and reliably, meaning it delivers the same expected results every time you use it.             | M        |
 |      | Reliability            | The tool can recover automatically from common failures.     | M        |
 |      | Reliability            | The tool recovers from failures quickly and minimizes data loss. | S        |
 |      | Reliability            | The tool handles errors gracefully and informs users of any issues. | S        |
