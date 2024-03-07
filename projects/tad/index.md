@@ -53,7 +53,7 @@ The requirements have been given a priority based on the [MoSCoW](https://en.wik
 |      | Maintainability        | The system is modular, allowing for easy modification of individual components. | S        |
 |      | Maintainability        | Diagnostic tools are available to identify and troubleshoot issues. | S        |
 |      | Maintainability        | The code is written in a modern and common programming language. | M        |
-|      | Maintainability        | The project provides version control for code changes and rollback capabilities. |          |
+|      | Maintainability        | The project provides version control for code changes and rollback capabilities. |  M        |
 |      | Security               | The tool must protect data and system from unauthorized access, use, disclosure, disruption, modification, or destruction. | M        |
 |      | Security               | The tool enforce authorization controls based on user roles and permissions, restricting access to sensitive data and functionalities. | C        |
 |      | Security               | Data encryption is used for sensitive information at rest and in transit. | C        |
