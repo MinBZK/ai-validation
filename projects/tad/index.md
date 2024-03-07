@@ -20,18 +20,18 @@ The requirements have been given a priority based on the [MoSCoW](https://en.wik
 |      | Functionality          | The tool offers options to discuss and document conversations. For example, to converse about technical tests or to collaborate on impact assessments. | C        |
 |      | Functionality          | The tool supports plugin functionality so additional tests can be added easily. | S        |
 |      | Functionality          | The tool can generate a human readable report.               | M        |
-|      | Functionality          | The tool can generate a machine readable report.             | S        |
-|      | Functionality          | The tool allows various formats for reports, like PDF, JSON, MD. | C        |
+|      | Functionality          | The tools works with a standardized report format, that it can read, write, and update.             | M        |
+|      | Functionality          | The tool allows extension of report formats functionality. | C        |
 |      | Functionality          | The tool allows to create custom reports based on components. | S        |
 |      | Functionality          | It is possible to add custom components for reports.         | S        |
 |      | Functionality          | The tool provides logging.                                   | S        |
 |      | Functionality          | The tool can be used on an isolated system without an internet connection. | S        |
-|      | Functionality          | The tool does not share any data or logging to anyone or anywhere. | C        |
+|      | Functionality          | The tool operates with complete data privacy; it does not share any data or logging information. | C        |
 |      | Functionality          | The tool can be integrated in a CI/CD flow.                  | C        |
 |      | Functionality          | The tool can be offered as a (cloud) service where no local installation is required. | C        |
-|      | Reliability            | The tool can operate consistently and reliably.              | M        |
-|      | Reliability            | The tool can recover automatically from common failures.     | M        |
-|      | Reliability            | The tool recovers from failures quickly and minimizes data loss. | S        |
+|      | Reliability            | The tool operates consistently and reliably, meaning it delivers the same expected results every time you use it.             | M        |
+|      | Reliability            | The tool recovers automatically from common failures.     | S        |
+|      | Reliability            | The tool recovers from failures quickly, minimizing data loss, for example by automatically saving intermediate test progress results. | S        |
 |      | Reliability            | The tool handles errors gracefully and informs users of any issues. | S        |
 |      | Reliability            | The tool provides clear error messages and instructions for troubleshooting. | S        |
 |      | Usability              | The tool possess a clean, intuitive, and visually appealing UI that follows industry standards. | S        |
