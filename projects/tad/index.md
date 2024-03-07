@@ -92,7 +92,7 @@ scale to allow for tool comparison.
 | The tool adheres to industry coding standards and best practices to ensure code quality and maintainability. | M        |
 | The code is written in a common, widely adopted and supported and actively used and maintained programming language. | M        |
 | The project provides version control for code changes and rollback capabilities. | M        |
-| The project is open source.                                  | S        |
+| The project is open source.                                  | M        |
 | It is possible to contribute to the source.                  | S        |
 | The system is modular, allowing for easy modification of individual components. | S        |
 | Diagnostic tools are available to identify and troubleshoot issues. | S        |
@@ -111,12 +111,12 @@ scale to allow for tool comparison.
 ### Compatibility
 
 | Requirement                                                  | Priority |
-| ------------------------------------------------------------ | -------- |
+| ------------------------------------------------------------ |----------|
 | The tool is compatible with existing systems and infrastructure. | M        |
 | The tool supports industry-standard data formats and protocols. | M        |
-| The tool operates seamlessly on supported operating systems and hardware platforms. | M        |
-| The tool integrates with existing security solutions.        | C        |
+| The tool operates seamlessly on supported operating systems and hardware platforms. | S        |
 | The tool supports commonly used data formats (e.g., CSV, Excel, JSON) for easy data exchange with other systems and tools. | S        |
+| The tool integrates with existing security solutions.        | C        |
 
 ### Accessibility
 
