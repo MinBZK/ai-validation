@@ -54,10 +54,13 @@ extra_css:
     - stylesheets/extra.css
 
 plugins:
+    - search
     - glightbox
     - git-revision-date-localized:
         enable_creation_date: true
-    - search
+    - git-committers:
+        repository: minbzk/ai-validation
+        branch: main
 
 repo_url: https://github.com/MinBZK/ai-validation
 edit_uri: edit/main/docs/
