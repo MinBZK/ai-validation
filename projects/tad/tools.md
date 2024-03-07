@@ -28,6 +28,8 @@ Links:
 
 ## Fate (toolkit?)
 
+Tools mentioned: Aequitas, AI Fairness 360, Dalex, Fairlean, Responsibly, and What-If-Tool
+
 [Paper](https://ceur-ws.org/Vol-2846/paper35.pdf)
 [Article](https://www.sciencedirect.com/science/article/pii/S2666920X23000310)
 [Microsoft links](https://www.sciencedirect.com/science/article/pii/S2666920X23000310)
