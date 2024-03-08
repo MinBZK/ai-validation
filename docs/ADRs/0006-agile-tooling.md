@@ -1,10 +1,5 @@
----
-    title: 0006 Agile tooling
-    adr:
-        author: Berry den Hartog
-        created: 28-Feb-2024
-        status:  accepted
----
+
+# ADR-0006 Agile tooling
 
 ## Context
 

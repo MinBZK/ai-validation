@@ -5,7 +5,7 @@ site_description: Documenting the processes of the AI Validation Team at the Min
 
 ### theme settings ###
 theme:
-    name: mkdocs-material-adr
+    name: material
     language: en
     palette:
         primary: deep orange
@@ -54,11 +54,13 @@ extra_css:
     - stylesheets/extra.css
 
 plugins:
-    - mkdocs-material-adr/adr
+    - search
     - glightbox
     - git-revision-date-localized:
         enable_creation_date: true
-    - search
+    - git-committers:
+        repository: minbzk/ai-validation
+        branch: main
 
 repo_url: https://github.com/MinBZK/ai-validation
 edit_uri: edit/main/docs/
