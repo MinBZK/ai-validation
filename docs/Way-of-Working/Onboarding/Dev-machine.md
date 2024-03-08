@@ -123,4 +123,6 @@ Contributing can be done by clicking "edit" top right and by making a pull reque
     tabby serve --device metal --model TabbyML/StarCoder-3B
     ```
 
+  Then configure your IDE by [installing a plugin](https://tabby.tabbyml.com/docs/extensions/installation/).
+
 - [Sign commits using SSH](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key#telling-git-about-your-ssh-key)
