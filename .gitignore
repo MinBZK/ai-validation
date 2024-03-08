@@ -2,4 +2,6 @@ venv
 .venv
 build
 site
+
+.idea/
 .cache
