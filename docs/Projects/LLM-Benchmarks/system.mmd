@@ -1,0 +1,24 @@
+ C4Context
+      title System Context diagram for LLM Benchmark System
+      Boundary(b0, "Dutch Government") {
+        System(SystemLLMBenchmark, "LLM Benchmark", "Allows users to upload LLM models and test against Dutch benchmarks.")
+        System(SystemAlgoReg, "Algorithm Register", "Registers the algorithms in use by the Dutch government.")
+        System(SystemLLMDashboard, "LLM Dashboard", "Shows the performance of the LLMs on the Dutch benchmarks")
+      }
+
+      Person(dev0, "Local LLM Developer", "Developer that develops LLMs")
+      Person(dev, "LLM Developer", "Developer that develops LLMs.")
+
+      Rel(dev0, SystemLLMBenchmark, "Uses the system locally")
+      Rel(dev, SystemLLMBenchmark, "Uploads LLM model")
+      Rel(dev, SystemLLMDashboard, "Inspects LLM model performances")
+
+      Rel(SystemLLMBenchmark, SystemAlgoReg, "Upload Benchmark results")
+      Rel(SystemAlgoReg, SystemLLMBenchmark, "Uploads specific LLM version")
+
+      Rel(SystemLLMBenchmark, SystemAlgoReg, "Upload Benchmark results")
+      Rel(SystemAlgoReg, SystemLLMBenchmark, "Uploads specific LLM version")
+
+      UpdateRelStyle(SystemLLMBenchmark, SystemAlgoReg, $offsetY="-50", $offsetX="-70")
+      UpdateRelStyle(SystemAlgoReg, SystemLLMBenchmark, $offsetY="50", $offsetX="-70")
+      UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
