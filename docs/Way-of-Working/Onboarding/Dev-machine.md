@@ -109,20 +109,20 @@ Contributing can be done by clicking "edit" top right and by making a pull reque
 
 - [TabbyML Opensource, self-hosted AI coding assistant](https://tabby.tabbyml.com/)
 
-  We can not just use hosted versions of coding assistants because of privacy and copyright issues.
-  We can however use self-hosted coding assistants provided they are trained on data with permissive licenses.
+    We can not just use hosted versions of coding assistants because of privacy and copyright issues.
+    We can however use self-hosted coding assistants provided they are trained on data with permissive licenses.
 
-  StarCoder (1-7B) models are all trained on version 1.2 of
-  [The Stack](https://www.bigcode-project.org/docs/about/the-stack/) dataset.
-  It boils down to all open GitHub code with permissive licenses (193 licenses in total). Minus opt-out requests.
+    StarCoder (1-7B) models are all trained on version 1.2 of
+    [The Stack](https://www.bigcode-project.org/docs/about/the-stack/) dataset.
+    It boils down to all open GitHub code with permissive licenses (193 licenses in total). Minus opt-out requests.
 
-  Code Lama and Deepseek models are not clear enough about their data licenses.
+    Code Lama and Deepseek models are not clear enough about their data licenses.
 
     ```shell
     brew install tabbyml/tabby/tabby
     tabby serve --device metal --model TabbyML/StarCoder-3B
     ```
 
-  Then configure your IDE by [installing a plugin](https://tabby.tabbyml.com/docs/extensions/installation/).
+    Then configure your IDE by [installing a plugin](https://tabby.tabbyml.com/docs/extensions/installation/).
 
 - [Sign commits using SSH](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key#telling-git-about-your-ssh-key)
