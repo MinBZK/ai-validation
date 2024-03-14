@@ -36,6 +36,12 @@ Create or use your existing Github account.
 - Properties
 - Enable read access
 
+## Shared email
+
+- Ask a colleague to add you to the shared [contact address](../../About/contact.md) by sending an email to Secretariat
+  of Digital Society.
+- In Outlook, go to Account Settings and "Add Account", leave the password empty
+
 ## Bookmark
 
 Bookmark these links in your browser:
