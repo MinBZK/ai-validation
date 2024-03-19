@@ -36,7 +36,7 @@ The following conditions apply to the researcher in residence.
   documents are submitted to a member of the team for review prior to being processed.
 - Any data collected and analyzed via interviews is done on the basis of informed consent.
 - The data collected is not shared with other parties and is handled ethically by the researcher.
-- No information, aggregation, or summary of information from the communication channel of the team (mattermost) is
+- No information, aggregation, or summary of information from the communication channel of the team (Mattermost) is
   collected, processed, or analyzed by the researcher.
 
 ## Risks
