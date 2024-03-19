@@ -41,8 +41,8 @@ The following conditions apply to the researcher in residence.
 
 ## Risks
 
-Risks around a potential chilling effect (team members not feeling free to express themselves) are mitigated by the conditions we impose. 
-In light of aforementioned form and conditions above, we see no further significant risks. 
+Risks around a potential chilling effect (team members not feeling free to express themselves) are mitigated by the conditions we impose.
+In light of aforementioned form and conditions above, we see no further significant risks.
 
 ## Consequences
 
