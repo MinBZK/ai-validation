@@ -48,4 +48,3 @@ In light of aforementioned form and conditions above, we see no foreseeable sign
 Including a researcher in residence makes it easier for them to conduct research within both the team and the wider
 organization where the AI validation team operates. This benefits the quality of the research findings and the feedback
 provided to the team and organization.
-
