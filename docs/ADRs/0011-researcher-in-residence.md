@@ -25,7 +25,7 @@ The researcher in residence takes the following form:
 
 - They join and participate in refinement meetings and other meetings of relevance.
 - They share their reflections and present their (interim) research findings.
-- They are provided access to the communication channel of the team (mattermost).
+- They are provided access to the communication channel of the team (Mattermost).
 - They meet with a contact person bi-weekly to discuss questions and relevant progress and findings.
 - The are independent as they are employed and financed by their respective university.
 - The results of their research, and thus processed data, are published in an academic journal.
