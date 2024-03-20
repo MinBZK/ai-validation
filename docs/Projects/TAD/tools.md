@@ -19,19 +19,18 @@ Links:
 
 ## To investigate further
 
-### AI Assessment Tool Belgium
+### VerifyML
 
-**What is it?** The tool is based on the
-[ALTAI recommendations](https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment)
-published by the European Commission.
+**What is it?** VerifyML is an opinionated, open-source toolkit and workflow to help companies implement
+human-centric AI practices. It seems pretty much equivalent to AI Verify.
 
-**Why interesting?** Although it only includes questionnaires it does give an interesting way
-of reporting the end results. Also this project can still be expanded with technical tests.
+**Why interesting?** The functionality of this toolkit seems to match closely with those of AI Verify.
+It has a "git and code first approach" and has automatic generation of model cards.
 
-**Remarks** Does not include any technical tests at this point.
+**Remarks** The code seems to be last updated 2 years ago.
 
-Links: [ALTAI ai4belgium Homepage](https://altai.ai4belgium.be/),
-[Altai Github](https://github.com/AI4Belgium/ai-assessment-tool).
+Links: [VerifyML](https://www.verifyml.com/),
+[VerifyML GitHub](https://github.com/cylynx/verifyml)
 
 ### IBM Research 360 Toolkit
 
@@ -66,6 +65,11 @@ Links:
 [Hollisticai Github](https://github.com/holistic-ai/holisticai).
 
 ## Interesting to mention
+
+* [AI Assessment Tool Belgium](https://altai.ai4belgium.be/). The tool is based on the
+[ALTAI recommendations](https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment)
+published by the European Commission. Although it only includes questionnaires it does give an interesting way
+of reporting the end results. Does not include any technical tests at this point.
 
 * [What-if](https://github.com/pair-code/what-if-tool). Provides interface for expanding understanding
 of a black-box classifaction or regression ML model. Can be accessed through TensorBoard or as an
