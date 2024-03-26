@@ -18,8 +18,22 @@ the license is *not* present in the license list, the following will be REQUIRED
     4. **Role** (OPTIONAL). Role of the contact person. This field is only set when the Name field
     is set.
 
-### 2. Models
-1. 
+### 2. Model
+1. **Name** (REQUIRED). The name of the model.
+2. **Version** (REQUIRED). The version of the model.
+3. **Results**
+    1. **Task Type**. The task of the model, for example object classifcation.
+    2. **Dataset** 
+        1. **Name** (REQUIRED). Name of the dataset.
+        2. **Version** (REQUIRED). Version of the dataset.
+    3. **Metrics**
+        1. **Name** (REQUIRED). A descriptive name of the metric.
+        2. **Type** (REQUIRED). The data type of the value field. This must be one of the following
+        data types: ... 
+        3. **Value** (REQUIRED). The value of the metric.
+        4. **Description** (REQUIRED). A description of the metric. This must include all relevant
+        information to reproduce the value of this metric.
+
 
 ### 3. Assessments
 For each assessment the following fields are present:
