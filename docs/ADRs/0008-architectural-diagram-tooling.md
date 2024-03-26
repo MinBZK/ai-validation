@@ -1,10 +1,4 @@
----
-    title: 0008 Architectural Diagram Tooling
-    adr:
-        author: Laurens Weijs
-        created: 04-Mar-2024
-        status:  accepted
----
+# ADR-0008 Architectural Diagram Tooling
 
 ## Context
 
