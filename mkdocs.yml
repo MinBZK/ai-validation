@@ -1,49 +1,48 @@
-### Site metadata ###
-
 site_name: AI Validation
 site_description: Documenting the processes of the AI Validation Team at the Ministry of the Interior and Kingdom Relations (Min BZK) in The Netherlands.
 
-### theme settings ###
-theme:
-    name: material
-    language: en
-    palette:
-        primary: deep orange
-        scheme: slate
-    features:
-        - navigation.indexes
-        - navigation.tabs
-        - navigation.tabs.sticky
-        - navigation.path
-        - navigation.top
-        - navigation.tracking
-        - navigation.instant
-        - search.highlight
-        - search.suggest
-        - content.action.edit
-        - content.code.copy
+copyright: European Union Public Licence v. 1.2
 
-    icon:
-        logo: fontawesome/solid/house
-        annotation: fontawesome/solid/circle-info
+repo_name: MinBZK/ai-validation
+repo_url: https://github.com/MinBZK/ai-validation
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  palette:
+    primary: deep orange
+    scheme: slate
+  features:
+    - content.action.edit
+    - content.code.copy
+    - navigation.indexes
+    - navigation.instant
+    - navigation.path
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+  icon:
+    logo: fontawesome/solid/house
+    annotation: fontawesome/solid/circle-info
 
 markdown_extensions:
-    - pymdownx.tabbed:
-        alternate_style: true
-    - pymdownx.superfences
-    - pymdownx.details
-    - admonition
-    - attr_list
-    - abbr
-    - md_in_html
-    - pymdownx.tasklist:
-        custom_checkbox: true
-    - pymdownx.emoji:
-        emoji_index: !!python/name:material.extensions.emoji.twemoji
-        emoji_generator: !!python/name:material.extensions.emoji.to_svg
-    - pymdownx.snippets:
-        auto_append:
-            - includes/abbreviations.md
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+  - attr_list
+  - abbr
+  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra:
   social:
@@ -51,16 +50,14 @@ extra:
       link: https://github.com/MinBZK/ai-validation
 
 extra_css:
-    - stylesheets/extra.css
+  - stylesheets/extra.css
 
 plugins:
-    - search
-    - glightbox
-    - git-revision-date-localized:
-        enable_creation_date: true
-    - git-committers:
-        repository: minbzk/ai-validation
-        branch: main
-
-repo_url: https://github.com/MinBZK/ai-validation
-edit_uri: edit/main/docs/
+  - git-committers:
+      repository: minbzk/ai-validation
+      branch: main
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - glightbox
+  - privacy
+  - search
