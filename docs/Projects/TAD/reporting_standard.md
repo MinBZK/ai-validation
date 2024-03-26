@@ -1,19 +1,30 @@
 # TAD Reporting Standard
 This document describes the Transparancy of Algorithmic Decision making (TAD) reporting standard.
 
-
 ## Specification of the standard
+The standard contains the following information.
 
-### Section 1
-| **Field** | **Type** | **Required** | **Description** |
-|-----------|----------|--------------|-----------------|
-|           |          |              |                 |
-|           |          |              |                 |
-|           |          |              |                 |
+### 1. General information
+1. **Timestamp** (REQUIRED). The date and time of the generation of the report containing the
+information in this standard.
+2. **License** (REQUIRED). Any license from the [SPDX License List](https://spdx.org/licenses/). If
+the license is *not* present in the license list, the following will be REQUIRED.
+    1. **License Name**. The name or identifier of the license.
+    2. **License Link**. A link to a file containing the contents of the license.
+3. **Owners**
+    1. **Organization** (REQUIRED). Name of the organization that owns the model.
+    2. **Name** (OPTIONAL). Name of a contact person within the organisation.
+    3. **Email** (OPTIONAL). Email adress of the contact person or organization.
+    4. **Role** (OPTIONAL). Role of the contact person. This field is only set when the Name field
+    is set.
 
-### Section 2
-| **Field** | **Type** | **Required** | **Description** |
-|-----------|----------|--------------|-----------------|
-|           |          |              |                 |
-|           |          |              |                 |
-|           |          |              |                 |
+### 2. Models
+1. 
+
+### 3. Assessments
+For each assessment the following fields are present:
+1. **Name** (REQUIRED). The name of the assessment.
+2. **Date** (REQUIRED). The date at which the assessment is completed.
+3. **Contents** (REQUIRED). A link to a file containing the contents of the assessment, which
+includes all questions and answers given to those questions. If a question is not answered, the
+question must be included and it's answer must be empty.
