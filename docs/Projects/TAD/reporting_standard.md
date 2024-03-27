@@ -2,7 +2,7 @@
 
 This document describes the Transparancy of Algorithmic Decision Making (TAD) reporting standard.
 
-## Specification of the standard
+## Introduction
 
 The standard almost [^1] [^2] extends the [Hugging Face model card metadata specification](https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1)
 to allow for:
@@ -19,6 +19,8 @@ The standards does not contain all fields present in the Hugging Face specificat
 are ommited.
 
 The standard contains the following information.
+
+## Specification of the standard
 
 ### 1. General information
 
