@@ -9,7 +9,7 @@ to allow for:
 
 1. More finegrained information on performance metrics.
 2. Capturing additional *measurements* on fairness and bias, such as for example SHAP-values.
-3. Capturing assessments
+3. Capturing *assessments*
 
 The standards does not contain all fields present in the Hugging Face specification: the fields that are
 
@@ -30,7 +30,7 @@ the license is NOT present in the license list, the following will be REQUIRED.
     1. **License Name**. An id for the license.
     2. **License Link**. A link to a file of that name inside the repo, or a URL to a remote file.
 
-3. **Library** (OPTIONAL). Any library from the [library list](ttps://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/model-libraries.ts).
+3. **Library** (OPTIONAL). Any library from the [library list](https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/model-libraries.ts).
 4. **Tags** (OPTIONAL). Tags with keywords to describe the project. There can be multiple tags.
 5. **Owners**. There can be multiple owners. For each owner the following fields are present.
 
@@ -58,7 +58,7 @@ There can be multiple models. For each model the following fields are present.
         or a link to a repository containing the dataset, for example "common_voice".
         2. **Name** (REQUIRED). Name pretty name for the dataset, for example "Common Voice (French)".
         3. **Split** (OPTIONAL). The split of the dataset, for example "train".
-        4. **Revision** (OPTIONAL). Version of the dataset, example 5503434ddd753f426f4b38109466949a1217c2bb.
+        4. **Revision** (OPTIONAL). Version of the dataset, for example 5503434ddd753f426f4b38109466949a1217c2bb.
 
     3. **Metrics**. There can be multiple metrics. For each metric the following fields are present.
 
@@ -109,7 +109,7 @@ owners:
   role: {owner_role}                # Optional. Example: Data Scientist.
 
 model-index:
-- name: {model_id}                  # Required. Example: CatClassifier.
+- name: {model_id}                  # Required. Example: ImageClassifier.
   results:
   - task:
       type: {task_type}             # Required. Example: image-classification.
@@ -129,7 +129,6 @@ model-index:
     measurements:
     - TODO
 
-# Assessments like IAMA.
 assessments:
 - name: {assessment_name}         # Required. Example: IAMA.
   date: {assessment_date}         # Required. Example: 25-03-2025.
