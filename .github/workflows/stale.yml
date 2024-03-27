@@ -1,0 +1,23 @@
+name: 'Close stale'
+on:
+  schedule:
+    - cron: '0 4 * * *'
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # only for delete-branch option
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/stale@v9
+        with:
+          days-before-stale: 90
+          days-before-close: 30
+          stale-issue-message: 'This issue did not have any activity in the last 90 days and will be removed after 30 days'
+          stale-pr-message: 'This PR did not have any activity in the last 90 days and will be removed after 30 days'
+          close-pr-message: 'This PR is closed due to inactivity'
+          close-issue-message: 'This issue is closed due to inactivity'
+          exempt-pr-labels: Future
+          exempt-issue-labels: Future
