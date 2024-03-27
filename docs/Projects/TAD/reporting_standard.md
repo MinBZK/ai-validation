@@ -11,16 +11,18 @@ to allow for:
 2. Capturing additional *measurements* on fairness and bias, such as for example SHAP-values.
 3. Capturing *assessments*
 
-The standards does not contain all fields present in the Hugging Face specification: the fields that are
+The standards does not contain all fields present in the Hugging Face specification: the fields that are optional in the
+HuggingFace specification, AND are specific to the HugginFace interface are ommited.
 
-- optional in the HuggingFace specification, AND
-- are very specific to the HugginFace interface
-
-are ommited.
-
-The standard contains the following information.
+The standard will be written in yaml. Some preliminary remarks about the standard:
+1. At this point size considerations of the resulting yaml have not been taken into account. It can very
+well be that some measurements (such as SHAP values) and assessments will make the file unneccecarily big. If
+this is the case, and turns out to be a problem, it can be necessary to revise the standard.
 
 ## Specification of the standard
+
+The standard will be written in yaml. An example is given in the next section. The standard contains the
+following information.
 
 ### 1. General information
 
