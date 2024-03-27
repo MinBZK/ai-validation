@@ -100,6 +100,7 @@ There can be multiple assessments. For each assessment the following fields are 
 ## Example
 
 ```yaml
+timestamp: {current_timestamp}      # Required. Timestamp of the generation of this file.
 language:
   - {lang_0}                        # Optional. Example nl.
 license: {licence}                  # Required. Example: apache-2.0 or any license identifier from https://huggingface.co/docs/hub/repositories-licenses
@@ -137,12 +138,12 @@ model-index:
     - TODO
 
 assessments:
-- name: {assessment_name}         # Required. Example: IAMA.
-  date: {assessment_date}         # Required. Example: 25-03-2025.
+- name: {assessment_name}           # Required. Example: IAMA.
+  date: {assessment_date}           # Required. Example: 25-03-2025.
   contents:
-    - question: {question_text}   # Required. Example: "Question 1: ...".
-      answer: {answer_text}       # Required. Example: "Answer: ...".
-      remarks: {remarks_text}     # Optional. Example: "Remarks: ...".
+    - question: {question_text}     # Required. Example: "Question 1: ...".
+      answer: {answer_text}         # Required. Example: "Answer: ...".
+      remarks: {remarks_text}       # Optional. Example: "Remarks: ...".
 
 ```
 
