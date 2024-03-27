@@ -4,7 +4,7 @@ This document describes the Transparancy of Algorithmic Decision Making (TAD) re
 
 ## Specification of the standard
 
-The standard (almost [^1]) extends the [Hugging Face model card metadata specification](https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1)
+The standard almost [^1] [^2] extends the [Hugging Face model card metadata specification](https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1)
 to allow for:
 
 1. More finegrained information on performance metrics.
@@ -55,14 +55,14 @@ There can be multiple models. For each model the following fields are present.
     2. **Dataset**
 
         1. **Type** (REQUIRED). The type of the dataset, can be a dataset id from [HuggingFace datasets](https://hf.co/datasets)
-        or a link to a repository containing the dataset, for example "common_voice".
+        or a link to a repository containing the dataset[^1], for example "common_voice".
         2. **Name** (REQUIRED). Name pretty name for the dataset, for example "Common Voice (French)".
         3. **Split** (OPTIONAL). The split of the dataset, for example "train".
         4. **Revision** (OPTIONAL). Version of the dataset, for example 5503434ddd753f426f4b38109466949a1217c2bb.
 
     3. **Metrics**. There can be multiple metrics. For each metric the following fields are present.
 
-        1. **Type** (REQUIRED). A metric-id from [Hugging Face metrics](https://hf.co//metrics), for example accuracy.
+        1. **Type** (REQUIRED). A metric-id from [Hugging Face metrics](https://hf.co//metrics)[^2], for example accuracy.
         TODO: add note.
         2. **Name** (REQUIRED). A descriptive name of the metric. For example "false positive rate" is
         not a descriptive name, but "training false positive rate w.r.t class x" is.
@@ -77,6 +77,9 @@ There can be multiple models. For each model the following fields are present.
             1. **Feature** (OPTIONAL). The name of the feature. For example: "gender".
             2. **Group** (OPTIONAL). The value of the feature. If **Feature** is set, this field must be set as wel.
             For example: "male".
+
+    4. **Measurements**. There can be multiple measurements. For each measurement the follwing fields are present.
+        1. TODO.
 
 ### 3. Assessments
 
@@ -141,3 +144,6 @@ assessments:
 
 [^1]: Deviation from the HuggingFace specification is in the Dataset Type field. HuggingFace only accepts
 dataset id's from [HuggingFace datasets](https://hf.co/datasets) while we also allow for any url pointing to the dataset.
+
+[^2]: For this extension to work relevent metrics (such as for example false positive rate) have to be added to the
+[Hugging Face metrics](https://hf.co//metrics), possibly this can be done in our organizational namespace.
