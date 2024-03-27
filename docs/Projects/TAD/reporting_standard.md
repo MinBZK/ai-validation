@@ -23,13 +23,13 @@ the license is *not* present in the license list, the following will be REQUIRED
 2. **Version** (REQUIRED). The version of the model.
 3. **Results**
     1. **Task Type**. The task of the model, for example object classifcation.
-    2. **Dataset** 
+    2. **Dataset**
         1. **Name** (REQUIRED). Name of the dataset.
         2. **Version** (REQUIRED). Version of the dataset.
     3. **Metrics**
         1. **Name** (REQUIRED). A descriptive name of the metric.
         2. **Type** (REQUIRED). The data type of the value field. This must be one of the following
-        data types: ... 
+        data types: ...
         3. **Value** (REQUIRED). The value of the metric.
         4. **Description** (REQUIRED). A description of the metric. This must include all relevant
         information to reproduce the value of this metric.
