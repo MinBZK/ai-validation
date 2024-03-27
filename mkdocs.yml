@@ -52,6 +52,9 @@ extra:
 extra_css:
   - stylesheets/extra.css
 
+extra_templates:
+  - .well-known/security.txt
+
 plugins:
   - git-committers:
       repository: minbzk/ai-validation
