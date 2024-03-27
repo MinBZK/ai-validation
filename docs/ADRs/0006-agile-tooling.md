@@ -1,4 +1,3 @@
-
 # ADR-0006 Agile tooling
 
 ## Context
