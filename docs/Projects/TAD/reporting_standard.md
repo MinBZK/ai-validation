@@ -26,17 +26,15 @@ following information.
 
 ### 1. General information
 
-1. **Timestamp** (REQUIRED). The date and time of the generation of the report containing the
-information in this standard.
-2. **License** (REQUIRED). Any license from the [license list](https://huggingface.co/docs/hub/repositories-licenses). If
+1. **License** (REQUIRED). Any license from the [license list](https://huggingface.co/docs/hub/repositories-licenses). If
 the license is NOT present in the license list, the following will be REQUIRED.
 
     1. **License Name**. An id for the license.
     2. **License Link**. A link to a file of that name inside the repo, or a URL to a remote file.
 
-3. **Library** (OPTIONAL). Any library from the [library list](https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/model-libraries.ts).
-4. **Tags** (OPTIONAL). Tags with keywords to describe the project. There can be multiple tags.
-5. **Owners**. There can be multiple owners. For each owner the following fields are present.
+2. **Library** (OPTIONAL). Any library from the [library list](https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/model-libraries.ts).
+3. **Tags** (OPTIONAL). Tags with keywords to describe the project. There can be multiple tags.
+4. **Owners**. There can be multiple owners. For each owner the following fields are present.
 
     1. **Organization** (REQUIRED). Name of the organization that owns the model.
     2. **Name** (OPTIONAL). Name of a contact person within the organisation.
@@ -100,51 +98,72 @@ There can be multiple assessments. For each assessment the following fields are 
 ## Example
 
 ```yaml
-timestamp: {current_timestamp}      # Required. Timestamp of the generation of this file.
 language:
-  - {lang_0}                        # Optional. Example nl.
-license: {licence}                  # Required. Example: apache-2.0 or any license identifier from https://huggingface.co/docs/hub/repositories-licenses
-license_name: {licence_name}        # Required. if license = other, specify an id for the licence. Example: 'my-license-1.0'
-license_link: {license_link}        # Required. if license = other, specify "LICENSE" or "LICENSE.md" to link to a file of that name inside the repo, or a URL to a remote file.
-library_name: {library_name}        # Optional. Example: keras or any library from https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/model-libraries.ts.
+  - {lang_0}                                            # Optional. Example nl.
+license: {licence}                                      # Required. Example: apache-2.0 or any license identifier from https://huggingface.co/docs/hub/repositories-licenses
+license_name: {licence_name}                            # Required. if license = other, specify an id for the licence. Example: 'my-license-1.0'
+license_link: {license_link}                            # Required. if license = other, specify "LICENSE" or "LICENSE.md" to link to a file of that name inside the repo, or a URL to a remote file.
+library_name: {library_name}                            # Optional. Example: keras or any library from https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/model-libraries.ts.
 tags:
-- {tag_0}                           # Optional. Example: audio
-- {tag_1}                           # Optional. Example: automatic-speech-recognition
+- {tag_0}                                               # Optional. Example: audio
+- {tag_1}                                               # Optional. Example: automatic-speech-recognition
 owners:
-- organization: {organization_name} # Required. Example: BZK
-  name: {owner_name}                # Optional. Example: John Doe
-  email: {owner_email}              # Optional. Example: johndoe@email.com
-  role: {owner_role}                # Optional. Example: Data Scientist.
+- organization: {organization_name}                     # Required. Example: BZK
+  name: {owner_name}                                    # Optional. Example: John Doe
+  email: {owner_email}                                  # Optional. Example: johndoe@email.com
+  role: {owner_role}                                    # Optional. Example: Data Scientist.
 
 model-index:
-- name: {model_id}                  # Required. Example: ImageClassifier.
+- name: {model_id}                                      # Required. Example: CatClassifier.
   results:
   - task:
-      type: {task_type}             # Required. Example: image-classification.
-      name: {task_name}             # Optional. Example: Image Classification.
+      type: {task_type}                                 # Required. Example: image-classification.
+      name: {task_name}                                 # Optional. Example: Image Classification.
     dataset:
-      type: {dataset_type}          # Required. Example: common_voice. Link to a repository containing the dataset or a dataset id from https://hf.co/datasets.
-      name: {dataset_name}          # Required. Example: "Common Voice (French)". A pretty name for the dataset.
-      revision: {dataset_version}   # Optional. Example: 5503434ddd753f426f4b38109466949a1217c2bb
+      type: {dataset_type}                              # Required. Example: common_voice. Link to a repository containing the dataset or a dataset id from https://hf.co/datasets.
+      name: {dataset_name}                              # Required. Example: "Common Voice (French)". A pretty name for the dataset.
+      revision: {dataset_version}                       # Optional. Example: 5503434ddd753f426f4b38109466949a1217c2bb
     metrics:
-    - type: {metric_type}           # Required. Example: false-positive-rate. Use metric id from https://hf.co/metrics.
-      name: {metric_name}           # Required. Example: "FPR wrt class 0 restricted to feature gender:0 and age:21".
-      value: {metric_value}         # Required. Example: 0.75.
-      class: {metric_output_class}  # Optional. Example: "1". Only relevant for certain metrics such as for example false-positive-rate positive rate.
+    - type: {metric_type}                               # Required. Example: false-positive-rate. Use metric id from https://hf.co/metrics.
+      name: {metric_name}                               # Required. Example: "FPR wrt class 0 restricted to feature gender:0 and age:21".
+      value: {metric_value}                             # Required. Example: 0.75.
+      class: {metric_output_class}                      # Optional. Example: "1". Only relevant for certain metrics such as for example false-positive-rate positive rate.
       subgroups:
-        - feature: {feature}        # Optional. Example: "gender".
-          group: {feature_subgroup} # Optional. Example: "female".
+        - feature: {feature_name}                       # Optional. Example: "gender".
+          group: {feature_subgroup}                     # Optional. Example: "female".
     measurements:
-    - TODO
+    - shap:
+      - feature: {feature_name}                         # Optional. Example: "gender".
+        value: {mean_abs_shap}                          # Optional. Example: 0.20.    
+      boundary_attack:
+        num_perturbed_samples: {number_total}           # Optional.
+        original: {original_value}                      # Optional.
+        adversarial: {adversarial_value}                # Optional.
+        num_failed_perturbed_samples: {number_failed}   # Optional.
+      measurment:
+        type: {measurement_type}                        # Optional. Example: "partial_dependence". Use measurement id from some list (TODO).
+        classes:
+          - class: {class_name}                         # Optional. Example: "1". 
+        # 3 dim tensor c*f*d, where c is the number of provided classes, f is the number of provided features and d is the nr of examples.
+        # Result is used to make a plot of (feature_val, val) for each provided feature for each provided class. 
+        # Example if two classes and two features with nr of examples 3 are provided is [[[0,1,2],[10,10,10]], [[10,11,12],[10,10,10]]].
+        features:
+          - feature: {feature_name}                     # Optional. Example: "gender".
+            results:
+          - - - feature_value: {feature_val}            # Optional. Value of the feature example. 
+              - value: {pd_value}                       # Optional. Value of the measurement corresponding to feature example. 
 
+# Assessments like IAMA.
 assessments:
-- name: {assessment_name}           # Required. Example: IAMA.
-  date: {assessment_date}           # Required. Example: 25-03-2025.
+- name: {assessment_name}         # Required. Example: IAMA.
+  date: {assessment_date}         # Required. Example: 25-03-2025.
   contents:
-    - question: {question_text}     # Required. Example: "Question 1: ...".
-      answer: {answer_text}         # Required. Example: "Answer: ...".
-      remarks: {remarks_text}       # Optional. Example: "Remarks: ...".
-
+    - question: {question_text}   # Required. Example: "Question 1: ...". 
+      answer: {answer_text}       # Required. Example: "Answer: ...".
+      remarks: {remarks_text}     # Optional. Example: "Remarks: ...".
+      authors:                    # Optional. Example: "['John', 'Peter']". 
+        -name: {author_name}      
+      timestamp: {timestamp}      # Optional. Example: 1711630721.
 ```
 
 [^1]: Deviation from the HuggingFace specification is in the Dataset Type field. HuggingFace only accepts
