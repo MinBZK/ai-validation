@@ -15,6 +15,7 @@ The standards does not contain all fields present in the Hugging Face specificat
 HuggingFace specification, AND are specific to the HugginFace interface are ommited.
 
 The standard will be written in yaml. Some preliminary remarks about the standard:
+
 1. At this point size considerations of the resulting yaml have not been taken into account. It can very
 well be that some measurements (such as SHAP values) and assessments will make the file unneccecarily big. If
 this is the case, and turns out to be a problem, it can be necessary to revise the standard.
@@ -80,8 +81,15 @@ There can be multiple models. For each model the following fields are present.
             2. **Group** (OPTIONAL). The value of the feature. If **Feature** is set, this field must be set as wel.
             For example: "male".
 
-    4. **Measurements**. There can be multiple measurements. For each measurement the follwing fields are present.
-        1. TODO.
+    4. **Measurements**.
+
+        1. **Bar Plots**. There can be multiple bar plots. For each bar plot the following fields are present.
+
+            1. TODO
+
+        2. **Graph Plots**. There can be multiple graph plots. For each graph plot the following fields are present.
+
+            1. TODO
 
 ### 3. Assessments
 
@@ -132,38 +140,38 @@ model-index:
         - feature: {feature_name}                       # Optional. Example: "gender".
           group: {feature_subgroup}                     # Optional. Example: "female".
     measurements:
-    - shap:
-      - feature: {feature_name}                         # Optional. Example: "gender".
-        value: {mean_abs_shap}                          # Optional. Example: 0.20.    
-      boundary_attack:
-        num_perturbed_samples: {number_total}           # Optional.
-        original: {original_value}                      # Optional.
-        adversarial: {adversarial_value}                # Optional.
-        num_failed_perturbed_samples: {number_failed}   # Optional.
-      measurment:
-        type: {measurement_type}                        # Optional. Example: "partial_dependence". Use measurement id from some list (TODO).
+      # Bar plots should be able to capture SHAP and Robustness Toolbox from AI Verify.
+      bar_plots:
+      - type: {measurement_type}                        # Optional. Example: "SHAP". Use measurement id from some list (TODO).
+        bar: {bar_name}
+        value: {var_value}
+        meta: {metadata}
+      # Graph plots should be able to capture graph based measurements such as partial dependence and accumalated local effect.
+      graph_plots:
+      - type: {measurement_type}                        # Optional. Example: "partial_dependence". Use measurement id from some list (TODO).
+        name: {measurement_name}                        # Optional. Example: "Partial Dependence Plot". Pretty name for description.
         classes:
-          - class: {class_name}                         # Optional. Example: "1". 
+          - class: {class_name}                         # Optional. Example: "1".
         # 3 dim tensor c*f*d, where c is the number of provided classes, f is the number of provided features and d is the nr of examples.
-        # Result is used to make a plot of (feature_val, val) for each provided feature for each provided class. 
+        # Result is used to make a plot of (feature_val, val) for each provided feature for each provided class.
         # Example if two classes and two features with nr of examples 3 are provided is [[[0,1,2],[10,10,10]], [[10,11,12],[10,10,10]]].
         features:
           - feature: {feature_name}                     # Optional. Example: "gender".
             results:
-          - - - feature_value: {feature_val}            # Optional. Value of the feature example. 
-              - value: {pd_value}                       # Optional. Value of the measurement corresponding to feature example. 
+          - - - feature_value: {feature_val}            # Optional. Value of the feature example.
+                value: {pd_value}                       # Optional. Value of the measurement corresponding to feature example.
 
 # Assessments like IAMA.
 assessments:
-- name: {assessment_name}         # Required. Example: IAMA.
-  date: {assessment_date}         # Required. Example: 25-03-2025.
+- name: {assessment_name}                               # Required. Example: IAMA.
+  date: {assessment_date}                               # Required. Example: 25-03-2025.
   contents:
-    - question: {question_text}   # Required. Example: "Question 1: ...". 
-      answer: {answer_text}       # Required. Example: "Answer: ...".
-      remarks: {remarks_text}     # Optional. Example: "Remarks: ...".
-      authors:                    # Optional. Example: "['John', 'Peter']". 
-        -name: {author_name}      
-      timestamp: {timestamp}      # Optional. Example: 1711630721.
+    - question: {question_text}                         # Required. Example: "Question 1: ...".
+      answer: {answer_text}                             # Required. Example: "Answer: ...".
+      remarks: {remarks_text}                           # Optional. Example: "Remarks: ...".
+      authors:                                          # Optional. Example: "['John', 'Peter']".
+        -name: {author_name}
+      timestamp: {timestamp}                            # Optional. Example: 1711630721.
 ```
 
 [^1]: Deviation from the HuggingFace specification is in the Dataset Type field. HuggingFace only accepts
