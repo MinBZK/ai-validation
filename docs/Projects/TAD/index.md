@@ -144,7 +144,7 @@ scale to allow for tool comparison.
 |:---------------------------------------------------------------------------------------------------------------------|:---------|
 | It is clear how the tool is funded to avoid improper influence due to conflicts of interest                          | M        |
 | The tool is compliant with relevant legal and regulatory requirements.                                               | S        |
-| The tool adheres to (local) data privacy regulations like GDPR and CCPA, ensuring the protection of user data.       | S        |
+| The tool adheres to (local) data privacy regulations like GDPR, ensuring the protection of user data.                | S        |
 | The tool implements appropriate security measures to comply with industry regulations and standards.                 | S        |
 | The tool is licensed for use within the organization according to the terms and conditions of the license agreement. | S        |
 | The tool respects intellectual property rights and avoid copyright infringement issues.                              | S        |
