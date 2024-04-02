@@ -35,7 +35,6 @@ scale to allow for tool comparison.
 | The tool provides detailed logging, including tracking of different model versions, changes in impact assessments, and technical test results for individual runs.                                | S        |
 | The tool supports saving progress.                                                                                                                                                                | S        |
 | The tool can be used on an isolated system without an internet connection.                                                                                                                        | S        |
-| The tool allows extension of report formats functionality.                                                                                                                                        | C        |
 | The tool offers options to discuss and document conversations. For example, to converse about technical tests or to collaborate on impact assessments.                                            | C        |
 | The tool operates with complete data privacy; it does not share any data or logging information.                                                                                                  | C        |
 | The tool allows extension of report formats functionality.                                                                                                                                        | C        |
