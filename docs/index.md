@@ -1,15 +1,18 @@
 ---
-title: AI Validation
-summary: Documenting the processes of the AI Validation Team at the Ministry of the Interior and Kingdom Relations (Min BZK) in The Netherlands.
+title: Home
+summary: Documenting the processes and work of the AI Validation Team at the Ministry of the Interior and Kingdom
+    Relations (Min BZK) in The Netherlands.
 ---
 
-Here we are documenting the processes of the AI Validation Team at the Ministry of the Interior and Kingdom Relations
-(Min BZK) in The Netherlands.
+Here we are documenting the processes and work of the [AI Validation Team](About/team.md) at the Ministry of the
+Interior and Kingdom Relations (Min BZK) in The Netherlands.
 
-!!! info "Disclaimer"
+We are a team of mostly engineers at a policy department.
 
-    This documentation is under development
+## Contribute
 
-## Contribute?
+Read our guide on [how to contribute](Way-of-Working/Contributing.md).
 
-We work open source at [GitHub](https://github.com/MinBZK/ai-validation).
+## Contact
+
+Our [contact details are here](About/contact.md).
