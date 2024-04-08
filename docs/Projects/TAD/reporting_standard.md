@@ -102,7 +102,7 @@ two fields will be REQUIRED.
     provide a URI to the repo of the library used here.
 5. `tags` (OPTIONAL, list[string]). Tags with keywords to describe the project. There can be multiple tags.
 
-### 2. `model_index`
+#### `model_index`
 
 There can be multiple models. For each model the following fields are present.
 
