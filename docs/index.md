@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Home
 
 Here we are documenting the processes and work of the [AI Validation Team](About/team.md) at the [Ministry of the
