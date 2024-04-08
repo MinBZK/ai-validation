@@ -58,7 +58,7 @@ A `system_card` contains the following information.
 
 #### 2. Models
 
-1. `models` (OPTIONAL, list[string]). A URI to a yaml file containg a model card. This model card can for example be a model
+1. `models` (OPTIONAL, list[ModelCard]). A list of model cards (as defined below) or `!include`s of a yaml file containing a model card. This model card can for example be a model
 card described in the next section or a model card from Hugging Face. There can be multiple model cards, meaning multiple
 models are used.
 
