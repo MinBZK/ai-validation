@@ -1,4 +1,4 @@
-# Principles: How We Work
+# Our Principles
 
 1. Our strong trust in the government and the dedication of people at all levels within the government organization is
 the basis of our actions.
