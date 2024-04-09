@@ -1,9 +1,16 @@
 # TAD Reporting Standard
 
+Version 0.1
+
 This document describes the Transparancy of Algorithmic Decision Making (TAD) reporting standard. Assessing
 fairness and bias in Machine Learning models can be done through various technical tests, but also by answering
 regulatory assessments. The goal of this reporting standard is to capture these technical tests and assessments
 in a standardised way.
+
+## Disclaimer
+
+The TAD Reporting Standard is work in progress. This means that the current standard is probably suboptimal
+and will change significantly in future versions.
 
 ## Introduction
 
@@ -28,8 +35,8 @@ Following Hugging Face, this proposed standard will be written in yaml.
 
 Another difference is that we devide our implementation into two parts.
 
-1. `systems card`, containing information about a group of ML-models which accomplish a specific task.
-2. `model card`, containing information about a specific ML-model.
+1. `systems_card`, containing information about a group of ML-models which accomplish a specific task.
+2. `model_card`, containing information about a specific ML-model.
 
 ## Intended usage
 
@@ -38,8 +45,8 @@ the Hugging Face metadata.
 
 ## Specification of the standard
 
-The standard will be written in yaml. An example yaml is given in the next section. The standard contains the
-following information.
+The standard will be written in yaml. An example yaml is given in the next section. The standard defines
+two 'cards': a `system_card` and a `model_card`.
 
 ### `system_card`
 
