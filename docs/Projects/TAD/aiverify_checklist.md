@@ -104,15 +104,15 @@ total_score = 8.3
 
 ## Compatibility
 
-| Requirement                                                                                                                | Priority | Fulfilled | Comments                                                                   |
-|:---------------------------------------------------------------------------------------------------------------------------|:---------|-----------|----------------------------------------------------------------------------|
-| The tool is compatible with existing systems and infrastructure.                                                           | M        | 1         | As it is a container it can run on Kubernetes and therefore at Digilab     |
-| The tool supports industry-standard data formats and protocols.                                                            | M        | 1         | Most Datasets and Models are supported by the tool                         |
-| The tool operates seamlessly on supported operating systems and hardware platforms.                                        | S        | 0.3       | On Windows and Mac it does not run well out of box                         |
-| The tool supports commonly used data formats (e.g., CSV, Excel, JSON) for easy data exchange with other systems and tools. | S        | 0.5       | As input many types are accepted, but only as export there is a PDF report |
-| The tool integrates with existing security solutions.                                                                      | C        | 0         | It does not integrate with security solutions                              |
+| Requirement                                                                                                                | Priority | Fulfilled | Comments                                                                                                                                 |
+|:---------------------------------------------------------------------------------------------------------------------------|:---------|-----------|------------------------------------------------------------------------------------------------------------------------------------------|
+| The tool is compatible with existing systems and infrastructure.                                                           | M        | 1         | As it is a container it can run on Kubernetes and therefore at Digilab                                                                   |
+| The tool supports industry-standard data formats and protocols.                                                            | M        | 1         | Most Datasets and Models are supported by the tool                                                                                       |
+| The tool operates seamlessly on supported operating systems and hardware platforms.                                        | S        | 1         | As it runs in a container it is able to run on all the major OS'es if you have Docker Desktop or use a cloud version managed by yourself |
+| The tool supports commonly used data formats (e.g., CSV, Excel, JSON) for easy data exchange with other systems and tools. | S        | 0.5       | As input many types are accepted, but only as export there is a PDF report                                                               |
+| The tool integrates with existing security solutions.                                                                      | C        | 0         | It does not integrate with security solutions                                                                                            |
 
-total_score = 10.4
+total_score = 12.5
 
 ## Accessibility
 
