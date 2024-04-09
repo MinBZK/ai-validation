@@ -18,12 +18,12 @@ The scoring is as follows: {M:4, S:3, C:2, W:-1}.
 | Performance Efficiency | 7.5            | 11             |                                |                   |             |
 | Maintainability        | 15.8           | 44.5           |                                |                   |             |
 | Security               | 8.3            | 2              |                                |                   |             |
-| Compatibility          | 10.4           | 14             |                                |                   |             |
+| Compatibility          | 12.5           | 14             |                                |                   |             |
 | Accessibility          | 0              | 0              |                                |                   |             |
 | Portability            | 7.5            | 4.5            |                                |                   |             |
 | Deployment             | 1.5            | 0.6            |                                |                   |             |
 | Legal & Compliance     | 19             | 16             |                                |                   |             |
-| **Total**              | **131.2**      | **140.1**      | ****                           | ****              | ****        |
+| **Total**              | **133.3**      | **140.1**      | ****                           | ****              | ****        |
 
 The scores are calculated in these individual markdowns
 [aiverify_checklist.md](aiverify_checklist.md),
