@@ -30,7 +30,6 @@ only looks at the verifyML python toolkit and not the web interface.
 | The tool can be offered as a (cloud) service where no local installation is required.                                                                                                             | C         | 0         | The python tool itself not, but a frontend which needs to be developed yes                                                                  |
 | It is possible to define and automate workflows for repetitive tasks.                                                                                                                             | C         | 1         | As it is written in python this can be automated easily                                                                                     |
 | The tool offers pre-built connectors or low-code/no-code integration options to simplify the integration process.                                                                                 | C         | 0         | The tool does this not                                                                                                                      |
-| The tool offers options to discuss and document conversations. For example, to converse about technical tests or to collaborate on impact assessments.                                            | C         | 0         | As it is a python toolkit, it does not do this, it does not have an UI                                                                      |
 
 total_score = 42
 

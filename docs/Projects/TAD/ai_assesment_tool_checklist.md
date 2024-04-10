@@ -24,7 +24,6 @@ Introduction is written here [tools.md](tools.md#ai-assessment-tool). It is a di
 | The tool can be offered as a (cloud) service where no local installation is required.                                                                                                             | C         | 1         | We could host this tool for other parties to use                                                                |
 | It is possible to define and automate workflows for repetitive tasks.                                                                                                                             | C         | 0         | It is an UI tool                                                                                                |
 | The tool offers pre-built connectors or low-code/no-code integration options to simplify the integration process.                                                                                 | C         | 0         | No                                                                                                              |
-| The tool offers options to discuss and document conversations. For example, to converse about technical tests or to collaborate on impact assessments.                                            | C         |           |                                                                                                                 |
 
 total_score =
 
