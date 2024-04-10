@@ -1,14 +1,13 @@
-# Hollisticai
+# Holisticai
 
-Introduction is written here [tools.md](tools.md#hollisticai). Lijkt meer een toolkit ook voor de data scientist om te onderzoeken,
-en tegelijkertijd ook het op te lossen, als je bijvoorbeeld bias in je model hebt kan je dit aanpassen tijdens het
-trainen.
+Introduction is written here [tools.md](tools.md#holisticai). It is a toolkit just like IBM-360-Toolkit for a
+data scientist to research bias and also to mitigate it immediately.
 
 ## Functionality
 
 | Requirement                                                                                                                                                                                       | Priority  | Fulfilled | Comments |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------|:----------|:---------|
-| The tool allows users to conduct technical tests on algorithms or models, including assessments of performance, bias, and fairness. To facilitate these tests, users can input relevant datasets, | M         |           |          |
+| The tool allows users to conduct technical tests on algorithms or models, including assessments of performance, bias, and fairness. To facilitate these tests, users can input relevant datasets, | M         | 1         |          |
 | The tool allows users to choose which tests to perform.                                                                                                                                           | M         |           |          |
 | The tool allows users to fill out questionnaires to conduct impact assessments for AI. For example IAMA or ALTAI.                                                                                 | M         |           |          |
 | The tool can generate a human readable report.                                                                                                                                                    | M         |           |          |

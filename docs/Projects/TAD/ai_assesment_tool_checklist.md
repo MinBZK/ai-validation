@@ -1,8 +1,6 @@
 # ALTAI
 
-Introduction is written here [tools.md](tools.md#hollisticai). Lijkt meer een toolkit ook voor de data scientist om te onderzoeken,
-en tegelijkertijd ook het op te lossen, als je bijvoorbeeld bias in je model hebt kan je dit aanpassen tijdens het
-trainen.
+Introduction is written here [tools.md](tools.md#ai-assessment-tool). Is a discussion tool about AI Systems.
 
 ## Functionality
 

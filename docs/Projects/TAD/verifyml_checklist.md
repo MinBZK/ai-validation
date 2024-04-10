@@ -93,7 +93,7 @@ total_score = 11
 | The system is modular, allowing for easy modification of individual components.                                      | S        | 0.5       | The idea of a model card is pretty modular, and can be changed any way we like. Adding assessments in the tool would be quite the effort |
 | Diagnostic tools are available to identify and troubleshoot issues.                                                  | S        | 1         | Just standard python troubleshooting tools                                                                                               |
 
-total_score = 44.5
+total_score = 24.5
 
 ## Security
 
@@ -130,11 +130,11 @@ total_score = 0
 
 ## Portability
 
-| Requirement                                                                                                                 | Priority | Fulfilled | Comments                                                                                         |
-|:----------------------------------------------------------------------------------------------------------------------------|:---------|-----------|--------------------------------------------------------------------------------------------------|
-| The tool support a range of operating systems (e.g., Windows, macOS, Linux) commonly used within an organization.           | S        | 0.5       | If you can run python, which is not always possible within the government for example            |
-| The tool minimizes dependencies on specific hardware or software configurations, promoting flexibility.                     | S        | 1         | As it is a python tool                                                                           |
-| The tool offers a cloud-based deployment option or be compatible with cloud environments for scalability and accessibility. | S        | 0         | It is not offerewd as a cloud-based option                                                       |
+| Requirement                                                                                                                 | Priority | Fulfilled | Comments                                                                                        |
+|:----------------------------------------------------------------------------------------------------------------------------|:---------|-----------|-------------------------------------------------------------------------------------------------|
+| The tool support a range of operating systems (e.g., Windows, macOS, Linux) commonly used within an organization.           | S        | 0.5       | If you can run python, which is not always possible within the government for example           |
+| The tool minimizes dependencies on specific hardware or software configurations, promoting flexibility.                     | S        | 1         | As it is a python tool                                                                          |
+| The tool offers a cloud-based deployment option or be compatible with cloud environments for scalability and accessibility. | S        | 0         | It is not offered as a cloud-based option                                                       |
 | The tool adheres to relevant cloud security standards and best practices.                                                   | S        | 0         | On the github nothing is mentioned about security and for the cloud version it is not applicable |
 
 total_score = 4.5

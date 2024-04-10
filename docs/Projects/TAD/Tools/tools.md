@@ -45,7 +45,7 @@ to be active.
 Links: [AI Fairness 360 Github](https://github.com/Trusted-AI/AIF360),
 [AI Explainability 360 Github](https://github.com/Trusted-AI/AIX360?tab=readme-ov-file).
 
-### Hollisticai
+### Holisticai
 
 **What is it?** Open source tool to assess and improve the trustworthiness of AI systems. Offers
 tools to measure and mitigate bias across numerous tasks. Will be extended to include tools for
@@ -61,15 +61,25 @@ is an example in which bias is measured in a classification model.
 reflected in the codebase. Possibly reports are only available with some sort of licenced product?
 
 Links:
-[Hollisticai homepage](https://www.holisticai.com/),
-[Hollisticai Github](https://github.com/holistic-ai/holisticai).
+[Holisticai homepage](https://www.holisticai.com/),
+[Holisticai Github](https://github.com/holistic-ai/holisticai).
+
+### AI Assessment Tool
+
+**What is it?** The tool is based on the [ALTAI](https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment)
+published by the European Commission. It is more of a discussion tool about AI Systems.
+
+**Why interesting?** Although it only includes questionnaires it does give an interesting way
+of reporting the end results. Discussions on for example IAMA can be documented as well within the tool.
+
+**Remarks** The tool of the EU itself is not open-source but the tool from Belgium is. Does not include
+any technical tests at this point.
+
+Links:
+[AI Assessment Tool Belgium homepage](https://altai.ai4belgium.be/)
+[AI Assessment Tool Belgium Github](https://github.com/AI4Belgium/ai-assessment-tool)
 
 ## Interesting to mention
-
-* [AI Assessment Tool Belgium](https://altai.ai4belgium.be/). The tool is based on the
-[ALTAI recommendations](https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment)
-published by the European Commission. Although it only includes questionnaires it does give an interesting way
-of reporting the end results. Does not include any technical tests at this point.
 
 * [What-if](https://github.com/pair-code/what-if-tool). Provides interface for expanding understanding
 of a black-box classifaction or regression ML model. Can be accessed through TensorBoard or as an
