@@ -1,6 +1,6 @@
 # Holisticai
 
-Introduction is written here [tools.md](tools.md#holisticai). It is a toolkit just like IBM-360-Toolkit for a
+See the [introduction](tools.md#holisticai). It is a toolkit just like IBM-360-Toolkit for a
 data scientist to research bias and also to mitigate it immediately.
 
 ## Functionality

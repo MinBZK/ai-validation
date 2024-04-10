@@ -1,38 +1,29 @@
 # Comparison of tools for transparency of algorithmic decision making
 
-In [tools.md](tools.md) we have researched a few tools which we want to
-investigate further, this document is the next step in that investigation.
-The checklist we will lay these tools against is written down at
-[index.md](index.md). The Fulfilled column will give a numerical value based
+[We have researched](tools.md) a few tools which we want to investigate
+further, this document is the next step in that investigation.
+We created a [checklist](index.md) to compare these tools against.
+The Fulfilled column will give a numerical value based
 on the priority which can then be compared with the other tools per section.
 The scoring is as follows: {M:4, S:3, C:2, W:-1}.
 
 ## Summary of the comparison
 
-| Requirement            | AIVerify Score | VerifyML Score | IBM 360 Research Toolkit Score | Holisticai Score | AI Assessment Tool Score |
-|:-----------------------|:---------------|----------------|--------------------------------|------------------|--------------------------|
-| Functionality          | 36             | 42             | 20                             | 17               | 22.85                    |
-| Reliability            | 13             | 4              | 16                             | 16               | 15.4                     |
-| Usability              | 9.4            | 0              | 0                              | 0                | 13                       |
-| Help & Documentation   | 2.8            | 1.5            | 6.4                            | 1.6              | 0.55                     |
-| Performance Efficiency | 7.5            | 11             | 11                             | 11               | 11                       |
-| Maintainability        | 15.8           | 24.5           | 29                             | 23.5             | 25.6                     |
-| Security               | 8.3            | 2              | 2                              | 2                | 7.5                      |
-| Compatibility          | 12.5           | 14             | 14                             | 10               | 11                       |
-| Accessibility          | 0              | 0              | 0                              | 0                | 0.3                      |
-| Portability            | 10.5           | 4.5            | 5.1                            | 7.5              | 11.4                     |
-| Deployment             | 1.5            | 0.6            | 1.2                            | 3.6              | 3                        |
-| Legal & Compliance     | 19             | 16             | 16                             | 16               | 19                       |
-| **Total**              | **136.3**      | **120.1**      | **120.7**                      | **108.2**        | **140.6**                |
-
-The scores are calculated in these individual markdowns
-[aiverify_checklist.md](aiverify_checklist.md),
-[verifyml_checklist.md](verifyml_checklist.md),
-[ibm_360_research_toolkit_checklist.md](ibm_360_research_toolkit_checklist.md),
-[holisticai_checklist.md](holisticai_checklist.md),
-[ai_assessment_tool_checklist.md](ai_assessment_tool_checklist.md).
-The scoring is done by an individual, for extra context the
-comment section in the checklist for that tool can be questioned.
+| Requirement            | [AIVerify](aiverify_checklist.md) | [VerifyML](verifyml_checklist.md)  | [IBM 360 Research Toolkit](ibm_360_research_toolkit_checklist.md)  | [Holisticai](holisticai_checklist.md) | [AI Assessment Tool](ai_assessment_tool_checklist.md) |
+|:-----------------------|:----------------------------------|------------------------------------|--------------------------------------------------------------------|---------------------------------------|-------------------------------------------------------|
+| Functionality          | 36                                | 42                                 | 20                                                                 | 17                                    | 22.85                                                 |
+| Reliability            | 13                                | 4                                  | 16                                                                 | 16                                    | 15.4                                                  |
+| Usability              | 9.4                               | 0                                  | 0                                                                  | 0                                     | 13                                                    |
+| Help & Documentation   | 2.8                               | 1.5                                | 6.4                                                                | 1.6                                   | 0.55                                                  |
+| Performance Efficiency | 7.5                               | 11                                 | 11                                                                 | 11                                    | 11                                                    |
+| Maintainability        | 15.8                              | 24.5                               | 29                                                                 | 23.5                                  | 25.6                                                  |
+| Security               | 8.3                               | 2                                  | 2                                                                  | 2                                     | 7.5                                                   |
+| Compatibility          | 12.5                              | 14                                 | 14                                                                 | 10                                    | 11                                                    |
+| Accessibility          | 0                                 | 0                                  | 0                                                                  | 0                                     | 0.3                                                   |
+| Portability            | 10.5                              | 4.5                                | 5.1                                                                | 7.5                                   | 11.4                                                  |
+| Deployment             | 1.5                               | 0.6                                | 1.2                                                                | 3.6                                   | 3                                                     |
+| Legal & Compliance     | 19                                | 16                                 | 16                                                                 | 16                                    | 19                                                    |
+| **Total**              | **136.3**                         | **120.1**                          | **120.7**                                                          | **108.2**                             | **140.6**                                             |
 
 ## Notable differences between the tools
 

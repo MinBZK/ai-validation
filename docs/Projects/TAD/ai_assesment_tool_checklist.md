@@ -1,6 +1,6 @@
 # ALTAI
 
-Introduction is written here [tools.md](tools.md#ai-assessment-tool). It is a discussion tool about AI Systems.
+See the [introduction](tools.md#ai-assessment-tool). It is a discussion tool about AI Systems.
 
 ## Functionality
 

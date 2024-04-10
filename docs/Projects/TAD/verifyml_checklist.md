@@ -1,6 +1,6 @@
 # VerifyML
 
-Introduction is written here [tools.md](tools.md#verifyml), the maker also suggests
+See the [introduction](tools.md#verifyml), the maker also suggests
 to use an front-end tool to collaboratively change the model card.
 [Model Card Editor](https://report.verifyml.com/) this is not
 open-source and also the developer suggests in this

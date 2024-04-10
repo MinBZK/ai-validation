@@ -1,6 +1,6 @@
 # AI Verify
 
-Introduction is written here [tools.md](tools.md#ai-verify)
+See the [introduction](tools.md#ai-verify)
 
 ## Functionality
 
