@@ -1,11 +1,14 @@
 # TAD Reporting Standard
 
-Version 0.1
+**Version**: 0.1a1
 
-This document describes the Transparancy of Algorithmic Decision Making (TAD) reporting standard. Assessing
-fairness and bias in Machine Learning models can be done through various technical tests, but also by answering
-regulatory assessments. The goal of this reporting standard is to capture these technical tests and assessments
-in a standardised way.
+This document describes the **T**ransparency of **A**lgorithmic **D**ecision making (TAD) Reporting Standard.
+
+For reproducibility, governance, auditing and sharing of algorithmic systems it is essential to have a
+reporting standard so that information about an algorithmic system can be shared. This reporting standard
+describes how information about the different phases of an algorithm's life cycle can be reported.
+It contains, among other things, descriptive information combined with information about the technical
+tests and assessments applied.
 
 ## Disclaimer
 
@@ -14,9 +17,9 @@ and will change significantly in future versions.
 
 ## Introduction
 
-Inspired by [Papers with Code Model Index](https://github.com/paperswithcode/model-index) and
-[Model Cards for Model Reporting](https://arxiv.org/abs/1810.03993) this standard almost [^1] [^2] [^3] [^4]
-extends the [Hugging Face model card metadata specification](https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1)
+Inspired by [Model Cards for Model Reporting](https://arxiv.org/abs/1810.03993)
+and [Papers with Code Model Index](https://github.com/paperswithcode/model-index) this standard almost
+[^1] [^2] [^3] [^4] extends the [Hugging Face model card metadata specification](https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1)
 to allow for:
 
 1. More finegrained information on performance metrics, by extending the `metrics_field` from the Hugging
@@ -28,15 +31,16 @@ by defining an new field `measurements`.
 and [ALTAI](https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment)).
 This is achieved by defining a new field `assessments`.
 
-This standard does not contain all fields present in the Hugging Face metadata specification. The fields that
-are optional in the HuggingFace specification AND are specific to the HugginFace interface are ommited.
-
 Following Hugging Face, this proposed standard will be written in yaml.
 
-Another difference is that we devide our implementation into two parts.
+This standard does not contain all fields present in the Hugging Face metadata specification. The fields that
+are optional in the HuggingFace specification and are specific to the HugginFace interface are ommited.
+
+Another difference is that we devide our implementation into three seperate parts.
 
 1. `systems_card`, containing information about a group of ML-models which accomplish a specific task.
 2. `model_card`, containing information about a specific ML-model.
+3. `assessment_card`, containing information about a regulatory assessment.
 
 ## Intended usage
 
@@ -45,55 +49,82 @@ the Hugging Face metadata.
 
 ## Specification of the standard
 
-The standard will be written in yaml. An example yaml is given in the next section. The standard defines
-two 'cards': a `system_card` and a `model_card`.
+The standard will be written in yaml. Example yaml files are given in the next section. The standard defines
+three cards: a `system_card`, a `model_card` and an `assessment_card`. A `system_card` contains information
+about an algorithmic system. It can have mutiple models and each of these models should have a `model_card`.
+Regulatory assessments can be processed in an `assessment_card`. Note that `model_card`'s and
+`assessment_card`'s can be included directly into the `system_card` or can be included as seperate yaml
+files with help of a yaml-include mechanism. For clarity the latter is preffered and is also used in
+the examples in the next section.
 
 ### `system_card`
 
 A `system_card` contains the following information.
 
-1. `upl` (OPTIONAL, string). If this algorithm is part of a product offered by the Dutch Government,
+1. `name` (OPTIONAL, string). Name used to describe the system.
+2. `upl` (OPTIONAL, string). If this algorithm is part of a product offered by the Dutch Government,
     it should contain a URI from the [Uniform Product List](https://standaarden.overheid.nl/owms/oquery/UPL-actueel.plain).
-2. `owners` (list). There can be multiple owners. For each owner the following fields are present.
+3. `owners` (list). There can be multiple owners. For each owner the following fields are present.
 
-    1. `organization` (REQUIRED, string). Name of the organization that owns the model.
-    2. `oin` (OPTIONAL, string). If applicable the [Organisatie-identificatienummer (OIN)](https://www.logius.nl/domeinen/toegang/organisatie-identificatienummer/wat-is-het).
+    1. `oin` (OPTIONAL, string). If applicable the [Organisatie-identificatienummer (OIN)](https://oinregister.logius.nl/oin-register).
+    2. `organization` (OPTIONAL, string). Name of the organization that owns the model. If `ion` is
+    NOT provided this field is REQUIRED.
     3. `name` (OPTIONAL, string). Name of a contact person within the organisation.
     4. `email` (OPTIONAL, string). Email address of the contact person or organization.
     5. `role` (OPTIONAL, string). Role of the contact person. This field should only be set when the `name` field
     is set.
 
-#### 2. Models
+4. `description` (OPTIONAL, string). A short description of the system.
+5. `labels` (OPTIONAL, list). This fields allows to store meta information about a system. There
+can be multiple labels. For each label the following fields are present.
+
+    1. `name` (OPTIONAL, string). Name of the label.
+    2. `value` (OPTIONAL, string). Value of the label.
+
+6. `status` (OPTIONAL, string). The status of the system. For example the status can be "production".
+7. `publication_category` (OPTIONAL, enum[string]). The publication category of the algorithm should
+be chosen from `["high_risk", other"]`.
+8. `begin_date` (OPTIONAL, string). The first date the system was used.
+Date should be given in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format, i.e. YYYY-MM-DD.
+9. `end_date` (OPTIONAL, string). The last date the system was used.
+Date should be given in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format, i.e. YYYY-MM-DD.
+10. `goal_and_impact` (OPTIONAL, string). The purpose of the system and the impact it has on citizens
+and companies.
+11. `considerations` (OPTIONAL, string). The pro's and con's of using the system.
+12. `risk_management` (OPTIONAL, string). Description of the risks associated with the system.
+13. `human_intervention` (OPTIONAL, string). A description to want extend there is human involvement
+in the system.
+14. `legal_base` (OPTIONAL, list). If there exists a legal base for the process the system is embedded
+in, this field can be filled in with the relevant laws. There can be multiple legal bases. For each
+legal base the following fields are present.
+    1. `name` (OPTIONAL, string). Name of the law.
+    2. `link` (OPTIONAL, string). URI pointing towards the contents of the law.
+15. `used_data` (OPTIONAL, string). An overview of the data that is used in the system.
+16. `technical_design` (OPTIONAL, string). Description on how the system works.
+17. `external_providers` (OPTIONAL, list[string]). Name of an external provider, if relevant. There can
+be multiple external providers.
+18. `references` (OPTIONAL, list[string]). Additional reference URI's that point information about the system
+and are relevant.
+
+#### 1. Models
 
 1. `models` (OPTIONAL, list[ModelCard]). A list of model cards (as defined below) or `!include`s of a yaml
 file containing a model card. This model card can for example be a model card described in the next section
 or a model card from Hugging Face. There can be multiple model cards, meaning multiple models are used.
 
-#### 3. Assessments
+#### 2. Assessments
 
-There can be multiple assessments. For each assessment the following fields are present:
-
-1. `name` (REQUIRED). The name of the assessment.
-2. `date` (REQUIRED). The date at which the assessment is completed.
-3. `contents`. There can be multiple items in contents. For each item the following fields are present:
-
-    1. `question` (REQUIRED). A question.
-    2. `answer` (REQUIRED). An answer.
-    3. `remarks` (OPTIONAL). A field to put relevant discussion remarks in.
-    4. `authors`. There can be multiple names. For each name the following field is present.
-        1. `name` (OPTIONAL). The name of the author of the question.
-    5. `timestamp` (OPTIONAL). A timestamp of the date and time of the answer.
+1. `assessments` (OPTIONAL, list[AssesmentCard]). A list of assessment cards (as defined below) or `!include`s of a yaml
+file containing a assessment card. This assessment card is an assessment card described in the next section.
+There can be multiple assessment cards, meaning multiple assessment were performed.
 
 ### `model_card`
 
 A `model_card` contains the following information.
 
-1. `algorithm-registers` (OPTIONAL, list[string]). If this algorithm is registered in an algorithm register,
-this field should contain a URI to the corresponding record in the register. There can be multiple registers.
-A URI could look like `https://huggingface.co/org/modelid` or `https://algoritmes.overheid.nl/nl/algoritme/modelid`.
-2. `language` (OPTIONAL, list[string]). If relevant, the natural languages the model supports in [ISO 639](https://www.iso.org/iso-639-language-code).
+1. `language` (OPTIONAL, list[string]). If relevant, the natural languages the model supports in [ISO 639](https://www.iso.org/iso-639-language-code).
     There can be multiple languages.
-3. `license`(REQUIRED, string). Any license from the [open source license list](https://opensource.org/license)
+2. `license`(REQUIRED, string). Any license from the [open source license list](https://opensource.org/license)
 [^1]. If the license is NOT present in the license list this field must be set to 'other' and the following
 two fields will be REQUIRED.
 
@@ -101,15 +132,18 @@ two fields will be REQUIRED.
     2. `license_link` (string). A link to a file of that name inside the repo, or a URL to a remote file containing the license
     contents.
 
-4. `library_name` (OPTIONAL, string). Any library from the [library list](https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/model-libraries.ts).
-    If the library is NOT present in the library list, the following fields CAN be set.
-    1. `library` (OPTIONAL, string). If a library is used that is not in the above list, you can provide
-    the name of the library used here.
-    2. `library_link` (OPTIONAL, string). If a libary is used that is not in the above list, you can
-    provide a URI to the repo of the library used here.
-5. `tags` (OPTIONAL, list[string]). Tags with keywords to describe the project. There can be multiple tags.
+3. `tags` (OPTIONAL, list[string]). Tags with keywords to describe the project. There can be multiple tags.
+4. `owners` (list). There can be multiple owners. For each owner the following fields are present.
 
-#### `model_index`
+    1. `oin` (OPTIONAL, string). If applicable the [Organisatie-identificatienummer (OIN)](https://oinregister.logius.nl/oin-register).
+    2. `organization` (OPTIONAL, string). Name of the organization that owns the model. If `ion` is
+    NOT provided this field is REQUIRED.
+    3. `name` (OPTIONAL, string). Name of a contact person within the organisation.
+    4. `email` (OPTIONAL, string). Email address of the contact person or organization.
+    5. `role` (OPTIONAL, string). Role of the contact person. This field should only be set when the `name` field
+    is set.
+
+#### 1. Model Index
 
 There can be multiple models. For each model the following fields are present.
 
@@ -122,15 +156,22 @@ artifact, that cannot be captured by any other field, but are relevant to model.
     1. `name` (REQUIRED, string). The name of the parameter, for example "epochs".
     2. `dtype` (OPTIONAL, string). The datatype of the parameter, for example "int".
     3. `value` (OPTIONAL, string). The value of the parameter, for example 100.
+    4. `labels` (list). This field allows to store meta information about a parameter.
+        There can be multiple labels. For each label the following fields are present.
+
+        1. `name` (OPTIONAL, string). The name of the label.
+        2. `dtype` (OPTIONAL, string). The datatype of the feature. If `name` is set, this field
+        is REQUIRED.
+        3. `value` (OPTIONAL, string). The value of the feature. If `name` is set, this field is REQUIRED.
 
 5. `results` (list). There can be multiple results. For each result the following fields are present.
 
-    1. `task` (list).
+    1. `task` (OPTIONAL, list).
 
         1. `task_type` (REQUIRED, string). The task of the model, for example "object-classifcation".
         2. `task_name` (OPTIONAL, string). A pretty name fo the model taks, for example "Object Classification".
 
-    2. `dataset` (list). There can be multiple results [^2]. For each result the following fields are present.
+    2. `datasets` (list). There can be multiple datasets [^2]. For each dataset the following fields are present.
 
         1. `type` (REQUIRED, string). The type of the dataset, can be a dataset id from [HuggingFace datasets](https://hf.co/datasets)
         or any other link to a repository containing the dataset[^3], for example "common_voice".
@@ -145,19 +186,19 @@ artifact, that cannot be captured by any other field, but are relevant to model.
         2. `name` (REQUIRED, string). A descriptive name of the metric. For example "false positive rate" is
         not a descriptive name, but "training false positive rate w.r.t class x" is.
         3. `dtype` (REQUIRED, string). The data type of the metric, for example `float`.
-        4. `value` (REQUIRED, float). The value of the metric.
-        5. `class` (OPTIONAL, string/int/float/bool). Some metrics (such as false positive rate for multiclass classification)
-        depend on a specific output class. In this field the output class can be specified. It must only be set for metrics
-        for which it makes sense.
-        6. `labels` (list). Metrics can be computed for example on subgroups of specific features.
-        For example one can compute the accuracy for examples where the feature "gender" is set to "male".
+        4. `value` (REQUIRED, string). The value of the metric.
+        5. `labels` (list). This field allows to store meta information about a metric. For example,
+        metrics can be computed for example on subgroups of specific features.
+        For example, one can compute the accuracy for examples where the feature "gender" is set to "male".
         There can be multiple subgroups, which means that the metric is computed on the intersection of those subgroups.
-        For each subgroup the following fields are present.
+        There can be multiple labels. For each label the following fields are present.
 
             1. `name` (OPTIONAL, string). The name of the feature. For example: "gender".
-            2. `type` (OPTIONAL, string). The datatype of the feature, for example `float`. If `name` is set, this field
-            must be set as well.
-            3. `value` (OPTIONAL, string). The value of the feature. If `name` is set, this field must be set as wel.
+            2. `type` (OPTIONAL, string). The type of the label. Can for example be set to "feature" or "output_class".
+            If `name` is set, this field is REQUIRED.
+            3. `dtype` (OPTIONAL, string). The datatype of the feature, for example `float`. If `name` is set, this field
+            is REQUIRED.
+            4. `value` (OPTIONAL, string). The value of the feature. If `name` is set, this field is REQUIRED.
             For example: "male".
 
     4. `measurements`.
@@ -188,49 +229,72 @@ artifact, that cannot be captured by any other field, but are relevant to model.
                     1. `x_value` (REQUIRED, float). The $x$-value of the graph.
                     2. `y_value` (REQUIRED, float). The $y$-value of the graph.
 
+### `assessment_card`
+
+An `assessment_card` contains the following information.
+
+1. `name` (REQUIRED, string). The name of the assessment.
+2. `date` (REQUIRED, string). The date at which the assessment is completed.
+Date should be given in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format, i.e. YYYY-MM-DD.
+3. `contents` (list). There can be multiple items in contents. For each item the following fields are present:
+
+    1. `question` (REQUIRED, string). A question.
+    2. `answer` (REQUIRED, string). An answer.
+    3. `remarks` (OPTIONAL, string). A field to put relevant discussion remarks in.
+    4. `authors`. There can be multiple names. For each name the following field is present.
+        1. `name` (OPTIONAL, string). The name of the author of the question.
+    5. `timestamp` (OPTIONAL, string). A timestamp of the date and time of the answer.
+
 ## Example
 
 ### System Card
 
 ```yaml
+name: {system_name}                                     # Optional. Example: "AangifteVertrekBuitenland"
 upl: {upl_uri}                                          # Optional. Example: https://standaarden.overheid.nl/owms/terms/AangifteVertrekBuitenland
 owners:
-- organization: {organization_name}                     # Required. Example: BZK
-  oin: {oin}                                            # Optional. Example: 00000001003214345000
+- oin: {oin}                                            # Optional. Example: 00000001003214345000
+  organization: {organization_name}                     # Optional if oin is provided, Required otherwise. Example: BZK
   name: {owner_name}                                    # Optional. Example: John Doe
   email: {owner_email}                                  # Optional. Example: johndoe@email.com
   role: {owner_role}                                    # Optional. Example: Data Scientist.
+description: {system_description}                       # Optional. Short description of the system.
+labels:                                                 # Optional labels to store metadata about the system.
+- name: {label_name}                                    # Optional.
+  value: {label_value}                                  # Optional.
+status: {system_status}                                 # Optional. Example "production".
+publication_category: {system_publication_cat}          # Optional. Example: "impactfull_algorithm".
+begin_date: {system_begin_date}                         # Optional. Example: 2025-1-1.
+end_date: {system_end_date}                             # Optional. Example: 2025-12-1.
+goal_and_impact: {system_goal_and_impact}               # Optional. Goal and impact of the system.
+considerations: {system_considerations}                 # Optional. Considerations about the system.
+risk_management: {system_risk_management}               # Optional. Description of risks associated with the system.
+human_intervention: {system_human_intervention}         # Optional. Description of uman involvement in the system.
+legal_base:
+- name: {law_name}                                      # Optional. Example: "AVG".
+  link: {law_uri}                                       # Optional. Example: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:31995L0046".
+used_data: {system_used_data}                           # Optional. Description of the data used by the system.
+technical_design: {technical_design}                    # Optional. Description of the technical design of the system.
+external_providers:
+- {system_external_provider}                            # Optional. Reference to used external providers.
+references:
+- {reference_uri}                                       # Optional. Example: URI to codebase.
 
-# Model Cards
 models:
- - !include {model_card_uri}                            # Optional. Example: model_card.yaml.
+ - !include {model_card_uri}                            # Optional. Example: cat_classifier_model.yaml.
 
-# Assessments like IAMA.
 assessments:
-- name: {assessment_name}                               # Required. Example: IAMA.
-  date: {assessment_date}                               # Required. Example: 25-03-2025.
-  contents:
-    - question: {question_text}                         # Required. Example: "Question 1: ...".
-      answer: {answer_text}                             # Required. Example: "Answer: ...".
-      remarks: {remarks_text}                           # Optional. Example: "Remarks: ...".
-      authors:                                          # Optional. Example: "['John', 'Peter']".
-        - name: {author_name}
-      timestamp: {timestamp}                            # Optional. Example: 1711630721.
+- !include {assessment_card_uri}                        # Required. Example: iama.yaml.
 ```
 
 ### Model Card
 
 ```yaml
-algorithm-registers:
-  - {id}                                                # Optional. Example: https://algoritmes.overheid.nl/nl/algoritme/45991543.
 language:
   - {lang_0}                                            # Optional. Example nl.
 license: {licence}                                      # Required. Example: Apache-2.0 or any license SPDX ID from https://opensource.org/license or "other".
-license_name: {licence_name}                            # Required. if license = other, specify an id for the licence. Example: 'my-license-1.0'
-license_link: {license_link}                            # Required. if license = other, specify "LICENSE" or "LICENSE.md" to link to a file of that name inside the repo, or a URL to a remote file.
-library_name: {library_name}                            # Optional. Example: keras or any library from https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/model-libraries.ts.
-library: {library_name}                                 # Optional. Example: mylibrary
-library_link: {library_link}                            # Optional. URI to user provided library.
+license_name: {licence_name}                            # Optional if license != other, Required otherwise. Example: 'my-license-1.0'
+license_link: {license_link}                            # Optional if license != other, Required otherwise. Specify "LICENSE" or "LICENSE.md" to link to a file of that name inside the repo, or a URL to a remote file.
 tags:
 - {tag_0}                                               # Optional. Example: audio
 - {tag_1}                                               # Optional. Example: automatic-speech-recognition
@@ -250,11 +314,15 @@ model-index:
   - name: {parameter_name}                              # Optional. Example: "epochs".
     dtype: {parameter_dtype}                            # Optional. Example "int".
     value: {parameter_value}                            # Optional. Example 100.
+    labels:
+      - name: {label_name}                              # Optional. Example: "gender".
+        dtype: {label_type}                             # Optional. Example: "string".
+        value: {label_value}                            # Optional. Example: "female".
   results:
   - task:
       type: {task_type}                                 # Required. Example: image-classification.
       name: {task_name}                                 # Optional. Example: Image Classification.
-    dataset:
+    datasets:
       - type: {dataset_type}                            # Required. Example: common_voice. Link to a repository containing the dataset
         name: {dataset_name}                            # Required. Example: "Common Voice (French)". A pretty name for the dataset.
         split: {split}                                  # Optional. Example "train".
@@ -266,11 +334,11 @@ model-index:
       name: {metric_name}                               # Required. Example: "FPR wrt class 0 restricted to feature gender:0 and age:21".
       dtype: {metric_dtype}                             # Required. Example: "float".
       value: {metric_value}                             # Required. Example: 0.75.
-      class: {metric_output_class}                      # Optional. Example: "1". Only relevant for certain metrics such as for example false-positive-rate positive rate.
       labels:
-        - name: {feature_name}                          # Optional. Example: "gender".
-          type: {feature_type}                          # Optional. Example: "string".
-          value: {feature_value}                        # Optional. Example: "female".
+        - name: {label_name}                            # Optional. Example: "gender".
+          type: {label_type}                            # Optional. Exmple "feature".
+          dtype: {label_type}                           # Optional. Example: "string".
+          value: {label_value}                          # Optional. Example: "female".
     measurements:
       # Bar plots should be able to capture SHAP and Robustness Toolbox from AI Verify.
       bar_plots:
@@ -293,6 +361,20 @@ model-index:
               y_value: {y_value}                        # Required. The y value of the graph data.
 
 ```
+
+### Assessment Card
+
+```yaml
+name: {assessment_name}                               # Required. Example: IAMA.
+date: {assessment_date}                               # Required. Example: 25-03-2025.
+contents:
+  - question: {question_text}                         # Required. Example: "Question 1: ...".
+    answer: {answer_text}                             # Required. Example: "Answer: ...".
+    remarks: {remarks_text}                           # Optional. Example: "Remarks: ...".
+    authors:                                          # Optional. Example: "['John', 'Peter']".
+      - name: {author_name}
+    timestamp: {timestamp}                            # Optional. Example: 1711630721.
+````
 
 ## Schema
 
