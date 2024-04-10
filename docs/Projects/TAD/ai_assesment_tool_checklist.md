@@ -25,131 +25,131 @@ Introduction is written here [tools.md](tools.md#ai-assessment-tool). It is a di
 | It is possible to define and automate workflows for repetitive tasks.                                                                                                                             | C         | 0         | It is an UI tool                                                                                                |
 | The tool offers pre-built connectors or low-code/no-code integration options to simplify the integration process.                                                                                 | C         | 0         | No                                                                                                              |
 
-total_score =
+total_score = 22.85
 
 ## Reliability
 
-| Requirement                                                                                                                            | Priority | Fulfilled | Comments |
-|:---------------------------------------------------------------------------------------------------------------------------------------|:---------|-----------|----------|
-| The tool operates consistently and reliably, meaning it delivers the same expected results every time you use it.                      | M        |           |          |
-| The tool recovers automatically from common failures.                                                                                  | S        |           |          |
-| The tool recovers from failures quickly, minimizing data loss, for example by automatically saving intermediate test progress results. | S        |           |          |
-| The tool handles errors gracefully and informs users of any issues.                                                                    | S        |           |          |
-| The tool provides clear error messages and instructions for troubleshooting.                                                           | S        |           |          |
+| Requirement                                                                                                                            | Priority | Fulfilled | Comments                                                                             |
+|:---------------------------------------------------------------------------------------------------------------------------------------|:---------|-----------|--------------------------------------------------------------------------------------|
+| The tool operates consistently and reliably, meaning it delivers the same expected results every time you use it.                      | M        | 1         | Yes                                                                                  |
+| The tool recovers automatically from common failures.                                                                                  | S        | 1         | The tool seems too do this                                                           |
+| The tool recovers from failures quickly, minimizing data loss, for example by automatically saving intermediate test progress results. | S        | 1         | The data is stored in mongoDB, so no data is lost                                    |
+| The tool handles errors gracefully and informs users of any issues.                                                                    | S        | 1         | If the email server is down the tool still operates                                  |
+| The tool provides clear error messages and instructions for troubleshooting.                                                           | S        | 0.8       | Some errors are not very informative when you get them, but mostly email related are |
 
-total_score =
+total_score = 15.4
 
 ## Usability
 
-| Requirement                                                                                         | Priority | Fulfilled | Comments |
-|:----------------------------------------------------------------------------------------------------|:---------|-----------|----------|
-| The tool possess a clean, intuitive, and visually appealing UI that follows industry standards.     | S        |           |          |
-| The tool provides clear and consistent navigation, making it easy for users to find what they need. | S        |           |          |
-| The tool is responsive and provides instant feedback.                                               | S        |           |          |
-| The user interface is multilingual and supports at least English.                                   | S        |           |          |
-| The tool offers keyboard shortcuts for efficient interaction.                                       | C        |           |          |
-| The user interface can easily be translated into other languages.                                   | C        |           |          |
+| Requirement                                                                                         | Priority | Fulfilled | Comments                                                                                                     |
+|:----------------------------------------------------------------------------------------------------|:---------|-----------|--------------------------------------------------------------------------------------------------------------|
+| The tool possess a clean, intuitive, and visually appealing UI that follows industry standards.     | S        | 1         | Very clean UI                                                                                                |
+| The tool provides clear and consistent navigation, making it easy for users to find what they need. | S        | 1         | Compared to AIVerify the navigation is very intuitive (but it also has less features)                        |
+| The tool is responsive and provides instant feedback.                                               | S        | 1         | Yes                                                                                                          |
+| The user interface is multilingual and supports at least English.                                   | S        | 0.8       | There is support for multilingual, but the assessments are not translated and needs to be translated by hand |
+| The tool offers keyboard shortcuts for efficient interaction.                                       | C        | 0         | No                                                                                                           |
+| The user interface can easily be translated into other languages.                                   | C        | 0.8       | The buttons are automatically translated but not the assessment itself                                       |
 
-total_score =
+total_score = 13
 
 ## Help & Documentation
 
-| Requirement                                                                                                                                                            | Priority | Fulfilled | Comments |
-|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------|-----------|----------|
-| The tool provides comprehensive online help documentation with searchable functionalities.                                                                             | S        |           |          |
-| The tool offers context-sensitive help within the application.                                                                                                         | C        |           |          |
-| The online documentation includes video tutorials and training materials for ease of learning.                                                                         | C        |           |          |
-| The project provides readily available customer support through various channels  (e.g., email, phone, online chat) to address user inquiries and troubleshoot issues. | C        |           |          |
+| Requirement                                                                                                                                                            | Priority | Fulfilled | Comments                                                                            |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------|-----------|-------------------------------------------------------------------------------------|
+| The tool provides comprehensive online help documentation with searchable functionalities.                                                                             | S        | 0.1       | There is little documentation, only the website and the github readme               |
+| The tool offers context-sensitive help within the application.                                                                                                         | C        | 0         | The icons are just very clear, would be nice to have a question mark at some places |
+| The online documentation includes video tutorials and training materials for ease of learning.                                                                         | C        | 0         | There is no such documentation                                                      |
+| The project provides readily available customer support through various channels  (e.g., email, phone, online chat) to address user inquiries and troubleshoot issues. | C        | 0.25      | You can issue tickets on Github, no other way supported way                         |
 
-total_score =
+total_score = 0.55
 
 ## Performance Efficiency
 
-| Requirement                                                              | Priority | Fulfilled | Comments |
-|:-------------------------------------------------------------------------|:---------|-----------|----------|
-| The tool operates efficiently and minimize resource utilization.         | M        |           |          |
-| The tool responds to user actions instantly.                             | M        |           |          |
-| The tool is scalable to accommodate increased user base and data volume. | S        |           |          |
+| Requirement                                                              | Priority | Fulfilled | Comments                                                                  |
+|:-------------------------------------------------------------------------|:---------|-----------|---------------------------------------------------------------------------|
+| The tool operates efficiently and minimize resource utilization.         | M        | 1         | The docker container is not so very big, also doesn't use much resources  |
+| The tool responds to user actions instantly.                             | M        | 1         | There is instant feedback in the UI                                       |
+| The tool is scalable to accommodate increased user base and data volume. | S        | 1         | As it runs on Docker, you can scale this on Kubernetes for multiple users |
 
-total_score =
+total_score = 11
 
 ## Maintainability
 
-| Requirement                                                                                                          | Priority | Fulfilled | Comments |
-|:---------------------------------------------------------------------------------------------------------------------|:---------|-----------|----------|
-| The tool is easy to modify and maintain.                                                                             | M        |           |          |
-| The tool adheres to industry coding standards and best practices to ensure code quality and maintainability.         | M        |           |          |
-| The code is written in a common, widely adopted and supported and actively used and maintained programming language. | M        |           |          |
-| The project provides version control for code changes and rollback capabilities.                                     | M        |           |          |
-| The project is open source.                                                                                          | M        |           |          |
-| It is possible to contribute to the source.                                                                          | S        |           |          |
-| The system is modular, allowing for easy modification of individual components.                                      | S        |           |          |
-| Diagnostic tools are available to identify and troubleshoot issues.                                                  | S        |           |          |
+| Requirement                                                                                                          | Priority | Fulfilled | Comments                                                                                                                                                       |
+|:---------------------------------------------------------------------------------------------------------------------|:---------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| The tool is easy to modify and maintain.                                                                             | M        | 0.8       | You need to be a bit aware of NextJS, then it is easy to maintain as it is not such a large tool                                                               |
+| The tool adheres to industry coding standards and best practices to ensure code quality and maintainability.         | M        | 0.8       | The code looks well structured, they have deployments on github but I don't see any CI or pre-commit hooks                                                     |
+| The code is written in a common, widely adopted and supported and actively used and maintained programming language. | M        | 1         | NextJS is very common for frontend tools                                                                                                                       |
+| The project provides version control for code changes and rollback capabilities.                                     | M        | 1         | The code is hosted on Github so yes                                                                                                                            |
+| The project is open source.                                                                                          | M        | 1         | see above                                                                                                                                                      |
+| It is possible to contribute to the source.                                                                          | S        | 1         | It is possible, not many people have done this yet                                                                                                             |
+| The system is modular, allowing for easy modification of individual components.                                      | S        | 0.6       | Extra assessments can be appended to the system, but not in such a way that it supports multiple (different) assessments, but roles can be changed very easily |
+| Diagnostic tools are available to identify and troubleshoot issues.                                                  | S        | 0.8       | The standard NextJS tools to troubleshoot, but not many tests                                                                                                  |
 
-total_score =
+total_score = 25.6
 
 ## Security
 
 | Requirement                                                                                                                            | Priority | Fulfilled | Comments                                                                                                                                                           |
 |:---------------------------------------------------------------------------------------------------------------------------------------|:---------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| The tool must protect data and system from unauthorized access, use, disclosure, disruption, modification, or destruction.             | M        |           |                                                                                                                                                                    |
+| The tool must protect data and system from unauthorized access, use, disclosure, disruption, modification, or destruction.             | M        | 1         | The data is stored in MongoDB                                                                                                                                      |
 | Regular security audits and penetration testing are conducted.                                                                         | S        | 0         | When running docker compose up, the docker client will tell there are quite some CVE vulnerabilities in there, an upgrade of the Node version would help much here |
-| The tool enforce authorization controls based on user roles and permissions, restricting access to sensitive data and functionalities. | C        | 1         | The tool                                                                                                                                                           |
-| Data encryption is used for sensitive information at rest and in transit.                                                              | C        | 1         |                                                                                                                                                                    |
+| The tool enforce authorization controls based on user roles and permissions, restricting access to sensitive data and functionalities. | C        | 0.5       | The tool has support for multiple users and roles (but we couldn't find a user management system)                                                                  |
+| Data encryption is used for sensitive information at rest and in transit.                                                              | C        | 1         | When data is transferred to mongoDB, a secure connection is set-up and also in the DB it is encrypted by MongoDB, also you have an SSL connection with the tool    |
 | The project allows for regular security audits and penetration testing to identify vulnerabilities and ensure system integrity.        | C        | 1         | The tool does allow this, as it is open-source                                                                                                                     |
-| The tool implements backup functionality to ensure data availability in case of incidents.                                             | C        |           |                                                                                                                                                                    |
+| The tool implements backup functionality to ensure data availability in case of incidents.                                             | C        | 1         | The data is store in a volume next to the main container of the                                                                                                    |
 
-total_score =
+total_score = 7.5
 
 ## Compatibility
 
-| Requirement                                                                                                                | Priority | Fulfilled | Comments |
-|:---------------------------------------------------------------------------------------------------------------------------|:---------|-----------|----------|
-| The tool is compatible with existing systems and infrastructure.                                                           | M        |           |          |
-| The tool supports industry-standard data formats and protocols.                                                            | M        |           |          |
-| The tool operates seamlessly on supported operating systems and hardware platforms.                                        | S        |           |          |
-| The tool supports commonly used data formats (e.g., CSV, Excel, JSON) for easy data exchange with other systems and tools. | S        |           |          |
-| The tool integrates with existing security solutions.                                                                      | C        |           |          |
+| Requirement                                                                                                                | Priority | Fulfilled | Comments                                                                                                                                 |
+|:---------------------------------------------------------------------------------------------------------------------------|:---------|-----------|------------------------------------------------------------------------------------------------------------------------------------------|
+| The tool is compatible with existing systems and infrastructure.                                                           | M        | 1         | As it is a container it can run on Kubernetes and therefore at Digilab                                                                   |
+| The tool supports industry-standard data formats and protocols.                                                            | M        | 1         | Assessment and other config are stored in JSON                                                                                           |
+| The tool operates seamlessly on supported operating systems and hardware platforms.                                        | S        | 1         | As it runs in a container it is able to run on all the major OS'es if you have Docker Desktop or use a cloud version managed by yourself |
+| The tool supports commonly used data formats (e.g., CSV, Excel, JSON) for easy data exchange with other systems and tools. | S        | 0         | The tool currently only exports a pdf which is not an exchangable format                                                                 |
+| The tool integrates with existing security solutions.                                                                      | C        | 0         | Not applicable as it is an UI                                                                                                            |
 
-total_score =
+total_score = 11
 
 ## Accessibility
 
-| Requirement                                                                                                                                                                        | Priority | Fulfilled | Comments |
-|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------|-----------|----------|
-| The tool is accessible to users with disabilities, following relevant accessibility standards (e.g., [WCAG](https://www.digitoegankelijk.nl/toegankelijkheid/en-301-549-en-wcag)). | S        |           |          |
+| Requirement                                                                                                                                                                        | Priority | Fulfilled | Comments                                                                                        |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------|-----------|-------------------------------------------------------------------------------------------------|
+| The tool is accessible to users with disabilities, following relevant accessibility standards (e.g., [WCAG](https://www.digitoegankelijk.nl/toegankelijkheid/en-301-549-en-wcag)). | S        | 0.1       | The color scheme is pretty good viewable, but for the rest there are not accessibility features |
 
-total_score =
+total_score = 0.3
 
 ### Portability
 
-| Requirement                                                                                                                 | Priority | Fulfilled | Comments |
-|:----------------------------------------------------------------------------------------------------------------------------|:---------|-----------|----------|
-| The tool support a range of operating systems (e.g., Windows, macOS, Linux) commonly used within an organization.           | S        |           |          |
-| The tool minimizes dependencies on specific hardware or software configurations, promoting flexibility.                     | S        |           |          |
-| The tool offers a cloud-based deployment option or be compatible with cloud environments for scalability and accessibility. | S        |           |          |
-| The tool adheres to relevant cloud security standards and best practices.                                                   | S        |           |          |
+| Requirement                                                                                                                 | Priority | Fulfilled | Comments                                                                                                                                   |
+|:----------------------------------------------------------------------------------------------------------------------------|:---------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| The tool support a range of operating systems (e.g., Windows, macOS, Linux) commonly used within an organization.           | S        | 1         | It is in docker so can run everywhere                                                                                                      |
+| The tool minimizes dependencies on specific hardware or software configurations, promoting flexibility.                     | S        | 1         | This is all containerized                                                                                                                  |
+| The tool offers a cloud-based deployment option or be compatible with cloud environments for scalability and accessibility. | S        | 1         | As it is containerized we could host this ourselves in a cloud environment, the Belgium government does not offer a hosted version for you |
+| The tool adheres to relevant cloud security standards and best practices.                                                   | S        | 0.8       | The docker container does contain some outdated versions of for example Node.                                                              |
 
-total_score =
+total_score = 11.4
 
 ## Deployment
 
-| Requirement                                                                                                              | Priority | Fulfilled | Comments |
-|:-------------------------------------------------------------------------------------------------------------------------|:---------|-----------|----------|
-| The tool has an easy and user-friendly installation and configuration process.                                           | S        |           |          |
-| The tool has on-premise or cloud-based deployment options to cater to different organizational needs and infrastructure. | S        |           |          |
+| Requirement                                                                                                              | Priority | Fulfilled | Comments                                                             |
+|:-------------------------------------------------------------------------------------------------------------------------|:---------|-----------|----------------------------------------------------------------------|
+| The tool has an easy and user-friendly installation and configuration process.                                           | S        | 1         | It was very easy to install out-of-the-box                           |
+| The tool has on-premise or cloud-based deployment options to cater to different organizational needs and infrastructure. | S        | 0         | The tool does not promise on-prem or cloud-based managed deployments |
 
-total_score =
+total_score = 3
 
 ## Legal & Compliance
 
-| Requirement                                                                                                          | Priority | Fulfilled | Comments |
-|:---------------------------------------------------------------------------------------------------------------------|:---------|-----------|----------|
-| It is clear how the tool is funded to avoid improper influence due to conflicts of interest                          | M        |          |          |
-| The tool is compliant with relevant legal and regulatory requirements.                                               | S        |          |          |
-| The tool adheres to (local) data privacy regulations like GDPR, ensuring the protection of user data.                | S        |          |          |
-| The tool implements appropriate security measures to comply with industry regulations and standards.                 | S        |          |          |
-| The tool is licensed for use within the organization according to the terms and conditions of the license agreement. | S        |          |          |
-| The tool respects intellectual property rights and avoid copyright infringement issues.                              | S        |          |          |
+| Requirement                                                                                                          | Priority | Fulfilled | Comments                                                                                                                                     |
+|:---------------------------------------------------------------------------------------------------------------------|:---------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| It is clear how the tool is funded to avoid improper influence due to conflicts of interest                          | M        | 1         | It is funded by the Belgian Government                                                                                                       |
+| The tool is compliant with relevant legal and regulatory requirements.                                               | S        | 1         | Yes EU license                                                                                                                               |
+| The tool adheres to (local) data privacy regulations like GDPR, ensuring the protection of user data.                | S        | 1         | Data is stored locally                                                                                                                       |
+| The tool implements appropriate security measures to comply with industry regulations and standards.                 | S        | 1         | [EUPL 1.2 license](https://github.com/AI4Belgium/ai-assessment-tool?tab=EUPL-1.2-1-ov-file#readme) (although they say they have MIT license) |
+| The tool is licensed for use within the organization according to the terms and conditions of the license agreement. | S        | 1         | Yes, see above                                                                                                                               |
+| The tool respects intellectual property rights and avoid copyright infringement issues.                              | S        | 1         | Yes, see above                                                                                                                               |
 
-total_score =
+total_score = 19

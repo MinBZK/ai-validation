@@ -83,21 +83,21 @@ total_score = 7.5
 | The project provides version control for code changes and rollback capabilities.                                     | M        | 0.8       | The code is stored on Github, but the container itself not and also the packages which the tools depend on not |
 | The project is open source.                                                                                          | M        | 1         | [Github link](https://github.com/IMDA-BTG/aiverify)                                                            |
 | It is possible to contribute to the source.                                                                          | S        | 0.5       | It is possible, although with our three features it takes a while for them to dedicated time for integration   |
-| The system is modular, allowing for easy modification of individual components.                                      | S        | 0.5       | The techincal tests and assessments are easy to adjust, other core features not                                |
+| The system is modular, allowing for easy modification of individual components.                                      | S        | 0.5       | The technical tests and assessments are easy to adjust, other core features not                                |
 | Diagnostic tools are available to identify and troubleshoot issues.                                                  | S        | 0         | Diagnosing some parts of the system took us quite some time as we couldn't properly debug in the containers    |
 
 total_score = 15.8
 
 ## Security
 
-| Requirement                                                                                                                            | Priority | Fulfilled | Comments                                                                                                                                          |
-|:---------------------------------------------------------------------------------------------------------------------------------------|:---------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| The tool must protect data and system from unauthorized access, use, disclosure, disruption, modification, or destruction.             | M        | 0.5       | This managed by that the data is stored in MongoDB however, it currently only has 1 user support                                                  |
-| Regular security audits and penetration testing are conducted.                                                                         | S        | 0.1       | We are unaware of the security audits but they do have a security policy [here](https://github.com/IMDA-BTG/aiverify?tab=security-ov-file#readme) |
-| The tool enforce authorization controls based on user roles and permissions, restricting access to sensitive data and functionalities. | C        | 0         | Currently only 1 user can use the system and see all the data                                                                                     |
-| Data encryption is used for sensitive information at rest and in transit.                                                              | C        | 1         | When data is transferred to mongoDB, a secure connection is set-up and also in the DB it is encrypted by MongoDB                                  |
-| The project allows for regular security audits and penetration testing to identify vulnerabilities and ensure system integrity.        | C        | 1         | As you can install it locally, this is possible                                                                                                   |
-| The tool implements backup functionality to ensure data availability in case of incidents.                                             | C        | 1         | Data is stores persistent, so even if the tool breaks the data will be in volumes                                                                 |
+| Requirement                                                                                                                            | Priority | Fulfilled | Comments                                                                                                                                                        |
+|:---------------------------------------------------------------------------------------------------------------------------------------|:---------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| The tool must protect data and system from unauthorized access, use, disclosure, disruption, modification, or destruction.             | M        | 0.5       | This managed by that the data is stored in MongoDB however, it currently only has 1 user support                                                                |
+| Regular security audits and penetration testing are conducted.                                                                         | S        | 0.1       | We are unaware of the security audits but they do have a security policy [here](https://github.com/IMDA-BTG/aiverify?tab=security-ov-file#readme)               |
+| The tool enforce authorization controls based on user roles and permissions, restricting access to sensitive data and functionalities. | C        | 0         | Currently only 1 user can use the system and see all the data                                                                                                   |
+| Data encryption is used for sensitive information at rest and in transit.                                                              | C        | 1         | When data is transferred to mongoDB, a secure connection is set-up and also in the DB it is encrypted by MongoDB, also you have an SSL connection with the tool |
+| The project allows for regular security audits and penetration testing to identify vulnerabilities and ensure system integrity.        | C        | 1         | As you can install it locally, this is possible                                                                                                                 |
+| The tool implements backup functionality to ensure data availability in case of incidents.                                             | C        | 1         | Data is stored persistent, so even if the tool breaks the data will be in volumes                                                                               |
 
 total_score = 8.3
 
@@ -123,14 +123,14 @@ total_score = 0
 
 ## Portability
 
-| Requirement                                                                                                                 | Priority | Fulfilled | Comments                                                                                                                                                  |
-|:----------------------------------------------------------------------------------------------------------------------------|:---------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| The tool support a range of operating systems (e.g., Windows, macOS, Linux) commonly used within an organization.           | S        | 0         | Only runs well in a Linux Container                                                                                                                       |
-| The tool minimizes dependencies on specific hardware or software configurations, promoting flexibility.                     | S        | 1         | This is all containerized                                                                                                                                 |
-| The tool offers a cloud-based deployment option or be compatible with cloud environments for scalability and accessibility. | S        | 1         | As it is containerized we could host this ourselves in a cloud environment                                                                                |
+| Requirement                                                                                                                 | Priority | Fulfilled | Comments                                                                                                                                                 |
+|:----------------------------------------------------------------------------------------------------------------------------|:---------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| The tool support a range of operating systems (e.g., Windows, macOS, Linux) commonly used within an organization.           | S        | 1         | It is containerized                                                                                                                                      |
+| The tool minimizes dependencies on specific hardware or software configurations, promoting flexibility.                     | S        | 1         | This is all containerized                                                                                                                                |
+| The tool offers a cloud-based deployment option or be compatible with cloud environments for scalability and accessibility. | S        | 1         | As it is containerized we could host this ourselves in a cloud environment                                                                               |
 | The tool adheres to relevant cloud security standards and best practices.                                                   | S        | 0.5       | The making of the container it self is lacking some best practices, otherwise the cloud security standards are not applicable as it is a self-hosted tool |
 
-total_score = 7.5
+total_score = 10.5
 
 ## Deployment
 

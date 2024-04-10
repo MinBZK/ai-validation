@@ -11,19 +11,19 @@ The scoring is as follows: {M:4, S:3, C:2, W:-1}.
 
 | Requirement            | AIVerify Score | VerifyML Score | IBM 360 Research Toolkit Score | Holisticai Score | AI Assessment Tool Score |
 |:-----------------------|:---------------|----------------|--------------------------------|------------------|--------------------------|
-| Functionality          | 36             | 42             | 20                             | 17               |                          |
-| Reliability            | 13             | 4              | 16                             | 16               |                          |
-| Usability              | 9.4            | 0              | 0                              | 0                |                          |
-| Help & Documentation   | 2.8            | 1.5            | 6.4                            | 1.6              |                          |
-| Performance Efficiency | 7.5            | 11             | 11                             | 11               |                          |
-| Maintainability        | 15.8           | 24.5           | 29                             | 23.5             |                          |
-| Security               | 8.3            | 2              | 2                              | 2                |                          |
-| Compatibility          | 12.5           | 14             | 14                             | 10               |                          |
-| Accessibility          | 0              | 0              | 0                              | 0                |                          |
-| Portability            | 7.5            | 4.5            | 5.1                            | 7.5              |                          |
-| Deployment             | 1.5            | 0.6            | 1.2                            | 3.6              |                          |
-| Legal & Compliance     | 19             | 16             | 16                             | 16               |                          |
-| **Total**              | **133.3**      | **120.1**      | **120.7**                      | **108.2**        | ****                     |
+| Functionality          | 36             | 42             | 20                             | 17               | 22.85                    |
+| Reliability            | 13             | 4              | 16                             | 16               | 15.4                     |
+| Usability              | 9.4            | 0              | 0                              | 0                | 13                       |
+| Help & Documentation   | 2.8            | 1.5            | 6.4                            | 1.6              | 0.55                     |
+| Performance Efficiency | 7.5            | 11             | 11                             | 11               | 11                       |
+| Maintainability        | 15.8           | 24.5           | 29                             | 23.5             | 25.6                     |
+| Security               | 8.3            | 2              | 2                              | 2                | 7.5                      |
+| Compatibility          | 12.5           | 14             | 14                             | 10               | 11                       |
+| Accessibility          | 0              | 0              | 0                              | 0                | 0.3                      |
+| Portability            | 10.5           | 4.5            | 5.1                            | 7.5              | 11.4                     |
+| Deployment             | 1.5            | 0.6            | 1.2                            | 3.6              | 3                        |
+| Legal & Compliance     | 19             | 16             | 16                             | 16               | 19                       |
+| **Total**              | **136.3**      | **120.1**      | **120.7**                      | **108.2**        | **140.6**                |
 
 The scores are calculated in these individual markdowns
 [aiverify_checklist.md](aiverify_checklist.md),
@@ -70,6 +70,10 @@ but it is less extensive than the 360 toolkit
 - It is a private company from the United Kingdom which has open sourced part of their tool
 
 AI Assessment Tool:
+
+- This tool does not have any technical tests, but outshines the others with the discussion on assessment option
+
+- It is also very performant
 
 ## Summary per tool in one sentence
 
