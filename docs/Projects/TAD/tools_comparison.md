@@ -11,19 +11,19 @@ The scoring is as follows: {M:4, S:3, C:2, W:-1}.
 
 | Requirement            | AIVerify Score | VerifyML Score | IBM 360 Research Toolkit Score | Holisticai Score | AI Assessment Tool Score |
 |:-----------------------|:---------------|----------------|--------------------------------|------------------|--------------------------|
-| Functionality          | 36             | 42             | 20                             |                  |                          |
-| Reliability            | 13             | 4              | 16                             |                  |                          |
-| Usability              | 9.4            | 0              | 0                              |                  |                          |
-| Help & Documentation   | 2.8            | 1.5            | 6.4                            |                  |                          |
-| Performance Efficiency | 7.5            | 11             | 11                             |                  |                          |
-| Maintainability        | 15.8           | 24.5           | 29                             |                  |                          |
-| Security               | 8.3            | 2              | 2                              |                  |                          |
-| Compatibility          | 12.5           | 14             | 14                             |                  |                          |
-| Accessibility          | 0              | 0              | 0                              |                  |                          |
-| Portability            | 7.5            | 4.5            | 5.1                            |                  |                          |
-| Deployment             | 1.5            | 0.6            | 1.2                            |                  |                          |
-| Legal & Compliance     | 19             | 16             | 16                             |                  |                          |
-| **Total**              | **133.3**      | **120.1**      | **120.7**                      | ****             | ****                     |
+| Functionality          | 36             | 42             | 20                             | 17               |                          |
+| Reliability            | 13             | 4              | 16                             | 16               |                          |
+| Usability              | 9.4            | 0              | 0                              | 0                |                          |
+| Help & Documentation   | 2.8            | 1.5            | 6.4                            | 1.6              |                          |
+| Performance Efficiency | 7.5            | 11             | 11                             | 11               |                          |
+| Maintainability        | 15.8           | 24.5           | 29                             | 23.5             |                          |
+| Security               | 8.3            | 2              | 2                              | 2                |                          |
+| Compatibility          | 12.5           | 14             | 14                             | 10               |                          |
+| Accessibility          | 0              | 0              | 0                              | 0                |                          |
+| Portability            | 7.5            | 4.5            | 5.1                            | 7.5              |                          |
+| Deployment             | 1.5            | 0.6            | 1.2                            | 3.6              |                          |
+| Legal & Compliance     | 19             | 16             | 16                             | 16               |                          |
+| **Total**              | **133.3**      | **120.1**      | **120.7**                      | **108.2**        | ****                     |
 
 The scores are calculated in these individual markdowns
 [aiverify_checklist.md](aiverify_checklist.md),
