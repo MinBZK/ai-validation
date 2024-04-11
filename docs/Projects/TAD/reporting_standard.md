@@ -38,9 +38,16 @@ are optional in the HuggingFace specification and are specific to the HugginFace
 
 Another difference is that we devide our implementation into three seperate parts.
 
-1. `systems_card`, containing information about a group of ML-models which accomplish a specific task.
+1. `system_card`, containing information about a group of ML-models which accomplish a specific task.
 2. `model_card`, containing information about a specific ML-model.
 3. `assessment_card`, containing information about a regulatory assessment.
+
+!!! note "Include statements"
+
+    These `model_card`s and  `assessment_card`s  can be included verbatim into a `system_card`,
+    or referenced with an `!include` statement, allowing for minimal cards to be compact and in a
+    single file, but for extensive cards to be split up for readability and maintainability.
+    Our standard allows for the `!include` to be used anywhere.
 
 ## Intended usage
 
@@ -61,10 +68,11 @@ the examples in the next section.
 
 A `system_card` contains the following information.
 
-1. `name` (OPTIONAL, string). Name used to describe the system.
-2. `upl` (OPTIONAL, string). If this algorithm is part of a product offered by the Dutch Government,
+1. `schema_version` (REQUIRED, string). Version of the schema used, for example "0.1a1".
+2. `name` (OPTIONAL, string). Name used to describe the system.
+3. `upl` (OPTIONAL, string). If this algorithm is part of a product offered by the Dutch Government,
     it should contain a URI from the [Uniform Product List](https://standaarden.overheid.nl/owms/oquery/UPL-actueel.plain).
-3. `owners` (list). There can be multiple owners. For each owner the following fields are present.
+4. `owners` (list). There can be multiple owners. For each owner the following fields are present.
 
     1. `oin` (OPTIONAL, string). If applicable the [Organisatie-identificatienummer (OIN)](https://oinregister.logius.nl/oin-register).
     2. `organization` (OPTIONAL, string). Name of the organization that owns the model. If `ion` is
@@ -74,36 +82,36 @@ A `system_card` contains the following information.
     5. `role` (OPTIONAL, string). Role of the contact person. This field should only be set when the `name` field
     is set.
 
-4. `description` (OPTIONAL, string). A short description of the system.
-5. `labels` (OPTIONAL, list). This fields allows to store meta information about a system. There
+5. `description` (OPTIONAL, string). A short description of the system.
+6. `labels` (OPTIONAL, list). This fields allows to store meta information about a system. There
 can be multiple labels. For each label the following fields are present.
 
     1. `name` (OPTIONAL, string). Name of the label.
     2. `value` (OPTIONAL, string). Value of the label.
 
-6. `status` (OPTIONAL, string). The status of the system. For example the status can be "production".
-7. `publication_category` (OPTIONAL, enum[string]). The publication category of the algorithm should
+7. `status` (OPTIONAL, string). The status of the system. For example the status can be "production".
+8. `publication_category` (OPTIONAL, enum[string]). The publication category of the algorithm should
 be chosen from `["high_risk", other"]`.
-8. `begin_date` (OPTIONAL, string). The first date the system was used.
+9. `begin_date` (OPTIONAL, string). The first date the system was used.
 Date should be given in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format, i.e. YYYY-MM-DD.
-9. `end_date` (OPTIONAL, string). The last date the system was used.
+10. `end_date` (OPTIONAL, string). The last date the system was used.
 Date should be given in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format, i.e. YYYY-MM-DD.
-10. `goal_and_impact` (OPTIONAL, string). The purpose of the system and the impact it has on citizens
+11. `goal_and_impact` (OPTIONAL, string). The purpose of the system and the impact it has on citizens
 and companies.
-11. `considerations` (OPTIONAL, string). The pro's and con's of using the system.
-12. `risk_management` (OPTIONAL, string). Description of the risks associated with the system.
-13. `human_intervention` (OPTIONAL, string). A description to want extend there is human involvement
+12. `considerations` (OPTIONAL, string). The pro's and con's of using the system.
+13. `risk_management` (OPTIONAL, string). Description of the risks associated with the system.
+14. `human_intervention` (OPTIONAL, string). A description to want extend there is human involvement
 in the system.
-14. `legal_base` (OPTIONAL, list). If there exists a legal base for the process the system is embedded
+15. `legal_base` (OPTIONAL, list). If there exists a legal base for the process the system is embedded
 in, this field can be filled in with the relevant laws. There can be multiple legal bases. For each
 legal base the following fields are present.
     1. `name` (OPTIONAL, string). Name of the law.
     2. `link` (OPTIONAL, string). URI pointing towards the contents of the law.
-15. `used_data` (OPTIONAL, string). An overview of the data that is used in the system.
-16. `technical_design` (OPTIONAL, string). Description on how the system works.
-17. `external_providers` (OPTIONAL, list[string]). Name of an external provider, if relevant. There can
+16. `used_data` (OPTIONAL, string). An overview of the data that is used in the system.
+17. `technical_design` (OPTIONAL, string). Description on how the system works.
+18. `external_providers` (OPTIONAL, list[string]). Name of an external provider, if relevant. There can
 be multiple external providers.
-18. `references` (OPTIONAL, list[string]). Additional reference URI's that point information about the system
+19. `references` (OPTIONAL, list[string]). Additional reference URI's that point information about the system
 and are relevant.
 
 #### 1. Models
@@ -250,6 +258,7 @@ Date should be given in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-fo
 ### System Card
 
 ```yaml
+version: {system_card_version}                          # Optional. Example: "0.1a1"
 name: {system_name}                                     # Optional. Example: "AangifteVertrekBuitenland"
 upl: {upl_uri}                                          # Optional. Example: https://standaarden.overheid.nl/owms/terms/AangifteVertrekBuitenland
 owners:
