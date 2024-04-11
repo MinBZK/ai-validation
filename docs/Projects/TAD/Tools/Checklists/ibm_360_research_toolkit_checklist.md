@@ -1,6 +1,6 @@
 # IBM Research 360 Toolkit
 
-See the [introduction](tools.md#ibm-research-360-toolkit), same thing as verifyML this has no
+See the [introduction](../Comparison/tools.md#ibm-research-360-toolkit), same thing as verifyML this has no
 frontend baked in, but has some nice integrations with MLops tooling like Kubeflow
 Pipelines. The IBM Research 360 toolkit is actuallt a collection of three open-source
 toolkits as stated by their [Github repo](https://github.com/IBM/ai-360-toolkit-explained);

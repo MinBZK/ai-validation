@@ -1,6 +1,6 @@
 # AI Verify
 
-See the [introduction](tools.md#ai-verify)
+See the [introduction](../Comparison/tools.md#ai-verify)
 
 ## Functionality
 
