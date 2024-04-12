@@ -1,4 +1,4 @@
-# TAD Reporting standards
+# Comparison
 
 This document assesses standards that standardize the way algorithm assessments can be captured.
 
