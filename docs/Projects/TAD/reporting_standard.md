@@ -10,10 +10,10 @@ describes how information about the different phases of an algorithm's life cycl
 It contains, among other things, descriptive information combined with information about the technical
 tests and assessments applied.
 
-## Disclaimer
+!!! warning "Disclaimer"
 
-The TAD Reporting Standard is work in progress. This means that the current standard is probably suboptimal
-and will change significantly in future versions.
+    The TAD Reporting Standard is work in progress. This means that the current standard is probably suboptimal
+    and will change significantly in future versions.
 
 ## Introduction
 
