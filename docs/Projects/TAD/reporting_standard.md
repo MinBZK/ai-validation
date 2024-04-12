@@ -387,7 +387,7 @@ contents:
 
 ## Schema
 
-JSON schema will be added here.
+JSON schema will be added when we publish the first beta version.
 
 [^1]: Deviation from the HuggingFace specification is in the Licence field. HuggingFace only accepts
 dataset id's from [HuggingFace license list](https://huggingface.co/docs/hub/repositories-licenses) while we
