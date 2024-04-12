@@ -378,7 +378,7 @@ contents:
     authors:                                          # Optional. Example: "['John', 'Peter']".
       - name: {author_name}
     timestamp: {timestamp}                            # Optional. Example: 1711630721.
-````
+```
 
 ## Schema
 
