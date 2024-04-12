@@ -49,11 +49,6 @@ Another difference is that we devide our implementation into three seperate part
     single file, but for extensive cards to be split up for readability and maintainability.
     Our standard allows for the `!include` to be used anywhere.
 
-## Intended usage
-
-The reporting standard defined in this document is intented to be given as a preamble in a README, similar to
-the Hugging Face metadata.
-
 ## Specification of the standard
 
 The standard will be written in yaml. Example yaml files are given in the next section. The standard defines
