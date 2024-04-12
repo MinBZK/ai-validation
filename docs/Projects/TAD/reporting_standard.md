@@ -45,9 +45,9 @@ Another difference is that we devide our implementation into three seperate part
 !!! note "Include statements"
 
     These `model_card`s and  `assessment_card`s  can be included verbatim into a `system_card`,
-    or referenced with an `!include` statement, allowing for minimal cards to be compact and in a
-    single file, but for extensive cards to be split up for readability and maintainability.
-    Our standard allows for the `!include` to be used anywhere.
+    or referenced with an `!include` statement, allowing for minimal cards to be compact in a single
+    file. Extensive cards can be split up for readability and maintainability. Our standard allows for
+    the `!include` to be used anywhere.
 
 ## Specification of the standard
 
