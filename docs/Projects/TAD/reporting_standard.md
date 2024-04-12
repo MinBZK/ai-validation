@@ -39,7 +39,7 @@ are optional in the HuggingFace specification and are specific to the HugginFace
 Another difference is that we devide our implementation into three seperate parts.
 
 1. `system_card`, containing information about a group of ML-models which accomplish a specific task.
-2. `model_card`, containing information about a specific ML-model.
+2. `model_card`, containing information about a specific data science model.
 3. `assessment_card`, containing information about a regulatory assessment.
 
 !!! note "Include statements"
