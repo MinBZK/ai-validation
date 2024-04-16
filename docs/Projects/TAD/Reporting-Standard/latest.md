@@ -1,6 +1,4 @@
-# Reporting Standard 0.1a2
-
-**Version**: 0.1a2
+# :label: 0.1a2 (Latest)
 
 This document describes the **T**ransparency of **A**lgorithmic **D**ecision making (TAD) Reporting Standard.
 

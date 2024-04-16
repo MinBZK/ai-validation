@@ -1,4 +1,4 @@
-# Comparison
+# Comparison of Reporting Standards
 
 This document assesses standards that standardize the way algorithm assessments can be captured.
 
