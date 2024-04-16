@@ -153,7 +153,9 @@ There can be multiple models. For each model the following fields are present.
 3. `artifacts` (OPTIONAL, list). A list of artifacts
 
     1. `uri` (OPTIONAL, string) URI refers to a relevant model artifact
-    2. `type` (OPTIONAL, string) Optional type, recognized values are "onnx", to refer to an ONNX representation of the model.
+    2. `content-type` (OPTIONAL, string) Optional type, follow the [Content-Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type).
+    Recognized values are "application/onnx"", to refer to an ONNX representation of the model.
+    3. `md5-checksum` (OPTIONAL, string) Optional checksum for the content of the file.
 
 4. `parameters` (list). There can be multiple parameters. For each parameter the following fields are present.
 
@@ -315,7 +317,8 @@ model-index:
   model: {model_uri}                                    # Required. URI to a repository containing the model file.
   artifacts:
   - uri: {model_artifact_uri}                           # Optional. Example: "https://github.com/MinBZK/poc-kijkdoos-wasm-models/raw/main/logres_iris/logreg_iris.onnx"
-  - type: {model_artifact_type}                         # Optional. Example: "onnx".
+  - content-type: {model_artifact_type}                 # Optional. Example: "application/onnx".
+  - md5-checksum: {md5_checksum}                        # Optional. Example: "120EA8A25E5D487BF68B5F7096440019"
   parameters:
   - name: {parameter_name}                              # Optional. Example: "epochs".
     dtype: {parameter_dtype}                            # Optional. Example: "int".
