@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../0.1a1/">
       
       
-        <link rel="next" href="../latest/">
+        <link rel="next" href="../../Tools/Checklists/ai_assesment_tool_checklist/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>0.1a1 - AI Validation Team</title>
+        <title>0.1a2 (Latest) - AI Validation Team</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#01a1" class="md-skip">
+        <a href="#01a2-latest" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-               0.1a1
+               0.1a2 (Latest)
             
           </span>
         </div>
@@ -928,6 +928,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../0.1a1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+     0.1a1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -944,7 +965,7 @@
           
   
   <span class="md-ellipsis">
-     0.1a1
+     0.1a2 (Latest)
   </span>
   
 
@@ -955,7 +976,7 @@
         
   
   <span class="md-ellipsis">
-     0.1a1
+     0.1a2 (Latest)
   </span>
   
 
@@ -1117,31 +1138,19 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#changelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changelog
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../latest/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-     0.1a2 (Latest)
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1909,6 +1918,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#changelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changelog
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1924,7 +1942,7 @@
                   
 
   
-    <a href="https://github.com/MinBZK/ai-validation/edit/main/docs/Projects/TAD/Reporting-Standard/0.1a1.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/MinBZK/ai-validation/edit/main/docs/Projects/TAD/Reporting-Standard/latest.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1932,7 +1950,7 @@
   
 
 
-<h1 id="01a1"><img alt="🏷" class="twemoji" src="../../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f3f7.svg" title=":label:"> 0.1a1</h1>
+<h1 id="01a2-latest"><img alt="🏷" class="twemoji" src="../../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f3f7.svg" title=":label:"> 0.1a2 (Latest)</h1>
 <p>This document describes the <strong>T</strong>ransparency of <strong>A</strong>lgorithmic <strong>D</strong>ecision making (TAD) Reporting Standard.</p>
 <p>For reproducibility, governance, auditing and sharing of algorithmic systems it is essential to have a
 reporting standard so that information about an algorithmic system can be shared. This reporting standard
@@ -1986,7 +2004,7 @@ the examples in the next section.</p>
 <h3 id="system_card"><code>system_card</code></h3>
 <p>A <code>system_card</code> contains the following information.</p>
 <ol>
-<li><code>schema_version</code> (REQUIRED, string). Version of the schema used, for example "0.1a1".</li>
+<li><code>schema_version</code> (REQUIRED, string). Version of the schema used, for example "0.1a2".</li>
 <li><code>name</code> (OPTIONAL, string). Name used to describe the system.</li>
 <li><code>upl</code> (OPTIONAL, string). If this algorithm is part of a product offered by the Dutch Government,
     it should contain a URI from the <a href="https://standaarden.overheid.nl/owms/oquery/UPL-actueel.plain">Uniform Product List</a>.</li>
@@ -2090,8 +2108,15 @@ is set.</li>
 <ol>
 <li><code>name</code> (REQUIRED, string). The name of the model.</li>
 <li><code>model</code> (REQUIRED, string). A URI pointing to a repository containing the model file.</li>
-<li><code>artifacts</code> (OPTIONAL, list[string]). A list of URI's where each URI refers to a relevant model
-artifact, that cannot be captured by any other field, but are relevant to model.</li>
+<li>
+<p><code>artifacts</code> (OPTIONAL, list). A list of artifacts</p>
+<ol>
+<li><code>uri</code> (OPTIONAL, string) URI refers to a relevant model artifact</li>
+<li><code>content-type</code> (OPTIONAL, string) Optional type, follow the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type">Content-Type</a>.
+Recognized values are "application/onnx"", to refer to an ONNX representation of the model.</li>
+<li><code>md5-checksum</code> (OPTIONAL, string) Optional checksum for the content of the file.</li>
+</ol>
+</li>
 <li>
 <p><code>parameters</code> (list). There can be multiple parameters. For each parameter the following fields are present.</p>
 <ol>
@@ -2236,7 +2261,7 @@ Date should be given in <a href="https://www.iso.org/iso-8601-date-and-time-form
 <span class="nt">labels</span><span class="p">:</span><span class="w">                                                 </span><span class="c1"># Optional. Labels to store metadata about the system.</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_name</span><span class="p p-Indicator">}</span><span class="w">                                    </span><span class="c1"># Optional.</span>
 <span class="w">  </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_value</span><span class="p p-Indicator">}</span><span class="w">                                  </span><span class="c1"># Optional.</span>
-<span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_status</span><span class="p p-Indicator">}</span><span class="w">                                 </span><span class="c1"># Optional. Example &quot;production&quot;.</span>
+<span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_status</span><span class="p p-Indicator">}</span><span class="w">                                 </span><span class="c1"># Optional. Example: &quot;production&quot;.</span>
 <span class="nt">publication_category</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_publication_cat</span><span class="p p-Indicator">}</span><span class="w">          </span><span class="c1"># Optional. Example: &quot;impactfull_algorithm&quot;.</span>
 <span class="nt">begin_date</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_begin_date</span><span class="p p-Indicator">}</span><span class="w">                         </span><span class="c1"># Optional. Example: 2025-1-1.</span>
 <span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_end_date</span><span class="p p-Indicator">}</span><span class="w">                             </span><span class="c1"># Optional. Example: 2025-12-1.</span>
@@ -2280,7 +2305,9 @@ Date should be given in <a href="https://www.iso.org/iso-8601-date-and-time-form
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_id</span><span class="p p-Indicator">}</span><span class="w">                                      </span><span class="c1"># Required. Example: CatClassifier.</span>
 <span class="w">  </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_uri</span><span class="p p-Indicator">}</span><span class="w">                                    </span><span class="c1"># Required. URI to a repository containing the model file.</span>
 <span class="w">  </span><span class="nt">artifacts</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_artifact</span><span class="p p-Indicator">}</span><span class="w">                                    </span><span class="c1"># Optional. URI to relevant model artifacts, if applicable.</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uri</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_artifact_uri</span><span class="p p-Indicator">}</span><span class="w">                           </span><span class="c1"># Optional. Example: &quot;https://github.com/MinBZK/poc-kijkdoos-wasm-models/raw/main/logres_iris/logreg_iris.onnx&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">content-type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_artifact_type</span><span class="p p-Indicator">}</span><span class="w">                 </span><span class="c1"># Optional. Example: &quot;application/onnx&quot;.</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">md5-checksum</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">md5_checksum</span><span class="p p-Indicator">}</span><span class="w">                        </span><span class="c1"># Optional. Example: &quot;120EA8A25E5D487BF68B5F7096440019&quot;</span>
 <span class="w">  </span><span class="nt">parameters</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">parameter_name</span><span class="p p-Indicator">}</span><span class="w">                              </span><span class="c1"># Optional. Example: &quot;epochs&quot;.</span>
 <span class="w">    </span><span class="nt">dtype</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">parameter_dtype</span><span class="p p-Indicator">}</span><span class="w">                            </span><span class="c1"># Optional. Example: &quot;int&quot;.</span>
@@ -2344,6 +2371,11 @@ Date should be given in <a href="https://www.iso.org/iso-8601-date-and-time-form
 </code></pre></div>
 <h2 id="schema">Schema</h2>
 <p>JSON schema will be added when we publish the first beta version.</p>
+<h2 id="changelog">Changelog</h2>
+<ul>
+<li>0.1a2: introduces typed artifacts</li>
+<li>0.1a1: initial draft version of this reporting standard</li>
+</ul>
 <div class="footnote">
 <hr />
 <ol>
@@ -2419,11 +2451,6 @@ dataset id's from <a href="https://hf.co/datasets">Hugging Face datasets</a> whi
         <a href="https://github.com/anneschuth" class="md-author" title="@anneschuth">
           
           <img src="../../../../assets/external/avatars.githubusercontent.com/u/586744.fe356448.png" alt="anneschuth">
-        </a>
-      
-        <a href="https://github.com/uittenbroekrobbert" class="md-author" title="@uittenbroekrobbert">
-          
-          <img src="../../../../assets/external/avatars.githubusercontent.com/u/159022774.fe356448.jpg" alt="uittenbroekrobbert">
         </a>
       
       
