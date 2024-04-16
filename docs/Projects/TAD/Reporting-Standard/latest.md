@@ -17,7 +17,7 @@ tests and assessments applied.
 
 Inspired by [Model Cards for Model Reporting](https://arxiv.org/abs/1810.03993)
 and [Papers with Code Model Index](https://github.com/paperswithcode/model-index) this standard almost
-[^1] [^2] [^3] [^4] extends the [HuggingFace model card metadata specification](https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1)
+[^1] [^2] [^3] [^4] extends the [Hugging Face model card metadata specification](https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1)
 to allow for:
 
 1. More finegrained information on performance metrics, by extending the `metrics_field` from the Hugging
@@ -29,10 +29,10 @@ by defining an new field `measurements`.
 and [ALTAI](https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment)).
 This is achieved by defining a new field `assessments`.
 
-Following HuggingFace, this proposed standard will be written in yaml.
+Following Hugging Face, this proposed standard will be written in yaml.
 
-This standard does not contain all fields present in the HuggingFace metadata specification. The fields that
-are optional in the HuggingFace specification and are specific to the HuggingFace interface are ommited.
+This standard does not contain all fields present in the Hugging Face metadata specification. The fields that
+are optional in the Hugging Face specification and are specific to the Hugging Face interface are ommited.
 
 Another difference is that we devide our implementation into three seperate parts.
 
@@ -111,7 +111,7 @@ and are relevant.
 
 1. `models` (OPTIONAL, list[ModelCard]). A list of model cards (as defined below) or `!include`s of a yaml
 file containing a model card. This model card can for example be a model card described in the next section
-or a model card from HuggingFace. There can be multiple model cards, meaning multiple models are used.
+or a model card from Hugging Face. There can be multiple model cards, meaning multiple models are used.
 
 #### 2. Assessments
 
@@ -177,7 +177,7 @@ There can be multiple models. For each model the following fields are present.
 
     2. `datasets` (list). There can be multiple datasets [^2]. For each dataset the following fields are present.
 
-        1. `type` (REQUIRED, string). The type of the dataset, can be a dataset id from [HuggingFace datasets](https://hf.co/datasets)
+        1. `type` (REQUIRED, string). The type of the dataset, can be a dataset id from [Hugging Face datasets](https://hf.co/datasets)
         or any other link to a repository containing the dataset[^3], for example "common_voice".
         2. `name` (REQUIRED, string). Name pretty name for the dataset, for example "Common Voice (French)".
         3. `split` (OPTIONAL, string). The split of the dataset, for example "train".
@@ -186,7 +186,7 @@ There can be multiple models. For each model the following fields are present.
 
     3. `metrics` (list). There can be multiple metrics. For each metric the following fields are present.
 
-        1. `type` (REQUIRED, string). A metric-id from [HuggingFace metrics](https://hf.co//metrics)[^4], for example accuracy.
+        1. `type` (REQUIRED, string). A metric-id from [Hugging Face metrics](https://hf.co//metrics)[^4], for example accuracy.
         2. `name` (REQUIRED, string). A descriptive name of the metric. For example "false positive rate" is
         not a descriptive name, but "training false positive rate w.r.t class x" is.
         3. `dtype` (REQUIRED, string). The data type of the metric, for example `float`.
@@ -391,15 +391,15 @@ JSON schema will be added when we publish the first beta version.
 - 0.1a2: introduces typed artifacts
 - 0.1a1: initial draft version of this reporting standard
 
-[^1]: Deviation from the HuggingFace specification is in the Licence field. HuggingFace only accepts
-dataset id's from [HuggingFace license list](https://huggingface.co/docs/hub/repositories-licenses) while we
+[^1]: Deviation from the Hugging Face specification is in the Licence field. Hugging Face only accepts
+dataset id's from [Hugging Face license list](https://huggingface.co/docs/hub/repositories-licenses) while we
 accept any license from [Open Source License List](https://opensource.org/license).
 
-[^2]: Deviation from the HuggingFace specification is in the `model_index:results:dataset` field. HuggingFace only accepts
+[^2]: Deviation from the Hugging Face specification is in the `model_index:results:dataset` field. Hugging Face only accepts
 one dataset, while we accept a list of datasets.
 
-[^3]: Deviation from the HuggingFace specification is in the Dataset Type field. HuggingFace only accepts
-dataset id's from [HuggingFace datasets](https://hf.co/datasets) while we also allow for any url pointing to the dataset.
+[^3]: Deviation from the Hugging Face specification is in the Dataset Type field. Hugging Face only accepts
+dataset id's from [Hugging Face datasets](https://hf.co/datasets) while we also allow for any url pointing to the dataset.
 
 [^4]: For this extension to work relevent metrics (such as for example false positive rate) have to be added to the
-[HuggingFace metrics](https://hf.co//metrics), possibly this can be done in our organizational namespace.
+[Hugging Face metrics](https://hf.co//metrics), possibly this can be done in our organizational namespace.
