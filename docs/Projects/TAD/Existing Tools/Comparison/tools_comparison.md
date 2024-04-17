@@ -2,7 +2,7 @@
 
 [We have researched](tools.md) a few tools which we want to investigate
 further, this document is the next step in that investigation.
-We created a [checklist](index.md) to compare these tools against.
+We created a [checklist](requirements) to compare these tools against.
 The Fulfilled column will give a numerical value based on whether that
 requirement is fulfilled or not between 0 and 1. Then the actual scoring
 is the fulfilled value times the priority (the priority is translated

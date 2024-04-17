@@ -1,4 +1,4 @@
-# Research of tools for transparency of algorithmic decision making
+# Research of tools for Transparency of Algorithmic Decision making
 
 In our ongoing research on AI validation and transparency, we are seeking tools to support assessments.
 Ideal tools would combine various technical tests with checklists and questionnaires and have the ability to generate

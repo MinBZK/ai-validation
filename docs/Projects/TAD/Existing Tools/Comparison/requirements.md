@@ -1,4 +1,4 @@
-# Transparency of algorithmic decision making
+# Requirements for tools for Transparency of Algorithmic Decision making
 
 This document contains a checklist with requirements for tools we could use to help with the
 transparency of algorithmic decision making.
