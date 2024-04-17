@@ -12,7 +12,8 @@ fairness and bias tests and regulatory assessments.
 A widely used implementation for [Model Cards for Model Reporting](https://arxiv.org/abs/1810.03993) is given
 by the [Hugging Face Model Card metadata specification](https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1),
 which in turn is based on [Papers with Code Model Index](https://github.com/paperswithcode/model-index).
-This implementation does not include fields for bias and fairness tests or regulartory assessments.
+This implementation does not capture sufficient details about metrics and does not include measurements
+from technical tests on bias and fairness or regulatory assessments.
 
 ## Decision
 
