@@ -6,7 +6,7 @@ The TAD Reporting Standard proposes a standardised way of capturing information 
 
 ## Assumptions
 
-There does not exists a standard of capturing all relevant information on ML-models that also includes
+There is no existing standard of capturing all relevant information on ML-models that also includes
 fairness and bias tests and regulatory assessments.
 
 A widely used implementation for [Model Cards for Model Reporting](https://arxiv.org/abs/1810.03993) is given
