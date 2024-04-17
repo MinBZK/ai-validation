@@ -33,7 +33,7 @@ extended to allow for:
 3. Capturing regulartory assessments.
 
 The extension is not strict, meaning that there the TAD Reporting Standard is not a valid Hugging Face
-metadata specification. The reason for this is that some fields in the Hugging Face standard to too much
+metadata specification. The reason for this is that some fields in the Hugging Face standard are too much
 intertwined with the Hugging Face ecosystem and it would not be logical for us to couple our implementation
 this thighly to Hugging Face.
 
