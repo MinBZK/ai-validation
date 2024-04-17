@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../0010-container-registry/">
+        <link rel="prev" href="../0011-researcher-in-residence/">
       
       
-        <link rel="next" href="../0012-dictionary-for-spelling/">
+        <link rel="next" href="../../About/contact/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>ADR-0011 Researcher in Residence - AI Validation Team</title>
+        <title>ADR-0012 Dictionary for spelling - AI Validation Team</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adr-0011-researcher-in-residence" class="md-skip">
+        <a href="#adr-0012-dictionary-for-spelling" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ADR-0011 Researcher in Residence
+              ADR-0012 Dictionary for spelling
             
           </span>
         </div>
@@ -636,6 +636,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../0011-researcher-in-residence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ADR-0011 Researcher in Residence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -652,7 +673,7 @@
           
   
   <span class="md-ellipsis">
-    ADR-0011 Researcher in Residence
+    ADR-0012 Dictionary for spelling
   </span>
   
 
@@ -663,7 +684,7 @@
         
   
   <span class="md-ellipsis">
-    ADR-0011 Researcher in Residence
+    ADR-0012 Dictionary for spelling
   </span>
   
 
@@ -733,27 +754,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../0012-dictionary-for-spelling/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ADR-0012 Dictionary for spelling
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1749,7 +1749,7 @@
                   
 
   
-    <a href="https://github.com/MinBZK/ai-validation/edit/main/docs/ADRs/0011-researcher-in-residence.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/MinBZK/ai-validation/edit/main/docs/ADRs/0012-dictionary-for-spelling.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1757,50 +1757,22 @@
   
 
 
-<h1 id="adr-0011-researcher-in-residence">ADR-0011 Researcher in Residence</h1>
+<h1 id="adr-0012-dictionary-for-spelling">ADR-0012 Dictionary for spelling</h1>
 <h2 id="context">Context</h2>
-<p>The AI validation team works transparently. Working with public funds warrants transparency toward the public.
-Additionally, being transparent aligns with the team's mission of increasing the transparency of public organizations.
-In line with this reasoning, it is important to be open to researchers interested in the work of the AI validation team.
-Allowing researchers to conduct research within the team contributes to transparency and enables external perspectives
-and feedback to be incorporated into the team's work.</p>
+<p>We use English as language in some of our external communications, like on GitHub.
+We noticed that among different documents certain words are spelled correctly but differently,
+depending on the author or dictionary used. Also there are occasional typos which can cause
+distraction and don't meet professional standards.</p>
 <h2 id="assumptions">Assumptions</h2>
-<ul>
-<li>Having researchers in residence is a mechanism that facilitates transparency.</li>
-<li>Research enables external feedback and perspectives to be incorporated into the team's work.</li>
-<li>Having researchers in residence from other disciplines facilitates an interdisciplinary exchange of ideas in light of
-  interdisciplinary issues.</li>
-<li>Research outcomes enable knowledge exchange between the scientific community and public organizations, in the
-  Netherlands and abroad.</li>
-</ul>
+<p>Standardizing the used dictionary avoids discussion on spelling and makes documents consistent.
+Eliminating typos contributes to professional, credible and unambiguous documents.</p>
+<p>Using a dictionary in a pre-commit hook will prevent commits being made with obvious spelling issues.</p>
 <h2 id="decision">Decision</h2>
-<p>We have decided to include a researcher in residence as a member of our team.</p>
-<p>The researcher in residence takes the following form:</p>
-<ul>
-<li>They join and participate in refinement meetings and other meetings of relevance.</li>
-<li>They share their reflections and present their (interim) research findings.</li>
-<li>They are provided access to the communication channel of the team (Mattermost).</li>
-<li>They meet with a contact person bi-weekly to discuss questions and relevant progress and findings.</li>
-<li>The are independent as they are employed and financed by their respective university.</li>
-<li>The results of their research, and thus processed data, are published in an academic journal.</li>
-</ul>
-<p>The following conditions apply to the researcher in residence.</p>
-<ul>
-<li>The research is able to access and analyze documents relevant to the research (ex. Notes/minutes taken). These
-  documents are submitted to a member of the team for review prior to being processed.</li>
-<li>Any data collected and analyzed via interviews is done on the basis of informed consent.</li>
-<li>The data collected is not shared with other parties and is handled ethically by the researcher.</li>
-<li>No information, aggregation, or summary of information from the communication channel of the team (Mattermost) is
-  collected, processed, or analyzed by the researcher.</li>
-</ul>
+<p>We will use the <em>U.S. English</em> spelling dictionary.</p>
 <h2 id="risks">Risks</h2>
-<p>Risks around a potential chilling effect (team members not feeling free to express themselves) are mitigated by the
-conditions we impose.
-In light of aforementioned form and conditions above, we see no further significant risks.</p>
+<p>It may slow down committing large files.</p>
 <h2 id="consequences">Consequences</h2>
-<p>Including a researcher in residence makes it easier for them to conduct research within both the team and the wider
-organization where the AI validation team operates. This benefits the quality of the research findings and the feedback
-provided to the team and organization.</p>
+<p>Documents will all use the same dictionary for spelling and will not contain typos.</p>
 
 
 
@@ -1823,7 +1795,7 @@ provided to the team and organization.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 21, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 17, 2024</span>
   </span>
 
     
@@ -1833,7 +1805,7 @@ provided to the team and organization.</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 20, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 17, 2024</span>
   </span>
 
     
@@ -1851,14 +1823,9 @@ provided to the team and organization.</p>
     
     <nav>
       
-        <a href="https://github.com/anneschuth" class="md-author" title="@anneschuth">
+        <a href="https://github.com/uittenbroekrobbert" class="md-author" title="@uittenbroekrobbert">
           
-          <img src="../../assets/external/avatars.githubusercontent.com/u/586744.fe356448.png" alt="anneschuth">
-        </a>
-      
-        <a href="https://github.com/LucasMHrug" class="md-author" title="@LucasMHrug">
-          
-          <img src="../../assets/external/avatars.githubusercontent.com/u/161753869.fe356448.png" alt="LucasMHrug">
+          <img src="../../assets/external/avatars.githubusercontent.com/u/159022774.fe356448.jpg" alt="uittenbroekrobbert">
         </a>
       
       
