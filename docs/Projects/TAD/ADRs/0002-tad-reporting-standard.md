@@ -38,8 +38,6 @@ metadata specification. The reason for this is that some fields in the Hugging F
 intertwined with the Hugging Face ecosystem and it would not be logical for us to couple our implementation
 this thighly to Hugging Face.
 
-The standard is written in yaml.
-
 ## Risks
 
 The TAD Reporting Standard is not fully backwards compatible with the Hugging Face Model Card
