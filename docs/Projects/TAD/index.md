@@ -1,12 +1,12 @@
 # TAD
 
-TAD is the abbreviation of Transparency of Algorithmic Decision Making, the goal is to make algorithmic systems more
+TAD is the acronym for **T**ransparency of **A**lgorithmic **D**ecision making, the goal is to make algorithmic systems more
 transparent by generating standardized reports on the algorithmic system for both it's technical element as well as the
 surrounding system. For both the model and the system the lifecycle is important and this needs to be taken into
 account.
 
 The TAD project is focused on one hand building the standardized format of reporting on an algorithmic system by
-extending on the format of [Industry Standard](Reporting-Standard%2Findex.md). On the other hand the project is focused
+extending on the format of [Industry Standard](Reporting-Standard). On the other hand the project is focused
 on filling in the system- and model cards with both technical metrics & measurements of the exact model as theoretical
 assessments on the system where the specific algorithm resides. The requirements and instruments are dictated by the
 [Algoritmekader](https://minbzk.github.io/Algoritmekader/).
