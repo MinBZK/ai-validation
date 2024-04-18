@@ -2,7 +2,7 @@
 
 ## Context
 
-The TAD Reporting Standard proposes a standardised way of capturing information of ML-models and systems.
+The TAD Reporting Standard proposes a standardized way of capturing information of ML-models and systems.
 
 ## Assumptions
 
@@ -29,14 +29,14 @@ Standard, or any other model card. A System Card can refer to multiple Assessmen
 We were heavily inspired by the Hugging Face Model Card metadata specification, which we essentially
 extended to allow for:
 
-1. More finegrained information on performance metrics.
+1. More fine-grained information on performance metrics.
 2. Capturing additional measurements on fairness and bias.
-3. Capturing regulartory assessments.
+3. Capturing regulatory assessments.
 
 The extension is not strict, meaning that there the TAD Reporting Standard is not a valid Hugging Face
 metadata specification. The reason for this is that some fields in the Hugging Face standard are too much
 intertwined with the Hugging Face ecosystem and it would not be logical for us to couple our implementation
-this thighly to Hugging Face.
+this tightly to Hugging Face.
 
 ## Risks
 
@@ -47,4 +47,4 @@ a standard, we might need to revise the TAD standard.
 ## Consequences
 
 The TAD Reporting Standard allows us to capture relevant information on model performance, bias and fairness
-and regulartory assessments in a standardised way.
+and regulatory assessments in a standardized way.

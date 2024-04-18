@@ -21,7 +21,7 @@ The following assumptions are made:
 After careful consideration and evaluation of various options like GitHub, GitLab and BitBucket, we propose adopting
 GitHub as our primary coding platform. The decision is based on the following factors:
 
-**Costs**: There are currently no costs associate in using GitHub for our usecases.
+**Costs**: There are currently no costs associate in using GitHub for our use cases.
 
 **Features and Functionality**: GitHub offers a comprehensive set of features essential for modern software development
 and collaboration with external teams, including version control, code review, issue tracking, continuous integration,

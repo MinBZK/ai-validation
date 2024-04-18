@@ -29,8 +29,8 @@ the security status of an image.
 * By configuration, tags can be made immutable, to prevent image tags from being overwritten.
 * The registry keeps logs of events regarding containers.
 * The registry needs to have a Role Based Access model.
-* No additional signup is required to pull the image
-* We can use a kubernetes authorisation token to pull images.
+* No additional sign up is required to pull the image
+* We can use a kubernetes authorization token to pull images.
 * The registry has support for scheduled deletion of images by criteria.
 
 ## Decision

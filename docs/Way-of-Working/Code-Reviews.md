@@ -29,7 +29,7 @@ of an emoji a reviewer will indicate they are looking at the PR.
 
 If the reviewer has suggestions or comments the PR creator can fix those or add comments to the suggestions. When the
 creator of the PR thinks he is done with the feedback he must re-request a review from the person that did the review.
-The reviewer must then look at the changes and approve or add more comments. This process continues untill the reviewer
+The reviewer must then look at the changes and approve or add more comments. This process continues until the reviewer
 agrees that all is correct and approves the PR.
 
 Once the review is approved the reviewer checks if the branch is in sync with the main branch before merging. If not,

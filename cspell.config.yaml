@@ -1,0 +1,6 @@
+dictionaryDefinitions:
+  - name: AIValidation
+    path: aivalidation_dictionary.txt
+    addWords: true
+dictionaries:
+  - AIValidation
