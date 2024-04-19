@@ -1153,7 +1153,7 @@
         
   
   <span class="md-ellipsis">
-    Holisticai
+    Holistic AI
   </span>
   
 
@@ -2125,7 +2125,7 @@
 
 
 <h1 id="01a3-latest"><img alt="🏷" class="twemoji" src="../../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f3f7.svg" title=":label:"> 0.1a3 (Latest)</h1>
-<p>This document describes the <strong>T</strong>ransparency of <strong>A</strong>lgorithmic <strong>D</strong>ecision making (TAD) Reporting Standard.</p>
+<p>This document describes the Transparency of Algorithmic Decision making (TAD) Reporting Standard.</p>
 <p>For reproducibility, governance, auditing and sharing of algorithmic systems it is essential to have a
 reporting standard so that information about an algorithmic system can be shared. This reporting standard
 describes how information about the different phases of an algorithm's life cycle can be reported.
@@ -2142,7 +2142,7 @@ and <a href="https://github.com/paperswithcode/model-index">Papers with Code Mod
 <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> <sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> extends the <a href="https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1">Hugging Face model card metadata specification</a>
 to allow for:</p>
 <ol>
-<li>More finegrained information on performance metrics, by extending the <code>metrics_field</code> from the Hugging
+<li>More fine-grained information on performance metrics, by extending the <code>metrics_field</code> from the Hugging
 Face metadata specification.</li>
 <li>Capturing additional <em>measurements</em> on fairness and bias, which can be partitioned into bar plot like
 measurements (such as mean absolute SHAP values) and graph plot like measurements (such as partial dependence). This is achieved
@@ -2153,8 +2153,8 @@ This is achieved by defining a new field <code>assessments</code>.</li>
 </ol>
 <p>Following Hugging Face, this proposed standard will be written in yaml.</p>
 <p>This standard does not contain all fields present in the Hugging Face metadata specification. The fields that
-are optional in the Hugging Face specification and are specific to the Hugging Face interface are ommited.</p>
-<p>Another difference is that we devide our implementation into three seperate parts.</p>
+are optional in the Hugging Face specification and are specific to the Hugging Face interface are omitted.</p>
+<p>Another difference is that we divide our implementation into three separate parts.</p>
 <ol>
 <li><code>system_card</code>, containing information about a group of ML-models which accomplish a specific task.</li>
 <li><code>model_card</code>, containing information about a specific data science model.</li>
@@ -2170,10 +2170,10 @@ the <code>!include</code> to be used anywhere.</p>
 <h2 id="specification-of-the-standard">Specification of the standard</h2>
 <p>The standard will be written in yaml. Example yaml files are given in the next section. The standard defines
 three cards: a <code>system_card</code>, a <code>model_card</code> and an <code>assessment_card</code>. A <code>system_card</code> contains information
-about an algorithmic system. It can have mutiple models and each of these models should have a <code>model_card</code>.
+about an algorithmic system. It can have multiple models and each of these models should have a <code>model_card</code>.
 Regulatory assessments can be processed in an <code>assessment_card</code>. Note that <code>model_card</code>'s and
-<code>assessment_card</code>'s can be included directly into the <code>system_card</code> or can be included as seperate yaml
-files with help of a yaml-include mechanism. For clarity the latter is preffered and is also used in
+<code>assessment_card</code>'s can be included directly into the <code>system_card</code> or can be included as separate yaml
+files with help of a yaml-include mechanism. For clarity the latter is preferred and is also used in
 the examples in the next section.</p>
 <h3 id="system_card"><code>system_card</code></h3>
 <p>A <code>system_card</code> contains the following information.</p>
@@ -2188,7 +2188,7 @@ the examples in the next section.</p>
 <li><code>oin</code> (OPTIONAL, string). If applicable the <a href="https://oinregister.logius.nl/oin-register">Organisatie-identificatienummer (OIN)</a>.</li>
 <li><code>organization</code> (OPTIONAL, string). Name of the organization that owns the model. If <code>ion</code> is
 NOT provided this field is REQUIRED.</li>
-<li><code>name</code> (OPTIONAL, string). Name of a contact person within the organisation.</li>
+<li><code>name</code> (OPTIONAL, string). Name of a contact person within the organization.</li>
 <li><code>email</code> (OPTIONAL, string). Email address of the contact person or organization.</li>
 <li><code>role</code> (OPTIONAL, string). Role of the contact person. This field should only be set when the <code>name</code> field
 is set.</li>
@@ -2242,7 +2242,7 @@ or a model card from Hugging Face. There can be multiple model cards, meaning mu
 </ol>
 <h4 id="2-assessments">2. Assessments</h4>
 <ol>
-<li><code>assessments</code> (OPTIONAL, list[AssesmentCard]). A list of assessment cards (as defined below) or <code>!include</code>s of a yaml
+<li><code>assessments</code> (OPTIONAL, list[AssessmentCard]). A list of assessment cards (as defined below) or <code>!include</code>s of a yaml
 file containing a assessment card. This assessment card is an assessment card described in the next section.
 There can be multiple assessment cards, meaning multiple assessment were performed.</li>
 </ol>
@@ -2270,7 +2270,7 @@ contents.</li>
 <li><code>oin</code> (OPTIONAL, string). If applicable the <a href="https://oinregister.logius.nl/oin-register">Organisatie-identificatienummer (OIN)</a>.</li>
 <li><code>organization</code> (OPTIONAL, string). Name of the organization that owns the model. If <code>ion</code> is
 NOT provided this field is REQUIRED.</li>
-<li><code>name</code> (OPTIONAL, string). Name of a contact person within the organisation.</li>
+<li><code>name</code> (OPTIONAL, string). Name of a contact person within the organization.</li>
 <li><code>email</code> (OPTIONAL, string). Email address of the contact person or organization.</li>
 <li><code>role</code> (OPTIONAL, string). Role of the contact person. This field should only be set when the <code>name</code> field
 is set.</li>
@@ -2315,8 +2315,8 @@ is REQUIRED.</li>
 <li>
 <p><code>task</code> (OPTIONAL, list).</p>
 <ol>
-<li><code>task_type</code> (REQUIRED, string). The task of the model, for example "object-classifcation".</li>
-<li><code>task_name</code> (OPTIONAL, string). A pretty name fo the model taks, for example "Object Classification".</li>
+<li><code>task_type</code> (REQUIRED, string). The task of the model, for example "object-classification".</li>
+<li><code>task_name</code> (OPTIONAL, string). A pretty name for the model tasks, for example "Object Classification".</li>
 </ol>
 </li>
 <li>
@@ -2360,12 +2360,12 @@ For example: "male".</li>
 <p><code>measurements</code>.</p>
 <ol>
 <li>
-<p><code>bar_plots</code> (list). The purpose of this field is to capute bar plot like measurements, for example SHAP values.
+<p><code>bar_plots</code> (list). The purpose of this field is to capture bar plot like measurements, for example SHAP values.
 There can be multiple bar plots. For each bar plot the following fields are present.</p>
 <ol>
 <li><code>type</code> (REQUIRED, string). The type of bar plot, for example "SHAP".</li>
 <li><code>name</code> (OPTIONAL, string). A pretty name for the plot, for example "Mean Absolute SHAP Values".</li>
-<li><code>results</code> (list). The contents of the bar plot. A result represents a bar. There can be mutiple results.
+<li><code>results</code> (list). The contents of the bar plot. A result represents a bar. There can be multiple results.
 For each result the following fields are present.<ol>
 <li><code>name</code> (REQUIRED, string). The name of bar.</li>
 <li><code>value</code> (REQUIRED, float). The value of the corresponding bar.</li>
@@ -2379,13 +2379,13 @@ plots.
 There can be multiple graph plots. For each graph plot the following fields are present.</p>
 <ol>
 <li><code>type</code> (REQUIRED, string). The type of the graph plot, for example "partial_dependence".</li>
-<li><code>name</code> (OPTONAL, string). A pretty name of the graph, for example "Partial Dependence Plot".</li>
+<li><code>name</code> (OPTIONAL, string). A pretty name of the graph, for example "Partial Dependence Plot".</li>
 <li><code>results</code> (list). Results contains the graph plot data. Each graph can depend on a specific output
 class and feature. There can be multiple results. For each result the following fields are present.<ol>
 <li><code>class</code> (OPTIONAL, string/int/float/bool). The output class name that the graph corresponds to.
 This field is not always present.</li>
 <li><code>feature</code> (REQUIRED, string). The feature the graph corresponds to. This is required, since all
-relevant graphs are dependend on features.</li>
+relevant graphs are dependent on features.</li>
 <li><code>data</code> (list)<ol>
 <li><code>x_value</code> (REQUIRED, float). The $x$-value of the graph.</li>
 <li><code>y_value</code> (REQUIRED, float). The $y$-value of the graph.</li>
@@ -2438,7 +2438,7 @@ format, i.e. <code>2024-04-16T16:48:14Z</code>.</li>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_name</span><span class="p p-Indicator">}</span><span class="w">                                    </span><span class="c1"># Optional.</span>
 <span class="w">  </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_value</span><span class="p p-Indicator">}</span><span class="w">                                  </span><span class="c1"># Optional.</span>
 <span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_status</span><span class="p p-Indicator">}</span><span class="w">                                 </span><span class="c1"># Optional. Example: &quot;production&quot;.</span>
-<span class="nt">publication_category</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_publication_cat</span><span class="p p-Indicator">}</span><span class="w">          </span><span class="c1"># Optional. Example: &quot;impactfull_algorithm&quot;.</span>
+<span class="nt">publication_category</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_publication_cat</span><span class="p p-Indicator">}</span><span class="w">          </span><span class="c1"># Optional. Example: &quot;impactful_algorithm&quot;.</span>
 <span class="nt">begin_date</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_begin_date</span><span class="p p-Indicator">}</span><span class="w">                         </span><span class="c1"># Optional. Example: 2025-1-1.</span>
 <span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_end_date</span><span class="p p-Indicator">}</span><span class="w">                             </span><span class="c1"># Optional. Example: 2025-12-1.</span>
 <span class="nt">goal_and_impact</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_goal_and_impact</span><span class="p p-Indicator">}</span><span class="w">               </span><span class="c1"># Optional. Goal and impact of the system.</span>
@@ -2464,8 +2464,8 @@ format, i.e. <code>2024-04-16T16:48:14Z</code>.</li>
 <h3 id="model-card">Model Card</h3>
 <div class="highlight"><pre><span></span><code><span class="nt">language</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">lang_0</span><span class="p p-Indicator">}</span><span class="w">                                            </span><span class="c1"># Optional. Example nl.</span>
-<span class="nt">license</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">licence</span><span class="p p-Indicator">}</span><span class="w">                                      </span><span class="c1"># Required. Example: Apache-2.0 or any license SPDX ID from https://opensource.org/license or &quot;other&quot;.</span>
-<span class="nt">license_name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">licence_name</span><span class="p p-Indicator">}</span><span class="w">                            </span><span class="c1"># Optional if license != other, Required otherwise. Example: &#39;my-license-1.0&#39;</span>
+<span class="nt">license</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">license</span><span class="p p-Indicator">}</span><span class="w">                                      </span><span class="c1"># Required. Example: Apache-2.0 or any license SPDX ID from https://opensource.org/license or &quot;other&quot;.</span>
+<span class="nt">license_name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">license_name</span><span class="p p-Indicator">}</span><span class="w">                            </span><span class="c1"># Optional if license != other, Required otherwise. Example: &#39;my-license-1.0&#39;</span>
 <span class="nt">license_link</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">license_link</span><span class="p p-Indicator">}</span><span class="w">                            </span><span class="c1"># Optional if license != other, Required otherwise. Specify &quot;LICENSE&quot; or &quot;LICENSE.md&quot; to link to a file of that name inside the repo, or a URL to a remote file.</span>
 <span class="nt">tags</span><span class="p">:</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">tag_0</span><span class="p p-Indicator">}</span><span class="w">                                               </span><span class="c1"># Optional. Example: audio</span>
@@ -2556,7 +2556,7 @@ format, i.e. <code>2024-04-16T16:48:14Z</code>.</li>
 <hr />
 <ol>
 <li id="fn:1">
-<p>Deviation from the Hugging Face specification is in the Licence field. Hugging Face only accepts
+<p>Deviation from the Hugging Face specification is in the License field. Hugging Face only accepts
 dataset id's from <a href="https://huggingface.co/docs/hub/repositories-licenses">Hugging Face license list</a> while we
 accept any license from <a href="https://opensource.org/license">Open Source License List</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
@@ -2569,7 +2569,7 @@ one dataset, while we accept a list of datasets.&#160;<a class="footnote-backref
 dataset id's from <a href="https://hf.co/datasets">Hugging Face datasets</a> while we also allow for any url pointing to the dataset.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
-<p>For this extension to work relevent metrics (such as for example false positive rate) have to be added to the
+<p>For this extension to work relevant metrics (such as for example false positive rate) have to be added to the
 <a href="https://hf.co//metrics">Hugging Face metrics</a>, possibly this can be done in our organizational namespace.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 </ol>
@@ -2624,6 +2624,11 @@ dataset id's from <a href="https://hf.co/datasets">Hugging Face datasets</a> whi
     
     <nav>
       
+        <a href="https://github.com/uittenbroekrobbert" class="md-author" title="@uittenbroekrobbert">
+          
+          <img src="../../../../assets/external/avatars.githubusercontent.com/u/159022774.fe356448.jpg" alt="uittenbroekrobbert">
+        </a>
+      
         <a href="https://github.com/ChristopherSpelt" class="md-author" title="@ChristopherSpelt">
           
           <img src="../../../../assets/external/avatars.githubusercontent.com/u/75083219.fe356448.jpg" alt="ChristopherSpelt">
@@ -2669,7 +2674,7 @@ dataset id's from <a href="https://hf.co/datasets">Hugging Face datasets</a> whi
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      European Union Public Licence v. 1.2
+      European Union Public License v. 1.2
     </div>
   
   
