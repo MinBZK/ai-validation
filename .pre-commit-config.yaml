@@ -18,6 +18,26 @@ repos:
     hooks:
       - id: markdownlint
 
+  - repo: https://github.com/streetsidesoftware/cspell-cli
+    rev: v8.7.0
+    hooks:
+      - id: cspell
+        args: [--no-must-find-files,
+               --quiet,
+               --show-suggestions,
+               --locale=en-US,
+               --exclude=.pre-commit-config.yaml,
+               --exclude=requirements.txt,
+               --exclude=.gitignore,
+               --exclude=mkdocs.yml,
+               --exclude=launch.json,
+               --exclude=dependabot.yml,
+               --exclude=security.txt,
+               --exclude=devcontainer.json,
+               --exclude=cspell.config.yaml,
+               --exclude=aivalidation_dictionary.txt
+        ]
+
 ci:
   autofix_prs: false
   autofix_commit_msg: 'Auto fix pre-commit.com hooks'

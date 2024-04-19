@@ -31,7 +31,7 @@ tools mentioned in the next section.
 There exist tools to (semi)-automatically generate models cards:
 
 1. [Model Card Generator by US Sensus Bureau](https://bias.xd.gov/resources/model-card-generator/). Basic UI to create
-model cards and export to markdown, also hase a command line tool.
+model cards and export to markdown, also has a command line tool.
 2. [Model Card Toolkit by Google](https://blog.research.google/2020/07/introducing-model-card-toolkit-for.html).
 Automation only comes from integration with [TensorFlowExtended](https://www.tensorflow.org/tfx) and
 [ML Metadata](https://www.tensorflow.org/tfx/guide/mlmd).
@@ -48,7 +48,7 @@ markdown.
 [A landscape analysis of ML documentation tools](https://huggingface.co/docs/hub/en/model-card-landscape-analysis)
 has been performed by Hugging Face and provides a good overview of the current landscape.
 
-Another interesting standard is the Algorithmic Transparency Recording Standard of the United Kingdom Goverment,
+Another interesting standard is the Algorithmic Transparency Recording Standard of the United Kingdom Government,
 which can be found [here](https://www.gov.uk/government/publications/algorithmic-transparency-template).
 
 ## Proposal

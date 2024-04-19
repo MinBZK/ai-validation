@@ -14,7 +14,7 @@ Contributing can be done by clicking "edit" top right and by making a pull reque
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     ```
 
-- [Rectange](https://rectangleapp.com/)
+- [Rectangle](https://rectangleapp.com/)
 
     ```shell
     brew install --cask rectangle

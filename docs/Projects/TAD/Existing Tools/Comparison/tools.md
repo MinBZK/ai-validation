@@ -9,7 +9,7 @@ This document contains a list of tools we have found and may want to investigate
 ## AI Verify
 
 AI Verify is an AI governance testing framework and software toolkit that validates the performance of AI systems against
-a set of  internationally recognised principles through standardised tests, and is consistent with international AI governance
+a set of  internationally recognized principles through standardized tests, and is consistent with international AI governance
 frameworks such as those from European Union, OECD and Singapore.
 
 Links:
@@ -35,7 +35,7 @@ Links: [VerifyML](https://www.verifyml.com/),
 ### IBM Research 360 Toolkit
 
 **What is it?** Open source Python libraries that supports interpretability and explainability of
-datasets and machine learning models. Most relevant tookits are the AI Fairness 360 and AI Explainability 360.
+datasets and machine learning models. Most relevant toolkits are the AI Fairness 360 and AI Explainability 360.
 
 **Why interesting?** Seems to encompass extensive fairness and explainability tests. Codebase seems
 to be active.
@@ -45,7 +45,7 @@ to be active.
 Links: [AI Fairness 360 Github](https://github.com/Trusted-AI/AIF360),
 [AI Explainability 360 Github](https://github.com/Trusted-AI/AIX360?tab=readme-ov-file).
 
-### Holisticai
+### Holistic AI
 
 **What is it?** Open source tool to assess and improve the trustworthiness of AI systems. Offers
 tools to measure and mitigate bias across numerous tasks. Will be extended to include tools for
@@ -58,11 +58,11 @@ does not seem to include any report generating code, but mainly technical tests.
 is an example in which bias is measured in a classification model.
 
 **Remarks** Website seems to suggest the possibility to generate reports, but this is not directly
-reflected in the codebase. Possibly reports are only available with some sort of licenced product?
+reflected in the codebase. Possibly reports are only available with some sort of licensed product?
 
 Links:
-[Holisticai homepage](https://www.holisticai.com/),
-[Holisticai Github](https://github.com/holistic-ai/holisticai).
+[Holistic AI Homepage](https://www.holisticai.com/),
+[Holistic AI Github](https://github.com/holistic-ai/holisticai).
 
 ### AI Assessment Tool
 
@@ -82,7 +82,7 @@ Links:
 ## Interesting to mention
 
 * [What-if](https://github.com/pair-code/what-if-tool). Provides interface for expanding understanding
-of a black-box classifaction or regression ML model. Can be accessed through TensorBoard or as an
+of a black-box classification or regression ML model. Can be accessed through TensorBoard or as an
 extension in a Jupyter or Colab notebook. Does not seem to be an active codebase.
 
 * [Aequitas](https://github.com/dssg/aequitas). Open source bias auditing and Fair ML toolkit.
@@ -98,10 +98,10 @@ multiclass classifiers. Part of TensorFlow.
 k
 * [Fairlearn](https://github.com/fairlearn/fairlearn). Open source Python package that empowers
 developers of AI systems to assess their system's fairness and mitigate any observed unfairness
-issuess.
+issues.
 
-* [Dalex](https://dalex.drwhy.ai/). The DALEX package xrays any model and helps to explore and
-explain its behaviour, helps to understand how complex models are working. The main function
+* [Dalex](https://dalex.drwhy.ai/). The DALEX package x-rays any model and helps to explore and
+explain its behavior, helps to understand how complex models are working. The main function
 explain() creates a wrapper around a predictive model. Wrapped models may then be explored and
 compared with a collection of local and global explainers. Recent developments from the area of
 Interpretable Machine Learning/eXplainable Artificial Intelligence.
@@ -122,7 +122,7 @@ scale, and govern AI safely and effectively. Does not seem to be open source.
 
 Paper by TNO about the FATE system. Acronym stands for "FAir, Transparent and Explainable Decision Making."
 
-Tools mentioned include some of the above: Aequitas, AI Fairness 360, Dalex, Fairlean,
+Tools mentioned include some of the above: Aequitas, AI Fairness 360, Dalex, Fairlearn,
 Responsibly, and What-If-Tool
 
 Links:

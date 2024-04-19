@@ -1,6 +1,6 @@
 # :label: 0.1a3 (Latest)
 
-This document describes the **T**ransparency of **A**lgorithmic **D**ecision making (TAD) Reporting Standard.
+This document describes the Transparency of Algorithmic Decision making (TAD) Reporting Standard.
 
 For reproducibility, governance, auditing and sharing of algorithmic systems it is essential to have a
 reporting standard so that information about an algorithmic system can be shared. This reporting standard
@@ -20,7 +20,7 @@ and [Papers with Code Model Index](https://github.com/paperswithcode/model-index
 [^1] [^2] [^3] [^4] extends the [Hugging Face model card metadata specification](https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1)
 to allow for:
 
-1. More finegrained information on performance metrics, by extending the `metrics_field` from the Hugging
+1. More fine-grained information on performance metrics, by extending the `metrics_field` from the Hugging
 Face metadata specification.
 2. Capturing additional *measurements* on fairness and bias, which can be partitioned into bar plot like
 measurements (such as mean absolute SHAP values) and graph plot like measurements (such as partial dependence). This is achieved
@@ -32,9 +32,9 @@ This is achieved by defining a new field `assessments`.
 Following Hugging Face, this proposed standard will be written in yaml.
 
 This standard does not contain all fields present in the Hugging Face metadata specification. The fields that
-are optional in the Hugging Face specification and are specific to the Hugging Face interface are ommited.
+are optional in the Hugging Face specification and are specific to the Hugging Face interface are omitted.
 
-Another difference is that we devide our implementation into three seperate parts.
+Another difference is that we divide our implementation into three separate parts.
 
 1. `system_card`, containing information about a group of ML-models which accomplish a specific task.
 2. `model_card`, containing information about a specific data science model.
@@ -51,10 +51,10 @@ Another difference is that we devide our implementation into three seperate part
 
 The standard will be written in yaml. Example yaml files are given in the next section. The standard defines
 three cards: a `system_card`, a `model_card` and an `assessment_card`. A `system_card` contains information
-about an algorithmic system. It can have mutiple models and each of these models should have a `model_card`.
+about an algorithmic system. It can have multiple models and each of these models should have a `model_card`.
 Regulatory assessments can be processed in an `assessment_card`. Note that `model_card`'s and
-`assessment_card`'s can be included directly into the `system_card` or can be included as seperate yaml
-files with help of a yaml-include mechanism. For clarity the latter is preffered and is also used in
+`assessment_card`'s can be included directly into the `system_card` or can be included as separate yaml
+files with help of a yaml-include mechanism. For clarity the latter is preferred and is also used in
 the examples in the next section.
 
 ### `system_card`
@@ -70,7 +70,7 @@ A `system_card` contains the following information.
     1. `oin` (OPTIONAL, string). If applicable the [Organisatie-identificatienummer (OIN)](https://oinregister.logius.nl/oin-register).
     2. `organization` (OPTIONAL, string). Name of the organization that owns the model. If `ion` is
     NOT provided this field is REQUIRED.
-    3. `name` (OPTIONAL, string). Name of a contact person within the organisation.
+    3. `name` (OPTIONAL, string). Name of a contact person within the organization.
     4. `email` (OPTIONAL, string). Email address of the contact person or organization.
     5. `role` (OPTIONAL, string). Role of the contact person. This field should only be set when the `name` field
     is set.
@@ -115,7 +115,7 @@ or a model card from Hugging Face. There can be multiple model cards, meaning mu
 
 #### 2. Assessments
 
-1. `assessments` (OPTIONAL, list[AssesmentCard]). A list of assessment cards (as defined below) or `!include`s of a yaml
+1. `assessments` (OPTIONAL, list[AssessmentCard]). A list of assessment cards (as defined below) or `!include`s of a yaml
 file containing a assessment card. This assessment card is an assessment card described in the next section.
 There can be multiple assessment cards, meaning multiple assessment were performed.
 
@@ -139,7 +139,7 @@ two fields will be REQUIRED.
     1. `oin` (OPTIONAL, string). If applicable the [Organisatie-identificatienummer (OIN)](https://oinregister.logius.nl/oin-register).
     2. `organization` (OPTIONAL, string). Name of the organization that owns the model. If `ion` is
     NOT provided this field is REQUIRED.
-    3. `name` (OPTIONAL, string). Name of a contact person within the organisation.
+    3. `name` (OPTIONAL, string). Name of a contact person within the organization.
     4. `email` (OPTIONAL, string). Email address of the contact person or organization.
     5. `role` (OPTIONAL, string). Role of the contact person. This field should only be set when the `name` field
     is set.
@@ -174,8 +174,8 @@ There can be multiple models. For each model the following fields are present.
 
     1. `task` (OPTIONAL, list).
 
-        1. `task_type` (REQUIRED, string). The task of the model, for example "object-classifcation".
-        2. `task_name` (OPTIONAL, string). A pretty name fo the model taks, for example "Object Classification".
+        1. `task_type` (REQUIRED, string). The task of the model, for example "object-classification".
+        2. `task_name` (OPTIONAL, string). A pretty name for the model tasks, for example "Object Classification".
 
     2. `datasets` (list). There can be multiple datasets [^2]. For each dataset the following fields are present.
 
@@ -209,12 +209,12 @@ There can be multiple models. For each model the following fields are present.
 
     4. `measurements`.
 
-        1. `bar_plots` (list). The purpose of this field is to capute bar plot like measurements, for example SHAP values.
+        1. `bar_plots` (list). The purpose of this field is to capture bar plot like measurements, for example SHAP values.
         There can be multiple bar plots. For each bar plot the following fields are present.
 
             1. `type` (REQUIRED, string). The type of bar plot, for example "SHAP".
             2. `name` (OPTIONAL, string). A pretty name for the plot, for example "Mean Absolute SHAP Values".
-            3. `results` (list). The contents of the bar plot. A result represents a bar. There can be mutiple results.
+            3. `results` (list). The contents of the bar plot. A result represents a bar. There can be multiple results.
             For each result the following fields are present.
                 1. `name` (REQUIRED, string). The name of bar.
                 2. `value` (REQUIRED, float). The value of the corresponding bar.
@@ -224,13 +224,13 @@ There can be multiple models. For each model the following fields are present.
         There can be multiple graph plots. For each graph plot the following fields are present.
 
             1. `type` (REQUIRED, string). The type of the graph plot, for example "partial_dependence".
-            2. `name` (OPTONAL, string). A pretty name of the graph, for example "Partial Dependence Plot".
+            2. `name` (OPTIONAL, string). A pretty name of the graph, for example "Partial Dependence Plot".
             3. `results` (list). Results contains the graph plot data. Each graph can depend on a specific output
             class and feature. There can be multiple results. For each result the following fields are present.
                 1. `class` (OPTIONAL, string/int/float/bool). The output class name that the graph corresponds to.
                 This field is not always present.
                 2. `feature` (REQUIRED, string). The feature the graph corresponds to. This is required, since all
-                relevant graphs are dependend on features.
+                relevant graphs are dependent on features.
                 3. `data` (list)
                     1. `x_value` (REQUIRED, float). The $x$-value of the graph.
                     2. `y_value` (REQUIRED, float). The $y$-value of the graph.
@@ -272,7 +272,7 @@ labels:                                                 # Optional. Labels to st
 - name: {label_name}                                    # Optional.
   value: {label_value}                                  # Optional.
 status: {system_status}                                 # Optional. Example: "production".
-publication_category: {system_publication_cat}          # Optional. Example: "impactfull_algorithm".
+publication_category: {system_publication_cat}          # Optional. Example: "impactful_algorithm".
 begin_date: {system_begin_date}                         # Optional. Example: 2025-1-1.
 end_date: {system_end_date}                             # Optional. Example: 2025-12-1.
 goal_and_impact: {system_goal_and_impact}               # Optional. Goal and impact of the system.
@@ -301,8 +301,8 @@ assessments:
 ```yaml
 language:
   - {lang_0}                                            # Optional. Example nl.
-license: {licence}                                      # Required. Example: Apache-2.0 or any license SPDX ID from https://opensource.org/license or "other".
-license_name: {licence_name}                            # Optional if license != other, Required otherwise. Example: 'my-license-1.0'
+license: {license}                                      # Required. Example: Apache-2.0 or any license SPDX ID from https://opensource.org/license or "other".
+license_name: {license_name}                            # Optional if license != other, Required otherwise. Example: 'my-license-1.0'
 license_link: {license_link}                            # Optional if license != other, Required otherwise. Specify "LICENSE" or "LICENSE.md" to link to a file of that name inside the repo, or a URL to a remote file.
 tags:
 - {tag_0}                                               # Optional. Example: audio
@@ -396,7 +396,7 @@ JSON schema will be added when we publish the first beta version.
 - 0.1a2: introduces typed artifacts
 - 0.1a1: initial draft version of this reporting standard
 
-[^1]: Deviation from the Hugging Face specification is in the Licence field. Hugging Face only accepts
+[^1]: Deviation from the Hugging Face specification is in the License field. Hugging Face only accepts
 dataset id's from [Hugging Face license list](https://huggingface.co/docs/hub/repositories-licenses) while we
 accept any license from [Open Source License List](https://opensource.org/license).
 
@@ -406,5 +406,5 @@ one dataset, while we accept a list of datasets.
 [^3]: Deviation from the Hugging Face specification is in the Dataset Type field. Hugging Face only accepts
 dataset id's from [Hugging Face datasets](https://hf.co/datasets) while we also allow for any url pointing to the dataset.
 
-[^4]: For this extension to work relevent metrics (such as for example false positive rate) have to be added to the
+[^4]: For this extension to work relevant metrics (such as for example false positive rate) have to be added to the
 [Hugging Face metrics](https://hf.co//metrics), possibly this can be done in our organizational namespace.

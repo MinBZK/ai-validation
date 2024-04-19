@@ -10,21 +10,21 @@ to numerical values in the following way: {M:4, S:3, C:2, W:-1}).
 
 ## Summary of the comparison
 
-| Requirement            | [AIVerify](../Checklists/aiverify_checklist.md) | [VerifyML](../Checklists/verifyml_checklist.md)  | [IBM 360 Research Toolkit](../Checklists/ibm_360_research_toolkit_checklist.md)  | [Holisticai](../Checklists/holisticai_checklist.md) | [AI Assessment Tool](ai_assessment_tool_checklist.md) |
-|:-----------------------|:----------------------------------|------------------------------------|--------------------------------------------------------------------|---------------------------------------|-------------------------------------------------------|
-| Functionality          | 36                                | 42                                 | 20                                                                 | 17                                    | 22.85                                                 |
-| Reliability            | 13                                | 4                                  | 16                                                                 | 16                                    | 15.4                                                  |
-| Usability              | 9.4                               | 0                                  | 0                                                                  | 0                                     | 13                                                    |
-| Help & Documentation   | 2.8                               | 1.5                                | 6.4                                                                | 1.6                                   | 0.55                                                  |
-| Performance Efficiency | 7.5                               | 11                                 | 11                                                                 | 11                                    | 11                                                    |
-| Maintainability        | 15.8                              | 24.5                               | 29                                                                 | 23.5                                  | 25.6                                                  |
-| Security               | 8.3                               | 2                                  | 2                                                                  | 2                                     | 7.5                                                   |
-| Compatibility          | 12.5                              | 14                                 | 14                                                                 | 10                                    | 11                                                    |
-| Accessibility          | 0                                 | 0                                  | 0                                                                  | 0                                     | 0.3                                                   |
-| Portability            | 10.5                              | 4.5                                | 5.1                                                                | 7.5                                   | 11.4                                                  |
-| Deployment             | 1.5                               | 0.6                                | 1.2                                                                | 3.6                                   | 3                                                     |
-| Legal & Compliance     | 19                                | 16                                 | 16                                                                 | 16                                    | 19                                                    |
-| **Total**              | **136.3**                         | **120.1**                          | **120.7**                                                          | **108.2**                             | **140.6**                                             |
+| Requirement            | [AIVerify](../Checklists/aiverify_checklist.md) | [VerifyML](../Checklists/verifyml_checklist.md) | [IBM 360 Research Toolkit](../Checklists/ibm_360_research_toolkit_checklist.md) | [Holistic AI](../Checklists/holisticai_checklist.md) | [AI Assessment Tool](ai_assessment_tool_checklist.md) |
+|:-----------------------|:------------------------------------------------|-------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------|-------------------------------------------------------|
+| Functionality          | 36                                              | 42                                              | 20                                                                              | 17                                                   | 22.85                                                 |
+| Reliability            | 13                                              | 4                                               | 16                                                                              | 16                                                   | 15.4                                                  |
+| Usability              | 9.4                                             | 0                                               | 0                                                                               | 0                                                    | 13                                                    |
+| Help & Documentation   | 2.8                                             | 1.5                                             | 6.4                                                                             | 1.6                                                  | 0.55                                                  |
+| Performance Efficiency | 7.5                                             | 11                                              | 11                                                                              | 11                                                   | 11                                                    |
+| Maintainability        | 15.8                                            | 24.5                                            | 29                                                                              | 23.5                                                 | 25.6                                                  |
+| Security               | 8.3                                             | 2                                               | 2                                                                               | 2                                                    | 7.5                                                   |
+| Compatibility          | 12.5                                            | 14                                              | 14                                                                              | 10                                                   | 11                                                    |
+| Accessibility          | 0                                               | 0                                               | 0                                                                               | 0                                                    | 0.3                                                   |
+| Portability            | 10.5                                            | 4.5                                             | 5.1                                                                             | 7.5                                                  | 11.4                                                  |
+| Deployment             | 1.5                                             | 0.6                                             | 1.2                                                                             | 3.6                                                  | 3                                                     |
+| Legal & Compliance     | 19                                              | 16                                              | 16                                                                              | 16                                                   | 19                                                    |
+| **Total**              | **136.3**                                       | **120.1**                                       | **120.7**                                                                       | **108.2**                                            | **140.6**                                             |
 
 ## Notable differences between the tools
 
@@ -52,12 +52,12 @@ IBM 360 toolkit notes:
 
 - It is purely for developers and has therefore no support for assessments
 
-HolisticAI:
+Holistic AI:
 
 - Like IBM 360 Toolkit it does differentiate to different type of technical assessments like bias and explainability,
 but it is less extensive than the 360 toolkit
 
-- The ambition is large of HolisticAI, they want to capture, Efficacy, Robustness, and Privacy tests as well
+- The ambition is large of Holistic AI, they want to capture, Efficacy, Robustness, and Privacy tests as well
 
 - It is a private company from the United Kingdom which has open sourced part of their tool
 
@@ -73,7 +73,7 @@ AI Assessment Tool:
 
 - `VerifyML` is a Python package to generate Model Cards.
 
-- `HolisticAI` is a Python package to test for and mitigate Bias in your model.
+- `Holistic AI` is a Python package to test for and mitigate Bias in your model.
 
 - `IBM 360 Research Toolkit` is a Python and R package to test for Fairness & Explainability of your model.
 
