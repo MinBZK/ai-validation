@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../aiverify_checklist/">
+        <link rel="prev" href="../ibm_360_research_toolkit_checklist/">
       
       
-        <link rel="next" href="../ibm_360_research_toolkit_checklist/">
+        <link rel="next" href="../../Comparison/requirements/">
       
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Holistic AI - AI Validation Team</title>
+        <title>VerifyML - AI Validation Team</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#holistic-ai" class="md-skip">
+        <a href="#verifyml" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Holistic AI
+              VerifyML
             
           </span>
         </div>
@@ -1150,6 +1150,48 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../holisticai_checklist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Holistic AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ibm_360_research_toolkit_checklist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IBM Research 360 Toolkit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1166,7 +1208,7 @@
           
   
   <span class="md-ellipsis">
-    Holistic AI
+    VerifyML
   </span>
   
 
@@ -1177,7 +1219,7 @@
         
   
   <span class="md-ellipsis">
-    Holistic AI
+    VerifyML
   </span>
   
 
@@ -1310,48 +1352,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ibm_360_research_toolkit_checklist/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    IBM Research 360 Toolkit
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../verifyml_checklist/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    VerifyML
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -2034,7 +2034,7 @@
                   
 
   
-    <a href="https://github.com/MinBZK/ai-validation/edit/main/docs/Projects/TAD/Existing Tools/Checklists/holisticai_checklist.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/MinBZK/ai-validation/edit/main/docs/Projects/TAD/Existing-Tools/Checklists/verifyml_checklist.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -2042,9 +2042,14 @@
   
 
 
-<h1 id="holistic-ai">Holistic AI</h1>
-<p>See the <a href="../../Comparison/tools/#holisticai">introduction</a>. It is a toolkit just like IBM-360-Toolkit for a
-data scientist to research bias and also to mitigate it immediately.</p>
+<h1 id="verifyml">VerifyML</h1>
+<p>See the <a href="../../Comparison/tools/#verifyml">introduction</a>, the maker also suggests
+to use an front-end tool to collaboratively change the model card.
+<a href="https://report.verifyml.com/">Model Card Editor</a> this is not
+open-source and also the developer suggests in this
+<a href="https://github.com/cylynx/verifyml/issues/63">issue</a> to not
+use this tool but to use tools like AIVerify. This checklist
+only looks at the verifyML python toolkit and not the web interface.</p>
 <h2 id="functionality">Functionality</h2>
 <table>
 <thead>
@@ -2060,7 +2065,7 @@ data scientist to research bias and also to mitigate it immediately.</p>
 <td style="text-align: left;">The tool allows users to conduct technical tests on algorithms or models, including assessments of performance, bias, and fairness. To facilitate these tests, users can input relevant datasets,</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">1</td>
-<td style="text-align: left;">The tests which can be executed are written <a href="https://holistic-ai.readthedocs.io/en/latest/tutorials.html">here</a></td>
+<td style="text-align: left;">The tool does allow a few standardized tests, specified <a href="https://github.com/cylynx/verifyml/blob/main/verifyml/model_tests/README.md">here</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool allows users to choose which tests to perform.</td>
@@ -2072,37 +2077,37 @@ data scientist to research bias and also to mitigate it immediately.</p>
 <td style="text-align: left;">The tool allows users to fill out questionnaires to conduct impact assessments for AI. For example IAMA or ALTAI.</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">0</td>
-<td style="text-align: left;">The tool only does technical tests</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool can generate a human readable report.</td>
 <td style="text-align: left;">M</td>
-<td style="text-align: left;">0</td>
-<td style="text-align: left;">The toolkit itself cannot make a human readable report, it only generates results which then needs to be interpreted</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">The tool can visualize model cards that are generated by it</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tools works with a standardized report format, that it can read, write, and update.</td>
 <td style="text-align: left;">M</td>
-<td style="text-align: left;">0</td>
-<td style="text-align: left;">The only format it outputs are specific numbers, so no standardized format or even een report format</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">It generates html which can be imported by a machine</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool supports plugin functionality so additional tests can be added easily.</td>
 <td style="text-align: left;">S</td>
-<td style="text-align: left;">0</td>
-<td style="text-align: left;">All the bias tests are put in a <a href="https://github.com/holistic-ai/holisticai/blob/main/holisticai/bias/metrics/_classification.py">single script</a> which making additional tests a bit cumbersome and leas developer-friendly</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Any test can be ran by the user itself and the output imported in the model card generated by the tool</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool allows to create custom reports based on components.</td>
 <td style="text-align: left;">S</td>
 <td style="text-align: left;">0</td>
-<td style="text-align: left;">Does not allow reports export</td>
+<td style="text-align: left;">It doesn't offer any standardization in what to put in the report</td>
 </tr>
 <tr>
 <td style="text-align: left;">It is possible to add custom components for reports.</td>
 <td style="text-align: left;">S</td>
-<td style="text-align: left;">0</td>
-<td style="text-align: left;">Does not allow reports export</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Anything can be put in the model card, which makes it very flexible</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool provides detailed logging, including tracking of different model versions, changes in impact assessments, and technical test results for individual runs.</td>
@@ -2113,60 +2118,60 @@ data scientist to research bias and also to mitigate it immediately.</p>
 <tr>
 <td style="text-align: left;">The tool supports saving progress.</td>
 <td style="text-align: left;">S</td>
-<td style="text-align: left;">0</td>
-<td style="text-align: left;">Not ouf of the box, but this could be written in code by the owner of the algorithm</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Once the modelcard is generated it could be loaded in again and be changed</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool can be used on an isolated system without an internet connection.</td>
 <td style="text-align: left;">S</td>
 <td style="text-align: left;">1</td>
-<td style="text-align: left;">As a python tool this is possible</td>
+<td style="text-align: left;">Once the tool is imported in python it can be used without an internet connection</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool offers options to discuss and document conversations. For example, to converse about technical tests or to collaborate on impact assessments.</td>
 <td style="text-align: left;">C</td>
 <td style="text-align: left;">0</td>
-<td style="text-align: left;">This is not supported</td>
+<td style="text-align: left;">Assessments are not supported</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool operates with complete data privacy; it does not share any data or logging information.</td>
 <td style="text-align: left;">C</td>
 <td style="text-align: left;">1</td>
-<td style="text-align: left;">The local tool does not share anything to the outside world</td>
+<td style="text-align: left;">It does not do this</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool allows extension of report formats functionality.</td>
 <td style="text-align: left;">C</td>
-<td style="text-align: left;">0</td>
-<td style="text-align: left;">This is not what the tool is built for</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">As it exports html, it can also be transferred to json or markdown</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool can be integrated in a CI/CD flow.</td>
 <td style="text-align: left;">C</td>
 <td style="text-align: left;">1</td>
-<td style="text-align: left;">As it is a python package it can be included in a CI pipeline</td>
+<td style="text-align: left;">The automated tests could be ran in the CI/CD tool to generated a model card</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool can be offered as a (cloud) service where no local installation is required.</td>
 <td style="text-align: left;">C</td>
 <td style="text-align: left;">0</td>
-<td style="text-align: left;">Not immediately, an UI needs to be build around it</td>
+<td style="text-align: left;">The python tool itself not, but a frontend which needs to be developed yes</td>
 </tr>
 <tr>
 <td style="text-align: left;">It is possible to define and automate workflows for repetitive tasks.</td>
 <td style="text-align: left;">C</td>
 <td style="text-align: left;">1</td>
-<td style="text-align: left;">Automated tests could be programmed specifically from this tool</td>
+<td style="text-align: left;">As it is written in python this can be automated easily</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool offers pre-built connectors or low-code/no-code integration options to simplify the integration process.</td>
 <td style="text-align: left;">C</td>
 <td style="text-align: left;">0</td>
-<td style="text-align: left;">Not supported by the tool</td>
+<td style="text-align: left;">The tool does this not</td>
 </tr>
 </tbody>
 </table>
-<p>total_score = 17</p>
+<p>total_score = 42</p>
 <h2 id="reliability">Reliability</h2>
 <table>
 <thead>
@@ -2182,35 +2187,35 @@ data scientist to research bias and also to mitigate it immediately.</p>
 <td style="text-align: left;">The tool operates consistently and reliably, meaning it delivers the same expected results every time you use it.</td>
 <td style="text-align: left;">M</td>
 <td>1</td>
-<td></td>
+<td>Once you have located the right (older) libraries it runs pretty smoothly and reliably</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool recovers automatically from common failures.</td>
 <td style="text-align: left;">S</td>
-<td>1</td>
-<td></td>
+<td>0</td>
+<td>Library dependencies needs to be solved by yourself as this is not handled by the tool (especially graphs)</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool recovers from failures quickly, minimizing data loss, for example by automatically saving intermediate test progress results.</td>
 <td style="text-align: left;">S</td>
-<td>1</td>
-<td></td>
+<td>0</td>
+<td>It does not store any intermediary results</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool handles errors gracefully and informs users of any issues.</td>
 <td style="text-align: left;">S</td>
-<td>1</td>
-<td></td>
+<td>0</td>
+<td>It just breaks, you need to explicitly export the model card for it to saved</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool provides clear error messages and instructions for troubleshooting.</td>
 <td style="text-align: left;">S</td>
-<td>1</td>
-<td></td>
+<td>0</td>
+<td>The error messages are python error messages unrelated to the tool</td>
 </tr>
 </tbody>
 </table>
-<p>total_score = 16</p>
+<p>total_score = 4</p>
 <h2 id="usability">Usability</h2>
 <table>
 <thead>
@@ -2226,37 +2231,37 @@ data scientist to research bias and also to mitigate it immediately.</p>
 <td style="text-align: left;">The tool possess a clean, intuitive, and visually appealing UI that follows industry standards.</td>
 <td style="text-align: left;">S</td>
 <td>0</td>
-<td>There is no user-interface</td>
+<td>There is no user interface</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool provides clear and consistent navigation, making it easy for users to find what they need.</td>
 <td style="text-align: left;">S</td>
 <td>0</td>
-<td>There is no user-interface</td>
+<td>There is no user interface</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool is responsive and provides instant feedback.</td>
 <td style="text-align: left;">S</td>
 <td>0</td>
-<td>There is no user-interface</td>
+<td>There is no user interface</td>
 </tr>
 <tr>
 <td style="text-align: left;">The user interface is multilingual and supports at least English.</td>
 <td style="text-align: left;">S</td>
 <td>0</td>
-<td>There is no user-interface</td>
+<td>There is no user interface</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool offers keyboard shortcuts for efficient interaction.</td>
 <td style="text-align: left;">C</td>
 <td>0</td>
-<td>There is no user-interface</td>
+<td>There is no user interface</td>
 </tr>
 <tr>
 <td style="text-align: left;">The user interface can easily be translated into other languages.</td>
 <td style="text-align: left;">C</td>
 <td>0</td>
-<td>There is no user-interface</td>
+<td>There is no user interface</td>
 </tr>
 </tbody>
 </table>
@@ -2275,30 +2280,30 @@ data scientist to research bias and also to mitigate it immediately.</p>
 <tr>
 <td style="text-align: left;">The tool provides comprehensive online help documentation with searchable functionalities.</td>
 <td style="text-align: left;">S</td>
-<td>0.2</td>
-<td>There is some <a href="https://holistic-ai.readthedocs.io/en/latest/index.html">documentation</a> but it is not very helpful</td>
+<td>0.5</td>
+<td>The documentation is quite concise and helpful, but it is outdated</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool offers context-sensitive help within the application.</td>
 <td style="text-align: left;">C</td>
 <td>0</td>
-<td>As a Python tool, no</td>
+<td>No context info whatsoever</td>
 </tr>
 <tr>
 <td style="text-align: left;">The online documentation includes video tutorials and training materials for ease of learning.</td>
 <td style="text-align: left;">C</td>
 <td>0</td>
-<td>Ths is not there</td>
+<td>Just documentation</td>
 </tr>
 <tr>
 <td style="text-align: left;">The project provides readily available customer support through various channels  (e.g., email, phone, online chat) to address user inquiries and troubleshoot issues.</td>
 <td style="text-align: left;">C</td>
-<td>0.5</td>
-<td>You can contact sales through their website and respond on Github, Github seems to be an okay response time (but not a large community)</td>
+<td>0</td>
+<td>The people who worked on the tool are quick to respond to issues, but they don't support the tool anymore</td>
 </tr>
 </tbody>
 </table>
-<p>total_score = 1.6</p>
+<p>total_score = 1.5</p>
 <h2 id="performance-efficiency">Performance Efficiency</h2>
 <table>
 <thead>
@@ -2314,13 +2319,13 @@ data scientist to research bias and also to mitigate it immediately.</p>
 <td style="text-align: left;">The tool operates efficiently and minimize resource utilization.</td>
 <td style="text-align: left;">M</td>
 <td>1</td>
-<td>very lightweight as a python package</td>
+<td>Very lightweight tool, as it is a python package</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool responds to user actions instantly.</td>
 <td style="text-align: left;">M</td>
 <td>1</td>
-<td>It will return output instantly</td>
+<td>When run, it returns instantly</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool is scalable to accommodate increased user base and data volume.</td>
@@ -2345,44 +2350,44 @@ data scientist to research bias and also to mitigate it immediately.</p>
 <tr>
 <td style="text-align: left;">The tool is easy to modify and maintain.</td>
 <td style="text-align: left;">M</td>
-<td>0.5</td>
-<td>It is less modular because most of the tests are written in a single script</td>
+<td>1</td>
+<td>The tool itself it not so large and written with tools we are all quite aware of</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool adheres to industry coding standards and best practices to ensure code quality and maintainability.</td>
 <td style="text-align: left;">M</td>
-<td>0.5</td>
-<td>They use pre-commit hooks, but the codebase seems to be a bit weirdly structured</td>
+<td>1</td>
+<td>The repository has poetry, pre-commit hooks, has a CI, and looks well structured</td>
 </tr>
 <tr>
 <td style="text-align: left;">The code is written in a common, widely adopted and supported and actively used and maintained programming language.</td>
 <td style="text-align: left;">M</td>
 <td>1</td>
-<td>It is written in Python</td>
+<td>in Python and jupyter notebooks</td>
 </tr>
 <tr>
 <td style="text-align: left;">The project provides version control for code changes and rollback capabilities.</td>
 <td style="text-align: left;">M</td>
 <td>1</td>
-<td>It is hosted on Github</td>
+<td>It is hosted on <a href="https://github.com/cylynx/verifyml">Github</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">The project is open source.</td>
 <td style="text-align: left;">M</td>
 <td>1</td>
-<td>Hosted <a href="https://github.com/holistic-ai/holisticai">here</a></td>
+<td><a href="https://github.com/cylynx/verifyml?tab=readme-ov-file#license">Apache 2.0 license</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">It is possible to contribute to the source.</td>
 <td style="text-align: left;">S</td>
-<td>1</td>
-<td>It is possible and they respond to contributions</td>
+<td>0</td>
+<td>The project is not active supported anymore, so we would need to make a fork and make that the main source</td>
 </tr>
 <tr>
 <td style="text-align: left;">The system is modular, allowing for easy modification of individual components.</td>
 <td style="text-align: left;">S</td>
 <td>0.5</td>
-<td>See the first point</td>
+<td>The idea of a model card is pretty modular, and can be changed any way we like. Adding assessments in the tool would be quite the effort</td>
 </tr>
 <tr>
 <td style="text-align: left;">Diagnostic tools are available to identify and troubleshoot issues.</td>
@@ -2392,7 +2397,7 @@ data scientist to research bias and also to mitigate it immediately.</p>
 </tr>
 </tbody>
 </table>
-<p>total_score = 23.5</p>
+<p>total_score = 24.5</p>
 <h2 id="security">Security</h2>
 <table>
 <thead>
@@ -2408,31 +2413,31 @@ data scientist to research bias and also to mitigate it immediately.</p>
 <td style="text-align: left;">The tool must protect data and system from unauthorized access, use, disclosure, disruption, modification, or destruction.</td>
 <td style="text-align: left;">M</td>
 <td>0</td>
-<td>Not applicable</td>
+<td>not applicable</td>
 </tr>
 <tr>
 <td style="text-align: left;">Regular security audits and penetration testing are conducted.</td>
 <td style="text-align: left;">S</td>
 <td>0</td>
-<td>It is not stated on the repository that they do something with security</td>
+<td>As the tool is not actively maintained anymore</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool enforce authorization controls based on user roles and permissions, restricting access to sensitive data and functionalities.</td>
 <td style="text-align: left;">C</td>
 <td>0</td>
-<td>The tool does not have Users or Access control</td>
+<td>As this is a local import only, this is managed by the developer</td>
 </tr>
 <tr>
 <td style="text-align: left;">Data encryption is used for sensitive information at rest and in transit.</td>
 <td style="text-align: left;">C</td>
 <td>0</td>
-<td>Transitionary data is not stored</td>
+<td>Intermediary data is not stored, and the end result is put in html with no encryption</td>
 </tr>
 <tr>
 <td style="text-align: left;">The project allows for regular security audits and penetration testing to identify vulnerabilities and ensure system integrity.</td>
 <td style="text-align: left;">C</td>
 <td>1</td>
-<td>This is not blocked by the tool</td>
+<td>It does not block this for users to do this</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool implements backup functionality to ensure data availability in case of incidents.</td>
@@ -2458,35 +2463,35 @@ data scientist to research bias and also to mitigate it immediately.</p>
 <td style="text-align: left;">The tool is compatible with existing systems and infrastructure.</td>
 <td style="text-align: left;">M</td>
 <td>1</td>
-<td>It can be imported in Python</td>
+<td>It can be easily imported and installed in python</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool supports industry-standard data formats and protocols.</td>
 <td style="text-align: left;">M</td>
-<td>0</td>
-<td>it does not standardize at all in the output of the tests</td>
+<td>1</td>
+<td>Standardized tests are used and the output format is html</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool operates seamlessly on supported operating systems and hardware platforms.</td>
 <td style="text-align: left;">S</td>
 <td>1</td>
-<td>Python can be ran on any system</td>
+<td>As it is a python tool, anywhere where python can run this can also be run</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool supports commonly used data formats (e.g., CSV, Excel, JSON) for easy data exchange with other systems and tools.</td>
 <td style="text-align: left;">S</td>
 <td>1</td>
-<td>If it can be imported in Python/R it is supported</td>
+<td>This can be imported</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool integrates with existing security solutions.</td>
 <td style="text-align: left;">C</td>
 <td>0</td>
-<td>Not applicable</td>
+<td>It does not do such a thing</td>
 </tr>
 </tbody>
 </table>
-<p>total_score = 10</p>
+<p>total_score = 14</p>
 <h2 id="accessibility">Accessibility</h2>
 <table>
 <thead>
@@ -2522,29 +2527,29 @@ data scientist to research bias and also to mitigate it immediately.</p>
 <td style="text-align: left;">The tool support a range of operating systems (e.g., Windows, macOS, Linux) commonly used within an organization.</td>
 <td style="text-align: left;">S</td>
 <td>0.5</td>
-<td>As it is a python tool it is supported anywhere python runs</td>
+<td>If you can run python, which is not always possible within the government for example</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool minimizes dependencies on specific hardware or software configurations, promoting flexibility.</td>
 <td style="text-align: left;">S</td>
 <td>1</td>
-<td>It is a python tool</td>
+<td>As it is a python tool</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool offers a cloud-based deployment option or be compatible with cloud environments for scalability and accessibility.</td>
 <td style="text-align: left;">S</td>
-<td>1</td>
-<td>The company behind Holistic AI offers a whole range of services included an UI which uses this open-source toolkit</td>
+<td>0</td>
+<td>It is not offered as a cloud-based option</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool adheres to relevant cloud security standards and best practices.</td>
 <td style="text-align: left;">S</td>
 <td>0</td>
-<td>On their <a href="https://www.holisticai.com/">website</a> they do not speak about where the data of their solution will go, this is not very transparent</td>
+<td>On the github nothing is mentioned about security and for the cloud version it is not applicable</td>
 </tr>
 </tbody>
 </table>
-<p>total_score = 7.5</p>
+<p>total_score = 4.5</p>
 <h2 id="deployment">Deployment</h2>
 <table>
 <thead>
@@ -2565,12 +2570,12 @@ data scientist to research bias and also to mitigate it immediately.</p>
 <tr>
 <td style="text-align: left;">The tool has on-premise or cloud-based deployment options to cater to different organizational needs and infrastructure.</td>
 <td style="text-align: left;">S</td>
-<td>1</td>
-<td>Yes the tool can be used as a cloud-based deployment but then with a whole UI around it</td>
+<td>0</td>
+<td>Not applicable</td>
 </tr>
 </tbody>
 </table>
-<p>total_score = 3.6</p>
+<p>total_score = 0.6</p>
 <h2 id="legal-compliance">Legal &amp; Compliance</h2>
 <table>
 <thead>
@@ -2586,19 +2591,19 @@ data scientist to research bias and also to mitigate it immediately.</p>
 <td style="text-align: left;">It is clear how the tool is funded to avoid improper influence due to conflicts of interest</td>
 <td style="text-align: left;">M</td>
 <td>1</td>
-<td>The tool is owned by a private company but has been made open source to the public</td>
+<td>It was developed during a competition and it does not receive funding anymore</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool is compliant with relevant legal and regulatory requirements.</td>
 <td style="text-align: left;">S</td>
 <td>1</td>
-<td>Under the <a href="https://github.com/holistic-ai/holisticai?tab=Apache-2.0-1-ov-file#readme">apache 2.0 license</a></td>
+<td>Under the <a href="https://github.com/cylynx/verifyml?tab=readme-ov-file#license">apache 2.0 license</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool adheres to (local) data privacy regulations like GDPR, ensuring the protection of user data.</td>
 <td style="text-align: left;">S</td>
 <td>1</td>
-<td>Data stays locally</td>
+<td>Data will stay local</td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool implements appropriate security measures to comply with industry regulations and standards.</td>
@@ -2610,7 +2615,7 @@ data scientist to research bias and also to mitigate it immediately.</p>
 <td style="text-align: left;">The tool is licensed for use within the organization according to the terms and conditions of the license agreement.</td>
 <td style="text-align: left;">S</td>
 <td>1</td>
-<td>Under the <a href="https://github.com/holistic-ai/holisticai?tab=Apache-2.0-1-ov-file#readme">apache 2.0 license</a></td>
+<td>Under the <a href="https://github.com/cylynx/verifyml?tab=readme-ov-file#license">apache 2.0 license</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">The tool respects intellectual property rights and avoid copyright infringement issues.</td>
@@ -2643,7 +2648,7 @@ data scientist to research bias and also to mitigate it immediately.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 18, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 22, 2024</span>
   </span>
 
     
@@ -2653,7 +2658,7 @@ data scientist to research bias and also to mitigate it immediately.</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 1, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 9, 2024</span>
   </span>
 
     
