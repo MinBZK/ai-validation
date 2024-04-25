@@ -19,8 +19,8 @@ benchmarks.
 
 ## The project
 
-The LLM-benchmark project of the AI-Validation Team aims to create a platform where LLMs can be measured
-across a wide range of benchmarks. We limit ourselves to LLMs and benchmarks that are related to the
+The LLM-benchmark project of the [AI Validation Team](../../About/team.md) aims to create a platform where LLMs can be
+measured across a wide range of benchmarks. We limit ourselves to LLMs and benchmarks that are related to the
 Dutch society. Both LLMs and the benchmarks can be configured by users of the platform.
 Users can run these benchmarks on LLMs on our platform. The intended goal of this project is to give government
 organizations, citizens and companies insight in the various LLMs and their quality, correctness, bias and
