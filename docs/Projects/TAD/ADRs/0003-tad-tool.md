@@ -21,7 +21,7 @@ These are our main requirements of our tool:
 * it can run many technical tests on a model.
 * it supports filling out assessments.
 * it supports capturing discussion and collaboration around technical tests and assessments,
-with features like f.e. mentions, (email) notifications and status updates.
+  with features like f.e. mentions, (email) notifications and status updates.
 * it offers UI access to the above requirements.
 * it can save results to a system card (or cards supported by system cards, like model, metrics and assessment).
 * it can commit the different cards to a VCS, such as git, to allow for an audit trail.
@@ -32,8 +32,8 @@ with features like f.e. mentions, (email) notifications and status updates.
 
 * Collaborating or extending another project will not give us the tool we are looking for.
 * We can reuse certain components, like the
-[plugins from AIVerify](https://github.com/IMDA-BTG/aiverify/tree/main/stock-plugins), or existing libraries,
-for technical tests.
+  [plugins from AIVerify](https://github.com/IMDA-BTG/aiverify/tree/main/stock-plugins), or existing libraries,
+  for technical tests.
 * The tool will use a design based on loose coupled modules. This can be done by scanning directories,
   to gather modules that implement a certain Interface.
 * Plugins will have to implement an Interface to be picked up by the system.
