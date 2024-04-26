@@ -35,8 +35,8 @@ These are our main requirements of our tool:
   [plugins from AIVerify](https://github.com/IMDA-BTG/aiverify/tree/main/stock-plugins), or existing libraries,
   for technical tests.
 * The tool will use a design based on loose coupled modules. This can be done by scanning directories,
-  to gather modules that implement a certain Interface.
-* Plugins will have to implement an Interface to be picked up by the system.
+  to gather modules that implement a certain interface.
+* Plugins will have to implement an interface to be picked up by the system.
 * We can, to some extend, re-use the already existing POCs or findings from these POCs.
 
 ## Decision
