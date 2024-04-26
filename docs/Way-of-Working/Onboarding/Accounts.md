@@ -1,6 +1,6 @@
 # Accounts
 
-## Mattermost Chat
+## Mattermost chat
 
 Make sure you have installed [Mattermost](Dev-machine.md), then follow these steps.
 
@@ -16,9 +16,9 @@ Make sure you have installed [Webex](Dev-machine.md), then follow these steps.
 - Create an account with your @rijksoverheid/@minbzk.nl email address.
 - Ask a team member to add to you to the AI Validation team.
 
-## Github
+## GitHub
 
-Create or use your existing Github account.
+Create or use your existing GitHub account.
 
 - Add your @rijksoverheid/@minbzk.nl email address to your account.
 - Or create a new account (anonymous if you want, see our [Principles](../Principles.md))
@@ -26,7 +26,7 @@ Create or use your existing Github account.
 - Ask a team member to add you to the [MinBZK Org](https://github.com/orgs/MinBZK).
 - Ask a team member to add to you to the [AI Validation Team](https://github.com/orgs/MinBZK/teams/ai-validation-team).
 
-## Collaboration Space
+## Collaboration space
 
 - Ask any team member to add you to the [Team Collaboration Space](https://www.samenwerkruimten.nl/teamsites/ai-validatie-team).
 
@@ -36,7 +36,7 @@ Create or use your existing Github account.
 - Properties
 - Enable read access
 
-## Shared email
+## Shared mailbox
 
 - Ask a colleague to add you to the shared [contact address](../../About/contact.md) by sending an email to Secretariat
   of Digital Society.
