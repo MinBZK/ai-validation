@@ -393,6 +393,7 @@ JSON schema will be added when we publish the first beta version.
 
 ## Changelog
 
+- 0.1a3: require ISO 8601 timestamp
 - 0.1a2: introduces typed artifacts
 - 0.1a1: initial draft version of this reporting standard
 
