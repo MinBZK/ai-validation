@@ -87,21 +87,6 @@
 
     [:fontawesome-brands-linkedin: Christopher Spelt](https://www.linkedin.com/in/christopher-spelt-27b39357/)
 
--   ## Willy Tadema
-
-    AI Ethics Lead
-
-    ----
-
-    ![Willy Tadema](../img/willy.png){: .round }
-
-    Willy specializes in AI governance, AI risk management, AI assurance and ethics-by-design.
-    She is an advocate of AI standards and a member of several ethics committees.
-
-    [:fontawesome-brands-github: FrieseWoudloper](https://github.com/FrieseWoudloper)
-
-    [:fontawesome-brands-linkedin: Willy Tadema](https://www.linkedin.com/in/willytadema/)
-
 -   ## Robbert Uittenbroek
 
     Engineer
@@ -134,5 +119,26 @@
     [:fontawesome-brands-github: laurensWe](https://github.com/laurensWe)
 
     [:fontawesome-brands-linkedin: Laurens Weijs](https://www.linkedin.com/in/laurensweijs)
+
+</div>
+
+## Our Alumni
+
+<div class="grid cards" markdown>
+
+-   ### Willy Tadema
+
+    AI Ethics Lead
+
+    ----
+
+    ![Willy Tadema](../img/willy.png){: .round }
+
+    Willy specializes in AI governance, AI risk management, AI assurance and ethics-by-design.
+    She is an advocate of AI standards and a member of several ethics committees.
+
+    [:fontawesome-brands-github: FrieseWoudloper](https://github.com/FrieseWoudloper)
+
+    [:fontawesome-brands-linkedin: Willy Tadema](https://www.linkedin.com/in/willytadema/)
 
 </div>
