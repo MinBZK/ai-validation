@@ -24,5 +24,5 @@ and alert on models a different approach should be taken but could very much be 
 Is TAD a tool?
 
 While the project does not aim to be just another tool, the existing tools we have compared in the market are
-not sufficient to our needs. Therefore, with ADR (XXX) we are proposing to make a set of tools which will help us
-realize the goal of filling in the standardized reporting format for algorithmic systems.
+not sufficient to our needs. Therefore, with [ADR 0003](ADRs%2F0003-tad-tool.md) we are proposing to make a set of
+tools which will help us realize the goal of filling in the standardized reporting format for algorithmic systems.
