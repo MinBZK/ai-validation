@@ -12,17 +12,3 @@ contains Model Cards and Assessment Cards. On the other hand the project is focu
 Assessment Cards with both performance metrics and technical measurements on fairness and bias of the model and
 assessments on the system where the specific algorithm resides. The requirements and instruments are dictated by the
 [Algoritmekader](https://minbzk.github.io/Algoritmekader/).
-
-## FAQ
-
-Is TAD an AI Governance Platform?
-
-While TAD will generate a standardized report and you are able to edit report of algorithmic systems, the
-governance/management aspect of different models is currently out of scope for this project. To keep track, compare,
-and alert on models a different approach should be taken but could very much be the follow-up from this project.
-
-Is TAD a tool?
-
-While the project does not aim to be just another tool, the existing tools we have compared in the market are
-not sufficient to our needs. Therefore, with [ADR 0003](ADRs%2F0003-tad-tool.md) we are proposing to make a set of
-tools which will help us realize the goal of filling in the standardized reporting format for algorithmic systems.
