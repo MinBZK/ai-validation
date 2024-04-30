@@ -7,8 +7,12 @@ For both the system and the model the lifecycle is important and this needs to b
 for an algorithm is derived from the [Algoritmeregister](https://algoritmes.overheid.nl/nl/footer/over-algoritmes).
 
 On the one hand the TAD project is focused on building a standardized format of reporting on a algorithmic system by
-developing a [Reporting Standard](Reporting-Standard). This Reporting Standard consists out of a System Card which
-contains Model Cards and Assessment Cards. On the other hand the project is focused on filling in the System, Model and
-Assessment Cards with both performance metrics and technical measurements on fairness and bias of the model and
-assessments on the system where the specific algorithm resides. The requirements and instruments are dictated by the
-[Algoritmekader](https://minbzk.github.io/Algoritmekader/).
+developing a [Reporting Standard](Reporting-Standard/index.md). This Reporting Standard consists out of a
+[System Card](Reporting-Standard/index.md#system_card) which contains
+[Model Cards](Reporting-Standard/index.md#model_card) and
+[Assessment Cards](Reporting-Standard/index.md#assessment_card).
+
+On the other hand the project is focused on filling in the System, Model and
+Assessment Cards with both performance metrics and technical measurements on fairness and bias of the model,
+assessments on the system where the specific algorithm resides, and descriptive information about the system.
+The requirements and instruments are dictated by the [Algoritmekader](https://minbzk.github.io/Algoritmekader/).
