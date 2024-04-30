@@ -95,6 +95,3 @@ webex
 webserver
 Weijs
 Woudloper
-ransparency
-lgorithmic
-ecision

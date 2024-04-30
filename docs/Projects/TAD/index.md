@@ -1,6 +1,6 @@
 # TAD
 
-TAD is the acronym for **T**ransparency of **A**lgorithmic **D**ecision making. TAD has the goal to make algorithmic
+TAD is the acronym for Transparency of Algorithmic Decision making. TAD has the goal to make algorithmic
 systems more transparent; it achieves this by generating standardized reports on the algorithmic system which
 encompasses both technical aspects in addition to descriptive information about the system and regulatory assessments.
 For both the system and the model the lifecycle is important and this needs to be taken into account. The definition
