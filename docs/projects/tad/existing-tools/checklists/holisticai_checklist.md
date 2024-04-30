@@ -1,6 +1,6 @@
 # Holistic AI
 
-See the [introduction](../Comparison/tools.md#holisticai). It is a toolkit just like IBM-360-Toolkit for a
+See the [introduction](../comparison/tools.md#holisticai). It is a toolkit just like IBM-360-Toolkit for a
 data scientist to research bias and also to mitigate it immediately.
 
 ## Functionality

@@ -2,7 +2,7 @@
 
 ## Mattermost chat
 
-Make sure you have installed [Mattermost](Dev-machine.md), then follow these steps.
+Make sure you have installed [Mattermost](dev-machine.md#communication), then follow these steps.
 
 - [Register](https://realisatieibds.pleio.nl/register) on Pleio with your @rijksoverheid/@minbzk.nl email address.
 - [Login](https://digilab.overheid.nl/chat/login)-> Gitlab -> Pleio.
@@ -11,7 +11,7 @@ Make sure you have installed [Mattermost](Dev-machine.md), then follow these ste
 
 ## Webex
 
-Make sure you have installed [Webex](Dev-machine.md), then follow these steps.
+Make sure you have installed [Webex](dev-machine.md#communication), then follow these steps.
 
 - Create an account with your @rijksoverheid/@minbzk.nl email address.
 - Ask a team member to add to you to the AI Validation team.
@@ -38,7 +38,7 @@ Create or use your existing GitHub account.
 
 ## Shared mailbox
 
-- Ask a colleague to add you to the shared [contact address](../../About/contact.md) by sending an email to Secretariat
+- Ask a colleague to add you to the shared [contact address](../../about/contact.md) by sending an email to Secretariat
   of Digital Society.
 - In Outlook, go to Account Settings and "Add Account", leave the password empty
 

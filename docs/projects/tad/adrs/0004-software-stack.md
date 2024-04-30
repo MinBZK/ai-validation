@@ -9,7 +9,7 @@ and which not to use.
 During further discussions and brainstorm sessions, a software stack was chosen
 that accommodates our needs best.
 
-While more fine grained [requirements](../Existing-Tools/Comparison/requirements.md) are listed elsewhere,
+While more fine grained [requirements](../existing-tools/comparison/requirements.md) are listed elsewhere,
 some key requirements are:
 
 * The tool is locally runnable with docker.

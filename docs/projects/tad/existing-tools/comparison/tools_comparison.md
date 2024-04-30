@@ -2,7 +2,7 @@
 
 [We have researched](tools.md) a few tools which we want to investigate
 further, this document is the next step in that investigation.
-We created a [checklist](requirements) to compare these tools against.
+We created a [checklist](requirements.md) to compare these tools against.
 The Fulfilled column will give a numerical value based on whether that
 requirement is fulfilled or not between 0 and 1. Then the actual scoring
 is the fulfilled value times the priority (the priority is translated
@@ -10,7 +10,7 @@ to numerical values in the following way: {M:4, S:3, C:2, W:-1}).
 
 ## Summary of the comparison
 
-| Requirement            | [AIVerify](../Checklists/aiverify_checklist.md) | [VerifyML](../Checklists/verifyml_checklist.md) | [IBM 360 Research Toolkit](../Checklists/ibm_360_research_toolkit_checklist.md) | [Holistic AI](../Checklists/holisticai_checklist.md) | [AI Assessment Tool](ai_assessment_tool_checklist.md) |
+| Requirement            | [AIVerify](../checklists/aiverify_checklist.md) | [VerifyML](../checklists/verifyml_checklist.md) | [IBM 360 Research Toolkit](../checklists/ibm_360_research_toolkit_checklist.md) | [Holistic AI](../checklists/holisticai_checklist.md) | [AI Assessment Tool](../checklists/ai_assesment_tool_checklist.md) |
 |:-----------------------|:------------------------------------------------|-------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------|-------------------------------------------------------|
 | Functionality          | 36                                              | 42                                              | 20                                                                              | 17                                                   | 22.85                                                 |
 | Reliability            | 13                                              | 4                                               | 16                                                                              | 16                                                   | 15.4                                                  |

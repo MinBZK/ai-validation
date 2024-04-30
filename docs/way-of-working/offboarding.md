@@ -22,12 +22,12 @@ We're sad to see you go! But if you do, here's what not to forget.
 
 ## Shared mailbox
 
-- Make sure to leave our  [shared mailbox](../../About/contact.md) by sending an email to Secretariat of Digital
+- Make sure to leave our  [shared mailbox](../about/contact.md) by sending an email to Secretariat of Digital
   Society (can be found in the Outlook address book).
 
 ## Teams page
 
-- Move yourself to our alumni section on the [team page](../About/team.md).
+- Move yourself to our alumni section on the [team page](../about/team.md).
 
 ## Webex
 
