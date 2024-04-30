@@ -2,6 +2,7 @@
 Aangifte
 Aequitas
 Algoritmeregister
+Algoritmekader
 Anch
 anneschuth
 architecting
