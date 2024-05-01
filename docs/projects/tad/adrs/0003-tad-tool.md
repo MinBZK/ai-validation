@@ -1,4 +1,4 @@
-# ADR-0003 Tool for Transparency of Algorithmic Decision making
+# TAD-0003 Tool for Transparency of Algorithmic Decision making
 
 ## Context
 

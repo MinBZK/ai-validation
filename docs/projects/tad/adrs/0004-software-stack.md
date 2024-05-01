@@ -1,4 +1,4 @@
-# ADR-0004 Software Stack for TAD
+# TAD-0004 Software Stack for TAD
 
 ## Context
 
