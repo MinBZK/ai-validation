@@ -76,6 +76,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://minbzk.github.io/ai-validation/adrs/0014-written-language/</loc>
+         <lastmod>2024-05-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://minbzk.github.io/ai-validation/projects/llm-benchmarks/</loc>
          <lastmod>2024-05-01</lastmod>
          <changefreq>daily</changefreq>
