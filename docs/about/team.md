@@ -31,7 +31,7 @@
 
     Lucas is PhD candidate conducting research into the regulation and governance of algorithmic discrimination by
     supervision and enforcement organizations. Lucas is our
-    [Researcher in Residence](../ADRs/0011-researcher-in-residence.md).
+    [Researcher in Residence](../adrs/0011-researcher-in-residence.md).
 
     [:fontawesome-brands-linkedin: Lucas Haitsma](https://www.linkedin.com/in/lucas-h-779375139/)
 

@@ -1,5 +1,6 @@
 # keep this file sorted: sort -u --ignore-case -o aivalidation_dictionary.txt aivalidation_dictionary.txt
 Aangifte
+adrs
 Aequitas
 Algoritmeregister
 Algoritmekader

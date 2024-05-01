@@ -1,18 +1,18 @@
-# ADR-0003 Tool for Transparency of Algorithmic Decision making
+# TAD-0003 Tool for Transparency of Algorithmic Decision making
 
 ## Context
 
 We are considering tooling for organizations to get more grip on their algorithms.
 Tooling for, for instance bias and fairness tests, and assessments (like [IAMA](https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes)).
 
-Transparency, we think, can be fostered by sharing reports from such a tool in a [standardized way](../Reporting-Standard/latest.md).
+Transparency, we think, can be fostered by sharing reports from such a tool in a [standardized way](../reporting-standard/latest.md).
 
 There are several existing open source
-[tools](../Existing-Tools/Comparison/tools.md) which
-we [have assessed](../Existing-Tools/Comparison/tools_comparison.md).
+[tools](../existing-tools/comparison/tools.md) which
+we [have assessed](../existing-tools/comparison/tools_comparison.md).
 Some support only assessments, others already combine more features and can generate a report.
 There is however no tool
-that supports all the [requirements](../Existing-Tools/Comparison/requirements.md) we have.
+that supports all the [requirements](../existing-tools/comparison/requirements.md) we have.
 
 These are our main requirements of our tool:
 
@@ -42,7 +42,7 @@ These are our main requirements of our tool:
 ## Decision
 
 We will build our own solution. Where possible this solution should be able to re-use certain
-components of other [related open-source projects](../Existing-Tools/Comparison/tools).
+components of other [related open-source projects](../existing-tools/comparison/tools.md).
 
 ## Risks
 

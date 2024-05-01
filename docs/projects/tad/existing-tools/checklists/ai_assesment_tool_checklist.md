@@ -1,6 +1,6 @@
 # ALTAI
 
-See the [introduction](../Comparison/tools.md#ai-assessment-tool). It is a discussion tool about AI Systems.
+See the [introduction](../comparison/tools.md#ai-assessment-tool). It is a discussion tool about AI Systems.
 
 ## Functionality
 
