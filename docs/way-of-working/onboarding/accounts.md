@@ -21,7 +21,7 @@ Make sure you have installed [Webex](dev-machine.md#communication), then follow 
 Create or use your existing GitHub account.
 
 - Add your @rijksoverheid/@minbzk.nl email address to your account.
-- Or create a new account (anonymous if you want, see our [Principles](../Principles.md))
+- Or create a new account (anonymous if you want, see our [Principles](../principles.md))
 - Make sure to add a profile picture
 - Ask a team member to add you to the [MinBZK Org](https://github.com/orgs/MinBZK).
 - Ask a team member to add to you to the [AI Validation Team](https://github.com/orgs/MinBZK/teams/ai-validation-team).

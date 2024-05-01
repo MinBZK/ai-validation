@@ -57,6 +57,7 @@ extra_templates:
   - .well-known/security.txt
 
 plugins:
+  - awesome-pages
   - git-committers:
       repository: minbzk/ai-validation
       branch: main
@@ -65,3 +66,33 @@ plugins:
   - glightbox
   - privacy
   - search
+
+nav:
+  - Home: index.md
+  - Projects:
+    - TAD:
+      - projects/tad/index.md
+      - Reporting Standard:
+        - projects/tad/reporting-standard/index.md
+        - 🏷 latest: projects/tad/reporting-standard/latest.md
+        - 🏷 0.1a2: projects/tad/reporting-standard/0.1a2.md
+        - 🏷 0.1a1: projects/tad/reporting-standard/0.1a1.md
+        - projects/tad/comparison.md
+      - ADRs for TAD:
+        - ... | flat | projects/tad/adrs/*
+      - Existing tools:
+        - ... | flat | projects/tad/existing-tools/comparison/*
+        - Checklist:
+          - ... | flat | projects/tad/existing-tools/checklists/*
+    - LLM Benchmarks:
+      - projects/llm-benchmarks/index.md
+  - Way of Working:
+    - way-of-working/principles.md
+    - way-of-working/contributing.md
+    - ... | flat | way-of-working/*
+    - Onboarding:
+      - ... | flat | way-of-working/onboarding/*
+    - way-of-working/off-boarding.md
+    - way-of-working/decision-log.md
+  - ... | adrs/*
+  - ... | about/*

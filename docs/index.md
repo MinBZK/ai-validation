@@ -13,7 +13,7 @@ We are a team of mostly engineers at a policy department.
 
 ## Contribute
 
-Read our guide on [how to contribute](Way-of-Working/Contributing.md).
+Read our guide on [how to contribute](way-of-working/contributing.md).
 
 ## Contact
 
