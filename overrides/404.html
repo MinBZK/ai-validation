@@ -1,0 +1,31 @@
+{% extends "main.html" %}
+
+{% block content %}
+<h1>404 - Page not found</h1>
+<p>
+    It looks like the requested page doesn't exist! You may be able to find the right information via our search
+    function.
+</p>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    function toLowerCaseExceptHash(url) {
+        let urlParts = url.split('#');
+        urlParts[0] = urlParts[0].toLowerCase();
+        return urlParts.join('#');
+    }
+
+    const currentUrl = window.location.href;
+    const lowerCaseUrl = toLowerCaseExceptHash(currentUrl);
+
+    if (currentUrl !== lowerCaseUrl) {
+        let h1 = document.querySelector("h1");
+        h1.innerText = "Redirecting...";
+        document.querySelector("p").remove();
+
+        window.location.replace(lowerCaseUrl);
+    }
+</script>
+{{ super() }}
+{% endblock %}

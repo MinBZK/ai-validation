@@ -10,6 +10,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   palette:
     primary: deep orange
@@ -56,6 +57,9 @@ extra_css:
 
 extra_templates:
   - .well-known/security.txt
+
+watch:
+  - overrides/
 
 plugins:
   - awesome-pages
