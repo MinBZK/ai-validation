@@ -1870,7 +1870,11 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+<h1>404 - Page not found</h1>
+<p>
+    It looks like the requested page doesn't exist! You may be able to find the right information via our search
+    function.
+</p>
 
               </article>
             </div>
@@ -1933,8 +1937,28 @@
     <script id="__config" type="application/json">{"base": "/ai-validation/", "features": ["content.action.edit", "content.code.copy", "navigation.indexes", "navigation.instant", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.suggest"], "search": "/ai-validation/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
+<script>
+    function toLowerCaseExceptHash(url) {
+        let urlParts = url.split('#');
+        urlParts[0] = urlParts[0].toLowerCase();
+        return urlParts.join('#');
+    }
+
+    const currentUrl = window.location.href;
+    const lowerCaseUrl = toLowerCaseExceptHash(currentUrl);
+
+    if (currentUrl !== lowerCaseUrl) {
+        let h1 = document.querySelector("h1");
+        h1.innerText = "Redirecting...";
+        document.querySelector("p").remove();
+
+        window.location.replace(lowerCaseUrl);
+    }
+</script>
+
       <script src="/ai-validation/assets/javascripts/bundle.dd8806f2.min.js"></script>
       
     
+
   </body>
 </html>
