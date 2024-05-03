@@ -29,6 +29,7 @@ Friese
 gettext
 glightbox
 Granian
+Guusje
 Haitsma
 Hanze
 Hartog
@@ -38,6 +39,7 @@ IAMA
 identificatienummer
 interpretability
 ITerm
+Juijn
 keycloak
 Kubeflow
 Laurens
@@ -83,6 +85,7 @@ ticketnumber
 Tijd
 toolkits
 TPRM
+traineeship
 twemoji
 Uittenbroek
 uittenbroekrobbert
