@@ -123,20 +123,20 @@
 -   ## Guusje Juijn
 
     Trainee
-    
+
     ----
 
     ![Guusje Juijn](../img/guusje.jpeg){: .round }
 
-    Guusje is currently enrolled in a two-year traineeship at the Dutch Government. After finishing her first
-    assignment at a policy department, she is excited to bring her knowledge about AI policy to a technical team.
-    Guusje has a background in Artificial Intelligence, is experienced in Python and machine learning and has
-    a strong interest in AI ethics.
+    Guusje is currently enrolled in a two-year traineeship at the Dutch Government. After finishing her first assignment
+    at a policy department, she is excited to bring her knowledge about AI policy to a technical team. Guusje has a
+    background in Artificial Intelligence, is experienced in Python and machine learning and has a strong interest in
+    AI ethics.
 
     [:fontawesome-brands-github: GuusjeJuijn](https://github.com/GuusjeJuijn)
 
     [:fontawesome-brands-linkedin: Guusje Juijn](https://www.linkedin.com/in/guusjejuijn)
-    
+
 </div>
 
 ## Our Alumni
