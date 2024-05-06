@@ -6,13 +6,14 @@ encompasses both technical aspects in addition to descriptive information about 
 For both the system and the model the lifecycle is important and this needs to be taken into account. The definition
 for an algorithm is derived from the [Algoritmeregister](https://algoritmes.overheid.nl/nl/footer/over-algoritmes).
 
-On the one hand the TAD project is focused on building a standardized format of reporting on a algorithmic system by
-developing a [Reporting Standard](reporting-standard/index.md). This Reporting Standard consists out of a
+One of the goals of the TAD project is providing a standardized format of reporting on a algorithmic
+system by developing a [Reporting Standard](reporting-standard/index.md). This Reporting Standard consists out of a
 [System Card](reporting-standard/index.md#system_card) which contains
 [Model Cards](reporting-standard/index.md#model_card) and
 [Assessment Cards](reporting-standard/index.md#assessment_card).
 
-On the other hand the project is focused on filling in the System, Model and
-Assessment Cards with both performance metrics and technical measurements on fairness and bias of the model,
-assessments on the system where the specific algorithm resides, and descriptive information about the system.
+The final result of the project is producing System, Model and Assessment Cards with both performance metrics
+and technical measurements on fairness and bias of the model, assessments on the system where the specific
+algorithm resides, and descriptive information about the system.
+
 The requirements and instruments are dictated by the [Algoritmekader](https://minbzk.github.io/Algoritmekader/).
