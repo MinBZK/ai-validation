@@ -11,14 +11,14 @@ The Netherlands.
 
 We are a team of mostly engineers at a policy department.
 
-We work on the projects with in the _Transparency of Algorithmic Decision making_ scope:
+We work on the projects within the _Transparency of Algorithmic Decision making_ scope:
 
 ``` mermaid
 graph TB
     ak[<a href='https://minbzk.github.io/Algoritmekader/'>Algoritmekader</a>] --> tad
 
     subgraph Transparency of Algorithmic Decision making
-        tad[Algoritme Management Toolkit] --> st[<a href='/ai-validation/projects/tad/reporting-standard/'>Reporting Standard</a>]
+        tad[Algorithm Management Toolkit] --> st[<a href='/ai-validation/projects/tad/reporting-standard/'>Reporting Standard</a>]
         llm[<a href='/ai-validation/projects/llm-benchmarks/'>LLM Benchmark</a>] --> tad
     end
 
