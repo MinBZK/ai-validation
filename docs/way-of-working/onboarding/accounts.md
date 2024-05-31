@@ -16,6 +16,13 @@ Make sure you have installed [Webex](dev-machine.md#communication), then follow 
 - Create an account with your @rijksoverheid/@minbzk.nl email address.
 - Ask a team member to add to you to the AI Validation team.
 
+## Tuple
+
+Make sure you have installed [Tuple](https://tuple.app/downloads/), then follow these steps.
+
+- Create an account with your @rijksoverheid/@minbzk.nl email address.
+- Ask a team member to add to you to the AI Validation team.
+
 ## GitHub
 
 Create or use your existing GitHub account.
