@@ -2,12 +2,14 @@
 Aangifte
 adrs
 Aequitas
-Algoritmeregister
+Algemene
 Algoritmekader
+Algoritmeregister
 Anch
 anneschuth
 architecting
 berrydenhartog
+bestuursrecht
 Blendle
 Bluelight
 Bos
@@ -56,6 +58,7 @@ Noord
 onnx
 Opensource
 Organisatie
+overheid
 Pleio
 protobuf
 Pydantic
@@ -69,6 +72,8 @@ Rijk
 rijksoverheid
 Robbert
 robbertbos
+Rouwhof
+rubenrouwhof
 Schuth
 SENSUS
 serverside
@@ -98,8 +103,5 @@ WCAG
 webex
 webserver
 Weijs
-Woudloper
-Algemene
-bestuursrecht
 wetten
-overheid
+Woudloper
