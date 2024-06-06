@@ -150,6 +150,8 @@
     [:fontawesome-brands-github: rubenrouwhof](https://github.com/rubenrouwhof)
 
     [:fontawesome-brands-linkedin: Ruben Rouwhof](https://www.linkedin.com/in/rubenrouwhof)
+
+    [:octicons-link-24: rubenrouwhof.nl](https://rubenrouwhof.nl)
 </div>
 
 ## Our Alumni
