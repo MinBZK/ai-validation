@@ -137,6 +137,23 @@
 
     [:fontawesome-brands-linkedin: Guusje Juijn](https://www.linkedin.com/in/guusjejuijn)
 
+-   ## Ruben Rouwhof
+
+    UX/UI Designer
+
+    ----
+
+    ![Ruben Rouwhof](../img/ruben.png){: .round }
+
+    Ruben is a dedicated UX/UI Designer focused on crafting user-centric digital experiences. He is involved in projects
+    from start to finish, covering user research, design, and technical implementation.
+
+    [:fontawesome-brands-github: rubenrouwhof](https://github.com/rubenrouwhof)
+
+    [:fontawesome-brands-linkedin: Ruben Rouwhof](https://www.linkedin.com/in/rubenrouwhof)
+
+    [:octicons-link-24: rubenrouwhof.nl](https://rubenrouwhof.nl)
+
 </div>
 
 ## Our Alumni
