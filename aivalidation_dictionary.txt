@@ -48,6 +48,7 @@ Laurens
 LLM
 LLMs
 Logius
+Meijer
 metamodel
 minbzk
 mkdocs
@@ -68,6 +69,8 @@ pymdownx
 Pyright
 pytest
 Québec
+Ravi
+ravimeijerrig
 Rijk
 rijksoverheid
 Robbert
