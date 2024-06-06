@@ -101,6 +101,12 @@ Contributing can be done by clicking "edit" top right and by making a pull reque
     brew install pyenv-virtualenv
     ```
 
+- [pre-commit](https://pre-commit.com/)
+
+    ```shell
+    brew install pre-commit
+    ```
+
 - [Xcode Command Line Tools](https://developer.apple.com/xcode/resources/)
 
     ```shell
