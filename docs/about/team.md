@@ -154,6 +154,21 @@
 
     [:octicons-link-24: rubenrouwhof.nl](https://rubenrouwhof.nl)
 
+-   ## Ravi Meijer
+
+    Product Researcher
+
+    ----
+
+    ![Ravi Meijer](../img/ravi.jpg){: .round }
+
+    Ravi is an accomplished data scientist with expertise in machine learning, responsible AI, and the data science lifecycle.
+    Her background in AI fuels her passion for solving complex problems and driving innovation for positive social impact.
+
+    [:fontawesome-brands-github: ravimeijerrig](https://github.com/ravimeijerrig)
+
+    [:fontawesome-brands-linkedin: Ravi Meijer](https://www.linkedin.com/in/ravi-meijer)
+
 </div>
 
 ## Our Alumni
