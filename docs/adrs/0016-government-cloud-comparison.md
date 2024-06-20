@@ -40,26 +40,42 @@ but these are not suitable for hosting a custom application.
     - Cons:
 - [Digilab](https://digilab.overheid.nl/)
     - Description:
-        - Digilab will provide an Openshift Kubernetes namespace for you, but also
+        - Digilab will provide an Openshift Kubernetes namespace for you, but also managed services like Mattermost.
+    - Pros:
+        - The platform is made such based on the vision of [Common Ground](https://commonground.nl/), and thus to
+standardize cloud hosting through [Haven](https://digilab.overheid.nl/projecten/haven/) for all Dutch
+municipalities. This standardization improves on integration later on.
+    - Cons:
 - Tender Process [Aanbestedingswet](https://wetten.overheid.nl/BWBR0032203/2022-03-02)
     - Description:
-        - If you don't want to make use of any of the governmental parties stated above you could go to the free market to
-provide an infrastructure for you. As the government cannot simply find a party to implement this for them you need to
+        - If you don't want to make use of the governmental parties stated above you could go to the free market to
+provide infrastructure for you. As the government cannot simply find a party to implement this for them, you need to
 go through a tender process as described in the law stated above in the title.
     - Pros:
+        - The process of acquiring this is open
     - Cons:
         - Takes a while as generally just like with SSC-ICT you need to write a whole set of documents to specify what you
 exactly want and you cannot change this in the meantime.
 - [SLM Rijk](https://www.rijksoverheid.nl/documenten/publicaties/2018/11/12/strategisch-leveranciersmanagement-microsoft-rijk-slm-microsoft)
     - Description:
+        - The Rijksoverheid has made Strategic Delivery Agreement that with certain restrictions public cloud providers
+can be used by the Dutch Government.
     - Pros:
+        - It is very easy to set-up infrastructure with the big international cloud providers
     - Cons:
+        - With our team we decided that we prefer open source solutions
+[principles.md](..%2Fway-of-working%2Fprinciples.md). So if we use some managed solutions of the big cloud providers
+we would not be following our principles.
 
 ## Decision
 
+For our infrastructure provider we decided to go with Digilab as the main source, as they can provide us with a
+Kubernetes namespace and are a reliable and convenient partner as we work closely with them.
+
 ## Risks
 
-## Consequences
+Certain choices are made for us if we make use of the Kubernetes namespace of Digilab, for example that we need to make
+use of Flux for our CI/CD pipeline.
 
 ## Extra information
 
