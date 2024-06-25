@@ -1,4 +1,4 @@
-# :label: 0.1a4 (Latest)
+# :label: 0.1a5 (Latest)
 
 This document describes the Transparency of Algorithmic Decision making (TAD) Reporting Standard.
 
@@ -24,7 +24,7 @@ to allow for:
 Face metadata specification.
 2. Capturing additional *measurements* on fairness and bias, which can be partitioned into bar plot like
 measurements (such as mean absolute SHAP values) and graph plot like measurements (such as partial dependence). This is achieved
-by defining an new field `measurements`.
+by defining a new field `measurements`.
 3. Capturing *assessments* (such as [IAMA](https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes)
 and [ALTAI](https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment)).
 This is achieved by defining a new field `assessments`.
@@ -113,10 +113,23 @@ legal base the following fields are present.
     2. `link` (OPTIONAL, string). URI pointing towards the contents of the law.
 17. `used_data` (OPTIONAL, string). An overview of the data that is used in the system.
 18. `technical_design` (OPTIONAL, string). Description on how the system works.
-19. `external_providers` (OPTIONAL, list[string]). Name of an external provider, if relevant. There can
-be multiple external providers.
+19. `external_providers` (OPTIONAL, list). If relevant, these fields allow to store information on external providers.
+ There can be multiple external providers.
+    1. `name` (OPTIONAL, string). Name of the external provider.
+    2. `version` (OPTIONAL, string). Version of the external provider reflecting its relation to previous versions.
 20. `references` (OPTIONAL, list[string]). Additional reference URI's that point information about the system
 and are relevant.
+21. `interaction_details` (OPTIONAL, list[string]). Explain how the AI system interacts with hardware or software,
+including other AI systems, or how the AI system can be used to interact with hardware or software.
+22. `version_requirements` (OPTIONAL, string). Describe the versions of the relevant software or firmware,
+ and any requirements related to version updates.
+23. `deployment_variants` (OPTIONAL, string). Description of all the forms in which the AI system is placed
+on the market or put into service, such as software packages embedded into hardware, downloads, or APIs.
+24. `hardware_requirements` (OPTIONAL, string). Provide a description of the hardware on which the AI system must be run.
+25. `product_markings` (OPTIONAL, string). If the AI system is a component of products, photos, or illustrations,
+describe the external features, markings, and internal layout of those products.
+26. `user_interface` (OPTIONAL, string). Provide a basic description of the user interface provided
+to the user responsible for its operation.
 
 #### 1. Models
 
@@ -323,9 +336,16 @@ legal_base:
 used_data: {system_used_data}                           # Optional. Description of the data used by the system.
 technical_design: {technical_design}                    # Optional. Description of the technical design of the system.
 external_providers:
-- {system_external_provider}                            # Optional. Reference to used external providers.
+- name: {name_external_provider}                        # Optional. Reference to used external providers.
+  version: {version_external_provider}                  # Optional. Version used of the external provider.
 references:
 - {reference_uri}                                       # Optional. Example: URI to codebase.
+interaction_details: {system_interaction_details}       # Optional. Example: "GPS modules for location tracking"
+version_requirements: {system_version_requirements}     # Optional. Example: "version2.1"
+deployment_variants: {system_deployment_variants}       # Optional. Example: "API"
+hardware_requirements: {system_hardware_requirements}   # Optional. Example: "8 GB RAM"
+product_markings: {system_product_markings}             # Optional. Example: where the AI system is a component of products, photographs or illustrations showing external features, the marking and internal layout of those products
+user_interface: {system_user_interface}                 # Optional. Example: "web-based dashboard"
 
 models:
 - !include {model_card_uri}                             # Optional. Example: cat_classifier_model.yaml.
@@ -441,6 +461,7 @@ JSON schema will be added when we publish the first beta version.
 
 ## Changelog
 
+- 0.1a5: adds a general description of high-risk systems for the EU technical documentation.
 - 0.1a4: adds data provenance
 - 0.1a3: require ISO 8601 timestamp
 - 0.1a2: introduces typed artifacts
