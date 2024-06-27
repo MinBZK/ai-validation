@@ -2,9 +2,9 @@
 
 ## Context
 
-Right now we have a few organizations (Logius, SSC-ICT, Standaard Platform, ODC-Noord, Tender process, and
-Digilab, etc...) offering IT infrastructure. This ADR will give an overview of what these different organizations are
-offering as well as make a decision for the AI Validation team on which infrastructure provider we will focus.
+Right now we have a few organizations (Logius, SSC-ICT, ODC-Noord, Tender process, and Digilab, etc...) offering IT
+infrastructure. This ADR will give an overview of what these different organizations are offering as well as make a
+decision for the AI Validation team on which infrastructure provider we will focus.
 
 ## Descriptions and comparison
 
