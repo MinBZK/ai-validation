@@ -21,6 +21,7 @@ Colab
 Dalex
 Deepseek
 devcontainer
+DICTU
 Digilab
 Digitoegankelijk
 Drempelvrij
@@ -41,6 +42,7 @@ Hartog
 HTMX
 HUIDERIA
 IAMA
+ICTU
 identificatienummer
 interpretability
 ITerm
@@ -102,6 +104,7 @@ traineeship
 twemoji
 Uittenbroek
 uittenbroekrobbert
+unmanaged
 Unported
 VCRPY
 VerifyML
