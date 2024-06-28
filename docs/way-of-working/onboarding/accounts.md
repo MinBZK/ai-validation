@@ -59,6 +59,6 @@ Bookmark these links in your browser:
 
 ## Secrets
 
-We use Hashicorp [Vault](https://vault.apps.digilab.network/) secrets manager for team secrets. You can login with a
-Github Personal access token. The token needs organization read permissions and you need to be added to the Github team
-to be able to access the vault.
+We use [HashiCorp Vault](https://vault.apps.digilab.network/) secrets manager for team secrets. You can login with a
+[GitHub Personal access token](https://github.com/settings/tokens). The token needs organization read
+permissions (`read:org`), and you should be part of our GitHub team to access the vault.
