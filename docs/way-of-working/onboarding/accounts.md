@@ -56,3 +56,9 @@ Bookmark these links in your browser:
 - [Team Collaboration Space](https://www.samenwerkruimten.nl/teamsites/ai-validatie-team)
 - [Sprint Board](https://github.com/orgs/MinBZK/projects/7)
 - [Webex Room](https://rijksvideo.webex.com/rijksvideo-du/j.php?MTID=mefba1dbb67959de6461040f02aadf353)
+
+## Secrets
+
+We use [HashiCorp Vault](https://vault.apps.digilab.network/) secrets manager for team secrets. You can login with a
+[GitHub Personal access token](https://github.com/settings/tokens). The token needs organization read
+permissions (`read:org`), and you should be part of our GitHub team to access the vault.
