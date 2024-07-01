@@ -17,7 +17,7 @@ and auditors to readily assess all necessary information for the technical docum
 The [RegCheck AI](https://huggingface.co/spaces/society-ethics/model-card-regulatory-check) tool published
 by [Hugging Face](https://huggingface.co), checks model cards for compliance with the EU AI Act.
 However, this prototype tool is research work and not a commercial or legal product. Furthermore,
-because we use a slightly modified model card setup, the performance may be less reliable.
+because we use a modified model card setup, the performance may be less reliable.
 
 ## Assumptions
 

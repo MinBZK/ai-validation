@@ -130,6 +130,8 @@ on the market or put into service, such as software packages embedded into hardw
 describe the external features, markings, and internal layout of those products.
 26. `user_interface` (OPTIONAL, string). Provide a basic description of the user interface provided
 to the user responsible for its operation.
+    1. `link` (OPTIONAL, string). A link to the user interface can be included.
+    2. `snapshot` (OPTIONAL, string). A snapshot/screenshot of the user interface can be included with the use of a hyperlink.
 
 #### 1. Models
 
@@ -346,6 +348,8 @@ deployment_variants: {system_deployment_variants}       # Optional. Example: "AP
 hardware_requirements: {system_hardware_requirements}   # Optional. Example: "8 GB RAM"
 product_markings: {system_product_markings}             # Optional. Example: where the AI system is a component of products, photographs or illustrations showing external features, the marking and internal layout of those products
 user_interface: {system_user_interface}                 # Optional. Example: "web-based dashboard"
+- link: {system_UI_link}                                # Optional. Example: "https://
+  snapshot: {system_UI_snapshot}                        # Optional. Example:  
 
 models:
 - !include {model_card_uri}                             # Optional. Example: cat_classifier_model.yaml.
