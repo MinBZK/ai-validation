@@ -4,7 +4,7 @@
 
 The [AI Verify project](https://github.com/aiverify-foundation/aiverify) is set up in a modular way, and the
 technical tests is one of the modules. The AI Verify
-team is developing a feature which makes it possible to run the technical tests using an API: a python library with
+team is developing a feature which makes it possible to run the technical tests using an API: a Python library with
 a method to run a test and providing the required configuration; for example, which  model and dataset to use and
 some test specific configuration.
 
