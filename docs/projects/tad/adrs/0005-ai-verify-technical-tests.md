@@ -1,4 +1,4 @@
-# TAD-0005 Use AI Verify for technical tests
+# TAD-0005 Add support to run technical tests via AI Verify
 
 ## Context
 
