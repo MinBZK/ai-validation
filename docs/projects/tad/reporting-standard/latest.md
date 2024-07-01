@@ -121,15 +121,19 @@ legal base the following fields are present.
 and are relevant.
 21. `interaction_details` (OPTIONAL, list[string]). Explain how the AI system interacts with hardware or software,
 including other AI systems, or how the AI system can be used to interact with hardware or software.
-22. `version_requirements` (OPTIONAL, string). Describe the versions of the relevant software or firmware,
+22. `version_requirements` (OPTIONAL, list[string]). Describe the versions of the relevant software or firmware,
  and any requirements related to version updates.
-23. `deployment_variants` (OPTIONAL, string). Description of all the forms in which the AI system is placed
+23. `deployment_variants` (OPTIONAL, list[string]). Description of all the forms in which the AI system is placed
 on the market or put into service, such as software packages embedded into hardware, downloads, or APIs.
-24. `hardware_requirements` (OPTIONAL, string). Provide a description of the hardware on which the AI system must be run.
-25. `product_markings` (OPTIONAL, string). If the AI system is a component of products, photos, or illustrations,
+24. `hardware_requirements` (OPTIONAL, list[string]). Provide a description of the hardware on
+which the AI system must be run.
+25. `product_markings` (OPTIONAL, list[string]). If the AI system is a component of products, photos, or illustrations,
 describe the external features, markings, and internal layout of those products.
-26. `user_interface` (OPTIONAL, string). Provide a basic description of the user interface provided
+26. `user_interface` (OPTIONAL, list). Provide information on the user interface provided
 to the user responsible for its operation.
+    1. `description` (OPTIONAL, string). A description of the provided user interface.
+    2. `link` (OPTIONAL, string). A link to the user interface can be included.
+    3. `snapshot` (OPTIONAL, string). A snapshot/screenshot of the user interface can be included with the use of a hyperlink.
 
 #### 1. Models
 
@@ -340,12 +344,16 @@ external_providers:
   version: {version_external_provider}                  # Optional. Version used of the external provider.
 references:
 - {reference_uri}                                       # Optional. Example: URI to codebase.
-interaction_details: {system_interaction_details}       # Optional. Example: "GPS modules for location tracking"
-version_requirements: {system_version_requirements}     # Optional. Example: "version2.1"
-deployment_variants: {system_deployment_variants}       # Optional. Example: "API"
-hardware_requirements: {system_hardware_requirements}   # Optional. Example: "8 GB RAM"
-product_markings: {system_product_markings}             # Optional. Example: where the AI system is a component of products, photographs or illustrations showing external features, the marking and internal layout of those products
+interaction_details: {system_interaction_details}       # Optional. Example: ["GPS modules for location tracking"]
+version_requirements: {system_version_requirements}     # Optional. Example: [">version2.1"]
+deployment_variants: {system_deployment_variants}       # Optional. Example: ["API", "Web Application"]
+hardware_requirements: {system_hardware_requirements}   # Optional. Example: ["8 GB RAM", "8 cores, 16 threads CPU"]
+product_markings: {system_product_markings}             # Optional. Example: ["Manufacturer logo on the front and back", "Model number near the screen bezel"]
+
+]
 user_interface: {system_user_interface}                 # Optional. Example: "web-based dashboard"
+- link: {system_UI_link}                                # Optional. Example: "http://example.com/content"
+  snapshot: {system_UI_snapshot}                        # Optional. Example: "http://example.com/snapshot.png"
 
 models:
 - !include {model_card_uri}                             # Optional. Example: cat_classifier_model.yaml.
@@ -461,7 +469,8 @@ JSON schema will be added when we publish the first beta version.
 
 ## Changelog
 
-- 0.1a5: adds a general description of high-risk systems for the EU technical documentation.
+- 0.1a5: adds a general description of the technical documentation required for
+high-risk systems to conform to the EU AI Act.
 - 0.1a4: adds data provenance
 - 0.1a3: require ISO 8601 timestamp
 - 0.1a2: introduces typed artifacts
