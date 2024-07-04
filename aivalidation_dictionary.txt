@@ -1,4 +1,5 @@
 # keep this file sorted: sort -u --ignore-case -o aivalidation_dictionary.txt aivalidation_dictionary.txt
+Aanbestedingswet
 Aangifte
 adrs
 Aequitas
@@ -20,6 +21,7 @@ Colab
 Dalex
 Deepseek
 devcontainer
+DICTU
 Digilab
 Digitoegankelijk
 Drempelvrij
@@ -40,6 +42,7 @@ Hartog
 HTMX
 HUIDERIA
 IAMA
+ICTU
 identificatienummer
 interpretability
 ITerm
@@ -85,6 +88,7 @@ SENSUS
 serverside
 SHAP
 Sonatype
+Standaard
 Standaardisatie
 Styleguides
 sublicensable
@@ -100,6 +104,7 @@ traineeship
 twemoji
 Uittenbroek
 uittenbroekrobbert
+unmanaged
 Unported
 VCRPY
 VerifyML
