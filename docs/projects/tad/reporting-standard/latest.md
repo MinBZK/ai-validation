@@ -344,16 +344,20 @@ external_providers:
   version: {version_external_provider}                  # Optional. Version used of the external provider.
 references:
 - {reference_uri}                                       # Optional. Example: URI to codebase.
-interaction_details: {system_interaction_details}       # Optional. Example: ["GPS modules for location tracking"]
-version_requirements: {system_version_requirements}     # Optional. Example: [">version2.1"]
-deployment_variants: {system_deployment_variants}       # Optional. Example: ["API", "Web Application"]
-hardware_requirements: {system_hardware_requirements}   # Optional. Example: ["8 GB RAM", "8 cores, 16 threads CPU"]
-product_markings: {system_product_markings}             # Optional. Example: ["Manufacturer logo on the front and back", "Model number near the screen bezel"]
-
-]
-user_interface: {system_user_interface}                 # Optional. Example: "web-based dashboard"
-- link: {system_UI_link}                                # Optional. Example: "http://example.com/content"
-  snapshot: {system_UI_snapshot}                        # Optional. Example: "http://example.com/snapshot.png"
+interaction_details:
+- {system_interaction_details}                          # Optional. Example: "GPS modules for location tracking"
+version_requirements:
+- {system_version_requirements}                         # Optional. Example: ">version2.1"
+deployment_variants:
+- {system_deployment_variants}                          # Optional. Example: "Web Application"
+hardware_requirements:
+- {system_hardware_requirements}                        # Optional. Example: "8 cores, 16 threads CPU"
+product_markings:
+- {system_product_markings}                             # Optional. Example: "Model number in the info menu"
+user_interface:
+- description: {system_user_interface}                  # Optional. Example: "web-based dashboard"
+  link: {system_user_interface_uri}                     # Optional. Example: "http://example.com/content"
+  snapshot: {system_user_interface_snapshot_uri}        # Optional. Example: "http://example.com/snapshot.png"
 
 models:
 - !include {model_card_uri}                             # Optional. Example: cat_classifier_model.yaml.
