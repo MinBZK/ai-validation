@@ -320,161 +320,157 @@ An `assessment_card` contains the following information.
 ### System Card
 
 ```yaml
-version: {system_card_version}                          # Optional. Example: "0.1a1"
-provenance:                                             # Optional.
-  git_commit_hash: {git_commit_hash}                    # Optional. Example: 5503434ddd753f426f4b38109466949a1217c2bb
-  timestamp: {modification_timestamp}                   # Optional. Example: 2024-04-16T16:48:14Z.
-  uri: {modification_uri}                               # Optional. Example: https://github.com/MinBZK/tad-conversion-tool
-  author: {modification_author}                         # Optional. Example: John Doe
-name: {system_name}                                     # Optional. Example: "AangifteVertrekBuitenland"
-upl: {upl_uri}                                          # Optional. Example: https://standaarden.overheid.nl/owms/terms/AangifteVertrekBuitenland
-owners:                                                 # Optional.
-  - oin: {oin}                                          # Optional. Example: 00000001003214345000
-    organization: {organization_name}                   # Optional if oin is provided, Required otherwise. Example: BZK
-    name: {owner_name}                                  # Optional. Example: John Doe
-    email: {owner_email}                                # Optional. Example: johndoe@email.com
-    role: {owner_role}                                  # Optional. Example: Data Scientist.
-description: {system_description}                       # Optional. Short description of the system.
-labels:                                                 # Optional. Labels to store metadata about the system.
-  - name: {label_name}                                  # Optional.
-    value: {label_value}                                # Optional.
-status: {system_status}                                 # Optional. Example: "production".
-publication_category: {system_publication_cat}          # Optional. Example: "impactful_algorithm".
-begin_date: {system_begin_date}                         # Optional. Example: 2025-1-1.
-end_date: {system_end_date}                             # Optional. Example: 2025-12-1.
-goal_and_impact: {system_goal_and_impact}               # Optional. Goal and impact of the system.
-considerations: {system_considerations}                 # Optional. Considerations about the system.
-risk_management: {system_risk_management}               # Optional. Description of risks associated with the system.
-human_intervention: {system_human_intervention}         # Optional. Description of human involvement in the system.
-legal_base:                                             # Optional.
-  - name: {law_name}                                    # Optional. Example: "AVG".
-    link: {law_uri}                                     # Optional. Example: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:31995L0046".
-used_data: {system_used_data}                           # Optional. Description of the data used by the system.
-technical_design: {technical_design}                    # Optional. Description of the technical design of the system.
-external_providers:                                     # Optional.
-  - name: {name_external_provider}                      # Optional. Reference to used external providers.
-    version: {version_external_provider}                # Optional. Version used of the external provider.
-references:                                             # Optional.
-  - {reference_uri}                                     # Optional. Example: URI to codebase.
-interaction_details:                                    # Optional.
-  - {system_interaction_details}                        # Optional. Example: "GPS modules for location tracking"
-version_requirements:                                   # Optional.
-  - {system_version_requirements}                       # Optional. Example: ">version2.1"
-deployment_variants:                                    # Optional.
-  - {system_deployment_variants}                        # Optional. Example: "Web Application"
-hardware_requirements:                                  # Optional.
-  - {system_hardware_requirements}                      # Optional. Example: "8 cores, 16 threads CPU"
-product_markings:                                       # Optional.
-  - {system_product_markings}                           # Optional. Example: "Model number in the info menu"
-user_interface:                                         # Optional.
-  - description: {system_user_interface}                # Optional. Example: "web-based dashboard"
-    link: {system_user_interface_uri}                   # Optional. Example: "http://example.com/content"
-    snapshot: {system_user_interface_snapshot_uri}      # Optional. Example: "http://example.com/snapshot.png"
+version: {system_card_version}
+provenance:
+  git_commit_hash: {git_commit_hash}
+  timestamp: {modification_timestamp}
+  uri: {modification_uri}
+  author: {modification_author}
+name: {system_name}
+upl: {upl_uri}
+owners:
+  - oin: {oin}
+    organization: {organization_name}
+    name: {owner_name}
+    email: {owner_email}
+    role: {owner_role}
+description: {system_description}
+labels:
+  - name: {label_name}
+    value: {label_value}
+status: {system_status}
+publication_category: {system_publication_cat}
+begin_date: {system_begin_date}
+end_date: {system_end_date}
+goal_and_impact: {system_goal_and_impact}
+considerations: {system_considerations}
+risk_management: {system_risk_management}
+human_intervention: {system_human_intervention}
+legal_base:
+  - name: {law_name}
+    link: {law_uri}
+used_data: {system_used_data}
+technical_design: {technical_design}
+external_providers:
+  - name: {name_external_provider}
+    version: {version_external_provider}
+references:
+  - {reference_uri}
+interaction_details:
+  - {system_interaction_details}
+version_requirements:
+  - {system_version_requirements}
+deployment_variants:
+  - {system_deployment_variants}
+hardware_requirements:
+  - {system_hardware_requirements}
+product_markings:
+  - {system_product_markings}
+user_interface:
+  - description: {system_user_interface}
+    link: {system_user_interface_uri}
+    snapshot: {system_user_interface_snapshot_uri}
 
-models:                                                 # Optional.
-  - !include {model_card_uri}                           # Optional. Example: cat_classifier_model.yaml.
+models:
+  - !include {model_card_uri}
 
-assessments:                                            # Optional.
-  - !include {assessment_card_uri}                      # Optional. Example: iama.yaml.
+assessments:
+  - !include {assessment_card_uri}
 ```
 
 ### Model Card
 
 ```yaml
-provenance:                                             # Optional.
-  git_commit_hash: {git_commit_hash}                    # Optional. Example: 5503434ddd753f426f4b38109466949a1217c2bb
-  timestamp: {modification_timestamp}                   # Optional. Example: 2024-04-16T16:48:14Z.
-  uri: {modification_uri}                               # Optional. Example: https://github.com/MinBZK/tad-conversion-tool
-  author: {modification_author}                         # Optional. Example: John Doe
-language:                                               # Optional.
-  - {lang_0}                                            # Optional. Example nl.
-license:                                                # Optional.
-  license_name: {license_name}                          # Required. Example: Apache-2.0 or any license SPDX ID from https://opensource.org/license or "other".
-  license_link: {license_uri}                           # Optional. Example: "LICENSE.md" to link to a file of that name inside the repo, or a URL to a remote file.
-tags:                                                   # Optional.
-  - {tag_0}                                             # Optional. Example: audio
-owners:                                                 # Optional.
-  - oin: {oin}                                          # Optional. Example: 00000001003214345000
-    organization: {organization_name}                   # Optional. Example: BZK
-    name: {owner_name}                                  # Optional. Example: John Doe
-    email: {owner_email}                                # Optional. Example: johndoe@email.com
-    role: {owner_role}                                  # Optional. Example: Data Scientist.
+provenance:
+  git_commit_hash: {git_commit_hash}
+  timestamp: {modification_timestamp}
+  uri: {modification_uri}
+  author: {modification_author}
+language:
+  - {lang_0}
+license:
+  license_name: {license_name}
+  license_link: {license_uri}
+tags:
+  - {tag_0}
+owners:
+  - oin: {oin}
+    organization: {organization_name}
+    name: {owner_name}
+    email: {owner_email}
+    role: {owner_role}
 
-model-index:                                            # Required.  
-  - name: {model_id}                                    # Required. Example: CatClassifier.
-    model: {model_uri}                                  # Required. URI to a repository containing the model file.
-    artifacts:                                          # Optional.
-      - uri: {model_artifact_uri}                       # Optional. Example: "https://github.com/MinBZK/poc-kijkdoos-wasm-models/raw/main/logres_iris/logreg_iris.onnx"
-      - content-type: {model_artifact_type}             # Optional. Example: "application/onnx".
-      - md5-checksum: {md5_checksum}                    # Optional. Example: "120EA8A25E5D487BF68B5F7096440019"
-    parameters:                                         # Optional.
-      - name: {parameter_name}                          # Optional. Example: "epochs".
-        dtype: {parameter_dtype}                        # Optional. Example: "int".
-        value: {parameter_value}                        # Optional. Example: 100.
-        labels:                                         # Optional.
-          - name: {label_name}                          # Optional. Example: "gender".
-            dtype: {label_type}                         # Optional. Example: "string".
-            value: {label_value}                        # Optional. Example: "female".
-    results:                                            # Optional.
-      - task:                                           # Required.
-          - type: {task_type}                           # Required. Example: image-classification.
-            name: {task_name}                           # Optional. Example: Image Classification.
-        datasets:                                       # Optional.
-          - type: {dataset_type}                        # Required. Example: common_voice. Link to a repository containing the dataset
-            name: {dataset_name}                        # Required. Example: "Common Voice (French)". A pretty name for the dataset.
-            split: {split}                              # Optional. Example: "train".
-            features:                                   # Optional.
-              - {feature_name}                          # Optional. Example: "gender".
-            revision: {dataset_version}                 # Optional. Example: "5503434ddd753f426f4b38109466949a1217c2bb"
-        metrics:                                        # Optional.
-          - type: {metric_type}                         # Required. Example: false-positive-rate. Use metric id from https://hf.co/metrics.
-            name: {metric_name}                         # Required. Example: "FPR wrt class 0 restricted to feature gender:0 and age:21".
-            dtype: {metric_dtype}                       # Required. Example: "float".
-            value: {metric_value}                       # Required. Example: 0.75.
-            labels:                                     # Optional.
-              - name: {label_name}                      # Optional. Example: "gender".
-                type: {label_type}                      # Optional. Example: "feature".
-                dtype: {label_type}                     # Optional. Example: "string".
-                value: {label_value}                    # Optional. Example: "female".
-        measurements:                                   # Optional.
-          # Bar plots should be able to capture SHAP and Robustness Toolbox from AI Verify.
-          bar_plots:                                    # Optional.
-            - type: {measurement_type}                  # Required. Example: "SHAP".
-              name: {measurement_name}                  # Optional. Example: "Mean Absolute Shap Values".
-              results:                                  # Required.
-                - name: {bar_name}                      # Required. The name of a bar.
-                  value: {bar_value}                    # Required. The corresponding value.
-          # Graph plots should be able to capture graph based measurements such as partial dependence and accumulated local effect.
-          graph_plots:                                  # Optional.
-            - type: {measurement_type}                  # Required. Example: "partial_dependence".
-              name: {measurement_name}                  # Optional. Example: "Partial Dependence Plot".
-              # Results store the graph plot data. So far all plots are dependent on a combination of a specific class (sometimes) and feature (always).
-              # For example partial dependence plots are made for each feature and class.
-              results:                                  # Required.
-                - class: {class_name}                   # Optional. Name of the output class the graph depends on.
-                  feature: {feature_name}               # Required. Name of the feature the graph depends on.
-                  data:                                 # Required.
-                    - x_value: {x_value}                # Required. The x value of the graph data.
-                      y_value: {y_value}                # Required. The y value of the graph data.
+model-index:
+  - name: {model_id}
+    model: {model_uri}
+    artifacts:
+      - uri: {model_artifact_uri}
+      - content-type: {model_artifact_type}
+      - md5-checksum: {md5_checksum}
+    parameters:
+      - name: {parameter_name}
+        dtype: {parameter_dtype}
+        value: {parameter_value}
+        labels:
+          - name: {label_name}
+            dtype: {label_type}
+            value: {label_value}
+    results:
+      - task:
+          - type: {task_type}
+            name: {task_name}
+        datasets:
+          - type: {dataset_type}
+            name: {dataset_name}
+            split: {split}
+            features:
+              - {feature_name}
+            revision: {dataset_version}
+        metrics:
+          - type: {metric_type}
+            name: {metric_name}
+            dtype: {metric_dtype}
+            value: {metric_value}
+            labels:
+              - name: {label_name}
+                type: {label_type}
+                dtype: {label_type}
+                value: {label_value}
+        measurements:
+          bar_plots:
+            - type: {measurement_type}
+              name: {measurement_name}
+              results:
+                - name: {bar_name}
+                  value: {bar_value}
+          graph_plots:
+            - type: {measurement_type}
+              name: {measurement_name}
+              results:
+                - class: {class_name}
+                  feature: {feature_name}
+                  data:
+                    - x_value: {x_value}
+                      y_value: {y_value}
 ```
 
 ### Assessment Card
 
 ```yaml
-provenance:                                             # Optional.
-  git_commit_hash: {git_commit_hash}                    # Optional. Example: 5503434ddd753f426f4b38109466949a1217c2bb
-  timestamp: {modification_timestamp}                   # Optional. Example: 2024-04-16T16:48:14Z.
-  uri: {modification_uri}                               # Optional. Example: https://github.com/MinBZK/tad-conversion-tool
-  author: {modification_author}                         # Optional. Example: John Doe
-name: {assessment_name}                                 # Required. Example: IAMA.
-date: {assessment_date}                                 # Required. Example: 25-03-2025.
-contents:                                               # Required.
-  - question: {question_text}                           # Required. Example: "Question 1: ...".
-    answer: {answer_text}                               # Required. Example: "Answer: ...".
-    remarks: {remarks_text}                             # Optional. Example: "Remarks: ...".
-    authors:                                            # Optional.
-      - name: {author_name}                             # Optional. Example: "Anne".
-    timestamp: {timestamp}                              # Optional. Example: 2024-04-16T16:48:14Z.
+provenance:
+  git_commit_hash: {git_commit_hash}
+  timestamp: {modification_timestamp}
+  uri: {modification_uri}
+  author: {modification_author}
+name: {assessment_name}
+date: {assessment_date}
+contents:
+  - question: {question_text}
+    answer: {answer_text}
+    remarks: {remarks_text}
+    authors:
+      - name: {author_name}
+    timestamp: {timestamp}
 ```
 
 ## Schema
