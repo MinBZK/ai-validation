@@ -24,7 +24,7 @@
     
     
       
-        <title>🏷 0.1a5 (Latest) - AI Validation Team</title>
+        <title>🏷 0.1a6 (Latest) - AI Validation Team</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#01a5-latest" class="md-skip">
+        <a href="#01a6-latest" class="md-skip">
           Skip to content
         </a>
       
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🏷 0.1a5 (Latest)
+              🏷 0.1a6 (Latest)
             
           </span>
         </div>
@@ -518,6 +518,8 @@
       
         
       
+        
+      
     
     
       
@@ -570,7 +572,28 @@
         
   
   <span class="md-ellipsis">
-    🏷 0.1a5 (Latest)
+    🏷 0.1a6 (Latest)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0.1a5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🏷 0.1a5
   </span>
   
 
@@ -2042,30 +2065,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="system_card">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Models
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-assessments" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Assessments
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -2074,21 +2073,6 @@
       model_card
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="model_card">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-model-index" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Model Index
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2189,36 +2173,37 @@
   
 
 
-<h1 id="01a5-latest"><img alt="🏷" class="twemoji" src="../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f3f7.svg" title=":label:"> 0.1a5 (Latest)</h1>
+<h1 id="01a6-latest"><img alt="🏷" class="twemoji" src="../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f3f7.svg" title=":label:"> 0.1a6 (Latest)</h1>
 <p>This document describes the Transparency of Algorithmic Decision making (TAD) Reporting Standard.</p>
-<p>For reproducibility, governance, auditing and sharing of algorithmic systems it is essential to have a
-reporting standard so that information about an algorithmic system can be shared. This reporting standard
-describes how information about the different phases of an algorithm's life cycle can be reported.
-It contains, among other things, descriptive information combined with information about the technical
-tests and assessments applied.</p>
+<p>For reproducibility, governance, auditing and sharing of algorithmic systems it is essential to have a reporting
+standard so that information about an algorithmic system can be shared. This reporting standard describes how
+information about the different phases of an algorithm's life cycle can be reported. It contains, among other things,
+descriptive information combined with information about the technical tests and assessments applied.</p>
 <div class="admonition warning">
 <p class="admonition-title">Disclaimer</p>
-<p>The TAD Reporting Standard is work in progress. This means that the current standard is probably suboptimal
-and will change significantly in future versions.</p>
+<p>The TAD Reporting Standard is work in progress. This means that the current standard is probably suboptimal and will
+change significantly in future versions.</p>
 </div>
 <h2 id="introduction">Introduction</h2>
-<p>Inspired by <a href="https://arxiv.org/abs/1810.03993">Model Cards for Model Reporting</a>
-and <a href="https://github.com/paperswithcode/model-index">Papers with Code Model Index</a> this standard almost
-<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> <sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> extends the <a href="https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1">Hugging Face model card metadata specification</a>
+<p>Inspired by <a href="https://arxiv.org/abs/1810.03993">Model Cards for Model Reporting</a> and
+<a href="https://github.com/paperswithcode/model-index">Papers with Code Model Index</a> this standard almost<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> <sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>
+extends the
+<a href="https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1">Hugging Face model card metadata specification</a>
 to allow for:</p>
 <ol>
 <li>More fine-grained information on performance metrics, by extending the <code>metrics_field</code> from the Hugging
-Face metadata specification.</li>
+   Face metadata specification.</li>
 <li>Capturing additional <em>measurements</em> on fairness and bias, which can be partitioned into bar plot like
-measurements (such as mean absolute SHAP values) and graph plot like measurements (such as partial dependence). This is achieved
-by defining a new field <code>measurements</code>.</li>
-<li>Capturing <em>assessments</em> (such as <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes">IAMA</a>
-and <a href="https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment">ALTAI</a>).
-This is achieved by defining a new field <code>assessments</code>.</li>
+   measurements (such as mean absolute SHAP values) and graph plot like measurements (such as partial dependence). This
+   is achieved by defining a new field <code>measurements</code>.</li>
+<li>Capturing <em>assessments</em> (such as
+   <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes">IAMA</a>
+   and <a href="https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment">ALTAI</a>).
+   This is achieved by defining a new field <code>assessments</code>.</li>
 </ol>
-<p>Following Hugging Face, this proposed standard will be written in yaml.</p>
-<p>This standard does not contain all fields present in the Hugging Face metadata specification. The fields that
-are optional in the Hugging Face specification and are specific to the Hugging Face interface are omitted.</p>
+<p>Following Hugging Face, this proposed standard will be written in YAML.</p>
+<p>This standard does not contain all fields present in the Hugging Face metadata specification. The fields that are
+optional in the Hugging Face specification and are specific to the Hugging Face interface are omitted.</p>
 <p>Another difference is that we divide our implementation into three separate parts.</p>
 <ol>
 <li><code>system_card</code>, containing information about a group of ML-models which accomplish a specific task.</li>
@@ -2227,32 +2212,30 @@ are optional in the Hugging Face specification and are specific to the Hugging F
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Include statements</p>
-<p>These <code>model_card</code>s and  <code>assessment_card</code>s  can be included verbatim into a <code>system_card</code>,
-or referenced with an <code>!include</code> statement, allowing for minimal cards to be compact in a single
-file. Extensive cards can be split up for readability and maintainability. Our standard allows for
-the <code>!include</code> to be used anywhere.</p>
+<p>These <code>model_card</code>s and  <code>assessment_card</code>s  can be included verbatim into a <code>system_card</code>, or referenced with an
+<code>!include</code> statement, allowing for minimal cards to be compact in a single file. Extensive cards can be split up for
+readability and maintainability. Our standard allows for the <code>!include</code> to be used anywhere.</p>
 </div>
 <h2 id="specification-of-the-standard">Specification of the standard</h2>
-<p>The standard will be written in yaml. Example yaml files are given in the next section. The standard defines
-three cards: a <code>system_card</code>, a <code>model_card</code> and an <code>assessment_card</code>. A <code>system_card</code> contains information
-about an algorithmic system. It can have multiple models and each of these models should have a <code>model_card</code>.
-Regulatory assessments can be processed in an <code>assessment_card</code>. Note that <code>model_card</code>'s and
-<code>assessment_card</code>'s can be included directly into the <code>system_card</code> or can be included as separate yaml
-files with help of a yaml-include mechanism. For clarity the latter is preferred and is also used in
-the examples in the next section.</p>
+<p>The standard will be written in YAML. Example YAML files are given in the next section. The standard defines three
+cards: a <code>system_card</code>, a <code>model_card</code> and an <code>assessment_card</code>. A <code>system_card</code> contains information about an
+algorithmic system. It can have multiple models and each of these models should have a <code>model_card</code>. Regulatory
+assessments can be processed in an <code>assessment_card</code>. Note that <code>model_card</code>'s and <code>assessment_card</code>'s can be included
+directly into the <code>system_card</code> or can be included as separate YAML files with help of a YAML-include mechanism. For
+clarity the latter is preferred and is also used in the examples in the next section.</p>
 <h3 id="system_card"><code>system_card</code></h3>
 <p>A <code>system_card</code> contains the following information.</p>
 <ol>
 <li><code>schema_version</code> (REQUIRED, string). Version of the schema used, for example "0.1a2".</li>
 <li>
-<p><code>provenance</code> (OPTIONAL). In case this System Card is generated from another source file, this field
-can capture the historical context of the contents of this System Card.</p>
+<p><code>provenance</code> (OPTIONAL). In case this System Card is generated from another source file, this field can capture the
+   historical context of the contents of this System Card.</p>
 <ol>
-<li><code>git_commit_hash</code> (OPTIONAL, string). Git commit hash of the commit which contains the transformation
-file used to create this card.</li>
+<li><code>git_commit_hash</code> (OPTIONAL, string). Git commit hash of the commit which contains the transformation file used
+    to create this card.</li>
 <li><code>timestamp</code> (OPTIONAL, string). A timestamp of the date, time and timezone of generation of this System Card.
-Timestamp should be given, preferably in UTC (represented as <code>Z</code>), in <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a>
-format, i.e. <code>2024-04-16T16:48:14Z</code>.</li>
+    Timestamp should be given, preferably in UTC (represented as <code>Z</code>), in
+    <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> format, i.e. <code>2024-04-16T16:48:14Z</code>.</li>
 <li><code>uri</code> (OPTIONAL, string). URI to the tool that was used to perform the transformations.</li>
 <li><code>author</code> (OPTIONAL, string). Name of person that initiated the transformations.</li>
 </ol>
@@ -2261,25 +2244,27 @@ format, i.e. <code>2024-04-16T16:48:14Z</code>.</li>
 <p><code>name</code> (OPTIONAL, string). Name used to describe the system.</p>
 </li>
 <li><code>upl</code> (OPTIONAL, string). If this algorithm is part of a product offered by the Dutch Government,
-    it should contain a URI from the <a href="https://standaarden.overheid.nl/owms/oquery/UPL-actueel.plain">Uniform Product List</a>.</li>
+    it should contain a URI from the
+    <a href="https://standaarden.overheid.nl/owms/oquery/UPL-actueel.plain">Uniform Product List</a>.</li>
 <li>
-<p><code>owners</code> (list). There can be multiple owners. For each owner the following fields are present.</p>
+<p><code>owners</code> (OPTIONAL, list). There can be multiple owners. For each owner the following fields are present.</p>
 <ol>
-<li><code>oin</code> (OPTIONAL, string). If applicable the <a href="https://oinregister.logius.nl/oin-register">Organisatie-identificatienummer (OIN)</a>.</li>
-<li><code>organization</code> (OPTIONAL, string). Name of the organization that owns the model. If <code>ion</code> is
-NOT provided this field is REQUIRED.</li>
+<li><code>oin</code> (OPTIONAL, string). If applicable the
+   <a href="https://oinregister.logius.nl/oin-register">Organisatie-identificatienummer (OIN)</a>.</li>
+<li><code>organization</code> (OPTIONAL, string). Name of the organization that owns the model. If <code>ion</code> is NOT provided this
+   field is REQUIRED.</li>
 <li><code>name</code> (OPTIONAL, string). Name of a contact person within the organization.</li>
 <li><code>email</code> (OPTIONAL, string). Email address of the contact person or organization.</li>
-<li><code>role</code> (OPTIONAL, string). Role of the contact person. This field should only be set when the <code>name</code> field
-is set.</li>
+<li><code>role</code> (OPTIONAL, string). Role of the contact person. This field should only be set when the <code>name</code> field is
+   set.</li>
 </ol>
 </li>
 <li>
 <p><code>description</code> (OPTIONAL, string). A short description of the system.</p>
 </li>
 <li>
-<p><code>labels</code> (OPTIONAL, list). This fields allows to store meta information about a system. There
-can be multiple labels. For each label the following fields are present.</p>
+<p><code>labels</code> (OPTIONAL, list). This fields allows to store meta information about a system. There can be multiple labels.
+   For each label the following fields are present.</p>
 <ol>
 <li><code>name</code> (OPTIONAL, string). Name of the label.</li>
 <li><code>value</code> (OPTIONAL, string). Value of the label.</li>
@@ -2288,113 +2273,120 @@ can be multiple labels. For each label the following fields are present.</p>
 <li>
 <p><code>status</code> (OPTIONAL, string). The status of the system. For example the status can be "production".</p>
 </li>
-<li><code>publication_category</code> (OPTIONAL, enum[string]). The publication category of the algorithm should
-be chosen from <code>["high_risk", other"]</code>.</li>
-<li><code>begin_date</code> (OPTIONAL, string). The first date the system was used.
-Date should be given in <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> format, i.e. <code>YYYY-MM-DD</code>.</li>
-<li><code>end_date</code> (OPTIONAL, string). The last date the system was used.
-Date should be given in <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> format, i.e. <code>YYYY-MM-DD</code>.</li>
-<li><code>goal_and_impact</code> (OPTIONAL, string). The purpose of the system and the impact it has on citizens
-and companies.</li>
+<li><code>publication_category</code> (OPTIONAL, enum[string]). The publication category of the algorithm should be chosen from
+   <code>["high_risk", other"]</code>.</li>
+<li><code>begin_date</code> (OPTIONAL, string). The first date the system was used. Date should be given in
+    <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> format, i.e. <code>YYYY-MM-DD</code>.</li>
+<li><code>end_date</code> (OPTIONAL, string). The last date the system was used. Date should be given in
+    <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> format, i.e. <code>YYYY-MM-DD</code>.</li>
+<li><code>goal_and_impact</code> (OPTIONAL, string). The purpose of the system and the impact it has on citizens and companies.</li>
 <li><code>considerations</code> (OPTIONAL, string). The pro's and con's of using the system.</li>
 <li><code>risk_management</code> (OPTIONAL, string). Description of the risks associated with the system.</li>
-<li><code>human_intervention</code> (OPTIONAL, string). A description to want extend there is human involvement
-in the system.</li>
-<li><code>legal_base</code> (OPTIONAL, list). If there exists a legal base for the process the system is embedded
-in, this field can be filled in with the relevant laws. There can be multiple legal bases. For each
-legal base the following fields are present.<ol>
+<li><code>human_intervention</code> (OPTIONAL, string). A description to want extend there is human involvement in the system.</li>
+<li>
+<p><code>legal_base</code> (OPTIONAL, list). If there exists a legal base for the process the system is embedded in, this field
+    can be filled in with the relevant laws. There can be multiple legal bases. For each legal base the following fields
+    are present.</p>
+<ol>
 <li><code>name</code> (OPTIONAL, string). Name of the law.</li>
 <li><code>link</code> (OPTIONAL, string). URI pointing towards the contents of the law.</li>
 </ol>
 </li>
-<li><code>used_data</code> (OPTIONAL, string). An overview of the data that is used in the system.</li>
+<li>
+<p><code>used_data</code> (OPTIONAL, string). An overview of the data that is used in the system.</p>
+</li>
 <li><code>technical_design</code> (OPTIONAL, string). Description on how the system works.</li>
-<li><code>external_providers</code> (OPTIONAL, list). If relevant, these fields allow to store information on external providers.
- There can be multiple external providers.<ol>
+<li>
+<p><code>external_providers</code> (OPTIONAL, list). If relevant, these fields allow to store information on external providers.
+    There can be multiple external providers.</p>
+<ol>
 <li><code>name</code> (OPTIONAL, string). Name of the external provider.</li>
 <li><code>version</code> (OPTIONAL, string). Version of the external provider reflecting its relation to previous versions.</li>
 </ol>
 </li>
-<li><code>references</code> (OPTIONAL, list[string]). Additional reference URI's that point information about the system
-and are relevant.</li>
+<li>
+<p><code>references</code> (OPTIONAL, list[string]). Additional reference URI's that point information about the system and are
+    relevant.</p>
+</li>
 <li><code>interaction_details</code> (OPTIONAL, list[string]). Explain how the AI system interacts with hardware or software,
-including other AI systems, or how the AI system can be used to interact with hardware or software.</li>
-<li><code>version_requirements</code> (OPTIONAL, list[string]). Describe the versions of the relevant software or firmware,
- and any requirements related to version updates.</li>
-<li><code>deployment_variants</code> (OPTIONAL, list[string]). Description of all the forms in which the AI system is placed
-on the market or put into service, such as software packages embedded into hardware, downloads, or APIs.</li>
-<li><code>hardware_requirements</code> (OPTIONAL, list[string]). Provide a description of the hardware on
-which the AI system must be run.</li>
+    including other AI systems, or how the AI system can be used to interact with hardware or software.</li>
+<li><code>version_requirements</code> (OPTIONAL, list[string]). Describe the versions of the relevant software or firmware, and any
+    requirements related to version updates.</li>
+<li><code>deployment_variants</code> (OPTIONAL, list[string]). Description of all the forms in which the AI system is placed on the
+    market or put into service, such as software packages embedded into hardware, downloads, or APIs.</li>
+<li><code>hardware_requirements</code> (OPTIONAL, list[string]). Provide a description of the hardware on which the AI system must
+    be run.</li>
 <li><code>product_markings</code> (OPTIONAL, list[string]). If the AI system is a component of products, photos, or illustrations,
-describe the external features, markings, and internal layout of those products.</li>
-<li><code>user_interface</code> (OPTIONAL, list). Provide information on the user interface provided
-to the user responsible for its operation.<ol>
+    describe the external features, markings, and internal layout of those products.</li>
+<li>
+<p><code>user_interface</code> (OPTIONAL, list). Provide information on the user interface provided to the user responsible for
+    its operation.</p>
+<ol>
 <li><code>description</code> (OPTIONAL, string). A description of the provided user interface.</li>
 <li><code>link</code> (OPTIONAL, string). A link to the user interface can be included.</li>
-<li><code>snapshot</code> (OPTIONAL, string). A snapshot/screenshot of the user interface can be included with the use of a hyperlink.</li>
+<li><code>snapshot</code> (OPTIONAL, string). A snapshot/screenshot of the user interface can be included with the use of a
+    hyperlink.</li>
 </ol>
 </li>
-</ol>
-<h4 id="1-models">1. Models</h4>
-<ol>
-<li><code>models</code> (OPTIONAL, list[ModelCard]). A list of model cards (as defined below) or <code>!include</code>s of a yaml
-file containing a model card. This model card can for example be a model card described in the next section
-or a model card from Hugging Face. There can be multiple model cards, meaning multiple models are used.</li>
-</ol>
-<h4 id="2-assessments">2. Assessments</h4>
-<ol>
-<li><code>assessments</code> (OPTIONAL, list[AssessmentCard]). A list of assessment cards (as defined below) or <code>!include</code>s of a yaml
-file containing a assessment card. This assessment card is an assessment card described in the next section.
-There can be multiple assessment cards, meaning multiple assessment were performed.</li>
+<li>
+<p><code>models</code> (OPTIONAL, list[ModelCard]). A list of model cards (as defined below) or <code>!include</code>s of a YAML file
+    containing a model card. This model card can for example be a model card described in the next section or a model
+    card from Hugging Face. There can be multiple model cards, meaning multiple models are used.</p>
+</li>
+<li>
+<p><code>assessments</code> (OPTIONAL, list[AssessmentCard]). A list of assessment cards (as defined below) or <code>!include</code>s of a
+    YAML file containing a assessment card. This assessment card is an assessment card described in the next section.
+    There can be multiple assessment cards, meaning multiple assessment were performed.</p>
+</li>
 </ol>
 <h3 id="model_card"><code>model_card</code></h3>
 <p>A <code>model_card</code> contains the following information.</p>
 <ol>
 <li>
-<p><code>provenance</code> (OPTIONAL). In case this Model Card is generated from another source file, this field
-can capture the historical context of the contents of this Model Card.</p>
+<p><code>provenance</code> (OPTIONAL). In case this Model Card is generated from another source file, this field can capture the
+   historical context of the contents of this Model Card.</p>
 <ol>
-<li><code>git_commit_hash</code> (OPTIONAL, string). Git commit hash of the commit which contains the transformation
-file used to create this card.</li>
+<li><code>git_commit_hash</code> (OPTIONAL, string). Git commit hash of the commit which contains the transformation file used
+    to create this card.</li>
 <li><code>timestamp</code> (OPTIONAL, string). A timestamp of the date, time and timezone of generation of this System Card.
-Timestamp should be given, preferably in UTC (represented as <code>Z</code>), in <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a>
-format, i.e. <code>2024-04-16T16:48:14Z</code>.</li>
+   Timestamp should be given, preferably in UTC (represented as <code>Z</code>), in
+   <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> format, i.e. <code>2024-04-16T16:48:14Z</code>.</li>
 <li><code>uri</code> (OPTIONAL, string). URI to the tool that was used to perform the transformations.</li>
 <li><code>author</code> (OPTIONAL, string). Name of person that initiated the transformations.</li>
 </ol>
 </li>
 <li>
-<p><code>language</code> (OPTIONAL, list[string]). If relevant, the natural languages the model supports in <a href="https://www.iso.org/iso-639-language-code">ISO 639</a>.
-    There can be multiple languages.</p>
+<p><code>language</code> (OPTIONAL, list[string]). If relevant, the natural languages the model supports in
+   <a href="https://www.iso.org/iso-639-language-code">ISO 639</a>. There can be multiple languages.</p>
 </li>
 <li>
-<p><code>license</code>(REQUIRED, string). Any license from the <a href="https://opensource.org/license">open source license list</a>
-<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. If the license is NOT present in the license list this field must be set to 'other' and the following
-two fields will be REQUIRED.</p>
+<p><code>license</code> (REQUIRED).</p>
 <ol>
-<li><code>license_name</code> (string). An id for the license.</li>
-<li><code>license_link</code> (string). A link to a file of that name inside the repo, or a URL to a remote file containing the license
-contents.</li>
+<li><code>license_name</code> (REQUIRED, string). Any license from the
+   <a href="https://opensource.org/license">open source license list</a><sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. If the license is NOT present in the license list
+   this field must be set to 'other' and the following two fields will be REQUIRED.</li>
+<li><code>license_link</code> (OPTIONAL, string). A link to a file of that name inside the repo, or a URL to a remote file
+   containing the license contents.</li>
 </ol>
 </li>
 <li>
 <p><code>tags</code> (OPTIONAL, list[string]). Tags with keywords to describe the project. There can be multiple tags.</p>
 </li>
 <li>
-<p><code>owners</code> (list). There can be multiple owners. For each owner the following fields are present.</p>
+<p><code>owners</code> (OPTIONAL, list). There can be multiple owners. For each owner the following fields are present.</p>
 <ol>
-<li><code>oin</code> (OPTIONAL, string). If applicable the <a href="https://oinregister.logius.nl/oin-register">Organisatie-identificatienummer (OIN)</a>.</li>
-<li><code>organization</code> (OPTIONAL, string). Name of the organization that owns the model. If <code>ion</code> is
-NOT provided this field is REQUIRED.</li>
+<li><code>oin</code> (OPTIONAL, string). If applicable the
+   <a href="https://oinregister.logius.nl/oin-register">Organisatie-identificatienummer (OIN)</a>.</li>
+<li><code>organization</code> (OPTIONAL, string). Name of the organization that owns the model. If <code>ion</code> is NOT provided this
+   field is REQUIRED.</li>
 <li><code>name</code> (OPTIONAL, string). Name of a contact person within the organization.</li>
 <li><code>email</code> (OPTIONAL, string). Email address of the contact person or organization.</li>
-<li><code>role</code> (OPTIONAL, string). Role of the contact person. This field should only be set when the <code>name</code> field
-is set.</li>
+<li><code>role</code> (OPTIONAL, string). Role of the contact person. This field should only be set when the <code>name</code> field is
+    set.</li>
 </ol>
 </li>
-</ol>
-<h4 id="1-model-index">1. Model Index</h4>
-<p>There can be multiple models. For each model the following fields are present.</p>
+<li>
+<p><code>model_index</code> (REQUIRED, list). There can be multiple models. For each model the following fields are present.</p>
 <ol>
 <li><code>name</code> (REQUIRED, string). The name of the model.</li>
 <li><code>model</code> (REQUIRED, string). A URI pointing to a repository containing the model file.</li>
@@ -2402,31 +2394,32 @@ is set.</li>
 <p><code>artifacts</code> (OPTIONAL, list). A list of artifacts</p>
 <ol>
 <li><code>uri</code> (OPTIONAL, string) URI refers to a relevant model artifact</li>
-<li><code>content-type</code> (OPTIONAL, string) Optional type, follow the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type">Content-Type</a>.
-Recognized values are "application/onnx"", to refer to an ONNX representation of the model.</li>
+<li><code>content-type</code> (OPTIONAL, string) Optional type, follow the
+   <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type">Content-Type</a>. Recognized values are
+   "application/onnx"", to refer to an ONNX representation of the model.</li>
 <li><code>md5-checksum</code> (OPTIONAL, string) Optional checksum for the content of the file.</li>
 </ol>
 </li>
 <li>
-<p><code>parameters</code> (list). There can be multiple parameters. For each parameter the following fields are present.</p>
+<p><code>parameters</code> (OPTIONAL, list). There can be multiple parameters. For each parameter the following fields are
+   present.</p>
 <ol>
 <li><code>name</code> (REQUIRED, string). The name of the parameter, for example "epochs".</li>
 <li><code>dtype</code> (OPTIONAL, string). The datatype of the parameter, for example "int".</li>
 <li><code>value</code> (OPTIONAL, string). The value of the parameter, for example 100.</li>
 <li>
-<p><code>labels</code> (list). This field allows to store meta information about a parameter.
-    There can be multiple labels. For each label the following fields are present.</p>
+<p><code>labels</code> (OPTIONAL, list). This field allows to store meta information about a parameter. There can be
+   multiple labels. For each label the following fields are present.</p>
 <ol>
 <li><code>name</code> (OPTIONAL, string). The name of the label.</li>
-<li><code>dtype</code> (OPTIONAL, string). The datatype of the feature. If <code>name</code> is set, this field
-is REQUIRED.</li>
+<li><code>dtype</code> (OPTIONAL, string). The datatype of the feature. If <code>name</code> is set, this field is REQUIRED.</li>
 <li><code>value</code> (OPTIONAL, string). The value of the feature. If <code>name</code> is set, this field is REQUIRED.</li>
 </ol>
 </li>
 </ol>
 </li>
 <li>
-<p><code>results</code> (list). There can be multiple results. For each result the following fields are present.</p>
+<p><code>results</code> (OPTIONAL, list). There can be multiple results. For each result the following fields are present.</p>
 <ol>
 <li>
 <p><code>task</code> (OPTIONAL, list).</p>
@@ -2436,38 +2429,42 @@ is REQUIRED.</li>
 </ol>
 </li>
 <li>
-<p><code>datasets</code> (list). There can be multiple datasets <sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. For each dataset the following fields are present.</p>
+<p><code>datasets</code> (OPTIONAL, list). There can be multiple datasets <sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. For each dataset the following fields are
+   present.</p>
 <ol>
-<li><code>type</code> (REQUIRED, string). The type of the dataset, can be a dataset id from <a href="https://hf.co/datasets">Hugging Face datasets</a>
-or any other link to a repository containing the dataset<sup id="fnref2:3"><a class="footnote-ref" href="#fn:3">3</a></sup>, for example "common_voice".</li>
+<li><code>type</code> (REQUIRED, string). The type of the dataset, can be a dataset id from
+   <a href="https://hf.co/datasets">Hugging Face datasets</a> or any other link to a repository containing the
+   dataset<sup id="fnref2:3"><a class="footnote-ref" href="#fn:3">3</a></sup>, for example "common_voice".</li>
 <li><code>name</code> (REQUIRED, string). Name pretty name for the dataset, for example "Common Voice (French)".</li>
 <li><code>split</code> (OPTIONAL, string). The split of the dataset, for example "train".</li>
 <li><code>features</code> (OPTIONAL, list[string]). List of feature names.</li>
-<li><code>revision</code> (OPTIONAL, string). Version of the dataset, for example 5503434ddd753f426f4b38109466949a1217c2bb.</li>
+<li><code>revision</code> (OPTIONAL, string). Version of the dataset, for example
+   "5503434ddd753f426f4b38109466949a1217c2bb".</li>
 </ol>
 </li>
 <li>
-<p><code>metrics</code> (list). There can be multiple metrics. For each metric the following fields are present.</p>
+<p><code>metrics</code> (OPTIONAL, list). There can be multiple metrics. For each metric the following fields are present.</p>
 <ol>
-<li><code>type</code> (REQUIRED, string). A metric-id from <a href="https://hf.co//metrics">Hugging Face metrics</a><sup id="fnref2:4"><a class="footnote-ref" href="#fn:4">4</a></sup>, for example accuracy.</li>
-<li><code>name</code> (REQUIRED, string). A descriptive name of the metric. For example "false positive rate" is
-not a descriptive name, but "training false positive rate w.r.t class x" is.</li>
+<li><code>type</code> (REQUIRED, string). A metric-id from <a href="https://hf.co//metrics">Hugging Face metrics</a><sup id="fnref2:4"><a class="footnote-ref" href="#fn:4">4</a></sup>, for
+   example accuracy.</li>
+<li><code>name</code> (REQUIRED, string). A descriptive name of the metric. For example "false positive rate" is not a
+   descriptive name, but "training false positive rate w.r.t class x" is.</li>
 <li><code>dtype</code> (REQUIRED, string). The data type of the metric, for example <code>float</code>.</li>
 <li><code>value</code> (REQUIRED, string). The value of the metric.</li>
 <li>
-<p><code>labels</code> (list). This field allows to store meta information about a metric. For example,
-metrics can be computed for example on subgroups of specific features.
-For example, one can compute the accuracy for examples where the feature "gender" is set to "male".
-There can be multiple subgroups, which means that the metric is computed on the intersection of those subgroups.
-There can be multiple labels. For each label the following fields are present.</p>
+<p><code>labels</code> (OPTIONAL, list). This field allows to store meta information about a metric. For example,
+   metrics can be computed for example on subgroups of specific features. For example, one can compute the
+   accuracy for examples where the feature "gender" is set to "male". There can be multiple subgroups, which
+   means that the metric is computed on the intersection of those subgroups. There can be multiple labels.
+   For each label the following fields are present.</p>
 <ol>
 <li><code>name</code> (OPTIONAL, string). The name of the feature. For example: "gender".</li>
-<li><code>type</code> (OPTIONAL, string). The type of the label. Can for example be set to "feature" or "output_class".
-If <code>name</code> is set, this field is REQUIRED.</li>
-<li><code>dtype</code> (OPTIONAL, string). The datatype of the feature, for example <code>float</code>. If <code>name</code> is set, this field
-is REQUIRED.</li>
-<li><code>value</code> (OPTIONAL, string). The value of the feature. If <code>name</code> is set, this field is REQUIRED.
-For example: "male".</li>
+<li><code>type</code> (OPTIONAL, string). The type of the label. Can for example be set to "feature" or
+   "output_class". If <code>name</code> is set, this field is REQUIRED.</li>
+<li><code>dtype</code> (OPTIONAL, string). The datatype of the feature, for example <code>float</code>. If <code>name</code> is set, this
+   field is REQUIRED.</li>
+<li><code>value</code> (OPTIONAL, string). The value of the feature. If <code>name</code> is set, this field is REQUIRED. For
+   example: "male".</li>
 </ol>
 </li>
 </ol>
@@ -2476,13 +2473,16 @@ For example: "male".</li>
 <p><code>measurements</code>.</p>
 <ol>
 <li>
-<p><code>bar_plots</code> (list). The purpose of this field is to capture bar plot like measurements, for example SHAP values.
-There can be multiple bar plots. For each bar plot the following fields are present.</p>
+<p><code>bar_plots</code> (OPTIONAL, list). The purpose of this field is to capture bar plot like measurements, for
+    example SHAP values. There can be multiple bar plots. For each bar plot the following fields are
+    present.</p>
 <ol>
 <li><code>type</code> (REQUIRED, string). The type of bar plot, for example "SHAP".</li>
 <li><code>name</code> (OPTIONAL, string). A pretty name for the plot, for example "Mean Absolute SHAP Values".</li>
-<li><code>results</code> (list). The contents of the bar plot. A result represents a bar. There can be multiple results.
-For each result the following fields are present.<ol>
+<li>
+<p><code>results</code> (REQUIRED, list). The contents of the bar plot. A result represents a bar. There can be
+   multiple results. For each result the following fields are present.</p>
+<ol>
 <li><code>name</code> (REQUIRED, string). The name of bar.</li>
 <li><code>value</code> (REQUIRED, float). The value of the corresponding bar.</li>
 </ol>
@@ -2490,21 +2490,28 @@ For each result the following fields are present.<ol>
 </ol>
 </li>
 <li>
-<p><code>graph_plots</code> (list). The purpose of this field is to capture graph plot like measurements, such as partial dependence
-plots.
-There can be multiple graph plots. For each graph plot the following fields are present.</p>
+<p><code>graph_plots</code> (OPTIONAL, list). The purpose of this field is to capture graph plot like measurements,
+   such as partial dependence plots. There can be multiple graph plots. For each graph plot the following
+   fields are present.</p>
 <ol>
 <li><code>type</code> (REQUIRED, string). The type of the graph plot, for example "partial_dependence".</li>
 <li><code>name</code> (OPTIONAL, string). A pretty name of the graph, for example "Partial Dependence Plot".</li>
-<li><code>results</code> (list). Results contains the graph plot data. Each graph can depend on a specific output
-class and feature. There can be multiple results. For each result the following fields are present.<ol>
+<li>
+<p><code>results</code> (REQUIRED, list). Results contains the graph plot data. Each graph can depend on a specific
+   output class and feature. There can be multiple results. For each result the following fields are
+   present.</p>
+<ol>
 <li><code>class</code> (OPTIONAL, string/int/float/bool). The output class name that the graph corresponds to.
-This field is not always present.</li>
+   This field is not always present.</li>
 <li><code>feature</code> (REQUIRED, string). The feature the graph corresponds to. This is required, since all
-relevant graphs are dependent on features.</li>
-<li><code>data</code> (list)<ol>
+   relevant graphs are dependent on features.</li>
+<li>
+<p><code>data</code> (REQUIRED, list)</p>
+<ol>
 <li><code>x_value</code> (REQUIRED, float). The $x$-value of the graph.</li>
 <li><code>y_value</code> (REQUIRED, float). The $y$-value of the graph.</li>
+</ol>
+</li>
 </ol>
 </li>
 </ol>
@@ -2520,14 +2527,14 @@ relevant graphs are dependent on features.</li>
 <p>An <code>assessment_card</code> contains the following information.</p>
 <ol>
 <li>
-<p><code>provenance</code> (OPTIONAL). In case this Assessment Card is generated from another source file, this field
-can capture the historical context of the contents of this Assessment Card.</p>
+<p><code>provenance</code> (OPTIONAL). In case this Assessment Card is generated from another source file, this field can capture
+   the historical context of the contents of this Assessment Card.</p>
 <ol>
-<li><code>git_commit_hash</code> (OPTIONAL, string). Git commit hash of the commit which contains the transformation
-file used to create this card.</li>
+<li><code>git_commit_hash</code> (OPTIONAL, string). Git commit hash of the commit which contains the transformation file used
+   to create this card.</li>
 <li><code>timestamp</code> (OPTIONAL, string). A timestamp of the date, time and timezone of generation of this System Card.
-Timestamp should be given, preferably in UTC (represented as <code>Z</code>), in <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a>
-format, i.e. <code>2024-04-16T16:48:14Z</code>.</li>
+   Timestamp should be given, preferably in UTC (represented as <code>Z</code>), in
+   <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> format, i.e. <code>2024-04-16T16:48:14Z</code>.</li>
 <li><code>uri</code> (OPTIONAL, string). URI to the tool that was used to perform the transformations.</li>
 <li><code>author</code> (OPTIONAL, string). Name of person that initiated the transformations.</li>
 </ol>
@@ -2535,183 +2542,187 @@ format, i.e. <code>2024-04-16T16:48:14Z</code>.</li>
 <li>
 <p><code>name</code> (REQUIRED, string). The name of the assessment.</p>
 </li>
-<li><code>date</code> (REQUIRED, string). The date at which the assessment is completed.
-Date should be given in <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> format, i.e. <code>YYYY-MM-DD</code>.</li>
+<li><code>date</code> (REQUIRED, string). The date at which the assessment is completed. Date should be given in
+   <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> format, i.e. <code>YYYY-MM-DD</code>.</li>
 <li>
-<p><code>contents</code> (list). There can be multiple items in contents. For each item the following fields are present:</p>
+<p><code>contents</code> (REQUIRED, list). There can be multiple items in contents. For each item the following fields are present:</p>
 <ol>
 <li><code>question</code> (REQUIRED, string). A question.</li>
 <li><code>answer</code> (REQUIRED, string). An answer.</li>
 <li><code>remarks</code> (OPTIONAL, string). A field to put relevant discussion remarks in.</li>
-<li><code>authors</code>. There can be multiple names. For each name the following field is present.<ol>
+<li>
+<p><code>authors</code> (OPTIONAL, list). There can be multiple names. For each name the following field is present.</p>
+<ol>
 <li><code>name</code> (OPTIONAL, string). The name of the author of the question.</li>
 </ol>
 </li>
-<li><code>timestamp</code> (OPTIONAL, string). A timestamp of the date, time and timezone of the answer.
-Timestamp should be given, preferably in UTC (represented as <code>Z</code>), in <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a>
-format, i.e. <code>2024-04-16T16:48:14Z</code>.</li>
+<li>
+<p><code>timestamp</code> (OPTIONAL, string). A timestamp of the date, time and timezone of the answer. Timestamp should be
+    given, preferably in UTC (represented as <code>Z</code>), in
+    <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> format, i.e. <code>2024-04-16T16:48:14Z</code>.</p>
+</li>
 </ol>
 </li>
 </ol>
 <h2 id="example">Example</h2>
 <h3 id="system-card">System Card</h3>
-<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_card_version</span><span class="p p-Indicator">}</span><span class="w">                          </span><span class="c1"># Optional. Example: &quot;0.1a1&quot;</span>
-<span class="nt">provenance</span><span class="p">:</span><span class="w">                                             </span><span class="c1"># Optional.</span>
-<span class="w">  </span><span class="nt">git_commit_hash</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">git_commit_hash</span><span class="p p-Indicator">}</span><span class="w">                    </span><span class="c1"># Optional. Example: 5503434ddd753f426f4b38109466949a1217c2bb</span>
-<span class="w">  </span><span class="nt">timestamp</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_timestamp</span><span class="p p-Indicator">}</span><span class="w">                   </span><span class="c1"># Optional. Example: 2024-04-16T16:48:14Z.</span>
-<span class="w">  </span><span class="nt">uri</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_uri</span><span class="p p-Indicator">}</span><span class="w">                               </span><span class="c1"># Optional. Example: https://github.com/MinBZK/tad-conversion-tool</span>
-<span class="w">  </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_author</span><span class="p p-Indicator">}</span><span class="w">                         </span><span class="c1"># Optional. Example: John Doe</span>
-<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_name</span><span class="p p-Indicator">}</span><span class="w">                                     </span><span class="c1"># Optional. Example: &quot;AangifteVertrekBuitenland&quot;</span>
-<span class="nt">upl</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">upl_uri</span><span class="p p-Indicator">}</span><span class="w">                                          </span><span class="c1"># Optional. Example: https://standaarden.overheid.nl/owms/terms/AangifteVertrekBuitenland</span>
+<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_card_version</span><span class="p p-Indicator">}</span>
+<span class="nt">provenance</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">git_commit_hash</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">git_commit_hash</span><span class="p p-Indicator">}</span>
+<span class="w">  </span><span class="nt">timestamp</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_timestamp</span><span class="p p-Indicator">}</span>
+<span class="w">  </span><span class="nt">uri</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_uri</span><span class="p p-Indicator">}</span>
+<span class="w">  </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_author</span><span class="p p-Indicator">}</span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_name</span><span class="p p-Indicator">}</span>
+<span class="nt">upl</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">upl_uri</span><span class="p p-Indicator">}</span>
 <span class="nt">owners</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">oin</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">oin</span><span class="p p-Indicator">}</span><span class="w">                                            </span><span class="c1"># Optional. Example: 00000001003214345000</span>
-<span class="w">  </span><span class="nt">organization</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">organization_name</span><span class="p p-Indicator">}</span><span class="w">                     </span><span class="c1"># Optional if oin is provided, Required otherwise. Example: BZK</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">owner_name</span><span class="p p-Indicator">}</span><span class="w">                                    </span><span class="c1"># Optional. Example: John Doe</span>
-<span class="w">  </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">owner_email</span><span class="p p-Indicator">}</span><span class="w">                                  </span><span class="c1"># Optional. Example: johndoe@email.com</span>
-<span class="w">  </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">owner_role</span><span class="p p-Indicator">}</span><span class="w">                                    </span><span class="c1"># Optional. Example: Data Scientist.</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_description</span><span class="p p-Indicator">}</span><span class="w">                       </span><span class="c1"># Optional. Short description of the system.</span>
-<span class="nt">labels</span><span class="p">:</span><span class="w">                                                 </span><span class="c1"># Optional. Labels to store metadata about the system.</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_name</span><span class="p p-Indicator">}</span><span class="w">                                    </span><span class="c1"># Optional.</span>
-<span class="w">  </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_value</span><span class="p p-Indicator">}</span><span class="w">                                  </span><span class="c1"># Optional.</span>
-<span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_status</span><span class="p p-Indicator">}</span><span class="w">                                 </span><span class="c1"># Optional. Example: &quot;production&quot;.</span>
-<span class="nt">publication_category</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_publication_cat</span><span class="p p-Indicator">}</span><span class="w">          </span><span class="c1"># Optional. Example: &quot;impactful_algorithm&quot;.</span>
-<span class="nt">begin_date</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_begin_date</span><span class="p p-Indicator">}</span><span class="w">                         </span><span class="c1"># Optional. Example: 2025-1-1.</span>
-<span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_end_date</span><span class="p p-Indicator">}</span><span class="w">                             </span><span class="c1"># Optional. Example: 2025-12-1.</span>
-<span class="nt">goal_and_impact</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_goal_and_impact</span><span class="p p-Indicator">}</span><span class="w">               </span><span class="c1"># Optional. Goal and impact of the system.</span>
-<span class="nt">considerations</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_considerations</span><span class="p p-Indicator">}</span><span class="w">                 </span><span class="c1"># Optional. Considerations about the system.</span>
-<span class="nt">risk_management</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_risk_management</span><span class="p p-Indicator">}</span><span class="w">               </span><span class="c1"># Optional. Description of risks associated with the system.</span>
-<span class="nt">human_intervention</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_human_intervention</span><span class="p p-Indicator">}</span><span class="w">         </span><span class="c1"># Optional. Description of human involvement in the system.</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">oin</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">oin</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">organization</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">organization_name</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">owner_name</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">owner_email</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">owner_role</span><span class="p p-Indicator">}</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_description</span><span class="p p-Indicator">}</span>
+<span class="nt">labels</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_name</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_value</span><span class="p p-Indicator">}</span>
+<span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_status</span><span class="p p-Indicator">}</span>
+<span class="nt">publication_category</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_publication_cat</span><span class="p p-Indicator">}</span>
+<span class="nt">begin_date</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_begin_date</span><span class="p p-Indicator">}</span>
+<span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_end_date</span><span class="p p-Indicator">}</span>
+<span class="nt">goal_and_impact</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_goal_and_impact</span><span class="p p-Indicator">}</span>
+<span class="nt">considerations</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_considerations</span><span class="p p-Indicator">}</span>
+<span class="nt">risk_management</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_risk_management</span><span class="p p-Indicator">}</span>
+<span class="nt">human_intervention</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_human_intervention</span><span class="p p-Indicator">}</span>
 <span class="nt">legal_base</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">law_name</span><span class="p p-Indicator">}</span><span class="w">                                      </span><span class="c1"># Optional. Example: &quot;AVG&quot;.</span>
-<span class="w">  </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">law_uri</span><span class="p p-Indicator">}</span><span class="w">                                       </span><span class="c1"># Optional. Example: &quot;https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:31995L0046&quot;.</span>
-<span class="nt">used_data</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_used_data</span><span class="p p-Indicator">}</span><span class="w">                           </span><span class="c1"># Optional. Description of the data used by the system.</span>
-<span class="nt">technical_design</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">technical_design</span><span class="p p-Indicator">}</span><span class="w">                    </span><span class="c1"># Optional. Description of the technical design of the system.</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">law_name</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">law_uri</span><span class="p p-Indicator">}</span>
+<span class="nt">used_data</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_used_data</span><span class="p p-Indicator">}</span>
+<span class="nt">technical_design</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">technical_design</span><span class="p p-Indicator">}</span>
 <span class="nt">external_providers</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">name_external_provider</span><span class="p p-Indicator">}</span><span class="w">                        </span><span class="c1"># Optional. Reference to used external providers.</span>
-<span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">version_external_provider</span><span class="p p-Indicator">}</span><span class="w">                  </span><span class="c1"># Optional. Version used of the external provider.</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">name_external_provider</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">version_external_provider</span><span class="p p-Indicator">}</span>
 <span class="nt">references</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">reference_uri</span><span class="p p-Indicator">}</span><span class="w">                                       </span><span class="c1"># Optional. Example: URI to codebase.</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">reference_uri</span><span class="p p-Indicator">}</span>
 <span class="nt">interaction_details</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_interaction_details</span><span class="p p-Indicator">}</span><span class="w">                          </span><span class="c1"># Optional. Example: &quot;GPS modules for location tracking&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_interaction_details</span><span class="p p-Indicator">}</span>
 <span class="nt">version_requirements</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_version_requirements</span><span class="p p-Indicator">}</span><span class="w">                         </span><span class="c1"># Optional. Example: &quot;&gt;version2.1&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_version_requirements</span><span class="p p-Indicator">}</span>
 <span class="nt">deployment_variants</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_deployment_variants</span><span class="p p-Indicator">}</span><span class="w">                          </span><span class="c1"># Optional. Example: &quot;Web Application&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_deployment_variants</span><span class="p p-Indicator">}</span>
 <span class="nt">hardware_requirements</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_hardware_requirements</span><span class="p p-Indicator">}</span><span class="w">                        </span><span class="c1"># Optional. Example: &quot;8 cores, 16 threads CPU&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_hardware_requirements</span><span class="p p-Indicator">}</span>
 <span class="nt">product_markings</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_product_markings</span><span class="p p-Indicator">}</span><span class="w">                             </span><span class="c1"># Optional. Example: &quot;Model number in the info menu&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_product_markings</span><span class="p p-Indicator">}</span>
 <span class="nt">user_interface</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface</span><span class="p p-Indicator">}</span><span class="w">                  </span><span class="c1"># Optional. Example: &quot;web-based dashboard&quot;</span>
-<span class="w">  </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface_uri</span><span class="p p-Indicator">}</span><span class="w">                     </span><span class="c1"># Optional. Example: &quot;http://example.com/content&quot;</span>
-<span class="w">  </span><span class="nt">snapshot</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface_snapshot_uri</span><span class="p p-Indicator">}</span><span class="w">        </span><span class="c1"># Optional. Example: &quot;http://example.com/snapshot.png&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface_uri</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">snapshot</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface_snapshot_uri</span><span class="p p-Indicator">}</span>
 
 <span class="nt">models</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="kt">!include</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_card_uri</span><span class="p p-Indicator">}</span><span class="w">                             </span><span class="c1"># Optional. Example: cat_classifier_model.yaml.</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="kt">!include</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_card_uri</span><span class="p p-Indicator">}</span>
 
 <span class="nt">assessments</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="kt">!include</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">assessment_card_uri</span><span class="p p-Indicator">}</span><span class="w">                        </span><span class="c1"># Required. Example: iama.yaml.</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="kt">!include</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">assessment_card_uri</span><span class="p p-Indicator">}</span>
 </code></pre></div>
 <h3 id="model-card">Model Card</h3>
-<div class="highlight"><pre><span></span><code><span class="nt">provenance</span><span class="p">:</span><span class="w">                                             </span><span class="c1"># Optional.</span>
-<span class="w">  </span><span class="nt">git_commit_hash</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">git_commit_hash</span><span class="p p-Indicator">}</span><span class="w">                    </span><span class="c1"># Optional. Example: 5503434ddd753f426f4b38109466949a1217c2bb</span>
-<span class="w">  </span><span class="nt">timestamp</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_timestamp</span><span class="p p-Indicator">}</span><span class="w">                   </span><span class="c1"># Optional. Example: 2024-04-16T16:48:14Z.</span>
-<span class="w">  </span><span class="nt">uri</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_uri</span><span class="p p-Indicator">}</span><span class="w">                               </span><span class="c1"># Optional. Example: https://github.com/MinBZK/tad-conversion-tool</span>
-<span class="w">  </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_author</span><span class="p p-Indicator">}</span><span class="w">                         </span><span class="c1"># Optional. Example: John Doe</span>
+<div class="highlight"><pre><span></span><code><span class="nt">provenance</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">git_commit_hash</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">git_commit_hash</span><span class="p p-Indicator">}</span>
+<span class="w">  </span><span class="nt">timestamp</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_timestamp</span><span class="p p-Indicator">}</span>
+<span class="w">  </span><span class="nt">uri</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_uri</span><span class="p p-Indicator">}</span>
+<span class="w">  </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_author</span><span class="p p-Indicator">}</span>
 <span class="nt">language</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">lang_0</span><span class="p p-Indicator">}</span><span class="w">                                            </span><span class="c1"># Optional. Example nl.</span>
-<span class="nt">license</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">license</span><span class="p p-Indicator">}</span><span class="w">                                      </span><span class="c1"># Required. Example: Apache-2.0 or any license SPDX ID from https://opensource.org/license or &quot;other&quot;.</span>
-<span class="nt">license_name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">license_name</span><span class="p p-Indicator">}</span><span class="w">                            </span><span class="c1"># Optional if license != other, Required otherwise. Example: &#39;my-license-1.0&#39;</span>
-<span class="nt">license_link</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">license_link</span><span class="p p-Indicator">}</span><span class="w">                            </span><span class="c1"># Optional if license != other, Required otherwise. Specify &quot;LICENSE&quot; or &quot;LICENSE.md&quot; to link to a file of that name inside the repo, or a URL to a remote file.</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">lang_0</span><span class="p p-Indicator">}</span>
+<span class="nt">license</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">license_name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">license_name</span><span class="p p-Indicator">}</span>
+<span class="w">  </span><span class="nt">license_link</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">license_uri</span><span class="p p-Indicator">}</span>
 <span class="nt">tags</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">tag_0</span><span class="p p-Indicator">}</span><span class="w">                                               </span><span class="c1"># Optional. Example: audio</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">tag_1</span><span class="p p-Indicator">}</span><span class="w">                                               </span><span class="c1"># Optional. Example: automatic-speech-recognition</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">tag_0</span><span class="p p-Indicator">}</span>
 <span class="nt">owners</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">organization</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">organization_name</span><span class="p p-Indicator">}</span><span class="w">                     </span><span class="c1"># Required. Example: BZK</span>
-<span class="w">  </span><span class="nt">oin</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">oin</span><span class="p p-Indicator">}</span><span class="w">                                            </span><span class="c1"># Optional. Example: 00000001003214345000</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">owner_name</span><span class="p p-Indicator">}</span><span class="w">                                    </span><span class="c1"># Optional. Example: John Doe</span>
-<span class="w">  </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">owner_email</span><span class="p p-Indicator">}</span><span class="w">                                  </span><span class="c1"># Optional. Example: johndoe@email.com</span>
-<span class="w">  </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">owner_role</span><span class="p p-Indicator">}</span><span class="w">                                    </span><span class="c1"># Optional. Example: Data Scientist.</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">oin</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">oin</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">organization</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">organization_name</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">owner_name</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">owner_email</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">owner_role</span><span class="p p-Indicator">}</span>
 
 <span class="nt">model-index</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_id</span><span class="p p-Indicator">}</span><span class="w">                                      </span><span class="c1"># Required. Example: CatClassifier.</span>
-<span class="w">  </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_uri</span><span class="p p-Indicator">}</span><span class="w">                                    </span><span class="c1"># Required. URI to a repository containing the model file.</span>
-<span class="w">  </span><span class="nt">artifacts</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uri</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_artifact_uri</span><span class="p p-Indicator">}</span><span class="w">                           </span><span class="c1"># Optional. Example: &quot;https://github.com/MinBZK/poc-kijkdoos-wasm-models/raw/main/logres_iris/logreg_iris.onnx&quot;</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">content-type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_artifact_type</span><span class="p p-Indicator">}</span><span class="w">                 </span><span class="c1"># Optional. Example: &quot;application/onnx&quot;.</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">md5-checksum</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">md5_checksum</span><span class="p p-Indicator">}</span><span class="w">                        </span><span class="c1"># Optional. Example: &quot;120EA8A25E5D487BF68B5F7096440019&quot;</span>
-<span class="w">  </span><span class="nt">parameters</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">parameter_name</span><span class="p p-Indicator">}</span><span class="w">                              </span><span class="c1"># Optional. Example: &quot;epochs&quot;.</span>
-<span class="w">    </span><span class="nt">dtype</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">parameter_dtype</span><span class="p p-Indicator">}</span><span class="w">                            </span><span class="c1"># Optional. Example: &quot;int&quot;.</span>
-<span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">parameter_value</span><span class="p p-Indicator">}</span><span class="w">                            </span><span class="c1"># Optional. Example: 100.</span>
-<span class="w">    </span><span class="nt">labels</span><span class="p">:</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_name</span><span class="p p-Indicator">}</span><span class="w">                              </span><span class="c1"># Optional. Example: &quot;gender&quot;.</span>
-<span class="w">        </span><span class="nt">dtype</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_type</span><span class="p p-Indicator">}</span><span class="w">                             </span><span class="c1"># Optional. Example: &quot;string&quot;.</span>
-<span class="w">        </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_value</span><span class="p p-Indicator">}</span><span class="w">                            </span><span class="c1"># Optional. Example: &quot;female&quot;.</span>
-<span class="w">  </span><span class="nt">results</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span>
-<span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">task_type</span><span class="p p-Indicator">}</span><span class="w">                                 </span><span class="c1"># Required. Example: image-classification.</span>
-<span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">task_name</span><span class="p p-Indicator">}</span><span class="w">                                 </span><span class="c1"># Optional. Example: Image Classification.</span>
-<span class="w">    </span><span class="nt">datasets</span><span class="p">:</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">dataset_type</span><span class="p p-Indicator">}</span><span class="w">                            </span><span class="c1"># Required. Example: common_voice. Link to a repository containing the dataset</span>
-<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">dataset_name</span><span class="p p-Indicator">}</span><span class="w">                            </span><span class="c1"># Required. Example: &quot;Common Voice (French)&quot;. A pretty name for the dataset.</span>
-<span class="w">        </span><span class="nt">split</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">split</span><span class="p p-Indicator">}</span><span class="w">                                  </span><span class="c1"># Optional. Example: &quot;train&quot;.</span>
-<span class="w">        </span><span class="nt">features</span><span class="p">:</span>
-<span class="w">         </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">feature_name</span><span class="p p-Indicator">}</span><span class="w">                               </span><span class="c1"># Optional. Example: &quot;gender&quot;.</span>
-<span class="w">        </span><span class="nt">revision</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">dataset_version</span><span class="p p-Indicator">}</span><span class="w">                     </span><span class="c1"># Optional. Example: 5503434ddd753f426f4b38109466949a1217c2bb</span>
-<span class="w">    </span><span class="nt">metrics</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">metric_type</span><span class="p p-Indicator">}</span><span class="w">                               </span><span class="c1"># Required. Example: false-positive-rate. Use metric id from https://hf.co/metrics.</span>
-<span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">metric_name</span><span class="p p-Indicator">}</span><span class="w">                               </span><span class="c1"># Required. Example: &quot;FPR wrt class 0 restricted to feature gender:0 and age:21&quot;.</span>
-<span class="w">      </span><span class="nt">dtype</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">metric_dtype</span><span class="p p-Indicator">}</span><span class="w">                             </span><span class="c1"># Required. Example: &quot;float&quot;.</span>
-<span class="w">      </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">metric_value</span><span class="p p-Indicator">}</span><span class="w">                             </span><span class="c1"># Required. Example: 0.75.</span>
-<span class="w">      </span><span class="nt">labels</span><span class="p">:</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_name</span><span class="p p-Indicator">}</span><span class="w">                            </span><span class="c1"># Optional. Example: &quot;gender&quot;.</span>
-<span class="w">          </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_type</span><span class="p p-Indicator">}</span><span class="w">                            </span><span class="c1"># Optional. Example: &quot;feature&quot;.</span>
-<span class="w">          </span><span class="nt">dtype</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_type</span><span class="p p-Indicator">}</span><span class="w">                           </span><span class="c1"># Optional. Example: &quot;string&quot;.</span>
-<span class="w">          </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_value</span><span class="p p-Indicator">}</span><span class="w">                          </span><span class="c1"># Optional. Example: &quot;female&quot;.</span>
-<span class="w">    </span><span class="nt">measurements</span><span class="p">:</span>
-<span class="w">      </span><span class="c1"># Bar plots should be able to capture SHAP and Robustness Toolbox from AI Verify.</span>
-<span class="w">      </span><span class="nt">bar_plots</span><span class="p">:</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">measurement_type</span><span class="p p-Indicator">}</span><span class="w">                        </span><span class="c1"># Required. Example: &quot;SHAP&quot;.</span>
-<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">measurement_name</span><span class="p p-Indicator">}</span><span class="w">                        </span><span class="c1"># Optional. Example: &quot;Mean Absolute Shap Values&quot;.</span>
-<span class="w">        </span><span class="nt">results</span><span class="p">:</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">bar_name</span><span class="p p-Indicator">}</span><span class="w">                              </span><span class="c1"># Required. The name of a bar.</span>
-<span class="w">          </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">bar_value</span><span class="p p-Indicator">}</span><span class="w">                            </span><span class="c1"># Required. The corresponding value.</span>
-<span class="w">      </span><span class="c1"># Graph plots should be able to capture graph based measurements such as partial dependence and accumulated local effect.</span>
-<span class="w">      </span><span class="nt">graph_plots</span><span class="p">:</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">measurement_type</span><span class="p p-Indicator">}</span><span class="w">                        </span><span class="c1"># Required. Example: &quot;partial_dependence&quot;.</span>
-<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">measurement_name</span><span class="p p-Indicator">}</span><span class="w">                        </span><span class="c1"># Optional. Example: &quot;Partial Dependence Plot&quot;.</span>
-<span class="w">        </span><span class="c1"># Results store the graph plot data. So far all plots are dependent on a combination of a specific class (sometimes) and feature (always).</span>
-<span class="w">        </span><span class="c1"># For example partial dependence plots are made for each feature and class.</span>
-<span class="w">        </span><span class="nt">results</span><span class="p">:</span>
-<span class="w">         </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">class_name</span><span class="p p-Indicator">}</span><span class="w">                          </span><span class="c1"># Optional. Name of the output class the graph depends on.</span>
-<span class="w">           </span><span class="nt">feature</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">feature_name</span><span class="p p-Indicator">}</span><span class="w">                      </span><span class="c1"># Required. Name of the feature the graph depends on.</span>
-<span class="w">           </span><span class="nt">data</span><span class="p">:</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">x_value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">x_value</span><span class="p p-Indicator">}</span><span class="w">                        </span><span class="c1"># Required. The x value of the graph data.</span>
-<span class="w">              </span><span class="nt">y_value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">y_value</span><span class="p p-Indicator">}</span><span class="w">                        </span><span class="c1"># Required. The y value of the graph data.</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_id</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_uri</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">artifacts</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uri</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_artifact_uri</span><span class="p p-Indicator">}</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">content-type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_artifact_type</span><span class="p p-Indicator">}</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">md5-checksum</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">md5_checksum</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">parameters</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">parameter_name</span><span class="p p-Indicator">}</span>
+<span class="w">        </span><span class="nt">dtype</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">parameter_dtype</span><span class="p p-Indicator">}</span>
+<span class="w">        </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">parameter_value</span><span class="p p-Indicator">}</span>
+<span class="w">        </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_name</span><span class="p p-Indicator">}</span>
+<span class="w">            </span><span class="nt">dtype</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_type</span><span class="p p-Indicator">}</span>
+<span class="w">            </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_value</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">results</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">task_type</span><span class="p p-Indicator">}</span>
+<span class="w">            </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">task_name</span><span class="p p-Indicator">}</span>
+<span class="w">        </span><span class="nt">datasets</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">dataset_type</span><span class="p p-Indicator">}</span>
+<span class="w">            </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">dataset_name</span><span class="p p-Indicator">}</span>
+<span class="w">            </span><span class="nt">split</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">split</span><span class="p p-Indicator">}</span>
+<span class="w">            </span><span class="nt">features</span><span class="p">:</span>
+<span class="w">              </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">feature_name</span><span class="p p-Indicator">}</span>
+<span class="w">            </span><span class="nt">revision</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">dataset_version</span><span class="p p-Indicator">}</span>
+<span class="w">        </span><span class="nt">metrics</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">metric_type</span><span class="p p-Indicator">}</span>
+<span class="w">            </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">metric_name</span><span class="p p-Indicator">}</span>
+<span class="w">            </span><span class="nt">dtype</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">metric_dtype</span><span class="p p-Indicator">}</span>
+<span class="w">            </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">metric_value</span><span class="p p-Indicator">}</span>
+<span class="w">            </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">              </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_name</span><span class="p p-Indicator">}</span>
+<span class="w">                </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_type</span><span class="p p-Indicator">}</span>
+<span class="w">                </span><span class="nt">dtype</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_type</span><span class="p p-Indicator">}</span>
+<span class="w">                </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_value</span><span class="p p-Indicator">}</span>
+<span class="w">        </span><span class="nt">measurements</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">bar_plots</span><span class="p">:</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">measurement_type</span><span class="p p-Indicator">}</span>
+<span class="w">              </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">measurement_name</span><span class="p p-Indicator">}</span>
+<span class="w">              </span><span class="nt">results</span><span class="p">:</span>
+<span class="w">                </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">bar_name</span><span class="p p-Indicator">}</span>
+<span class="w">                  </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">bar_value</span><span class="p p-Indicator">}</span>
+<span class="w">          </span><span class="nt">graph_plots</span><span class="p">:</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">measurement_type</span><span class="p p-Indicator">}</span>
+<span class="w">              </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">measurement_name</span><span class="p p-Indicator">}</span>
+<span class="w">              </span><span class="nt">results</span><span class="p">:</span>
+<span class="w">                </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">class_name</span><span class="p p-Indicator">}</span>
+<span class="w">                  </span><span class="nt">feature</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">feature_name</span><span class="p p-Indicator">}</span>
+<span class="w">                  </span><span class="nt">data</span><span class="p">:</span>
+<span class="w">                    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">x_value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">x_value</span><span class="p p-Indicator">}</span>
+<span class="w">                      </span><span class="nt">y_value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">y_value</span><span class="p p-Indicator">}</span>
 </code></pre></div>
 <h3 id="assessment-card">Assessment Card</h3>
-<div class="highlight"><pre><span></span><code><span class="nt">provenance</span><span class="p">:</span><span class="w">                                             </span><span class="c1"># Optional.</span>
-<span class="w">  </span><span class="nt">git_commit_hash</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">git_commit_hash</span><span class="p p-Indicator">}</span><span class="w">                    </span><span class="c1"># Optional. Example: 5503434ddd753f426f4b38109466949a1217c2bb</span>
-<span class="w">  </span><span class="nt">timestamp</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_timestamp</span><span class="p p-Indicator">}</span><span class="w">                   </span><span class="c1"># Optional. Example: 2024-04-16T16:48:14Z.</span>
-<span class="w">  </span><span class="nt">uri</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_uri</span><span class="p p-Indicator">}</span><span class="w">                               </span><span class="c1"># Optional. Example: https://github.com/MinBZK/tad-conversion-tool</span>
-<span class="w">  </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_author</span><span class="p p-Indicator">}</span><span class="w">                         </span><span class="c1"># Optional. Example: John Doe</span>
-<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">assessment_name</span><span class="p p-Indicator">}</span><span class="w">                                 </span><span class="c1"># Required. Example: IAMA.</span>
-<span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">assessment_date</span><span class="p p-Indicator">}</span><span class="w">                                 </span><span class="c1"># Required. Example: 25-03-2025.</span>
+<div class="highlight"><pre><span></span><code><span class="nt">provenance</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">git_commit_hash</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">git_commit_hash</span><span class="p p-Indicator">}</span>
+<span class="w">  </span><span class="nt">timestamp</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_timestamp</span><span class="p p-Indicator">}</span>
+<span class="w">  </span><span class="nt">uri</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_uri</span><span class="p p-Indicator">}</span>
+<span class="w">  </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_author</span><span class="p p-Indicator">}</span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">assessment_name</span><span class="p p-Indicator">}</span>
+<span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">assessment_date</span><span class="p p-Indicator">}</span>
 <span class="nt">contents</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">question</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">question_text</span><span class="p p-Indicator">}</span><span class="w">                           </span><span class="c1"># Required. Example: &quot;Question 1: ...&quot;.</span>
-<span class="w">    </span><span class="nt">answer</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">answer_text</span><span class="p p-Indicator">}</span><span class="w">                               </span><span class="c1"># Required. Example: &quot;Answer: ...&quot;.</span>
-<span class="w">    </span><span class="nt">remarks</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">remarks_text</span><span class="p p-Indicator">}</span><span class="w">                             </span><span class="c1"># Optional. Example: &quot;Remarks: ...&quot;.</span>
-<span class="w">    </span><span class="nt">authors</span><span class="p">:</span><span class="w">                                            </span><span class="c1"># Optional. Example: &quot;[&#39;John&#39;, &#39;Peter&#39;]&quot;.</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">question</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">question_text</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">answer</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">answer_text</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">remarks</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">remarks_text</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">authors</span><span class="p">:</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">author_name</span><span class="p p-Indicator">}</span>
-<span class="w">    </span><span class="nt">timestamp</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">timestamp</span><span class="p p-Indicator">}</span><span class="w">                              </span><span class="c1"># Optional. Example: 2024-04-16T16:48:14Z.</span>
+<span class="w">    </span><span class="nt">timestamp</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">timestamp</span><span class="p p-Indicator">}</span>
 </code></pre></div>
 <h2 id="schema">Schema</h2>
 <p>JSON schema will be added when we publish the first beta version.</p>
 <h2 id="changelog">Changelog</h2>
 <ul>
-<li>0.1a5: adds a general description of the technical documentation required for
-high-risk systems to conform to the EU AI Act.</li>
+<li>0.1a6:<ul>
+<li>fix mismatches between description and examples</li>
+<li>format YAML examples and Markdown formatting</li>
+</ul>
+</li>
+<li>0.1a5: adds a general description of the technical documentation required for high-risk systems to conform to the EU
+  AI Act.</li>
 <li>0.1a4: adds data provenance</li>
 <li>0.1a3: require ISO 8601 timestamp</li>
 <li>0.1a2: introduces typed artifacts</li>
@@ -2721,21 +2732,21 @@ high-risk systems to conform to the EU AI Act.</li>
 <hr />
 <ol>
 <li id="fn:1">
-<p>Deviation from the Hugging Face specification is in the License field. Hugging Face only accepts
-dataset id's from <a href="https://huggingface.co/docs/hub/repositories-licenses">Hugging Face license list</a> while we
-accept any license from <a href="https://opensource.org/license">Open Source License List</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Deviation from the Hugging Face specification is in the License field. Hugging Face only accepts dataset id's
+  from <a href="https://huggingface.co/docs/hub/repositories-licenses">Hugging Face license list</a> while we accept any
+  license from <a href="https://opensource.org/license">Open Source License List</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>Deviation from the Hugging Face specification is in the <code>model_index:results:dataset</code> field. Hugging Face only accepts
-one dataset, while we accept a list of datasets.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>Deviation from the Hugging Face specification is in the <code>model_index:results:dataset</code> field. Hugging Face only
+  accepts one dataset, while we accept a list of datasets.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
-<p>Deviation from the Hugging Face specification is in the Dataset Type field. Hugging Face only accepts
-dataset id's from <a href="https://hf.co/datasets">Hugging Face datasets</a> while we also allow for any url pointing to the dataset.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>Deviation from the Hugging Face specification is in the Dataset Type field. Hugging Face only accepts dataset id's
+  from <a href="https://hf.co/datasets">Hugging Face datasets</a> while we also allow for any url pointing to the dataset.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
 <p>For this extension to work relevant metrics (such as for example false positive rate) have to be added to the
-<a href="https://hf.co//metrics">Hugging Face metrics</a>, possibly this can be done in our organizational namespace.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+  <a href="https://hf.co//metrics">Hugging Face metrics</a>, possibly this can be done in our organizational namespace.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

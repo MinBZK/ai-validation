@@ -196,6 +196,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://minbzk.github.io/ai-validation/projects/tad/reporting-standard/0.1a5/</loc>
+         <lastmod>2024-07-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://minbzk.github.io/ai-validation/projects/tad/reporting-standard/latest/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>

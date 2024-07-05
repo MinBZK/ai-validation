@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://minbzk.github.io/ai-validation/projects/tad/reporting-standard/0.1a4/">
+        <link rel="canonical" href="https://minbzk.github.io/ai-validation/projects/tad/reporting-standard/0.1a5/">
       
       
-        <link rel="prev" href="../0.1a5/">
+        <link rel="prev" href="../latest/">
       
       
-        <link rel="next" href="../0.1a3/">
+        <link rel="next" href="../0.1a4/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>🏷 0.1a4 - AI Validation Team</title>
+        <title>🏷 0.1a5 - AI Validation Team</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#01a4" class="md-skip">
+        <a href="#01a5" class="md-skip">
           Skip to content
         </a>
       
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🏷 0.1a4
+              🏷 0.1a5
             
           </span>
         </div>
@@ -586,27 +586,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../0.1a5/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    🏷 0.1a5
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -623,7 +602,7 @@
           
   
   <span class="md-ellipsis">
-    🏷 0.1a4
+    🏷 0.1a5
   </span>
   
 
@@ -634,7 +613,7 @@
         
   
   <span class="md-ellipsis">
-    🏷 0.1a4
+    🏷 0.1a5
   </span>
   
 
@@ -809,6 +788,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0.1a4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🏷 0.1a4
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2394,7 +2394,7 @@
                   
 
   
-    <a href="https://github.com/MinBZK/ai-validation/edit/main/docs/projects/tad/reporting-standard/0.1a4.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/MinBZK/ai-validation/edit/main/docs/projects/tad/reporting-standard/0.1a5.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -2402,7 +2402,7 @@
   
 
 
-<h1 id="01a4"><img alt="🏷" class="twemoji" src="../../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f3f7.svg" title=":label:"> 0.1a4</h1>
+<h1 id="01a5"><img alt="🏷" class="twemoji" src="../../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f3f7.svg" title=":label:"> 0.1a5</h1>
 <p>This document describes the Transparency of Algorithmic Decision making (TAD) Reporting Standard.</p>
 <p>For reproducibility, governance, auditing and sharing of algorithmic systems it is essential to have a
 reporting standard so that information about an algorithmic system can be shared. This reporting standard
@@ -2522,10 +2522,31 @@ legal base the following fields are present.<ol>
 </li>
 <li><code>used_data</code> (OPTIONAL, string). An overview of the data that is used in the system.</li>
 <li><code>technical_design</code> (OPTIONAL, string). Description on how the system works.</li>
-<li><code>external_providers</code> (OPTIONAL, list[string]). Name of an external provider, if relevant. There can
-be multiple external providers.</li>
+<li><code>external_providers</code> (OPTIONAL, list). If relevant, these fields allow to store information on external providers.
+ There can be multiple external providers.<ol>
+<li><code>name</code> (OPTIONAL, string). Name of the external provider.</li>
+<li><code>version</code> (OPTIONAL, string). Version of the external provider reflecting its relation to previous versions.</li>
+</ol>
+</li>
 <li><code>references</code> (OPTIONAL, list[string]). Additional reference URI's that point information about the system
 and are relevant.</li>
+<li><code>interaction_details</code> (OPTIONAL, list[string]). Explain how the AI system interacts with hardware or software,
+including other AI systems, or how the AI system can be used to interact with hardware or software.</li>
+<li><code>version_requirements</code> (OPTIONAL, list[string]). Describe the versions of the relevant software or firmware,
+ and any requirements related to version updates.</li>
+<li><code>deployment_variants</code> (OPTIONAL, list[string]). Description of all the forms in which the AI system is placed
+on the market or put into service, such as software packages embedded into hardware, downloads, or APIs.</li>
+<li><code>hardware_requirements</code> (OPTIONAL, list[string]). Provide a description of the hardware on
+which the AI system must be run.</li>
+<li><code>product_markings</code> (OPTIONAL, list[string]). If the AI system is a component of products, photos, or illustrations,
+describe the external features, markings, and internal layout of those products.</li>
+<li><code>user_interface</code> (OPTIONAL, list). Provide information on the user interface provided
+to the user responsible for its operation.<ol>
+<li><code>description</code> (OPTIONAL, string). A description of the provided user interface.</li>
+<li><code>link</code> (OPTIONAL, string). A link to the user interface can be included.</li>
+<li><code>snapshot</code> (OPTIONAL, string). A snapshot/screenshot of the user interface can be included with the use of a hyperlink.</li>
+</ol>
+</li>
 </ol>
 <h4 id="1-models">1. Models</h4>
 <ol>
@@ -2779,9 +2800,24 @@ format, i.e. <code>2024-04-16T16:48:14Z</code>.</li>
 <span class="nt">used_data</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_used_data</span><span class="p p-Indicator">}</span><span class="w">                           </span><span class="c1"># Optional. Description of the data used by the system.</span>
 <span class="nt">technical_design</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">technical_design</span><span class="p p-Indicator">}</span><span class="w">                    </span><span class="c1"># Optional. Description of the technical design of the system.</span>
 <span class="nt">external_providers</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_external_provider</span><span class="p p-Indicator">}</span><span class="w">                            </span><span class="c1"># Optional. Reference to used external providers.</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">name_external_provider</span><span class="p p-Indicator">}</span><span class="w">                        </span><span class="c1"># Optional. Reference to used external providers.</span>
+<span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">version_external_provider</span><span class="p p-Indicator">}</span><span class="w">                  </span><span class="c1"># Optional. Version used of the external provider.</span>
 <span class="nt">references</span><span class="p">:</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">reference_uri</span><span class="p p-Indicator">}</span><span class="w">                                       </span><span class="c1"># Optional. Example: URI to codebase.</span>
+<span class="nt">interaction_details</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_interaction_details</span><span class="p p-Indicator">}</span><span class="w">                          </span><span class="c1"># Optional. Example: &quot;GPS modules for location tracking&quot;</span>
+<span class="nt">version_requirements</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_version_requirements</span><span class="p p-Indicator">}</span><span class="w">                         </span><span class="c1"># Optional. Example: &quot;&gt;version2.1&quot;</span>
+<span class="nt">deployment_variants</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_deployment_variants</span><span class="p p-Indicator">}</span><span class="w">                          </span><span class="c1"># Optional. Example: &quot;Web Application&quot;</span>
+<span class="nt">hardware_requirements</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_hardware_requirements</span><span class="p p-Indicator">}</span><span class="w">                        </span><span class="c1"># Optional. Example: &quot;8 cores, 16 threads CPU&quot;</span>
+<span class="nt">product_markings</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_product_markings</span><span class="p p-Indicator">}</span><span class="w">                             </span><span class="c1"># Optional. Example: &quot;Model number in the info menu&quot;</span>
+<span class="nt">user_interface</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface</span><span class="p p-Indicator">}</span><span class="w">                  </span><span class="c1"># Optional. Example: &quot;web-based dashboard&quot;</span>
+<span class="w">  </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface_uri</span><span class="p p-Indicator">}</span><span class="w">                     </span><span class="c1"># Optional. Example: &quot;http://example.com/content&quot;</span>
+<span class="w">  </span><span class="nt">snapshot</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface_snapshot_uri</span><span class="p p-Indicator">}</span><span class="w">        </span><span class="c1"># Optional. Example: &quot;http://example.com/snapshot.png&quot;</span>
 
 <span class="nt">models</span><span class="p">:</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="kt">!include</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_card_uri</span><span class="p p-Indicator">}</span><span class="w">                             </span><span class="c1"># Optional. Example: cat_classifier_model.yaml.</span>
@@ -2887,6 +2923,8 @@ format, i.e. <code>2024-04-16T16:48:14Z</code>.</li>
 <p>JSON schema will be added when we publish the first beta version.</p>
 <h2 id="changelog">Changelog</h2>
 <ul>
+<li>0.1a5: adds a general description of the technical documentation required for
+high-risk systems to conform to the EU AI Act.</li>
 <li>0.1a4: adds data provenance</li>
 <li>0.1a3: require ISO 8601 timestamp</li>
 <li>0.1a2: introduces typed artifacts</li>
@@ -2967,11 +3005,6 @@ dataset id's from <a href="https://hf.co/datasets">Hugging Face datasets</a> whi
         <a href="https://github.com/robbertbos" class="md-author" title="@robbertbos">
           
           <img src="../../../../assets/external/avatars.githubusercontent.com/u/11290343.fe356448.jpg" alt="robbertbos">
-        </a>
-      
-        <a href="https://github.com/ravimeijerrig" class="md-author" title="@ravimeijerrig">
-          
-          <img src="../../../../assets/external/avatars.githubusercontent.com/u/171654501.fe356448.jpg" alt="ravimeijerrig">
         </a>
       
       
