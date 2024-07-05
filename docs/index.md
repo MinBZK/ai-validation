@@ -9,20 +9,21 @@ Here we are documenting the processes and work of the [AI Validation Team](about
 Interior and Kingdom Relations](https://www.government.nl/ministries/ministry-of-the-interior-and-kingdom-relations) in
 The Netherlands.
 
-We are a team of mostly engineers at a policy department.
+We are a team of engineers, UX designers & researchers, and product experts at a policy department.
 
-We work on the projects within the _Transparency of Algorithmic Decision making_ scope:
+We work on the following projects within the _Transparency of Algorithmic Decision making_ scope:
 
 ``` mermaid
 graph TB
-    ak[<a href='https://minbzk.github.io/Algoritmekader/'>Algoritmekader</a>] --> tad
+    ak[<a href='https://minbzk.github.io/Algoritmekader/'>Algoritmekader</a>] <--> tmt
 
-    subgraph Transparency of Algorithmic Decision making
-        tad[Algorithm Management Toolkit] --> st[<a href='/ai-validation/projects/tad/reporting-standard/'>Reporting Standard</a>]
-        llm[<a href='/ai-validation/projects/llm-benchmarks/'>LLM Benchmark</a>] --> tad
+    subgraph tmt[Algorithm Management Toolkit]
+        st[<a href='/ai-validation/projects/tad/reporting-standard/'>Reporting Standard</a>] --> tad[<a href='https://github.com/MinBZK/tad/'>Algorithm Management Platform</a>]
+        tad <--> llm[<a href='/ai-validation/projects/llm-benchmarks/'>LLM Benchmark Tooling</a>]
     end
 
-    tad --> ar[<a href='https://algoritmes.overheid.nl'>Algoritmeregister</a>]
+    tmt --> ar[<a href='https://algoritmes.overheid.nl/en/'>The Algorithm Register of the Dutch government</a>]
+    tmt --> or[Other registries]
 ```
 
 ## Contribute
