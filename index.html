@@ -2133,17 +2133,18 @@
 <p>Here we are documenting the processes and work of the <a href="about/team/">AI Validation Team</a> at the <a href="https://www.government.nl/ministries/ministry-of-the-interior-and-kingdom-relations">Ministry of the
 Interior and Kingdom Relations</a> in
 The Netherlands.</p>
-<p>We are a team of mostly engineers at a policy department.</p>
-<p>We work on the projects within the <em>Transparency of Algorithmic Decision making</em> scope:</p>
+<p>We are a team of engineers, UX designers &amp; researchers, and product experts at a policy department.</p>
+<p>We work on the following projects within the <em>Transparency of Algorithmic Decision making</em> scope:</p>
 <pre class="mermaid"><code>graph TB
-    ak[&lt;a href='https://minbzk.github.io/Algoritmekader/'&gt;Algoritmekader&lt;/a&gt;] --&gt; tad
+    ak[&lt;a href='https://minbzk.github.io/Algoritmekader/'&gt;Algoritmekader&lt;/a&gt;] &lt;--&gt; tmt
 
-    subgraph Transparency of Algorithmic Decision making
-        tad[Algorithm Management Toolkit] --&gt; st[&lt;a href='/ai-validation/projects/tad/reporting-standard/'&gt;Reporting Standard&lt;/a&gt;]
-        llm[&lt;a href='/ai-validation/projects/llm-benchmarks/'&gt;LLM Benchmark&lt;/a&gt;] --&gt; tad
+    subgraph tmt[Algorithm Management Toolkit]
+        st[&lt;a href='/ai-validation/projects/tad/reporting-standard/'&gt;Reporting Standard&lt;/a&gt;] --&gt; tad[&lt;a href='https://github.com/MinBZK/tad/'&gt;Algorithm Management Platform&lt;/a&gt;]
+        tad &lt;--&gt; llm[&lt;a href='/ai-validation/projects/llm-benchmarks/'&gt;LLM Benchmark Tooling&lt;/a&gt;]
     end
 
-    tad --&gt; ar[&lt;a href='https://algoritmes.overheid.nl'&gt;Algoritmeregister&lt;/a&gt;]</code></pre>
+    tmt --&gt; ar[&lt;a href='https://algoritmes.overheid.nl/en/'&gt;The Algorithm Register of the Dutch government&lt;/a&gt;]
+    tmt --&gt; or[Other registries]</code></pre>
 <h2 id="contribute">Contribute</h2>
 <p>Read our guide on <a href="way-of-working/contributing/">how to contribute</a>.</p>
 <h2 id="contact">Contact</h2>
@@ -2170,7 +2171,7 @@ The Netherlands.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 21, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 5, 2024</span>
   </span>
 
     
