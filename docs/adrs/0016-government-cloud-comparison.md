@@ -26,12 +26,13 @@ don't have what you want.
     - Pros:
         - High availability is possible with an SLA (so production ready)
         - More separation of concerns if you want to have a separate cluster
-        - Gitlab is included therefore easy CI/CD
+        - GitLab is included; therefore easy CI/CD
         - Convenient connection with the
 [Centraal Aansluitpunt](https://www.logius.nl/domeinen/infrastructuur/centraal-aansluitpunt) of Logius
     - Cons:
-        - They do not want to be a cloud service provider, they do provide Gitlab and Postgres but not Keycloak because
-they want to minimize the services they provide (focus should be on the platform).
+        - It is not vanilla Kubernetes
+        - They do not want to be a cloud service provider, they do provide GitLab and PostgreSQL but not Keycloak
+because they want to minimize the services they provide (focus should be on the platform).
 - [ODC-Noord](https://www.odc-noord.nl/)
     - Description:
         - ODC-Noord provides multiple services, on one hand it can provide:
@@ -55,6 +56,7 @@ but these are not suitable for hosting a custom application.
         - The platform is made such based on the vision of [Common Ground](https://commonground.nl/), and thus to
 standardize cloud hosting through [Haven](https://digilab.overheid.nl/projecten/haven/) for all Dutch
 municipalities. This standardization improves on integration later on.
+        - It is vanilla Kubernetes
     - Cons:
 - Tender Process [Aanbestedingswet](https://wetten.overheid.nl/BWBR0032203/2022-03-02)
     - Description:
