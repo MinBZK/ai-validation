@@ -88,9 +88,8 @@ infrastructure yourself.
         - You need to do stakeholder management if you make use of their services instead of changing the
 infrastructure yourself.
 
-Please see the following [picture](Cloud providers) for an overview of the providers in relation to what they can
-provide, currently we are heavily searching in the realm of unmanaged infrastructure, as we want this to manage
-ourselves.
+Please see the following picture for an overview of the providers in relation to what they can provide, currently we are
+heavily searching in the realm of unmanaged infrastructure, as we want this to manage ourselves.
 
 ![Cloud providers](../img/cloud_providers.png)
 
