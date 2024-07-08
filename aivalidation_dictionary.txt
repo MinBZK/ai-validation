@@ -1,6 +1,7 @@
 # keep this file sorted: sort -u --ignore-case -o aivalidation_dictionary.txt aivalidation_dictionary.txt
 Aanbestedingswet
 Aangifte
+Aansluitpunt
 adrs
 Aequitas
 Algemene
@@ -16,6 +17,7 @@ Blendle
 Bluelight
 Bos
 Buitenland
+Centraal
 CODEOWNER
 Colab
 Dalex

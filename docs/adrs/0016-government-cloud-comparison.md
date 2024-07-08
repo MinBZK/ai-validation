@@ -22,9 +22,16 @@ also manages.
 don't have what you want.
 - [Standaard Platform (Logius)](https://www.logius.nl/domeinen/infrastructuur/standaard-platform)
     - Description:
-        - The standard Platform of Logius will provide an Openshift Kubernetes namespace for you
+        - The standard Platform of Logius will provide an Openshift Kubernetes namespace or cluster for you
     - Pros:
+        - High availability is possible with an SLA (so production ready)
+        - More separation of concerns if you want to have a separate cluster
+        - Gitlab is included therefore easy CI/CD
+        - Convenient connection with the
+[Centraal Aansluitpunt](https://www.logius.nl/domeinen/infrastructuur/centraal-aansluitpunt) of Logius
     - Cons:
+        - They do not want to be a cloud service provider, they do provide Gitlab and Postgres but not Keycloak because
+they want to minimize the services they provide (focus should be on the platform).
 - [ODC-Noord](https://www.odc-noord.nl/)
     - Description:
         - ODC-Noord provides multiple services, on one hand it can provide:
