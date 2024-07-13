@@ -9,3 +9,5 @@ This log provides a reference point for those decisions.
 ## Overview of decisions
 
 * We keep project ADRs in the relevant project.
+* When we encounter a bug in our software, we create a regression test to reproduce it.
+ When the bug is solved, the regression test is updated to reflect the solved situation.
