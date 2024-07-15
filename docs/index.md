@@ -15,15 +15,16 @@ We work on the following projects within the _Transparency of Algorithmic Decisi
 
 ``` mermaid
 graph TB
-    ak[<a href='https://minbzk.github.io/Algoritmekader/'>Algoritmekader</a>] <--> tmt
+    ak[<a href='https://minbzk.github.io/Algoritmekader/'>Algoritmekader</a>] <--> amt
 
-    subgraph tmt[Algorithm Management Toolkit]
-        st[<a href='/ai-validation/projects/tad/reporting-standard/'>Reporting Standard</a>] --> tad[<a href='https://github.com/MinBZK/tad/'>Algorithm Management Platform</a>]
-        tad <--> llm[<a href='/ai-validation/projects/llm-benchmarks/'>LLM Benchmark Tooling</a>]
+    subgraph amt[Algorithm Management Toolkit]
+        ir[<a href='https://minbzk.github.io/instrument-registry'>Instrument Registry</a>] --> amp[<a href='https://github.com/MinBZK/tad/'>Algorithm Management Platform</a>]
+        st[<a href='/ai-validation/projects/tad/reporting-standard/'>Reporting Standard</a>] --> amp
+        amp <--> llm[<a href='/ai-validation/projects/llm-benchmarks/'>LLM Benchmark Tooling</a>]
     end
 
-    tmt --> ar[<a href='https://algoritmes.overheid.nl/en/'>The Algorithm Register of the Dutch government</a>]
-    tmt --> or[Other registries]
+    amt --> ar[<a href='https://algoritmes.overheid.nl/en/'>The Algorithm Register of the Dutch government</a>]
+    amt --> or[Other registries]
 ```
 
 ## Contribute
