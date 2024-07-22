@@ -4,3 +4,13 @@ build
 site
 .idea/
 .cache
+
+
+# MacOS
+*.DS_Store
+
+# Python
+.python-version
+
+# logs
+*log.txt

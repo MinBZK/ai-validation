@@ -1,8 +1,8 @@
-# TAD-0004 Software Stack for TAD
+# AMT-0004 Software Stack for AMT
 
 ## Context
 
-For building our own TAD solution, we need to choose a software stack. During our earlier
+For building our own AMT solution, we need to choose a software stack. During our earlier
 POCs and market research, we gathered insight and information on technologies to use
 and which not to use.
 
@@ -23,10 +23,10 @@ some key requirements are:
 We stick to suitable programming languages. As most AI related
 tooling is written in Python, this language is the logical choice for our development as well.
 
-Currently we do not see the need for a separate web GUI framework.
+Currently, we do not see the need for a separate web GUI framework.
 it is preferred to bundle backend and frontend in one solution.
 
-As part of a Dutch government organization, we need to adhere to all dutch laws and standards, like:
+As part of a Dutch government organization, we need to adhere to all Dutch laws and standards, like:
 
 * [Digitoegankelijk](https://www.digitoegankelijk.nl/)
 * [WCAG Guidelines](https://wcag.nl/kennis/richtlijnen/wcag-2-1-richtlijnen/)
@@ -74,4 +74,4 @@ did not anticipate.
 
 ## Consequences
 
-We have clarity about the tools to use and develop our TAD tool.
+We have clarity about the tools to use and develop our AMT tool.

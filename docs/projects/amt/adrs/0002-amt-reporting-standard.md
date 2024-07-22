@@ -1,8 +1,8 @@
-# TAD-0002 TAD Reporting Standard
+# AMT-0002 AMT Reporting Standard
 
 ## Context
 
-The TAD Reporting Standard proposes a standardized way of capturing information of ML-models and systems.
+The AMT Reporting Standard proposes a standardized way of capturing information of ML-models and systems.
 
 ## Assumptions
 
@@ -21,7 +21,7 @@ We decided to implement a custom reporting standard. Our reporting standard can 
 into three elements.
 
 1. System Card, containing information about a group of ML-models which accomplish a specific task.
-A System Card can refer to multiple Model Cards, either a Model Card specified by the TAD Reporting
+A System Card can refer to multiple Model Cards, either a Model Card specified by the AMT Reporting
 Standard, or any other model card. A System Card can refer to multiple Assessment Cards.
 2. Model Card, containing information about a specific ML-model.
 3. Assessment Card, containing information about a regulatory assessment.
@@ -33,18 +33,18 @@ extended to allow for:
 2. Capturing additional measurements on fairness and bias.
 3. Capturing regulatory assessments.
 
-The extension is not strict, meaning that there the TAD Reporting Standard is not a valid Hugging Face
+The extension is not strict, meaning that there the AMT Reporting Standard is not a valid Hugging Face
 metadata specification. The reason for this is that some fields in the Hugging Face standard are too much
 intertwined with the Hugging Face ecosystem and it would not be logical for us to couple our implementation
 this tightly to Hugging Face.
 
 ## Risks
 
-The TAD Reporting Standard is not fully backwards compatible with the Hugging Face Model Card
+The AMT Reporting Standard is not fully backwards compatible with the Hugging Face Model Card
 metadata specification. If in the future the Hugging Face Model Card metadata specification becomes
-a standard, we might need to revise the TAD standard.
+a standard, we might need to revise the AMT standard.
 
 ## Consequences
 
-The TAD Reporting Standard allows us to capture relevant information on model performance, bias and fairness
+The AMT Reporting Standard allows us to capture relevant information on model performance, bias and fairness
 and regulatory assessments in a standardized way.
