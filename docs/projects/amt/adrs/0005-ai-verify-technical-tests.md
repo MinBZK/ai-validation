@@ -1,4 +1,4 @@
-# TAD-0005 Add support to run technical tests via AI Verify
+# AMT-0005 Add support to run technical tests via AI Verify
 
 ## Context
 
@@ -36,8 +36,8 @@ which can be processed in any way we please, like writing it to a file or System
 * We can wrap the API and other AI Verify requirements in a Docker image.
 * We can run the Docker image independently where we only have to provide the model, datasets and other
  required configuration to run a test.
-* We can monitor the progress of a test in our TAD tool.
-* We can process the results of a test in our TAD tool.
+* We can monitor the progress of a test in our AMT tool.
+* We can process the results of a test in our AMT tool.
 
 ## Decision
 
@@ -51,4 +51,4 @@ be done in the AI Verify core.
 
 ## Consequences
 
-We have a set of technical tests we can integrate in the TAD tool.
+We have a set of technical tests we can integrate in the AMT tool.

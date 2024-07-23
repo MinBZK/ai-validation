@@ -1,4 +1,4 @@
-# TAD-0006 Include EU AI Act into System Card
+# AMT-0006 Include EU AI Act into System Card
 
 ## Context
 
@@ -38,4 +38,4 @@ itself and in the assessment card.
 ## Consequences
 
 The extended system card and proposed instrument will facilitate the documentation of information in accordance
-with the EU AI Act using the TAD tool.
+with the EU AI Act using the AMT tool.

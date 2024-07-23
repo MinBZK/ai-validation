@@ -80,24 +80,24 @@ plugins:
 nav:
   - Home: index.md
   - Projects:
-    - TAD:
-      - projects/tad/index.md
+    - AMT:
+      - projects/amt/index.md
       - Reporting Standard:
-        - projects/tad/reporting-standard/index.md
-        - projects/tad/reporting-standard/latest.md
-        - projects/tad/reporting-standard/0.1a6.md
-        - projects/tad/reporting-standard/0.1a5.md
-        - projects/tad/reporting-standard/0.1a4.md
-        - projects/tad/reporting-standard/0.1a3.md
-        - projects/tad/reporting-standard/0.1a2.md
-        - projects/tad/reporting-standard/0.1a1.md
-        - projects/tad/comparison.md
-      - ADRs for TAD:
-        - ... | flat | projects/tad/adrs/*
+        - projects/amt/reporting-standard/index.md
+        - projects/amt/reporting-standard/latest.md
+        - projects/amt/reporting-standard/0.1a6.md
+        - projects/amt/reporting-standard/0.1a5.md
+        - projects/amt/reporting-standard/0.1a4.md
+        - projects/amt/reporting-standard/0.1a3.md
+        - projects/amt/reporting-standard/0.1a2.md
+        - projects/amt/reporting-standard/0.1a1.md
+        - projects/amt/comparison.md
+      - ADRs for AMT:
+        - ... | flat | projects/amt/adrs/*
       - Existing tools:
-        - ... | flat | projects/tad/existing-tools/comparison/*
+        - ... | flat | projects/amt/existing-tools/comparison/*
         - Checklist:
-          - ... | flat | projects/tad/existing-tools/checklists/*
+          - ... | flat | projects/amt/existing-tools/checklists/*
     - LLM Benchmarks:
       - projects/llm-benchmarks/index.md
   - Way of Working:

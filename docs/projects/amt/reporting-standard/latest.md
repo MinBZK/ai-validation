@@ -1,6 +1,6 @@
-# :label: 0.1a6
+# :label: 0.1a7 (Latest)
 
-This document describes the Transparency of Algorithmic Decision making (TAD) Reporting Standard.
+This document describes the Algorithm Management Toolkit (AMT) Reporting Standard.
 
 For reproducibility, governance, auditing and sharing of algorithmic systems it is essential to have a reporting
 standard so that information about an algorithmic system can be shared. This reporting standard describes how
@@ -9,7 +9,7 @@ descriptive information combined with information about the technical tests and 
 
 !!! warning "Disclaimer"
 
-    The TAD Reporting Standard is work in progress. This means that the current standard is probably suboptimal and will
+    The AMT Reporting Standard is work in progress. This means that the current standard is probably suboptimal and will
     change significantly in future versions.
 
 ## Introduction
@@ -300,18 +300,20 @@ An `assessment_card` contains the following information.
     4. `author` (OPTIONAL, string). Name of person that initiated the transformations.
 
 2. `name` (REQUIRED, string). The name of the assessment.
-3. `date` (REQUIRED, string). The date at which the assessment is completed. Date should be given in
+3. `urn` (OPTIONAL, string). A Uniform Resource Name (URN) of the instrument in the instrument register.
+4. `date` (REQUIRED, string). The date at which the assessment is completed. Date should be given in
    [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format, i.e. `YYYY-MM-DD`.
-4. `contents` (REQUIRED, list). There can be multiple items in contents. For each item the following fields are present:
+5. `contents` (REQUIRED, list). There can be multiple items in contents. For each item the following fields are present:
 
     1. `question` (REQUIRED, string). A question.
-    2. `answer` (REQUIRED, string). An answer.
-    3. `remarks` (OPTIONAL, string). A field to put relevant discussion remarks in.
-    4. `authors` (OPTIONAL, list). There can be multiple names. For each name the following field is present.
+    2. `urn` (OPTIONAL, string). A Uniform Resource Name (URN) of the corresponding task in the instrument register.
+    3. `answer` (REQUIRED, string). An answer.
+    4. `remarks` (OPTIONAL, string). A field to put relevant discussion remarks in.
+    5. `authors` (OPTIONAL, list). There can be multiple names. For each name the following field is present.
 
         1. `name` (OPTIONAL, string). The name of the author of the question.
 
-    5. `timestamp` (OPTIONAL, string). A timestamp of the date, time and timezone of the answer. Timestamp should be
+    6. `timestamp` (OPTIONAL, string). A timestamp of the date, time and timezone of the answer. Timestamp should be
         given, preferably in UTC (represented as `Z`), in
         [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format, i.e. `2024-04-16T16:48:14Z`.
 
@@ -463,9 +465,11 @@ provenance:
   uri: {modification_uri}
   author: {modification_author}
 name: {assessment_name}
+urn: {urn}
 date: {assessment_date}
 contents:
   - question: {question_text}
+    urn: {urn}
     answer: {answer_text}
     remarks: {remarks_text}
     authors:
@@ -479,6 +483,7 @@ JSON schema will be added when we publish the first beta version.
 
 ## Changelog
 
+- 0.1a7: adds urn to assessment card
 - 0.1a6:
     - fix mismatches between description and examples
     - format YAML examples and Markdown formatting

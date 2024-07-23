@@ -1,4 +1,4 @@
-# TAD-0003 Tool for Transparency of Algorithmic Decision making
+# AMT-0003 Tool for Managing Algorithms
 
 ## Context
 
