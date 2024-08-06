@@ -52,8 +52,9 @@ The Python backend will use the following key dependencies:
 
 ### Frontend
 
-We will use serverside rendering of HTML, based on [HTMX](https://htmx.org/).
-For styling and components we will use [NL Design System](https://github.com/nl-design-system/rijkshuisstijl-community).
+We will use server-side rendering of HTML based on [HTMX](https://htmx.org). For our main styling, we use [Rijkshuisstijl](https://www.rijkshuisstijl.nl). This is implemented by using [design tokens](https://nldesignsystem.nl/handboek/design-tokens/), so that other organizations can use their own styling when using our tools by linking their own tokens.
+
+When available, we use components from the [NL Design System](https://github.com/nl-design-system/rijkshuisstijl-community). If a component is not available, we will build it ourselves and contribute it to the NL Design System. We will publish the components that we use in Storybook with GitHub pages, which is hosted on the [BZK GitHub](https://github.com/MinBZK).
 
 ### Testing
 
