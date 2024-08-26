@@ -1,0 +1,249 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/MinBZK/ai-validatie/main/docs/projects/amt/reporting-standard/schemas",
+    "title": "System card schema",
+    "description": "JSON schema for system card",
+    "type": "object",
+    "properties": {
+        "version":{
+            "type": "string",
+            "description": "The version of the schema used"
+        },
+        "provenance": {
+            "type": "object",
+            "properties":{
+                "git_commit_hash":{
+                    "type": "string",
+                    "description": "Git commit hash of the commit which contains the transformation file used to create this card"
+                },
+                "timestamp":{
+                    "type": "string",
+                    "description": "A timestamp of the date, time and timezone of generation of this System Card"
+                },
+                "uri": {
+                    "type": "string",
+                    "description": "URI to the tool that was used to perform the transformations"
+                },
+                "author":{
+                    "type": "string",
+                    "description": "Name of person that initiated the transformations"
+                }
+            }
+        },
+        "name": {
+            "type": "string",
+            "description": "Name used to describe the system"
+        },
+        "upl": {
+            "type": "string",
+            "description": "If this algorithm is part of a product offered by the Dutch Government, it should contain a URI from the Uniform Product List"
+        },
+        "owners":  {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "oin": {
+                    "type": "string",
+                    "description": "If applicable the Organisatie-identificatienummer (OIN)"
+                },
+                "organization": {
+                    "type": "string",
+                    "description": "Name of the organization that owns the model. If ion is NOT provided this field is REQUIRED"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of a contact person within the organization"
+                },
+                "email": {
+                    "type": "string",
+                    "description": "Email address of the contact person or organization"
+                },
+                "role": {
+                    "type": "string",
+                    "description": "Role of the contact person. This field should only be set when the name field is set"
+                }
+              }
+            }
+        },
+        "description":{
+            "type": "string",
+            "description": "A short description of the system"
+            },
+        "labels": {
+            "type": "array",
+            "description": "Labels to store meta information about the system",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of the label"
+                },
+                "value": {
+                  "type": "string",
+                  "description": "Value of the label"
+                }
+              }
+            }
+          },
+        "status":{
+            "type": "string",
+            "description": "Status of the system"
+        },
+        "publication_category":{
+            "type": "string",
+            "description": "Publication category of the algorithm",
+            "enum": [
+                "high_risk",
+                "other"
+            ]
+        },
+        "begin_date": {
+            "type": "string",
+            "description": "The first date the system was used, in ISO 8601 format, i.e. YYYY-MM-DD"
+        },
+        "end_date": {
+            "type": "string",
+            "description": "The last date the system was used, in ISO 8601 format, i.e. YYYY-MM-DD"
+        },
+        "goal_and_impact": {
+            "type": "string",
+            "description": "The purpose of the system and the impact it has on citizens and companies"
+        },
+        "considerations":{
+            "type": "string",
+            "description": "The pro's and con's of using the system"
+        },
+        "risk_management":{
+            "type": "string",
+            "description": "Description of the risks associated with the system"
+        },
+        "human_intervention":{
+            "type": "string",
+            "description": "A description to want extend there is human involvement in the system"
+        },
+        "legal_base": {
+            "type": "array",
+            "description": "Relevant laws for the process the system is embedded in",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of the law"
+                },
+                "link": {
+                  "type": "string",
+                  "description": "URI pointing towards the contents of the law"
+                }
+              }
+            }
+        },
+        "used_data":{
+            "type": "string",
+            "description": "An overview of the data that is used in the system"
+        },
+        "technical_design":{
+            "type": "string",
+            "description": "Description on how the system works"
+        },
+        "external_providers":{
+            "type": "array",
+            "description": "Information on external providers",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of the external provider"
+                },
+                "version": {
+                  "type": "string",
+                  "description": "Version of the external provider reflecting its relation to previous versions"
+                }
+              }
+            }
+        },
+        "references":{
+            "type": "array",
+            "description": "Additional reference URI's that point information about the system and are relevant",
+            "items": {
+                "type": "string"
+            }
+        },
+        "interaction_details": {
+            "type": "array",
+            "description": "How the AI system interacts with hardware or software, including other AI systems",
+            "items": {
+              "type": "string"
+            }
+        },
+        "version_requirements":{
+            "type": "array",
+            "description": "The versions of the relevant software or firmware, and any requirements related to version updates",
+            "items": {
+              "type": "string"
+            }
+        },
+        "deployment_variants":{
+            "type": "array",
+            "description": "All the forms in which the AI system is placed on the market or put into service, such as software packages embedded into hardware, downloads, or APIs",
+            "items": {
+              "type": "string"
+            }
+        },
+        "hardware_requirements":{
+            "type": "array",
+            "description": "Description of the hardware on which the AI system must be run",
+            "items": {
+              "type": "string"
+            }
+        },
+        "product_markings":{
+            "type": "array",
+            "description": "If the AI system is a component of products, photos, or illustrations, the external features, markings, and internal layout of those products",
+            "items": {
+              "type": "string"
+            }
+        },
+        "user_interface":{
+            "type": "array",
+            "description": "Information on the user interface provided to the user responsible for its operation",
+            "items": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string",
+                  "description": "A description of the provided user interface"
+                },
+                "link": {
+                  "type": "string",
+                  "description": "A link to the user interface can be included"
+                },
+                "snapshot":{
+                  "type": "string",
+                  "description": "A snapshot/screenshot of the user interface can be included with the use of a hyperlink"
+                }
+              }
+            }
+        },
+        "models": {
+            "type": "array",
+            "description": "A list of model cards",
+            "items": {
+                "$ref": "modelcard_schema.json"
+            }
+        },
+        "assessments":{
+            "type": "array",
+            "description": "A list of assessment cards",
+            "items": {
+                "$ref": "assessmentcard_schema.json"
+            }
+        }
+    },
+    "required": ["version"]
+}
+
+
