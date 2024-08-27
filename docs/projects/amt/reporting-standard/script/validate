@@ -1,0 +1,64 @@
+#!/usr/bin/env python
+
+import json
+import sys
+import argparse
+
+import jsonschema
+import yaml
+from jsonschema import validate
+
+# Argument parsing
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--schema_file",
+    help="file location of the JSON schema file to check the YAML against",
+    type=str,
+)
+parser.add_argument(
+    "--file_pairs",
+    nargs="+",  # Accept multiple pairs of schema and YAML files
+    help="Pairs of schema and YAML files, in the format schema1.json:file1.yaml schema2.json:file2.yaml",
+    type=str,
+)
+args = parser.parse_args()
+
+# Load the JSON schema
+with open(args.schema_file, "r") as schema_file:
+    schema = json.load(schema_file)
+
+# Load the YAML file
+f = args.yaml_file
+with open(f, "r") as yaml_file:
+    data = yaml.safe_load(yaml_file)
+
+# Function to validate a single pair
+def validate_pair(schema_file, yaml_file):
+    # Load the JSON schema
+    with open(schema_file, "r") as sf:
+        schema = json.load(sf)
+
+    # Load the YAML file
+    with open(yaml_file, "r") as yf:
+        data = yaml.safe_load(yf)
+
+    # Validate the data
+    try:
+        validate(instance=data, schema=schema)
+        print(f"Validation of '{yaml_file}' against '{schema_file}' successful.")
+    except jsonschema.exceptions.ValidationError as err:
+        print(
+            f"Validation error in '{yaml_file}' against '{schema_file}': {err.message}"
+        )
+        sys.exit(1)
+
+
+# Handle multiple file pairs if provided
+if args.file_pairs:
+    for pair in args.file_pairs:
+        schema_file, yaml_file = pair.split(":")
+        validate_pair(schema_file, yaml_file)
+else:
+    print(
+        "Error: Please provide either --schema_file and --yaml_file for a single validation, or --file_pairs for multiple validations."
+    )
