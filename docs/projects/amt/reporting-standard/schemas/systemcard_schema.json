@@ -34,6 +34,29 @@
             "type": "string",
             "description": "Name used to describe the system"
         },
+        "instruments":{
+            "type": "array",
+            "description": "List of instruments from the instrument register that must be executed to fill this system card",
+            "items": {
+                "type": "object",
+                "properties":{
+                    "urn": {
+                        "type": "string",
+                        "description": "Uniform Resource Names of the instrument"
+                    },
+                    "version": {
+                        "type": "string",
+                        "description": "Version of the instrument"
+                    },
+                    "required": {
+                        "type": "string",
+                        "description": "Specifies whether the instrument is required to be executed or not"
+                    }
+                },
+                "required": ["urn"]
+            }
+
+        },
         "upl": {
             "type": "string",
             "description": "If this algorithm is part of a product offered by the Dutch Government, it should contain a URI from the Uniform Product List"

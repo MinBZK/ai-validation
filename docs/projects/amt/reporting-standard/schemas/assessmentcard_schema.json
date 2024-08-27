@@ -1,0 +1,86 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/MinBZK/ai-validatie/main/docs/projects/amt/reporting-standard/schemas",
+    "title": "Model card schema",
+    "description": "JSON schema for model card",
+    "type": "object",
+    "properties": {
+        "provenance": {
+            "type": "object",
+            "properties":{
+                "git_commit_hash":{
+                    "type": "string",
+                    "description": "Git commit hash of the commit which contains the transformation file used to create this card"
+                },
+                "timestamp":{
+                    "type": "string",
+                    "description": "A timestamp of the date, time and timezone of generation of this Assessment Card"
+                },
+                "uri": {
+                    "type": "string",
+                    "description": "URI to the tool that was used to perform the transformations"
+                },
+                "author":{
+                    "type": "string",
+                    "description": "Name of person that initiated the transformations"
+                }
+            }
+        },
+        "name":{
+            "type": "string",
+            "description": "Name of the assessment"
+        },
+        "urn":{
+            "type": "string",
+            "description": "A Uniform Resource Name (URN) of the instrument in the instrument register"
+        },
+        "date":{
+            "type": "string",
+            "description": "The date at which the assessment is completed"
+        },
+        "contents":{
+            "type":  "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "question":{
+                        "type": "string",
+                        "description": "A question"
+                    },
+                    "urn":{
+                        "type": "string",
+                        "description":  "A Uniform Resource Name (URN) of the corresponding task in the instrument register"
+                    },
+                    "answer":{
+                        "type": "string",
+                        "description": "An answer"
+
+                    },
+                    "remarks":{
+                        "type": "string",
+                        "description": "A field to put relevant discussion remarks in"
+                    },
+                    "authors":{
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties":{
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name of the author of the question"
+                                }
+                            }
+                        }
+                    },
+                    "timestamp":{
+                        "type": "string",
+                        "description": "A timestamp of the date, time and timezone of the answer"
+
+                    }
+                }
+            },
+            "required": ["question", "answer"]
+        }
+    },
+    "required": ["name", "date", "contents"]
+}
