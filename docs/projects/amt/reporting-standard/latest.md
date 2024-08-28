@@ -492,7 +492,7 @@ contents:
 
 ## Schema
 
-JSON schemas of the system card, model card and assessment card can be found on Github: [https://github.com/MinBZK/ai-validation].
+JSON schemas of the system card, model card and assessment card can be found on [Github]:<https://github.com/MinBZK/ai-validation/tree/main/docs/projects/amt/reporting-standard/schemas>
 
 ## Changelog
 

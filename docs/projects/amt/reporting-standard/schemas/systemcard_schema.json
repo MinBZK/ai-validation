@@ -18,7 +18,7 @@
                 },
                 "timestamp":{
                     "type": "string",
-                    "description": "A timestamp of the date, time and timezone of generation of this System Card"
+                    "description": "A timestamp of the date, time and timezone of generation of this System Card in ISO 8601 format"
                 },
                 "uri": {
                     "type": "string",

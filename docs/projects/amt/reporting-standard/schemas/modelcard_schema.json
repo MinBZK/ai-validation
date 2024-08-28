@@ -14,7 +14,8 @@
                 },
                 "timestamp":{
                     "type": "string",
-                    "description": "A timestamp of the date, time and timezone of generation of this Model Card"
+                    "format": "date-time",
+                    "description": "A timestamp of the date, time and timezone of generation of this Model Card in ISO 8601 format"
                 },
                 "uri": {
                     "type": "string",
@@ -228,7 +229,12 @@
                                     "description": "The data type of the metric"
                                   },
                                   "value": {
-                                    "type": "string",
+
+                                    "oneOf": [
+                                        { "type": "string" },
+                                        { "type": "integer" },
+                                        { "type": "number" }
+                                    ],
                                     "description": "The value of the metric"
                                   },
                                   "labels": {
