@@ -39,6 +39,8 @@ Contributing can be done by clicking "edit" top right and by making a pull reque
     brew install --cask mattermost
     ```
 
+- [Tuple](https://tuple.app/download) for pair programming and standups
+
 ## Terminal and shell
 
 - [Iterm2](https://iterm2.com/)
