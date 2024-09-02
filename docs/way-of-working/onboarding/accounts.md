@@ -5,6 +5,7 @@
 Make sure you have installed [Mattermost](dev-machine.md#communication), then follow these steps.
 
 - [Register](https://realisatieibds.pleio.nl/register) on Pleio with your @rijksoverheid/@minbzk.nl email address.
+- Use this server: `https://digilab.overheid.nl/chat`
 - [Login](https://digilab.overheid.nl/chat/login)-> Gitlab -> Pleio.
 - Ask a team member to add you to the RIG and AI Validation team.
 - Make sure to add a recognizable profile picture
