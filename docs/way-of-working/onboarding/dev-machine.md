@@ -39,7 +39,7 @@ Contributing can be done by clicking "edit" top right and by making a pull reque
     brew install --cask mattermost
     ```
 
-- [Tuple](https://tuple.app/download) for pair programming and standups
+- [Tuple](https://tuple.app/download) for pair programming and our standup
 
 ## Terminal and shell
 
