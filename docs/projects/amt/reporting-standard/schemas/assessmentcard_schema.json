@@ -13,11 +13,11 @@
                     "description": "Git commit hash of the commit which contains the transformation file used to create this card"
                 },
                 "timestamp":{
-                    "type": "string",
+                    "type": "date-time",
                     "description": "A timestamp of the date, time and timezone of generation of this Assessment Card in ISO 8601 format"
                 },
                 "uri": {
-                    "type": "string",
+                    "type": "uri",
                     "description": "URI to the tool that was used to perform the transformations"
                 },
                 "author":{
@@ -35,7 +35,7 @@
             "description": "A Uniform Resource Name (URN) of the instrument in the instrument register"
         },
         "date":{
-            "type": "string",
+            "type": "date",
             "description": "The date at which the assessment is completed"
         },
         "contents":{
@@ -73,7 +73,7 @@
                         }
                     },
                     "timestamp":{
-                        "type": "string",
+                        "type": "date-time",
                         "description": "A timestamp of the date, time and timezone of generation of the answer ISO 8601 format"
 
                     }

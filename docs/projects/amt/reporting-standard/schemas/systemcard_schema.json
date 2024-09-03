@@ -17,7 +17,7 @@
                     "description": "Git commit hash of the commit which contains the transformation file used to create this card"
                 },
                 "timestamp":{
-                    "type": "string",
+                    "type": "date-time",
                     "description": "A timestamp of the date, time and timezone of generation of this System Card in ISO 8601 format"
                 },
                 "uri": {
@@ -123,12 +123,12 @@
             ]
         },
         "begin_date": {
-            "type": "string",
-            "description": "The first date the system was used, in ISO 8601 format, i.e. YYYY-MM-DD"
+            "type": "date",
+            "description": "The first date the system was used, in ISO 8601 format, i.e. YYYY-MM-DD. Left out if not yet in use."
         },
         "end_date": {
-            "type": "string",
-            "description": "The last date the system was used, in ISO 8601 format, i.e. YYYY-MM-DD"
+            "type": "date",
+            "description": "The last date the system was used, in ISO 8601 format, i.e. YYYY-MM-DD. Left out if still in use."
         },
         "goal_and_impact": {
             "type": "string",
