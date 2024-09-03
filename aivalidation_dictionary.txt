@@ -17,6 +17,7 @@ Blendle
 Bluelight
 Bos
 Buitenland
+Burema
 Centraal
 CODEOWNER
 Colab
@@ -79,6 +80,7 @@ pytest
 Québec
 Ravi
 ravimeijerrig
+Renate
 Rijk
 rijksoverheid
 Robbert
