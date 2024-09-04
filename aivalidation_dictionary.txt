@@ -10,6 +10,8 @@ Algoritmeregister
 Anch
 anneschuth
 architecting
+argparse
+assessmentcard
 automerge
 berrydenhartog
 bestuursrecht
@@ -49,6 +51,7 @@ ICTU
 identificatienummer
 interpretability
 ITerm
+jsonschema
 Juijn
 keycloak
 Kubeflow
@@ -63,6 +66,7 @@ mkdocs
 mmmd
 modelcard
 multiclass
+nargs
 Noord
 onnx
 Opensource
