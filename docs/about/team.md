@@ -21,7 +21,6 @@
 
     [:fontawesome-brands-linkedin: Robbert Bos](https://www.linkedin.com/in/robbertbos/)
 
-
 -   ## Berry den Hartog
 
     Engineer
