@@ -21,22 +21,6 @@
 
     [:fontawesome-brands-linkedin: Robbert Bos](https://www.linkedin.com/in/robbertbos/)
 
--   ## Lucas Haitsma
-
-    Researcher in Residence
-
-    ----
-
-    ![Lucas Haitsma](../img/lucas.jpeg){: .round }
-
-    Lucas is PhD candidate conducting research into the regulation and governance of algorithmic discrimination by
-    supervision and enforcement organizations. Lucas is our
-    [Researcher in Residence](../adrs/0011-researcher-in-residence.md).
-
-    [:fontawesome-brands-linkedin: Lucas Haitsma](https://www.linkedin.com/in/lucas-h-779375139/)
-
-    [:octicons-link-24: rug.nl](https://www.rug.nl/staff/l.m.haitsma/?lang=en)
-
 -   ## Berry den Hartog
 
     Engineer
@@ -203,5 +187,21 @@
     [:fontawesome-brands-github: FrieseWoudloper](https://github.com/FrieseWoudloper)
 
     [:fontawesome-brands-linkedin: Willy Tadema](https://www.linkedin.com/in/willytadema/)
+
+-   ## Lucas Haitsma
+
+    Researcher in Residence
+
+    ----
+
+    ![Lucas Haitsma](../img/lucas.jpeg){: .round }
+
+    Lucas is PhD candidate conducting research into the regulation and governance of algorithmic discrimination by
+    supervision and enforcement organizations. Lucas is our
+    [Researcher in Residence](../adrs/0011-researcher-in-residence.md).
+
+    [:fontawesome-brands-linkedin: Lucas Haitsma](https://www.linkedin.com/in/lucas-h-779375139/)
+
+    [:octicons-link-24: rug.nl](https://www.rug.nl/staff/l.m.haitsma/?lang=en)
 
 </div>
