@@ -13,7 +13,8 @@
                     "description": "Git commit hash of the commit which contains the transformation file used to create this card"
                 },
                 "timestamp":{
-                    "type": "date-time",
+                    "type": "string",
+                    "format": "date-time",
                     "description": "A timestamp of the date, time and timezone of generation of this Assessment Card in ISO 8601 format"
                 },
                 "uri": {
