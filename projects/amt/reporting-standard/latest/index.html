@@ -16,7 +16,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../0.1a7/">
+        <link rel="next" href="../0.1a8/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>🏷 0.1a8 (Latest) - AI Validation Team</title>
+        <title>🏷 0.1a9 (Latest) - AI Validation Team</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#01a8-latest" class="md-skip">
+        <a href="#01a9-latest" class="md-skip">
           Skip to content
         </a>
       
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🏷 0.1a8 (Latest)
+              🏷 0.1a9 (Latest)
             
           </span>
         </div>
@@ -524,6 +524,8 @@
       
         
       
+        
+      
     
     
       
@@ -585,7 +587,7 @@
           
   
   <span class="md-ellipsis">
-    🏷 0.1a8 (Latest)
+    🏷 0.1a9 (Latest)
   </span>
   
 
@@ -596,7 +598,7 @@
         
   
   <span class="md-ellipsis">
-    🏷 0.1a8 (Latest)
+    🏷 0.1a9 (Latest)
   </span>
   
 
@@ -732,6 +734,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0.1a8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🏷 0.1a8
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2370,7 +2393,7 @@
   
 
 
-<h1 id="01a8-latest"><img alt="🏷" class="twemoji" src="../../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f3f7.svg" title=":label:"> 0.1a8 (Latest)</h1>
+<h1 id="01a9-latest"><img alt="🏷" class="twemoji" src="../../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f3f7.svg" title=":label:"> 0.1a9 (Latest)</h1>
 <p>This document describes the Algorithm Management Toolkit (AMT) Reporting Standard.</p>
 <p>For reproducibility, governance, auditing and sharing of algorithmic systems it is essential to have a reporting
 standard so that information about an algorithmic system can be shared. This reporting standard describes how
@@ -2564,6 +2587,9 @@ is added.</li>
 <li><code>uri</code> (OPTIONAL, string). URI to the tool that was used to perform the transformations.</li>
 <li><code>author</code> (OPTIONAL, string). Name of person that initiated the transformations.</li>
 </ol>
+</li>
+<li>
+<p><code>name</code> (OPTIONAL, string). Name used to describe the model.</p>
 </li>
 <li>
 <p><code>language</code> (OPTIONAL, list[string]). If relevant, the natural languages the model supports in
@@ -2845,6 +2871,7 @@ is added.</li>
 <span class="w">  </span><span class="nt">timestamp</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_timestamp</span><span class="p p-Indicator">}</span>
 <span class="w">  </span><span class="nt">uri</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_uri</span><span class="p p-Indicator">}</span>
 <span class="w">  </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_author</span><span class="p p-Indicator">}</span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_name</span><span class="p p-Indicator">}</span>
 <span class="nt">language</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">lang_0</span><span class="p p-Indicator">}</span>
 <span class="nt">license</span><span class="p">:</span>
@@ -2934,6 +2961,7 @@ is added.</li>
 <p>JSON schemas of the system card, model card and assessment card can be found on <a href="https://github.com/MinBZK/ai-validation/tree/main/docs/projects/amt/reporting-standard/schemas">Github</a>.</p>
 <h2 id="changelog">Changelog</h2>
 <ul>
+<li>0.1a9: adds name to model card</li>
 <li>0.1a8: adds selected instrument urns to system card</li>
 <li>0.1a7: adds urn to assessment card</li>
 <li>0.1a6:<ul>
@@ -2992,7 +3020,7 @@ is added.</li>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 4, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 16, 2024</span>
   </span>
 
     
@@ -3002,7 +3030,7 @@ is added.</li>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 5, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 18, 2024</span>
   </span>
 
     
@@ -3020,14 +3048,14 @@ is added.</li>
     
     <nav>
       
-        <a href="https://github.com/GuusjeJuijn" class="md-author" title="@GuusjeJuijn">
-          
-          <img src="../../../../assets/external/avatars.githubusercontent.com/u/96429015.fe356448.jpg" alt="GuusjeJuijn">
-        </a>
-      
         <a href="https://github.com/ChristopherSpelt" class="md-author" title="@ChristopherSpelt">
           
           <img src="../../../../assets/external/avatars.githubusercontent.com/u/75083219.fe356448.jpg" alt="ChristopherSpelt">
+        </a>
+      
+        <a href="https://github.com/GuusjeJuijn" class="md-author" title="@GuusjeJuijn">
+          
+          <img src="../../../../assets/external/avatars.githubusercontent.com/u/96429015.fe356448.jpg" alt="GuusjeJuijn">
         </a>
       
         <a href="https://github.com/apps/github-actions" class="md-author" title="@github-actions[bot]">
