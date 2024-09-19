@@ -10,28 +10,28 @@
       
       
       
-        <link rel="canonical" href="https://minbzk.github.io/ai-validation/adrs/0004-software-hosting-platform/">
+        <link rel="canonical" href="https://minbzk.github.io/ai-validation/projects/amt/adrs/0007-front-end-components-implementation/">
       
       
-        <link rel="prev" href="../0003-ci-cd/">
+        <link rel="prev" href="../0006-extend-system-card-EU-AI-Act/">
       
       
-        <link rel="next" href="../0005-python-tooling/">
+        <link rel="next" href="../../existing-tools/comparison/requirements/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
     
     
       
-        <title>ADR-0004 Software hosting platform - AI Validation Team</title>
+        <title>AMT-0007 Front-end components implementation - AI Validation Team</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.35f28582.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -51,21 +51,21 @@
         
         
         
-        <link rel="stylesheet" href="../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <link rel="stylesheet" href="../../../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -74,7 +74,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adr-0004-software-hosting-platform" class="md-skip">
+        <a href="#amt-0007-front-end-components-implementation" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="AI Validation Team" class="md-header__button md-logo" aria-label="AI Validation Team" data-md-component="logo">
+    <a href="../../../.." title="AI Validation Team" class="md-header__button md-logo" aria-label="AI Validation Team" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1v16.2c0 22.1-17.9 40-40 40h-16c-1.1 0-2.2 0-3.3-.1-1.4.1-2.8.1-4.2.1L416 512h-24c-22.1 0-40-17.9-40-40v-88c0-17.7-14.3-32-32-32h-64c-17.7 0-32 14.3-32 32v88c0 22.1-17.9 40-40 40h-55.9c-1.5 0-3-.1-4.5-.2-1.2.1-2.4.2-3.6.2h-16c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9.1-2.8v-69.7h-32c-18 0-32-14-32-32.1 0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7l255.4 224.5c8 7 12 15 11 24"/></svg>
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ADR-0004 Software hosting platform
+              AMT-0007 Front-end components implementation
             
           </span>
         </div>
@@ -204,7 +204,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
     
@@ -219,17 +219,21 @@
         
   
   
+    
+  
   
     
     
       
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../projects/amt/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
     
@@ -252,7 +256,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../way-of-working/principles/" class="md-tabs__link">
+        <a href="../../../../way-of-working/principles/" class="md-tabs__link">
           
   
     
@@ -268,13 +272,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../0001-adrs/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../adrs/0001-adrs/" class="md-tabs__link">
           
   
     
@@ -294,7 +296,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../about/team/" class="md-tabs__link">
+        <a href="../../../../about/team/" class="md-tabs__link">
           
   
     
@@ -335,7 +337,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="AI Validation Team" class="md-nav__button md-logo" aria-label="AI Validation Team" data-md-component="logo">
+    <a href="../../../.." title="AI Validation Team" class="md-nav__button md-logo" aria-label="AI Validation Team" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1v16.2c0 22.1-17.9 40-40 40h-16c-1.1 0-2.2 0-3.3-.1-1.4.1-2.8.1-4.2.1L416 512h-24c-22.1 0-40-17.9-40-40v-88c0-17.7-14.3-32-32-32h-64c-17.7 0-32 14.3-32 32v88c0 22.1-17.9 40-40 40h-55.9c-1.5 0-3-.1-4.5-.2-1.2.1-2.4.2-3.6.2h-16c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9.1-2.8v-69.7h-32c-18 0-32-14-32-32.1 0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7l255.4 224.5c8 7 12 15 11 24"/></svg>
@@ -365,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -382,8 +384,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -394,17 +398,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -415,7 +422,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Projects
@@ -426,6 +433,8 @@
                 
   
   
+    
+  
   
   
     
@@ -447,16 +456,16 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../projects/amt/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -473,7 +482,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             AMT
@@ -530,7 +539,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../projects/amt/reporting-standard/" class="md-nav__link ">
+            <a href="../../reporting-standard/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -563,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/latest/" class="md-nav__link">
+      <a href="../../reporting-standard/latest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -584,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a8/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -605,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a7/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -626,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a6/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -647,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a5/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -668,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a4/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -689,7 +698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a3/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -710,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a2/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -731,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a1/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -752,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/comparison/" class="md-nav__link">
+      <a href="../../comparison/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -778,8 +787,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -803,11 +814,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_1_3" id="__nav_2_1_3_label" tabindex="0">
@@ -821,7 +832,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1_3">
             <span class="md-nav__icon md-icon"></span>
             ADRs for AMT
@@ -835,7 +846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/adrs/0001-adrs/" class="md-nav__link">
+      <a href="../0001-adrs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -856,7 +867,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/adrs/0002-amt-reporting-standard/" class="md-nav__link">
+      <a href="../0002-amt-reporting-standard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -877,7 +888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/adrs/0003-amt-tool/" class="md-nav__link">
+      <a href="../0003-amt-tool/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -898,7 +909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/adrs/0004-software-stack/" class="md-nav__link">
+      <a href="../0004-software-stack/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -919,7 +930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/adrs/0005-ai-verify-technical-tests/" class="md-nav__link">
+      <a href="../0005-ai-verify-technical-tests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -940,7 +951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/adrs/0006-extend-system-card-EU-AI-Act/" class="md-nav__link">
+      <a href="../0006-extend-system-card-EU-AI-Act/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -958,10 +969,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../projects/amt/adrs/0007-front-end-components-implementation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    AMT-0007 Front-end components implementation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -970,6 +1001,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assumptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assumptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consequences
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consequences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      More Information
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1038,7 +1167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/existing-tools/comparison/requirements/" class="md-nav__link">
+      <a href="../../existing-tools/comparison/requirements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1059,7 +1188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/existing-tools/comparison/tools/" class="md-nav__link">
+      <a href="../../existing-tools/comparison/tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1080,7 +1209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/existing-tools/comparison/tools_comparison/" class="md-nav__link">
+      <a href="../../existing-tools/comparison/tools_comparison/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1151,7 +1280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/existing-tools/checklists/ai_assesment_tool_checklist/" class="md-nav__link">
+      <a href="../../existing-tools/checklists/ai_assesment_tool_checklist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1172,7 +1301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/existing-tools/checklists/aiverify_checklist/" class="md-nav__link">
+      <a href="../../existing-tools/checklists/aiverify_checklist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1193,7 +1322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/existing-tools/checklists/holisticai_checklist/" class="md-nav__link">
+      <a href="../../existing-tools/checklists/holisticai_checklist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1214,7 +1343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/existing-tools/checklists/ibm_360_research_toolkit_checklist/" class="md-nav__link">
+      <a href="../../existing-tools/checklists/ibm_360_research_toolkit_checklist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1235,7 +1364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/existing-tools/checklists/verifyml_checklist/" class="md-nav__link">
+      <a href="../../existing-tools/checklists/verifyml_checklist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1301,7 +1430,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../projects/llm-benchmarks/" class="md-nav__link ">
+            <a href="../../../llm-benchmarks/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1398,7 +1527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../way-of-working/principles/" class="md-nav__link">
+      <a href="../../../../way-of-working/principles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1419,7 +1548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../way-of-working/contributing/" class="md-nav__link">
+      <a href="../../../../way-of-working/contributing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1440,7 +1569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../way-of-working/code-reviews/" class="md-nav__link">
+      <a href="../../../../way-of-working/code-reviews/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1461,7 +1590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../way-of-working/ubiquitous_language/" class="md-nav__link">
+      <a href="../../../../way-of-working/ubiquitous_language/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1507,7 +1636,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../way-of-working/onboarding/" class="md-nav__link ">
+            <a href="../../../../way-of-working/onboarding/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1540,7 +1669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../way-of-working/onboarding/accounts/" class="md-nav__link">
+      <a href="../../../../way-of-working/onboarding/accounts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1561,7 +1690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../way-of-working/onboarding/dev-machine/" class="md-nav__link">
+      <a href="../../../../way-of-working/onboarding/dev-machine/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1590,7 +1719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../way-of-working/off-boarding/" class="md-nav__link">
+      <a href="../../../../way-of-working/off-boarding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1611,7 +1740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../way-of-working/decision-log/" class="md-nav__link">
+      <a href="../../../../way-of-working/decision-log/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1636,10 +1765,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1674,20 +1801,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1698,7 +1822,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             ADRs
@@ -1712,7 +1836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0001-adrs/" class="md-nav__link">
+      <a href="../../../../adrs/0001-adrs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1733,7 +1857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0002-code-platform/" class="md-nav__link">
+      <a href="../../../../adrs/0002-code-platform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1754,7 +1878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0003-ci-cd/" class="md-nav__link">
+      <a href="../../../../adrs/0003-ci-cd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1772,30 +1896,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    ADR-0004 Software hosting platform
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../adrs/0004-software-hosting-platform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1804,62 +1908,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#context" class="md-nav__link">
-    <span class="md-ellipsis">
-      Context
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assumptions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Assumptions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#decision" class="md-nav__link">
-    <span class="md-ellipsis">
-      Decision
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#consequences" class="md-nav__link">
-    <span class="md-ellipsis">
-      Consequences
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1872,7 +1920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0005-python-tooling/" class="md-nav__link">
+      <a href="../../../../adrs/0005-python-tooling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1893,7 +1941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0006-agile-tooling/" class="md-nav__link">
+      <a href="../../../../adrs/0006-agile-tooling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1914,7 +1962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0007-commit-convention/" class="md-nav__link">
+      <a href="../../../../adrs/0007-commit-convention/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1935,7 +1983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0008-architectural-diagram-tooling/" class="md-nav__link">
+      <a href="../../../../adrs/0008-architectural-diagram-tooling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1956,7 +2004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0010-container-registry/" class="md-nav__link">
+      <a href="../../../../adrs/0010-container-registry/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1977,7 +2025,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0011-researcher-in-residence/" class="md-nav__link">
+      <a href="../../../../adrs/0011-researcher-in-residence/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1998,7 +2046,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0012-dictionary-for-spelling/" class="md-nav__link">
+      <a href="../../../../adrs/0012-dictionary-for-spelling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2019,7 +2067,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0013-date-time-representation/" class="md-nav__link">
+      <a href="../../../../adrs/0013-date-time-representation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2040,7 +2088,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0014-written-language/" class="md-nav__link">
+      <a href="../../../../adrs/0014-written-language/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2061,7 +2109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0016-government-cloud-comparison/" class="md-nav__link">
+      <a href="../../../../adrs/0016-government-cloud-comparison/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2133,7 +2181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/team/" class="md-nav__link">
+      <a href="../../../../about/team/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2154,7 +2202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/contact/" class="md-nav__link">
+      <a href="../../../../about/contact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2229,9 +2277,51 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#consequences" class="md-nav__link">
     <span class="md-ellipsis">
       Consequences
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consequences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      More Information
     </span>
   </a>
   
@@ -2252,7 +2342,7 @@
                   
 
   
-    <a href="https://github.com/MinBZK/ai-validation/edit/main/docs/adrs/0004-software-hosting-platform.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/MinBZK/ai-validation/edit/main/docs/projects/amt/adrs/0007-front-end-components-implementation.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -2260,28 +2350,61 @@
   
 
 
-<h1 id="adr-0004-software-hosting-platform">ADR-0004 Software hosting platform</h1>
+<h1 id="amt-0007-front-end-components-implementation">AMT-0007 Front-end components implementation</h1>
 <h2 id="context">Context</h2>
-<p>Our team recognizes the necessity of a platform to run our software, as our local machines lack the capacity to handle
-certain workloads effectively. We have evaluated several options available to us:</p>
-<ol>
-<li>Digilab Kubernetes</li>
-<li>Logius Kubernetes</li>
-<li>SSC-ICT VMs</li>
-<li>ODC Noord</li>
-</ol>
+<p>We will implement the <a href="https://nldesignsystem.nl">NL Design System</a> to ensure consistency, accessibility,
+and efficiency in our user interface development. This decision is motivated by the need
+to align with accessibility standards and best practices. Ensuring that our products are intuitive,
+cohesive, and maintain a high standard of quality. By leveraging the NL Design System,
+we will streamline our design process and collaborate with other governmental institutions.</p>
 <h2 id="assumptions">Assumptions</h2>
-<p>We operate under the following assumptions:</p>
 <ul>
-<li>High availability is not a critical requirement for our software.</li>
-<li>Our team prioritizes low maintenance solutions.</li>
+<li>The NL Design System will continue to evolve and remain supported.</li>
+<li>Our team has the capacity and expertise to contribute to the NL Design System when needed.</li>
+<li>The existing components in the NL Design System will cover the majority of our design needs.</li>
+<li>We will develop custom components when needed, if they are not yet addressed by the NL Design System.</li>
 </ul>
 <h2 id="decision">Decision</h2>
-<p>We will use <a href="https://digilab.overheid.nl/">Digilab Kubernetes</a> for our workloads.</p>
+<p>We will adopt the NL Design System as the foundation for our GUI implementation.
+For any special requirements not covered by the system, we will develop our own components and
+contribute them back to the NL Design System community where applicable.</p>
+<p>We also establish links to the ROOS Design System from RVO and, in the future,
+to the Rijkshuisstijl community, ensuring that our contributions and customizations are in line
+with broader governmental design standards.</p>
+<h2 id="risks">Risks</h2>
+<ul>
+<li>The NL Design System might not evolve quickly enough to meet all our future needs,
+  leading to potential delays in development.</li>
+<li>Contributing back to the NL Design System might require additional resources and
+  could introduce complexities in managing our own custom components.</li>
+<li>Dependence on external systems and communities might pose a risk if their priorities
+  shift or if there is a lack of support.</li>
+</ul>
 <h2 id="consequences">Consequences</h2>
-<p>By choosing Digilab Kubernetes, we gain access to a namespace within their managed Kubernetes cluster. However, it's
-important to note that Digilab does not provide any guarantees regarding the availability of the cluster. Should our
-software require higher availability assurances, we may need to explore alternative solutions.</p>
+<h3 id="positive">Positive</h3>
+<ul>
+<li><strong>Consistency:</strong> Our products will benefit from a consistent look and feel,
+  in line with governmental standards.</li>
+<li><strong>Efficiency</strong>: Reusing existing components will accelerate development and reduce redundancy.</li>
+<li><strong>Community engagement</strong>: By contributing to the NL Design System, we enhance our standing within
+  the design community and promote shared innovation.</li>
+</ul>
+<h3 id="negative">Negative</h3>
+<ul>
+<li><strong>Customization complexity:</strong> Developing and maintaining custom components might increase our design and
+development workload.</li>
+<li><strong>Dependency:</strong> Our design system will be partially dependent on external frameworks and community
+ developments, which could introduce unforeseen challenges.</li>
+</ul>
+<h2 id="more-information">More Information</h2>
+<ul>
+<li><a href="https://nl-design-system.github.io/rvo/docs/">ROOS Design System</a> - The design system developed by RVO,
+  which will serve as an initial reference.</li>
+<li><a href="https://github.com/nl-design-system/rijkshuisstijl-community">Rijkshuisstijl Community</a> - The broader
+  community we plan to engage with in the future.</li>
+<li><a href="https://nldesignsystem.nl/">NL Design System official documentation</a> - The NL Design System community, documentation
+  and tools.</li>
+</ul>
 
 
 
@@ -2304,7 +2427,7 @@ software require higher availability assurances, we may need to explore alternat
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 30, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 17, 2024</span>
   </span>
 
     
@@ -2314,7 +2437,7 @@ software require higher availability assurances, we may need to explore alternat
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 28, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 17, 2024</span>
   </span>
 
     
@@ -2332,9 +2455,9 @@ software require higher availability assurances, we may need to explore alternat
     
     <nav>
       
-        <a href="https://github.com/robbertbos" class="md-author" title="@robbertbos">
+        <a href="https://github.com/rubenrouwhof" class="md-author" title="@rubenrouwhof">
           
-          <img src="../../assets/external/avatars.githubusercontent.com/u/11290343.fe356448.jpg" alt="robbertbos">
+          <img src="../../../../assets/external/avatars.githubusercontent.com/u/12407811.fe356448.jpg" alt="rubenrouwhof">
         </a>
       
       
@@ -2408,10 +2531,10 @@ software require higher availability assurances, we may need to explore alternat
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.code.copy", "navigation.indexes", "navigation.instant", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.action.edit", "content.code.copy", "navigation.indexes", "navigation.instant", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.suggest"], "search": "../../../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
     
   <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
