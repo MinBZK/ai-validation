@@ -4,6 +4,7 @@ Aangifte
 Aansluitpunt
 adrs
 Aequitas
+aivalidation
 Algemene
 Algoritmekader
 Algoritmeregister
@@ -25,6 +26,7 @@ CODEOWNER
 Colab
 Dalex
 Deepseek
+Design
 devcontainer
 DICTU
 Digilab
@@ -40,6 +42,7 @@ Friese
 gettext
 glightbox
 Granian
+GUI
 Guusje
 Haitsma
 Hanze
@@ -67,6 +70,8 @@ mmmd
 modelcard
 multiclass
 nargs
+NL
+nldesignsystem
 Noord
 onnx
 Opensource
@@ -86,12 +91,14 @@ Ravi
 ravimeijerrig
 Renate
 Rijk
+Rijkshuisstijl
 rijksoverheid
 Robbert
 robbertbos
 Rouwhof
+ROOS
 rubenrouwhof
-Rijkshuisstijl
+RVO
 Schuth
 SENSUS
 serverside
@@ -101,6 +108,8 @@ Standaard
 Standaardisatie
 Styleguides
 sublicensable
+superfences
+System
 tabbyml
 Tadema
 tasklist
