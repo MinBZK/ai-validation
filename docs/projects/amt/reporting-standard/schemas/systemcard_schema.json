@@ -36,7 +36,7 @@
         },
         "instruments":{
             "type": "array",
-            "description": "List of instruments from the instrument register that must be executed to fill this system card",
+            "description": "List of instruments from the task registry that must be executed to fill this system card",
             "items": {
                 "type": "object",
                 "properties":{

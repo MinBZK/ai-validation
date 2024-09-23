@@ -18,7 +18,7 @@ graph TB
     ak[<a href='https://minbzk.github.io/Algoritmekader/'>Algoritmekader</a>] <--> amt
 
     subgraph amt[Algorithm Management Toolkit]
-        ir[<a href='https://minbzk.github.io/instrument-registry'>Instrument Registry</a>] --> amp[<a href='https://github.com/MinBZK/amt/'>Algorithm Management Platform</a>]
+        tr[<a href='https://minbzk.github.io/task-registry'>Task Registry</a>] --> amp[<a href='https://github.com/MinBZK/amt/'>Algorithm Management Platform</a>]
         st[<a href='/ai-validation/projects/amt/reporting-standard/'>Reporting Standard</a>] --> amp
         amp <--> llm[<a href='/ai-validation/projects/llm-benchmarks/'>LLM Benchmark Tooling</a>]
     end

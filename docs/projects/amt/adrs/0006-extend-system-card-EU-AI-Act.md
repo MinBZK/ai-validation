@@ -27,7 +27,7 @@ because we use a modified model card setup, the performance may be less reliable
 ## Decision
 
 * We include the general description cases of the EU AI Act for high-risk systems into the system card directly.
-* We create a separate instrument including the complete technical documentation into the instrument registry.
+* We create a separate instrument including the complete technical documentation into the task registry.
 
 ## Risks
 
