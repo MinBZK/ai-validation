@@ -104,23 +104,6 @@
 
     [:fontawesome-brands-linkedin: Laurens Weijs](https://www.linkedin.com/in/laurensweijs)
 
--   ## Guusje Juijn
-
-    Trainee
-
-    ----
-
-    ![Guusje Juijn](../img/guusje.jpeg){: .round }
-
-    Guusje is currently enrolled in a two-year traineeship at the Dutch Government. After finishing her first assignment
-    at a policy department, she is excited to bring her knowledge about AI policy to a technical team. Guusje has a
-    background in Artificial Intelligence, is experienced in Python and machine learning and has a strong interest in
-    AI ethics.
-
-    [:fontawesome-brands-github: GuusjeJuijn](https://github.com/GuusjeJuijn)
-
-    [:fontawesome-brands-linkedin: Guusje Juijn](https://www.linkedin.com/in/guusjejuijn)
-
 -   ## Ruben Rouwhof
 
     UX/UI Designer
@@ -203,5 +186,22 @@
     [:fontawesome-brands-linkedin: Lucas Haitsma](https://www.linkedin.com/in/lucas-h-779375139/)
 
     [:octicons-link-24: rug.nl](https://www.rug.nl/staff/l.m.haitsma/?lang=en)
+
+-   ## Guusje Juijn
+
+    Trainee
+
+    ----
+
+    ![Guusje Juijn](../img/guusje.jpeg){: .round }
+
+    Guusje has a background in Artificial Intelligence, is experienced in Python and
+    machine learning and has a strong interest in AI ethics.
+    During her traineeship at the Dutch Government, she gained valuable experience in
+    both a policy department and a software engineering team.
+
+    [:fontawesome-brands-github: GuusjeJuijn](https://github.com/GuusjeJuijn)
+
+    [:fontawesome-brands-linkedin: Guusje Juijn](https://www.linkedin.com/in/guusjejuijn)
 
 </div>
