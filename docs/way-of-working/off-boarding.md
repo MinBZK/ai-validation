@@ -2,6 +2,11 @@
 
 We're sad to see you go! But if you do, here's what not to forget.
 
+## If you're leaving RIG
+
+- Make sure to reset your laptop **before** you hand in your phone
+- Hand in your laptop and phone
+
 ## GitHub
 
 - Make sure you transfer any ownership you may have to the team.
