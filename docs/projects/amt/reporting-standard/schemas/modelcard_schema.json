@@ -27,6 +27,10 @@
                 }
             }
         },
+        "name":{
+            "type": "string",
+            "description": "Name of the model"
+        },
         "language": {
             "type": "array",
             "description": "The natural languages the model supports in ISO 639",
