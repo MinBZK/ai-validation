@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://minbzk.github.io/ai-validation/projects/amt/reporting-standard/0.1a7/">
+        <link rel="canonical" href="https://minbzk.github.io/ai-validation/projects/amt/reporting-standard/0.1a9/">
       
       
-        <link rel="prev" href="../0.1a8/">
+        <link rel="prev" href="../latest/">
       
       
-        <link rel="next" href="../0.1a6/">
+        <link rel="next" href="../0.1a8/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>🏷 0.1a7 - AI Validation Team</title>
+        <title>🏷 0.1a9 - AI Validation Team</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#01a7" class="md-skip">
+        <a href="#01a9" class="md-skip">
           Skip to content
         </a>
       
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🏷 0.1a7
+              🏷 0.1a9
             
           </span>
         </div>
@@ -594,48 +594,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../0.1a9/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    🏷 0.1a9
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../0.1a8/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    🏷 0.1a8
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -652,7 +610,7 @@
           
   
   <span class="md-ellipsis">
-    🏷 0.1a7
+    🏷 0.1a9
   </span>
   
 
@@ -663,7 +621,7 @@
         
   
   <span class="md-ellipsis">
-    🏷 0.1a7
+    🏷 0.1a9
   </span>
   
 
@@ -799,6 +757,48 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0.1a8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🏷 0.1a8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0.1a7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🏷 0.1a7
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2431,7 +2431,7 @@
                   
 
   
-    <a href="https://github.com/MinBZK/ai-validation/edit/main/docs/projects/amt/reporting-standard/0.1a7.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/MinBZK/ai-validation/edit/main/docs/projects/amt/reporting-standard/0.1a9.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -2439,7 +2439,7 @@
   
 
 
-<h1 id="01a7"><img alt="🏷" class="twemoji" src="../../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f3f7.svg" title=":label:"> 0.1a7</h1>
+<h1 id="01a9"><img alt="🏷" class="twemoji" src="../../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f3f7.svg" title=":label:"> 0.1a9</h1>
 <p>This document describes the Algorithm Management Toolkit (AMT) Reporting Standard.</p>
 <p>For reproducibility, governance, auditing and sharing of algorithmic systems it is essential to have a reporting
 standard so that information about an algorithmic system can be shared. This reporting standard describes how
@@ -2509,9 +2509,22 @@ clarity the latter is preferred and is also used in the examples in the next sec
 <li>
 <p><code>name</code> (OPTIONAL, string). Name used to describe the system.</p>
 </li>
-<li><code>upl</code> (OPTIONAL, string). If this algorithm is part of a product offered by the Dutch Government,
+<li>
+<p><code>instruments</code> (OPTIONAL, list). List of instruments from
+the <a href="https://github.com/MinBZK/instrument-registry">instrument register</a> that must be executed to fill this system card.
+There can be multiple instruments. For each instrument the following fields are present.</p>
+<ol>
+<li><code>urn</code> (REQUIRED, string). Uniform Resource Names of the instrument. It is required if an instrument object
+is added.</li>
+<li><code>version</code> (OPTIONAL, string). The version of the instrument.</li>
+<li><code>required</code> (OPTIONAL, boolean). Specifies whether the instrument is required to be executed or not.</li>
+</ol>
+</li>
+<li>
+<p><code>upl</code> (OPTIONAL, string). If this algorithm is part of a product offered by the Dutch Government,
     it should contain a URI from the
-    <a href="https://standaarden.overheid.nl/owms/oquery/UPL-actueel.plain">Uniform Product List</a>.</li>
+    <a href="https://standaarden.overheid.nl/owms/oquery/UPL-actueel.plain">Uniform Product List</a>.</p>
+</li>
 <li>
 <p><code>owners</code> (OPTIONAL, list). There can be multiple owners. For each owner the following fields are present.</p>
 <ol>
@@ -2620,6 +2633,9 @@ clarity the latter is preferred and is also used in the examples in the next sec
 <li><code>uri</code> (OPTIONAL, string). URI to the tool that was used to perform the transformations.</li>
 <li><code>author</code> (OPTIONAL, string). Name of person that initiated the transformations.</li>
 </ol>
+</li>
+<li>
+<p><code>name</code> (OPTIONAL, string). Name used to describe the model.</p>
 </li>
 <li>
 <p><code>language</code> (OPTIONAL, list[string]). If relevant, the natural languages the model supports in
@@ -2808,14 +2824,14 @@ clarity the latter is preferred and is also used in the examples in the next sec
 <li>
 <p><code>name</code> (REQUIRED, string). The name of the assessment.</p>
 </li>
-<li><code>urn</code> (OPTIONAL, string). A Uniform Resource Name (URN) of the instrument in the task registry.</li>
+<li><code>urn</code> (OPTIONAL, string). A Uniform Resource Name (URN) of the instrument in the instrument register.</li>
 <li><code>date</code> (REQUIRED, string). The date at which the assessment is completed. Date should be given in
    <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> format, i.e. <code>YYYY-MM-DD</code>.</li>
 <li>
 <p><code>contents</code> (REQUIRED, list). There can be multiple items in contents. For each item the following fields are present:</p>
 <ol>
 <li><code>question</code> (REQUIRED, string). A question.</li>
-<li><code>urn</code> (OPTIONAL, string). A Uniform Resource Name (URN) of the corresponding task in the task registry.</li>
+<li><code>urn</code> (OPTIONAL, string). A Uniform Resource Name (URN) of the corresponding task in the instrument register.</li>
 <li><code>answer</code> (REQUIRED, string). An answer.</li>
 <li><code>remarks</code> (OPTIONAL, string). A field to put relevant discussion remarks in.</li>
 <li>
@@ -2841,6 +2857,10 @@ clarity the latter is preferred and is also used in the examples in the next sec
 <span class="w">  </span><span class="nt">uri</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_uri</span><span class="p p-Indicator">}</span>
 <span class="w">  </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_author</span><span class="p p-Indicator">}</span>
 <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_name</span><span class="p p-Indicator">}</span>
+<span class="nt">instruments</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">urn</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">instrument_urn</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">instrument_version</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">instrument_required</span><span class="p p-Indicator">}</span>
 <span class="nt">upl</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">upl_uri</span><span class="p p-Indicator">}</span>
 <span class="nt">owners</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">oin</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">oin</span><span class="p p-Indicator">}</span>
@@ -2897,6 +2917,7 @@ clarity the latter is preferred and is also used in the examples in the next sec
 <span class="w">  </span><span class="nt">timestamp</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_timestamp</span><span class="p p-Indicator">}</span>
 <span class="w">  </span><span class="nt">uri</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_uri</span><span class="p p-Indicator">}</span>
 <span class="w">  </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">modification_author</span><span class="p p-Indicator">}</span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_name</span><span class="p p-Indicator">}</span>
 <span class="nt">language</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">lang_0</span><span class="p p-Indicator">}</span>
 <span class="nt">license</span><span class="p">:</span>
@@ -2983,9 +3004,11 @@ clarity the latter is preferred and is also used in the examples in the next sec
 <span class="w">    </span><span class="nt">timestamp</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">timestamp</span><span class="p p-Indicator">}</span>
 </code></pre></div>
 <h2 id="schema">Schema</h2>
-<p>JSON schema will be added when we publish the first beta version.</p>
+<p>JSON schemas of the system card, model card and assessment card can be found on <a href="https://github.com/MinBZK/ai-validation/tree/main/docs/projects/amt/reporting-standard/schemas">Github</a>.</p>
 <h2 id="changelog">Changelog</h2>
 <ul>
+<li>0.1a9: adds name to model card</li>
+<li>0.1a8: adds selected instrument urns to system card</li>
 <li>0.1a7: adds urn to assessment card</li>
 <li>0.1a6:<ul>
 <li>fix mismatches between description and examples</li>
@@ -3043,7 +3066,7 @@ clarity the latter is preferred and is also used in the examples in the next sec
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 18, 2024</span>
   </span>
 
     
@@ -3070,11 +3093,6 @@ clarity the latter is preferred and is also used in the examples in the next sec
 
     
     <nav>
-      
-        <a href="https://github.com/ravimeijerrig" class="md-author" title="@ravimeijerrig">
-          
-          <img src="../../../../assets/external/avatars.githubusercontent.com/u/171654501.fe356448.jpg" alt="ravimeijerrig">
-        </a>
       
         <a href="https://github.com/ChristopherSpelt" class="md-author" title="@ChristopherSpelt">
           

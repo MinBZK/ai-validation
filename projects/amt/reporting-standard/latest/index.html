@@ -16,7 +16,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../0.1a8/">
+        <link rel="next" href="../0.1a9/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>🏷 0.1a9 (Latest) - AI Validation Team</title>
+        <title>🏷 0.1a10 (Latest) - AI Validation Team</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#01a9-latest" class="md-skip">
+        <a href="#01a10-latest" class="md-skip">
           Skip to content
         </a>
       
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🏷 0.1a9 (Latest)
+              🏷 0.1a10 (Latest)
             
           </span>
         </div>
@@ -526,6 +526,8 @@
       
         
       
+        
+      
     
     
       
@@ -587,7 +589,7 @@
           
   
   <span class="md-ellipsis">
-    🏷 0.1a9 (Latest)
+    🏷 0.1a10 (Latest)
   </span>
   
 
@@ -598,7 +600,7 @@
         
   
   <span class="md-ellipsis">
-    🏷 0.1a9 (Latest)
+    🏷 0.1a10 (Latest)
   </span>
   
 
@@ -734,6 +736,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0.1a9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🏷 0.1a9
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2416,7 +2439,7 @@
   
 
 
-<h1 id="01a9-latest"><img alt="🏷" class="twemoji" src="../../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f3f7.svg" title=":label:"> 0.1a9 (Latest)</h1>
+<h1 id="01a10-latest"><img alt="🏷" class="twemoji" src="../../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f3f7.svg" title=":label:"> 0.1a10 (Latest)</h1>
 <p>This document describes the Algorithm Management Toolkit (AMT) Reporting Standard.</p>
 <p>For reproducibility, governance, auditing and sharing of algorithmic systems it is essential to have a reporting
 standard so that information about an algorithmic system can be shared. This reporting standard describes how
@@ -2492,7 +2515,7 @@ the <a href="https://github.com/MinBZK/task-registry">task registry</a> that mus
 There can be multiple instruments. For each instrument the following fields are present.</p>
 <ol>
 <li><code>urn</code> (REQUIRED, string). Uniform Resource Names of the instrument. It is required if an instrument object
-is added.</li>
+    is added.</li>
 <li><code>version</code> (OPTIONAL, string). The version of the instrument.</li>
 <li><code>required</code> (OPTIONAL, boolean). Specifies whether the instrument is required to be executed or not.</li>
 </ol>
@@ -2519,7 +2542,37 @@ is added.</li>
 <p><code>description</code> (OPTIONAL, string). A short description of the system.</p>
 </li>
 <li>
-<p><code>labels</code> (OPTIONAL, list). This fields allows to store meta information about a system. There can be multiple labels.
+<p><code>ai_act_profile</code> (OPTIONAL). Information about the system in relation to the EU AI Act.
+    The contents of this field can be retrieved by traversing the AI Act decision tree or can be specified by the user.</p>
+<ol>
+<li><code>type</code> (OPTIONAL, enum[string]). The type of the system should be chosen from:
+<code>["AI-systeem", "AI-systeem voor algemene doeleinden", "AI-model voor algemene doeleinden", "geen algoritme"]</code>.</li>
+<li><code>open_source</code> (OPTIONAL, enum[string]). Whether the system is open source or not.
+Options are <code>["open-source", "geen open-source"]</code>.</li>
+<li><code>publication_category</code> (OPTIONAL, enum[string]). The publication category of the system should be chosen from:
+<code>["impactvol algoritme", "niet-impactvol algoritme",  "hoog-risico AI",
+"geen hoog-risico AI", "verboden AI", "uitzondering van toepassing"]</code>.</li>
+<li><code>systemic_risk</code> (OPTIONAL, enum[string]). Whether the AI model is classified as having systemic risk.
+Options are <code>["systeemrisico", "geen systeemrisico"]</code>.</li>
+<li><code>transparency_obligations</code> (OPTIONAL, enum[string]). Whether the system faces transparency obligations.
+Options are <code>["transparantieverplichtingen", "geen transparantieverplichtingen"]</code>.</li>
+<li><code>role</code> (OPTIONAL, enum[string]). The organization’s role in relation to the system.
+Options are <code>["aanbieder", "gebruiksverantwoordelijke", "aanbieder + gebruiksverantwoordelijke"]</code></li>
+<li>
+<p><code>decision_tree</code> (OPTIONAL). This field is REQUIRED if the above fields are retrieved by traversing the decision tree.</p>
+<ol>
+<li><code>version</code> (REQUIRED, string). The version of the decision tree.</li>
+<li><code>path</code> (REQUIRED). The traversed path through the decision tree.<ol>
+<li><code>question</code> (REQUIRED, string). The question id of the question.</li>
+<li><code>answer</code> (REQUIRED, enum[string]). The answer to the question. The only valid values are <code>yes</code> or <code>no</code>.</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p><code>labels</code> (OPTIONAL, list). This field allows to store meta information about a system. There can be multiple labels.
    For each label the following fields are present.</p>
 <ol>
 <li><code>name</code> (OPTIONAL, string). Name of the label.</li>
@@ -2529,8 +2582,6 @@ is added.</li>
 <li>
 <p><code>status</code> (OPTIONAL, string). The status of the system. For example the status can be "production".</p>
 </li>
-<li><code>publication_category</code> (OPTIONAL, enum[string]). The publication category of the algorithm should be chosen from
-   <code>["high_risk", other"]</code>.</li>
 <li><code>begin_date</code> (OPTIONAL, string). The first date the system was used. Date should be given in
     <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> format, i.e. <code>YYYY-MM-DD</code>.</li>
 <li><code>end_date</code> (OPTIONAL, string). The last date the system was used. Date should be given in
@@ -2846,11 +2897,22 @@ is added.</li>
 <span class="w">    </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">owner_email</span><span class="p p-Indicator">}</span>
 <span class="w">    </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">owner_role</span><span class="p p-Indicator">}</span>
 <span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_description</span><span class="p p-Indicator">}</span>
+<span class="nt">ai_act_profile</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_type</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">open_source</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">open_source</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">publication_category</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">publication_category</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">systemic_risk</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">systemic_risk</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">transparency_obligations</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">transparency_obligations</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">role</span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="nt">decision_tree</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">decision_tree_version</span><span class="p p-Indicator">}</span>
+<span class="w">        </span><span class="nt">path</span><span class="p">:</span>
+<span class="w">         </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">question</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">question_id</span><span class="p p-Indicator">}</span>
+<span class="w">           </span><span class="nt">answer</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">answer</span><span class="p p-Indicator">}</span>
 <span class="nt">labels</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_name</span><span class="p p-Indicator">}</span>
 <span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_value</span><span class="p p-Indicator">}</span>
 <span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_status</span><span class="p p-Indicator">}</span>
-<span class="nt">publication_category</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_publication_cat</span><span class="p p-Indicator">}</span>
 <span class="nt">begin_date</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_begin_date</span><span class="p p-Indicator">}</span>
 <span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_end_date</span><span class="p p-Indicator">}</span>
 <span class="nt">goal_and_impact</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_goal_and_impact</span><span class="p p-Indicator">}</span>
@@ -2984,6 +3046,7 @@ is added.</li>
 <p>JSON schemas of the system card, model card and assessment card can be found on <a href="https://github.com/MinBZK/ai-validation/tree/main/docs/projects/amt/reporting-standard/schemas">Github</a>.</p>
 <h2 id="changelog">Changelog</h2>
 <ul>
+<li>0.1a10: adds ai act profile field to system card</li>
 <li>0.1a9: adds name to model card</li>
 <li>0.1a8: adds selected instrument urns to system card</li>
 <li>0.1a7: adds urn to assessment card</li>
@@ -3043,7 +3106,7 @@ is added.</li>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 18, 2024</span>
   </span>
 
     
@@ -3053,7 +3116,7 @@ is added.</li>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 3, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 4, 2024</span>
   </span>
 
     

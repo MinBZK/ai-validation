@@ -17,7 +17,8 @@
                     "description": "Git commit hash of the commit which contains the transformation file used to create this card"
                 },
                 "timestamp":{
-                    "type": "date-time",
+                    "type": "string",
+                    "format": "date-time",
                     "description": "A timestamp of the date, time and timezone of generation of this System Card in ISO 8601 format"
                 },
                 "uri": {
@@ -93,6 +94,96 @@
             "type": "string",
             "description": "A short description of the system"
             },
+        "ai_act_profile": {
+            "type": "object",
+            "properties":{
+                "type":{
+                    "type": "string",
+                    "description": "System type",
+                    "enum": [
+                        "AI-systeem",
+                        "AI-systeem voor algemene doeleinden",
+                        "AI-model voor algemene doeleinden",
+                        "geen algoritme"
+                    ]
+                },
+                "open_source":{
+                    "type": "string",
+                    "description": "Whether the system is open source or not",
+                    "enum": [
+                        "open-source",
+                        "geen open-source"
+                    ]
+                },
+                "publication_category":{
+                    "type": "string",
+                    "description": "Publication category of the system",
+                    "enum": [
+                        "impactvol algoritme",
+                        "niet-impactvol algoritme",
+                        "hoog-risico AI",
+                        "geen hoog-risico AI",
+                        "verboden AI",
+                        "uitzondering van toepassing"
+                    ]
+                },
+                "systemic_risk":{
+                    "type": "string",
+                    "description": "Whether the system is classified as having a systemic risk",
+                    "enum": [
+                        "systeemrisico",
+                        "geen systeemrisico"
+                    ]
+                },
+                "transparency_obligations":{
+                    "type": "string",
+                    "description": "Whether the system faces transparency obligations.",
+                    "enum": [
+                        "transparantieverplichtingen",
+                        "geen transparantieverplichtingen"
+                    ]
+                },
+                "role":{
+                    "type": "string",
+                    "description": "The organizations role in relation to the system.",
+                    "enum": [
+                        "aanbieder",
+                        "gebruiksverantwoordelijke",
+                        "aanbieder + gebruiksverantwoordelijke"
+                    ]
+                },
+                "decision_tree": {
+                    "type": "object",
+                    "properties": {
+                        "version": {
+                            "type": "string",
+                            "description": "The version of the decision tree"
+                            }
+                        },
+                        "path": {
+                            "type": "array",
+                            "description": "The traversed path in the decision tree",
+                            "items": {
+                                "type": "object",
+                                "properties":{
+                                    "question": {
+                                        "type": "string",
+                                        "description": "Question ID"
+                                    },
+                                    "answer":{
+                                        "type": "string",
+                                        "description": "Answer to the question",
+                                        "enum": [
+                                            "Ja",
+                                            "Nee"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
         "labels": {
             "type": "array",
             "description": "Labels to store meta information about the system",
@@ -108,19 +199,10 @@
                   "description": "Value of the label"
                 }
               }
-            }
           },
         "status":{
             "type": "string",
             "description": "Status of the system"
-        },
-        "publication_category":{
-            "type": "string",
-            "description": "Publication category of the algorithm",
-            "enum": [
-                "high_risk",
-                "other"
-            ]
         },
         "begin_date": {
             "type": "date",
@@ -267,4 +349,5 @@
         }
     },
     "required": ["version"]
+}
 }
