@@ -36,7 +36,7 @@ may be inefficient without proper indexing or further optimization.
 ### Positive
 
 * **Fast implementation**: The solution is easy to set up, reducing the time to get the project operational.
-* **Future proof**: This approach is designed with future scalability in mind. While system cards are initially
+* **Future proof**: This approach is chosen with future scalability in mind. While system cards are initially
 stored in Postgres as JSONB blobs, the plan to transition to a persistent volume with versioned YAML files
 managed through Git ensures easy adaptation. The future migration to a remote Git-based storage system offers
 enhanced version control, collaboration, and auditing, with minimal disruption to existing workflows.
