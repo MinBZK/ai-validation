@@ -36,10 +36,10 @@ may be inefficient without proper indexing or further optimization.
 ### Positive
 
 * **Fast implementation**: The solution is easy to set up, reducing the time to get the project operational.
-* **Future proof**: This approach is chosen with future scalability in mind. While system cards are initially
-stored in Postgres as JSONB blobs, the plan to transition to a persistent volume with versioned YAML files
-managed through Git ensures easy adaptation. The future migration to a remote Git-based storage system offers
-enhanced version control, collaboration, and auditing, with minimal disruption to existing workflows.
+* **Future proof**: This approach is designed with future scalability in mind. While system cards will initially
+be stored in Postgres as JSONB blobs, we anticipate migrating to a Git-based remote storage solution as the system
+ evolves, where cards will be managed as versioned YAML files on a persistent volume. Importantly, this initial
+ decision allows for a seamless transition in the future, ensuring no obstacles to migration.
 * **Fast access**: Storing the data in Postgres ensures fast access, as everything is contained within a single source.
 * **Single source**: Keeping everything in one database simplifies backups and maintenance.
 * **Built-in permissions**: Postgres provides built-in access control and security through its permission system.
