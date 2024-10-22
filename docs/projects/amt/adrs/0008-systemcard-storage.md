@@ -9,7 +9,7 @@ the deletion of system_cards. Therefore, we need a different kind of storage to 
 
 ## Assumptions
 
-* The system card data is small to moderate in size and fits within the capabilities of Postgres' JSONB storage.
+* The system card data is small to moderate in size (up to 2GB), making it manageable for SQLite.
 * Tracking changes to the system card data over time is not a priority in the short term, but may become
 necessary in the future.
 
@@ -48,3 +48,6 @@ reduces maintenance complexity, and ensures quick data access.
 * **Complex queries**: Complex queries can be inefficient and require custom parsing.
 * **Collaboration**: Collaborating on the JSONB data is challenging due to its complex format and lack of version control.
 * **Scalability**: As the JSONB blobs grow in size, the storage overhead and query performance may become significant issues.
+* **Not supported by SQLite**: While SQLite supports JSON through its JSON1 extension, it does not support PostgreSQL's
+JSONB data type natively, which complicates local development and testing environments that rely on SQLite as a database
+backend.
