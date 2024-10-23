@@ -9,24 +9,25 @@ the deletion of system_cards. Therefore, we need a different kind of storage to 
 
 ## Assumptions
 
-* The system card data is small to moderate in size (up to 2GB), making it manageable for SQLite.
+* The system card data is small to moderate in size (up to 255MB), making it manageable to store
+in databases (in postgres as well as in  in SQLite).
 * Tracking changes to the system card data over time is not a priority in the short term, but may become
 necessary in the future.
 
 ## Decision
 
-The system card of an algorithm system is stored solely as a JSONB blob in the projects table in Postgres,
+The system card of an algorithm system is stored solely as a JSON blob in the projects table in Postgres,
 with no additional storage elsewhere.
 
 ## Risks
 
 * **Data Overwrite**: As the system card is overwritten with each update, it becomes difficult to track
 historical changes or revert to previous states.
-* **Scaling**: As the project grows, managing larger JSONB blobs may present performance challenges,
+* **Scaling**: As the project grows, managing larger JSON blobs may present performance challenges,
 particularly when handling complex queries.
-* **Collaboration**: Collaborating on the system card content is more difficult, as the JSONB format
+* **Collaboration**: Collaborating on the system card content is more difficult, as the JSON format
 requires parsing and manual intervention for certain tasks.
-* **Limited Querying**: While Postgres supports querying JSONB, complex queries and data manipulations
+* **Limited Querying**: While Postgres supports querying and indexing JSON fields, complex queries and data manipulations
 may be inefficient without proper indexing or further optimization.
 
 ## Consequences
