@@ -13,4 +13,4 @@ bring cookies and cake to the office the next thursday as a way of compensation.
 ## Risks
 
 - We could have a big security breach if people leave their laptops unlocked and unmanaged.
-- People could become less healthy by eating many ccokies.
+- People could become less healthy by eating many cookies.
