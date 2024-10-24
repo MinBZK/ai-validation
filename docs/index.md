@@ -17,9 +17,10 @@ We work on the following projects within the _Transparency of Algorithmic Decisi
 graph TB
     ak[<a href='https://minbzk.github.io/Algoritmekader/'>Algoritmekader</a>] <--> amt
 
-    subgraph amt[Algorithm Management Toolkit]
+    subgraph amt[<a href='https://amt.prd.apps.digilab.network'>Algorithm Management Toolkit</a>]
         tr[<a href='https://minbzk.github.io/task-registry'>Task Registry</a>] --> amp[<a href='https://github.com/MinBZK/amt/'>Algorithm Management Platform</a>]
         st[<a href='/ai-validation/projects/amt/reporting-standard/'>Reporting Standard</a>] --> amp
+        amp <--> ai_act_decision_tree[<a href='https://ai-act-decisiontree.apps.digilab.network'>AI Act Decision Tree</a>]
         amp <--> llm[<a href='/ai-validation/projects/llm-benchmarks/'>LLM Benchmark Tooling</a>]
     end
 
