@@ -1,6 +1,7 @@
 # AMT
 
-AMT is the acronym for Algorithm Management Toolkit. The AMT aims to enhance transparency and governance throughout
+AMT is the acronym for [Algorithm Management Toolkit](https://amt.prd.apps.digilab.network).
+The AMT aims to enhance transparency and governance throughout
 the entire lifecycle of algorithmic systems. By generating standardized reports, AMT provides a comprehensive view
 of both technical details and descriptive information, including regulatory assessments, from development to deployment
 and beyond. This continuous approach promotes accountability, oversight, and collaboration, ensuring that both models
