@@ -2,14 +2,14 @@
 
 ## Context
 
-When people leave their laptop open, unlocked, and unattended, this could be a big security breach, especially when you
+When people leave their laptop open, unlocked and unattended, this could be a big security breach. Especially when you
 have SSO on for multiple services.
 
 ## Decision
 
 Whenever a colleague will find your laptop open, unlocked, and unattended, they will message in the `random` Mattermost
-channel of the Rijks AI Validation team to bring cookies and/or cake to the office the next thursday as a way of
-compensation.
+channel of the Rijks AI Validation team to bring a small treat, e.g. cookies or cake to the office the next thursday
+as a way of compensation.
 
 ## Risks
 
