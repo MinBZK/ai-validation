@@ -10,28 +10,28 @@
       
       
       
-        <link rel="canonical" href="https://minbzk.github.io/ai-validation/way-of-working/decision-log/">
+        <link rel="canonical" href="https://minbzk.github.io/ai-validation/projects/amt/adrs/0008-systemcard-storage/">
       
       
-        <link rel="prev" href="../off-boarding/">
+        <link rel="prev" href="../0007-front-end-components-implementation/">
       
       
-        <link rel="next" href="../../adrs/0001-adrs/">
+        <link rel="next" href="../../existing-tools/comparison/requirements/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
     
     
       
-        <title>Decision Log - AI Validation Team</title>
+        <title>AMT-0008 System card Storage - AI Validation Team</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -51,21 +51,21 @@
         
         
         
-        <link rel="stylesheet" href="../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <link rel="stylesheet" href="../../../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -74,7 +74,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#decision-log" class="md-skip">
+        <a href="#amt-0008-system-card-storage" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="AI Validation Team" class="md-header__button md-logo" aria-label="AI Validation Team" data-md-component="logo">
+    <a href="../../../.." title="AI Validation Team" class="md-header__button md-logo" aria-label="AI Validation Team" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1v16.2c0 22.1-17.9 40-40 40h-16c-1.1 0-2.2 0-3.3-.1-1.4.1-2.8.1-4.2.1L416 512h-24c-22.1 0-40-17.9-40-40v-88c0-17.7-14.3-32-32-32h-64c-17.7 0-32 14.3-32 32v88c0 22.1-17.9 40-40 40h-55.9c-1.5 0-3-.1-4.5-.2-1.2.1-2.4.2-3.6.2h-16c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9.1-2.8v-69.7h-32c-18 0-32-14-32-32.1 0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7l255.4 224.5c8 7 12 15 11 24"/></svg>
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Decision Log
+              AMT-0008 System card Storage
             
           </span>
         </div>
@@ -204,7 +204,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
     
@@ -219,17 +219,21 @@
         
   
   
+    
+  
   
     
     
       
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../projects/amt/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
     
@@ -248,13 +252,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../principles/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../way-of-working/principles/" class="md-tabs__link">
           
   
     
@@ -274,7 +276,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../adrs/0001-adrs/" class="md-tabs__link">
+        <a href="../../../../adrs/0001-adrs/" class="md-tabs__link">
           
   
     
@@ -294,7 +296,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../about/team/" class="md-tabs__link">
+        <a href="../../../../about/team/" class="md-tabs__link">
           
   
     
@@ -335,7 +337,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="AI Validation Team" class="md-nav__button md-logo" aria-label="AI Validation Team" data-md-component="logo">
+    <a href="../../../.." title="AI Validation Team" class="md-nav__button md-logo" aria-label="AI Validation Team" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1v16.2c0 22.1-17.9 40-40 40h-16c-1.1 0-2.2 0-3.3-.1-1.4.1-2.8.1-4.2.1L416 512h-24c-22.1 0-40-17.9-40-40v-88c0-17.7-14.3-32-32-32h-64c-17.7 0-32 14.3-32 32v88c0 22.1-17.9 40-40 40h-55.9c-1.5 0-3-.1-4.5-.2-1.2.1-2.4.2-3.6.2h-16c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9.1-2.8v-69.7h-32c-18 0-32-14-32-32.1 0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7l255.4 224.5c8 7 12 15 11 24"/></svg>
@@ -365,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -382,8 +384,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -394,17 +398,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -415,7 +422,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Projects
@@ -426,6 +433,8 @@
                 
   
   
+    
+  
   
   
     
@@ -447,16 +456,16 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../projects/amt/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -473,7 +482,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             AMT
@@ -534,7 +543,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../projects/amt/reporting-standard/" class="md-nav__link ">
+            <a href="../../reporting-standard/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -567,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/latest/" class="md-nav__link">
+      <a href="../../reporting-standard/latest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -588,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a10/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a10/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -609,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a9/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a9/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -630,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a8/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -651,7 +660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a7/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -672,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a6/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -693,7 +702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a5/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -714,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a4/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -735,7 +744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a3/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -756,7 +765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a2/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -777,7 +786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/reporting-standard/0.1a1/" class="md-nav__link">
+      <a href="../../reporting-standard/0.1a1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -798,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/comparison/" class="md-nav__link">
+      <a href="../../comparison/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -824,8 +833,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -851,11 +862,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_1_3" id="__nav_2_1_3_label" tabindex="0">
@@ -869,7 +880,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1_3">
             <span class="md-nav__icon md-icon"></span>
             ADRs for AMT
@@ -883,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/adrs/0001-adrs/" class="md-nav__link">
+      <a href="../0001-adrs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -904,7 +915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/adrs/0002-amt-reporting-standard/" class="md-nav__link">
+      <a href="../0002-amt-reporting-standard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -925,7 +936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/adrs/0003-amt-tool/" class="md-nav__link">
+      <a href="../0003-amt-tool/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -946,7 +957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/adrs/0004-software-stack/" class="md-nav__link">
+      <a href="../0004-software-stack/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -967,7 +978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/adrs/0005-ai-verify-technical-tests/" class="md-nav__link">
+      <a href="../0005-ai-verify-technical-tests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -988,7 +999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/adrs/0006-extend-system-card-EU-AI-Act/" class="md-nav__link">
+      <a href="../0006-extend-system-card-EU-AI-Act/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1009,7 +1020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/adrs/0007-front-end-components-implementation/" class="md-nav__link">
+      <a href="../0007-front-end-components-implementation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1027,10 +1038,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../projects/amt/adrs/0008-systemcard-storage/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    AMT-0008 System card Storage
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1039,6 +1070,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assumptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assumptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consequences
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consequences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1107,7 +1227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/existing-tools/comparison/requirements/" class="md-nav__link">
+      <a href="../../existing-tools/comparison/requirements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1128,7 +1248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/existing-tools/comparison/tools/" class="md-nav__link">
+      <a href="../../existing-tools/comparison/tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1149,7 +1269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/existing-tools/comparison/tools_comparison/" class="md-nav__link">
+      <a href="../../existing-tools/comparison/tools_comparison/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1220,7 +1340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/existing-tools/checklists/ai_assesment_tool_checklist/" class="md-nav__link">
+      <a href="../../existing-tools/checklists/ai_assesment_tool_checklist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1241,7 +1361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/existing-tools/checklists/aiverify_checklist/" class="md-nav__link">
+      <a href="../../existing-tools/checklists/aiverify_checklist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1262,7 +1382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/existing-tools/checklists/holisticai_checklist/" class="md-nav__link">
+      <a href="../../existing-tools/checklists/holisticai_checklist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1283,7 +1403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/existing-tools/checklists/ibm_360_research_toolkit_checklist/" class="md-nav__link">
+      <a href="../../existing-tools/checklists/ibm_360_research_toolkit_checklist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1304,7 +1424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/amt/existing-tools/checklists/verifyml_checklist/" class="md-nav__link">
+      <a href="../../existing-tools/checklists/verifyml_checklist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1370,7 +1490,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../projects/llm-benchmarks/" class="md-nav__link ">
+            <a href="../../../llm-benchmarks/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1410,10 +1530,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1434,20 +1552,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1458,7 +1573,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Way of Working
@@ -1472,7 +1587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../principles/" class="md-nav__link">
+      <a href="../../../../way-of-working/principles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1493,7 +1608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contributing/" class="md-nav__link">
+      <a href="../../../../way-of-working/contributing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1514,7 +1629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../code-reviews/" class="md-nav__link">
+      <a href="../../../../way-of-working/code-reviews/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1535,7 +1650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ubiquitous_language/" class="md-nav__link">
+      <a href="../../../../way-of-working/ubiquitous_language/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1581,7 +1696,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../onboarding/" class="md-nav__link ">
+            <a href="../../../../way-of-working/onboarding/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1614,7 +1729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../onboarding/accounts/" class="md-nav__link">
+      <a href="../../../../way-of-working/onboarding/accounts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1635,7 +1750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../onboarding/dev-machine/" class="md-nav__link">
+      <a href="../../../../way-of-working/onboarding/dev-machine/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1664,7 +1779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../off-boarding/" class="md-nav__link">
+      <a href="../../../../way-of-working/off-boarding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1682,30 +1797,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Decision Log
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../way-of-working/decision-log/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1714,35 +1809,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview-of-decisions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview of decisions
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1830,7 +1896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adrs/0001-adrs/" class="md-nav__link">
+      <a href="../../../../adrs/0001-adrs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1851,7 +1917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adrs/0002-code-platform/" class="md-nav__link">
+      <a href="../../../../adrs/0002-code-platform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1872,7 +1938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adrs/0003-ci-cd/" class="md-nav__link">
+      <a href="../../../../adrs/0003-ci-cd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1893,7 +1959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adrs/0004-software-hosting-platform/" class="md-nav__link">
+      <a href="../../../../adrs/0004-software-hosting-platform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1914,7 +1980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adrs/0005-python-tooling/" class="md-nav__link">
+      <a href="../../../../adrs/0005-python-tooling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1935,7 +2001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adrs/0006-agile-tooling/" class="md-nav__link">
+      <a href="../../../../adrs/0006-agile-tooling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1956,7 +2022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adrs/0007-commit-convention/" class="md-nav__link">
+      <a href="../../../../adrs/0007-commit-convention/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1977,7 +2043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adrs/0008-architectural-diagram-tooling/" class="md-nav__link">
+      <a href="../../../../adrs/0008-architectural-diagram-tooling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1998,7 +2064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adrs/0010-container-registry/" class="md-nav__link">
+      <a href="../../../../adrs/0010-container-registry/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2019,7 +2085,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adrs/0011-researcher-in-residence/" class="md-nav__link">
+      <a href="../../../../adrs/0011-researcher-in-residence/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2040,7 +2106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adrs/0012-dictionary-for-spelling/" class="md-nav__link">
+      <a href="../../../../adrs/0012-dictionary-for-spelling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2061,7 +2127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adrs/0013-date-time-representation/" class="md-nav__link">
+      <a href="../../../../adrs/0013-date-time-representation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2082,7 +2148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adrs/0014-written-language/" class="md-nav__link">
+      <a href="../../../../adrs/0014-written-language/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2103,7 +2169,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adrs/0016-government-cloud-comparison/" class="md-nav__link">
+      <a href="../../../../adrs/0016-government-cloud-comparison/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2175,7 +2241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/team/" class="md-nav__link">
+      <a href="../../../../about/team/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2196,7 +2262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/contact/" class="md-nav__link">
+      <a href="../../../../about/contact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2244,11 +2310,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview-of-decisions" class="md-nav__link">
+  <a href="#context" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview of decisions
+      Context
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assumptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assumptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consequences
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consequences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2267,7 +2393,7 @@
                   
 
   
-    <a href="https://github.com/MinBZK/ai-validation/edit/main/docs/way-of-working/decision-log.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/MinBZK/ai-validation/edit/main/docs/projects/amt/adrs/0008-systemcard-storage.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -2275,16 +2401,54 @@
   
 
 
-<h1 id="decision-log">Decision Log</h1>
-<p>Throughout our work, small decisions about processes and approaches are often made in meetings and chats.
-While these aren't big enough for formal documentation like ADRs, capturing them is valuable for both
-current and future team members.</p>
-<p>This log provides a reference point for those decisions.</p>
-<h2 id="overview-of-decisions">Overview of decisions</h2>
+<h1 id="amt-0008-system-card-storage">AMT-0008 System card Storage</h1>
+<h2 id="context">Context</h2>
+<p>By default, Kubernetes pods use ephemeral storage, which is tied to the pod's lifecycle.
+When the pod terminates or restarts, all data is lost. The <code>/tmp/</code> directory, being part of
+the system's temporary file storage, is cleared during reboots or pod restarts, resulting in
+the deletion of system_cards. Therefore, we need a different kind of storage to preserve the data.</p>
+<h2 id="assumptions">Assumptions</h2>
 <ul>
-<li>We keep project ADRs in the relevant project.</li>
-<li>When we encounter a bug in our software, we create a regression test to reproduce it.
- When the bug is solved, the regression test is updated to reflect the solved situation.</li>
+<li>The system card data is small to moderate in size (up to 255MB), making it manageable to store
+in databases (in postgres as well as in  in SQLite).</li>
+<li>Tracking changes to the system card data over time is not a priority in the short term, but may become
+necessary in the future.</li>
+</ul>
+<h2 id="decision">Decision</h2>
+<p>The system card of an algorithm system is stored solely as a JSON blob in the projects table in Postgres,
+with no additional storage elsewhere.</p>
+<h2 id="risks">Risks</h2>
+<ul>
+<li><strong>Data Overwrite</strong>: As the system card is overwritten with each update, it becomes difficult to track
+historical changes or revert to previous states.</li>
+<li><strong>Scaling</strong>: As the project grows, managing larger JSON blobs may present performance challenges,
+particularly when handling complex queries.</li>
+<li><strong>Collaboration</strong>: Collaborating on the system card content is more difficult, as the JSON format
+requires parsing and manual intervention for certain tasks.</li>
+<li><strong>Limited Querying</strong>: While Postgres supports querying and indexing JSON fields, complex queries and data manipulations
+may be inefficient without proper indexing or further optimization.</li>
+</ul>
+<h2 id="consequences">Consequences</h2>
+<h3 id="positive">Positive</h3>
+<ul>
+<li><strong>Fast implementation</strong>: The solution is easy to set up, reducing the time to get the project operational.</li>
+<li><strong>Future proof</strong>: This approach is designed with future scalability in mind. While system cards will initially
+be stored in Postgres as JSONB blobs, we anticipate migrating to a Git-based local or remote storage solution
+as the system evolves. Importantly, this initial decision allows for a seamless transition in the future,
+ensuring no obstacles to migration.</li>
+<li><strong>Single source &amp; Fast access</strong>: Centralizing everything in a single Postgres database streamlines backups,
+reduces maintenance complexity, and ensures quick data access.</li>
+<li><strong>Built-in permissions</strong>: Postgres provides built-in access control and security through its permission system.</li>
+</ul>
+<h3 id="negative">Negative</h3>
+<ul>
+<li><strong>Data tracking</strong>: Changes to the system card are overwritten, making it difficult to maintain a history or audit trail.</li>
+<li><strong>Complex queries</strong>: Complex queries can be inefficient and require custom parsing.</li>
+<li><strong>Collaboration</strong>: Collaborating on the JSONB data is challenging due to its complex format and lack of version control.</li>
+<li><strong>Scalability</strong>: As the JSONB blobs grow in size, the storage overhead and query performance may become significant issues.</li>
+<li><strong>Not supported by SQLite</strong>: While SQLite supports JSON through its JSON1 extension, it does not support PostgreSQL's
+JSONB data type natively, which complicates local development and testing environments that rely on SQLite as a database
+backend.</li>
 </ul>
 
 
@@ -2308,7 +2472,7 @@ current and future team members.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 12, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 23, 2024</span>
   </span>
 
     
@@ -2318,7 +2482,7 @@ current and future team members.</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 23, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 18, 2024</span>
   </span>
 
     
@@ -2336,14 +2500,9 @@ current and future team members.</p>
     
     <nav>
       
-        <a href="https://github.com/uittenbroekrobbert" class="md-author" title="@uittenbroekrobbert">
+        <a href="https://github.com/ravimeijerrig" class="md-author" title="@ravimeijerrig">
           
-          <img src="../../assets/external/avatars.githubusercontent.com/u/159022774.fe356448.jpg" alt="uittenbroekrobbert">
-        </a>
-      
-        <a href="https://github.com/robbertbos" class="md-author" title="@robbertbos">
-          
-          <img src="../../assets/external/avatars.githubusercontent.com/u/11290343.fe356448.jpg" alt="robbertbos">
+          <img src="../../../../assets/external/avatars.githubusercontent.com/u/171654501.fe356448.jpg" alt="ravimeijerrig">
         </a>
       
       
@@ -2417,10 +2576,10 @@ current and future team members.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.code.copy", "navigation.indexes", "navigation.instant", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.action.edit", "content.code.copy", "navigation.indexes", "navigation.instant", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.suggest"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
