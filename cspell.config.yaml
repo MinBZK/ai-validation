@@ -4,3 +4,6 @@ dictionaryDefinitions:
     addWords: true
 dictionaries:
   - AIValidation
+
+ignorePaths:
+  - '**/*.svg'
