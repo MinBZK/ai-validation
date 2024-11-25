@@ -28,8 +28,8 @@ jobs:
           restore-keys: |
             mkdocs-material-
 
-      - run:
-        git config --global url."https://github-actions:${{ secrets.MKDOCS_MATERIAL_INSIDERS }}@github".insteadOf ssh://git@github
-        pip install -r requirements.txt
+      - run: |
+          git config --global url."https://github-actions:${{ secrets.MKDOCS_MATERIAL_INSIDERS }}@github".insteadOf ssh://git@github
+          pip install -r requirements.txt
 
       - run: mkdocs gh-deploy --force
