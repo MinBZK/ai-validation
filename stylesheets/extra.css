@@ -1,3 +1,36 @@
 img.round {
   border-radius: 50%;
 }
+
+.rvo-logo {
+    align-items:center;
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+    max-width:206px
+}
+
+.rvo-logo__emblem{
+    align-self: flex-start;
+    height:80px;
+    min-width:40px;
+    width:40px
+}
+
+.rvo-header__logo-wrapper{
+    margin-inline-start:calc(50% - 20px)
+}
+
+.md-header__inner{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.md-header__extra{
+    display:flex;
+    align-items: flex-end;
+    position: absolute;
+    position: top: 10px; /* Adjust as needed */
+    right: 20%; /* Adjust as needed */;
+}

@@ -1,0 +1,263 @@
+/* cSpell: disable */
+.md-typeset :target {
+    --md-scroll-margin: 5.2rem
+}
+
+.md-main__inner {
+    margin: 0
+}
+
+.md-content__inner {
+    margin-bottom: 0;
+    padding: 5.2rem 0
+}
+
+.md-content__inner:before {
+    display: none
+}
+
+.md-content header {
+    transition: opacity .75s
+}
+
+.js .md-content header[hidden] {
+    opacity: 0
+}
+
+.md-header:not(.md-header--shadow) {
+    background-color: initial;
+    transition: background-color 125ms, transform 125ms cubic-bezier(.1, .7, .1, 1), box-shadow 0ms
+}
+
+.md-header--shadow {
+    transition: background-color .25s, transform .25s cubic-bezier(.1, .7, .1, 1), box-shadow .25s
+}
+
+:root {
+    --md-parallax-perspective: 2.5rem
+}
+
+.mdx-parallax {
+    height: 100vh;
+    margin-top: -2.4rem;
+    overflow: hidden auto;
+    overscroll-behavior-y: none;
+    perspective: var(--md-parallax-perspective);
+    scroll-behavior: smooth;
+    width: 100vw
+}
+
+.mdx-parallax__group {
+    background-color: var(--md-default-bg-color);
+    color: var(--md-typeset-color);
+    display: block;
+    position: relative;
+    transform-style: preserve-3d
+}
+
+.mdx-parallax__group:last-child {
+    background-color: var(--md-default-bg-color)
+}
+
+.mdx-parallax__layer {
+    height: max(120vh, 100vw);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transform: translateZ(calc(var(--md-parallax-perspective) * var(--md-parallax-depth) * -1)) scale(calc(var(--md-parallax-depth) + 1));
+    transform-origin: 50vw 50vh;
+    width: 100vw;
+    z-index: calc(10 - var(--md-parallax-depth, 0))
+}
+
+.mdx-parallax__image {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: var(--md-image-position, 50%);
+    position: absolute;
+    width: 100%;
+    z-index: -1
+}
+
+.mdx-parallax__blend {
+    background-image: linear-gradient(to bottom, #FFFFFF, var(--md-default-bg-color));
+    bottom: 0;
+    height: min(100vh, 100vw);
+    top: auto
+}
+
+.mdx-content__column:last-child {
+    margin-top: 2.4rem
+}
+
+.mdx-content__column p:last-child {
+    margin-bottom: 0
+}
+
+@media screen and (min-width: 60em) {
+    .mdx-content__inner {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 6.4rem
+    }
+
+    .mdx-content__column {
+        margin-top: 0
+    }
+
+    .mdx-content__column:first-child {
+        flex: 2 0
+    }
+
+    .mdx-content__column:last-child {
+        flex: 1 0;
+        margin-top: 0
+    }
+}
+
+.mdx-ai-val {
+    display: block;
+    transition: transform .75s cubic-bezier(.075, .85, .175, 1) 125ms, opacity .75s 125ms
+}
+
+.mdx-ai-val-trust-hover__link:hover{
+    color: #EF6312 !important;
+}
+
+.mdx-ai-val-trust-black__link:link, .mdx-ai-val-trust-black__link:visited {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.mdx-ai-val-trust-white__link:link, .mdx-ai-val-trust-white__link:visited {
+    color: #F8F8F8;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.js .mdx-ai-val[hidden] {
+    opacity: 0;
+    transform: translateY(1.6rem)
+}
+
+.mdx-parallax-ai-val-trust-in-algorithms{
+    background: #F8F8F8;
+}
+
+.ai-val-trust-in-algorithms-content{
+    color: #000000;
+}
+
+.ai-val-trust-in-algorithms-content > h1{
+    color: #000000;
+    font-weight: bold;
+}
+
+.ai-val-ai-act-tree-content{
+    color: #000000;
+}
+
+.ai-val-ai-act-tree-content > h1{
+    color: #000000;
+    font-weight: bold;
+}
+
+.ai-val-team-content{
+    color: #F8F8F8;
+}
+
+.ai-val-team-content > h1{
+    color: #F8F8F8;
+    font-weight: bold;
+}
+
+.ai-val-wow-content{
+    color: #000000;
+}
+
+.ai-val-wow-content > h1{
+    color: #000000;
+    font-weight: bold;
+}
+
+.mdx-parallax-ai-val-amt{
+    background: #000000;
+    color: #F8F8F8;
+}
+
+.ai-val-amt-content{
+    color: #F8F8F8;
+    text-align: center;
+}
+
+.ai-val-amt-content > h1{
+    color: #F8F8F8;
+    font-weight: bold;
+}
+
+.mdx-parallax-ai-val-ai-act-tree{
+    background: #F8F8F8;
+    color: #000000;
+}
+
+.mdx-parallax-ai-val-team{
+    background: #000000;
+    color: #F8F8F8;
+    text-align: center;
+}
+
+.mdx-parallax-ai-val-wow{
+    background: #F8F8F8;
+    color: #000000;
+    text-align: center;
+}
+
+@media screen and (min-width: 60em) {
+    .md-sidebar--secondary {
+        display: none
+    }
+}
+
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+        display: none
+    }
+}
+
+/*[data-md-color-primary] .md-tabs {*/
+/*    background-color: initial;*/
+/*    position: absolute;*/
+/*    top: 2.4rem*/
+/*}*/
+
+.ai-val-team-page-person-circles-container {
+  display: flex; /* Plaats de cirkels naast elkaar */
+  justify-content: center; /* Centreer de cirkels horizontaal */
+  align-items: center; /* Centreer de cirkels verticaal */
+  height: 200px; /* Pas de hoogte van de container aan */
+}
+
+.ai-val-amt-screenshot {
+    max-width: 50%;
+    margin: auto;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Maakt de div elementen rond */
+    margin: 0 -20px; /* Overlap van 20px aan elke kant */
+}
+
+.md-header {
+    background: #FFFFFF !important;
+}
+
+.md-tabs {
+    border-bottom: none !important;
+}
+/* cSpell: enable */
