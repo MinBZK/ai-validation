@@ -9,7 +9,15 @@
 
 .md-content__inner {
     margin-bottom: 0;
-    padding: 5.2rem 0
+}
+
+.mdx-parallax__group{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.mdx-parallax__group:first-child{
+    padding-top: calc(4rem + 52.8px); /* Add the height of the navigation to the first parallax */
 }
 
 .md-content__inner:before {
@@ -55,44 +63,12 @@
     transform-style: preserve-3d
 }
 
-.mdx-parallax__group:last-child {
-    background-color: var(--md-default-bg-color)
+.mdx-content__column {
+    max-width: 50%;
 }
 
-.mdx-parallax__layer {
-    height: max(120vh, 100vw);
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    transform: translateZ(calc(var(--md-parallax-perspective) * var(--md-parallax-depth) * -1)) scale(calc(var(--md-parallax-depth) + 1));
-    transform-origin: 50vw 50vh;
-    width: 100vw;
-    z-index: calc(10 - var(--md-parallax-depth, 0))
-}
-
-.mdx-parallax__image {
-    display: block;
-    height: 100%;
-    object-fit: cover;
-    object-position: var(--md-image-position, 50%);
-    position: absolute;
-    width: 100%;
-    z-index: -1
-}
-
-.mdx-parallax__blend {
-    background-image: linear-gradient(to bottom, #FFFFFF, var(--md-default-bg-color));
-    bottom: 0;
-    height: min(100vh, 100vw);
-    top: auto
-}
-
-.mdx-content__column:last-child {
-    margin-top: 2.4rem
-}
-
-.mdx-content__column p:last-child {
-    margin-bottom: 0
+.mdx-content-amt__column {
+    max-width: 60%;
 }
 
 @media screen and (min-width: 60em) {
@@ -108,11 +84,6 @@
 
     .mdx-content__column:first-child {
         flex: 2 0
-    }
-
-    .mdx-content__column:last-child {
-        flex: 1 0;
-        margin-top: 0
     }
 }
 
@@ -228,12 +199,6 @@
     }
 }
 
-/*[data-md-color-primary] .md-tabs {*/
-/*    background-color: initial;*/
-/*    position: absolute;*/
-/*    top: 2.4rem*/
-/*}*/
-
 .ai-val-team-page-person-circles-container {
   display: flex; /* Plaats de cirkels naast elkaar */
   justify-content: center; /* Centreer de cirkels horizontaal */
@@ -242,7 +207,7 @@
 }
 
 .ai-val-amt-screenshot {
-    max-width: 50%;
+    max-width: 60%;
     margin: auto;
 }
 
@@ -253,11 +218,29 @@
     margin: 0 -20px; /* Overlap van 20px aan elke kant */
 }
 
-.md-header {
-    background: #FFFFFF !important;
+
+.md-tabs__item--active {
+    font-weight: bold;
 }
 
-.md-tabs {
-    border-bottom: none !important;
+.ai-val-ada-logo{
+    max-width: 60% !important;
 }
+
+.ai-val-h1{
+    font-size: 3em !important;
+}
+
+.ai-val-h2{
+    font-size: 2.5em !important;
+}
+
+.md-typeset h1 {
+    margin: 0 0 0.5em !important;
+}
+
+.mdx-content-centralized_column{
+    margin: 0 auto;
+}
+
 /* cSpell: enable */

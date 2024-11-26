@@ -1,10 +1,11 @@
 # Our Team
 
+## Current team members
 <!-- markdownlint-disable MD030 MD033 -->
 
 <div class="grid cards" markdown>
 
--   ## Robbert Bos
+-   ### Robbert Bos
 
     Product Owner
 
@@ -21,7 +22,7 @@
 
     [:fontawesome-brands-linkedin: Robbert Bos](https://www.linkedin.com/in/robbertbos/)
 
--   ## Berry den Hartog
+-   ### Berry den Hartog
 
     Engineer
 
@@ -38,7 +39,7 @@
 
     [:fontawesome-brands-linkedin: Berry den Hartog](https://www.linkedin.com/in/berry-denhartog)
 
--   ## Anne Schuth
+-   ### Anne Schuth
 
     Engineering Manager
 
@@ -55,7 +56,7 @@
 
     [:octicons-link-24: anneschuth.nl](https://anneschuth.nl)
 
--   ## Christopher Spelt
+-   ### Christopher Spelt
 
     Engineer
 
@@ -71,7 +72,7 @@
 
     [:fontawesome-brands-linkedin: Christopher Spelt](https://www.linkedin.com/in/christopher-spelt-27b39357/)
 
--   ## Robbert Uittenbroek
+-   ### Robbert Uittenbroek
 
     Engineer
 
@@ -88,7 +89,7 @@
 
     [:fontawesome-brands-linkedin: Robbert Uittenbroek](https://www.linkedin.com/in/robbert-uittenbroek-48a215/)
 
--   ## Laurens Weijs
+-   ### Laurens Weijs
 
     Engineer
 
@@ -104,7 +105,7 @@
 
     [:fontawesome-brands-linkedin: Laurens Weijs](https://www.linkedin.com/in/laurensweijs)
 
--   ## Ruben Rouwhof
+-   ### Ruben Rouwhof
 
     UX/UI Designer
 
@@ -121,7 +122,7 @@
 
     [:octicons-link-24: rubenrouwhof.nl](https://rubenrouwhof.nl)
 
--   ## Ravi Meijer
+-   ### Ravi Meijer
 
     Product Researcher
 
@@ -136,7 +137,7 @@
 
     [:fontawesome-brands-linkedin: Ravi Meijer](https://www.linkedin.com/in/ravi-meijer)
 
--   ## Renate Burema
+-   ### Renate Burema
 
     Intern
 
@@ -171,7 +172,7 @@
 
     [:fontawesome-brands-linkedin: Willy Tadema](https://www.linkedin.com/in/willytadema/)
 
--   ## Lucas Haitsma
+-   ### Lucas Haitsma
 
     Researcher in Residence
 
@@ -187,7 +188,7 @@
 
     [:octicons-link-24: rug.nl](https://www.rug.nl/staff/l.m.haitsma/?lang=en)
 
--   ## Guusje Juijn
+-   ### Guusje Juijn
 
     Trainee
 

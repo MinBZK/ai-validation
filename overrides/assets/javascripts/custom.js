@@ -2386,7 +2386,7 @@
             r.subscribe(({active: o}) => {
                 o.hidden = !1
             }), navigator.userAgent.includes("Gecko/") && Ke(e).pipe(A(({y: o}) => o > 1), ne()).subscribe(o => {
-                let n = Ye("hero");
+                // let n = Ye("hero");
                 // n.hidden = o
             });
             let t = Z(":scope > :nth-child(2)", e);
@@ -2434,7 +2434,16 @@
         circles_container.appendChild(person_circle);
     }
 
-    const imagePaths = ["./img/anne.png", "./img/berry.jpeg", "./img/christopher.jpeg", "./img/laurens.jpeg", "./img/ravi.jpg", "./img/renate.jpg", "./img/robbert_bos.jpeg", "./img/robbert_uittenbroek.jpeg", "./img/ruben.png", // Change here when people leave the active team
+    const imagePaths = ["./img/anne.png",
+                                "./img/berry.jpeg",
+                                "./img/christopher.jpeg",
+                                "./img/laurens.jpeg",
+                                "./img/ravi.jpg",
+                                "./img/renate.jpg",
+                                "./img/robbert_bos.jpeg",
+                                "./img/robbert_uittenbroek.jpeg",
+                                "./img/ruben.png",
+                                // Change here when people leave the active team
     ];
 
     imagePaths.forEach(imagePath => {

@@ -26,7 +26,6 @@ theme:
   name: material
   custom_dir: overrides
   features:
-    - announce.dismiss
     - content.action.edit
     - content.action.view
     - content.code.annotate
@@ -34,7 +33,6 @@ theme:
     - content.code.select
     - content.footnote.tooltips
     - content.tooltips
-    - navigation.footer
     - navigation.indexes
     - navigation.sections
     - navigation.tabs
@@ -43,12 +41,12 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
-    - toc.follow
   palette:
     primary: white
     scheme: slate
   icon:
-    logo: logo
+    logo: fontawesome/solid/house
+    annotation: fontawesome/solid/circle-info
   language: en
 
 # Plugins
@@ -108,6 +106,9 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
   - AI Validation Team: index.md
