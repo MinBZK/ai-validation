@@ -5,7 +5,7 @@ This document describes the Algorithm Management Toolkit (AMT) Reporting Standar
 For reproducibility, governance, auditing and sharing of algorithmic systems it is essential to have a reporting
 standard so that information about an algorithmic system can be shared. This reporting standard describes how
 information about the different phases of an algorithm's life cycle can be reported. It contains, among other things,
-descriptive information combined with information about the technical tests and assessments applied.
+descriptive information combined with information about the technical tests and tasks applied.
 
 !!! warning "Disclaimer"
 
@@ -25,10 +25,10 @@ to allow for:
 2. Capturing additional *measurements* on fairness and bias, which can be partitioned into bar plot like
    measurements (such as mean absolute SHAP values) and graph plot like measurements (such as partial dependence). This
    is achieved by defining a new field `measurements`.
-3. Capturing *assessments* (such as
+3. Capturing *tasks* (such as
    [IAMA](https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes)
    and [ALTAI](https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment)).
-   This is achieved by defining a new field `assessments`.
+   This is achieved by defining a new field `tasks`.
 
 Following Hugging Face, this proposed standard will be written in YAML.
 
@@ -50,9 +50,9 @@ Another difference is that we divide our implementation into three separate part
 ## Specification of the standard
 
 The standard will be written in YAML. Example YAML files are given in the next section. The standard defines three
-cards: a `system_card`, a `model_card` and an `assessment_card`. A `system_card` contains information about an
+cards: a `system_card`, a `model_card` and an `task_card`. A `system_card` contains information about an
 algorithmic system. It can have multiple models and each of these models should have a `model_card`. Regulatory
-assessments can be processed in an `assessment_card`. Note that `model_card`'s and `assessment_card`'s can be included
+tasks can be processed in an `task_card`. Note that `model_card`'s and `task_card`'s can be included
 directly into the `system_card` or can be included as separate YAML files with help of a YAML-include mechanism. For
 clarity the latter is preferred and is also used in the examples in the next section.
 
@@ -154,7 +154,7 @@ A `system_card` contains the following information.
     card from Hugging Face. There can be multiple model cards, meaning multiple models are used.
 
 31. `tasks` (OPTIONAL, list[TaskCard]). A list of task cards (as defined below) or `!include`s of a
-    YAML file containing a task card. This task card is an assessment card described in the next section.
+    YAML file containing a task card. This task card is an task card described in the next section.
     There can be multiple task cards, meaning multiple tasks were performed.
 
 
@@ -514,9 +514,9 @@ provenance:
   timestamp: {modification_timestamp}
   uri: {modification_uri}
   author: {modification_author}
-name: {assessment_name}
+name: {task_name}
 urn: {urn}
-date: {assessment_date}
+date: {task_date}
 contents:
   - question: {question_text}
     urn: {urn}
@@ -529,7 +529,7 @@ contents:
 
 ## Schema
 
-JSON schemas of the system card, model card and assessment card can be found on [Github](https://github.com/MinBZK/ai-validation/tree/main/docs/projects/amt/reporting-standard/schemas).
+JSON schemas of the system card, model card and task card can be found on [Github](https://github.com/MinBZK/ai-validation/tree/main/docs/projects/amt/reporting-standard/schemas).
 
 ## Changelog
 
