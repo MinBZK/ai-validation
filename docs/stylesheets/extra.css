@@ -34,3 +34,40 @@ img.round {
     position: top: 10px; /* Adjust as needed */
     right: 20%; /* Adjust as needed */;
 }
+
+/* This part is to remake the search bar which is an extension of mkdocs*/
+.md-search__form {
+    background: #F8F8F8 !important;
+
+}
+
+.md-search__options {
+    width: 0;
+    padding: 0;
+}
+
+.md-search__suggest {
+    width: 0;
+    padding: 0;
+}
+
+ .md-search__inner {
+     width: 2.1rem;
+ }
+
+.md-search__input::placeholder {
+    color: transparent !important; /*  Hide the Search placeholder*/
+}
+
+.md-header__source {
+    margin-left: 0 !important;
+}
+
+.md-header {
+    background: #F8F8F8 !important;
+}
+
+.md-tabs {
+    border-bottom: none !important;
+    background: #F8F8F8 !important;
+}
