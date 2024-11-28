@@ -142,16 +142,18 @@ A `system_card` contains the following information.
     2. `value` (OPTIONAL, string). Value of the label.
 
 10. `status` (OPTIONAL, string). The status of the system. For example the status can be "production".
-11. `begin_date` (OPTIONAL, string). The first date the system was used. Date should be given in
+11. `references` (OPTIONAL, list[string]). Additional reference URI's that point information about the system and are
+     relevant.
+12. `begin_date` (OPTIONAL, string). The first date the system was used. Date should be given in
     [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format, i.e. `YYYY-MM-DD`.
-12. `end_date` (OPTIONAL, string). The last date the system was used. Date should be given in
+13. `end_date` (OPTIONAL, string). The last date the system was used. Date should be given in
     [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format, i.e. `YYYY-MM-DD`.
 
-13. `models` (OPTIONAL, list[ModelCard]). A list of model cards (as defined below) or `!include`s of a YAML file
+14. `models` (OPTIONAL, list[ModelCard]). A list of model cards (as defined below) or `!include`s of a YAML file
     containing a model card. This model card can for example be a model card described in the next section or a model
     card from Hugging Face. There can be multiple model cards, meaning multiple models are used.
 
-14. `tasks` (OPTIONAL, list[TaskCard]). A list of task cards (as defined below) or `!include`s of a
+15. `tasks` (OPTIONAL, list[TaskCard]). A list of task cards (as defined below) or `!include`s of a
     YAML file containing a task card. This task card is an task card described in the next section.
     There can be multiple task cards, meaning multiple task were performed.
 
