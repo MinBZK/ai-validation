@@ -16,6 +16,7 @@ architecting
 argparse
 assessmentcard
 automerge
+beoordeling
 berrydenhartog
 bestuursrecht
 Blendle
@@ -28,6 +29,7 @@ CODEOWNER
 Colab
 Dalex
 Deepseek
+derde
 Design
 devcontainer
 DICTU
@@ -88,6 +90,7 @@ onnx
 Opensource
 Organisatie
 overheid
+partij
 Pleio
 protobuf
 Pydantic

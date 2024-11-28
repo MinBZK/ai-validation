@@ -74,14 +74,15 @@ A `system_card` contains the following information.
 
 3. `name` (OPTIONAL, string). Name used to describe the system.
 
-4. `selected_tasks` (OPTIONAL, list). List of tasks from the [task registry](https://github.com/MinBZK/task-registry) that are selected to be performed. 
-    1. `requirements`(OPTIONAL, list). List of selected requirements. 
+4. `selected_tasks` (OPTIONAL, list). List of tasks from the [task registry](https://github.com/MinBZK/task-registry)
+    that are selected to be performed.
+    1. `requirements`(OPTIONAL, list). List of selected requirements.
         1. `urn` (OPTIONAL, string). URN of the requirement.
-        2. `version` (OPTIONAL, string). Version of the task registry. 
-    2. `measures` (OPTIONAL, list). List of selected measures. 
+        2. `version` (OPTIONAL, string). Version of the task registry.
+    2. `measures` (OPTIONAL, list). List of selected measures.
         1. `urn` (OPTIONAL, string). URN of the measure.
-        2. `version` (OPTIONAL, string). Version of the task registry. 
-    3. `tools`(OPTIONAL, list). List of selected tools. 
+        2. `version` (OPTIONAL, string). Version of the task registry.
+    3. `tools`(OPTIONAL, list). List of selected tools.
         1. `urn` (OPTIONAL, string). URN of the tool.
         2. `version` (OPTIONAL, string). Version of the task registry.
 
@@ -102,7 +103,7 @@ A `system_card` contains the following information.
 7. `description` (OPTIONAL, string). A short description of the system.
 8. `ai_act_profile` (OPTIONAL). Information about the system in relation to the EU AI Act.
     The contents of this field can be retrieved by traversing the AI Act decision tree or can be specified by the user.
-    1. `provenance` (OPTIONAL). This field can capture the context of the contents of the ai act profile labels. 
+    1. `provenance` (OPTIONAL). This field can capture the context of the contents of the ai act profile labels.
         1. `git_commit_hash` (OPTIONAL, string). Git commit hash of the commit which contains the transformation file used
             to create this card.
         2. `timestamp` (OPTIONAL, string). A timestamp of the date, time and timezone of generation of this System Card.
@@ -111,7 +112,7 @@ A `system_card` contains the following information.
         3. `uri` (OPTIONAL, string). URI to the tool that was used to perform the transformations.
         4. `author` (OPTIONAL, string). Name of person that initiated the transformations.
 
-    2. `labels` (OPTIONAL, list). 
+    2. `labels` (OPTIONAL, list).
 
         1. `type` (OPTIONAL, enum[string]). The type of the system should be chosen from:
         `["AI-systeem", "AI-systeem voor algemene doeleinden", "AI-model voor algemene doeleinden", "geen algoritme"]`.
@@ -126,8 +127,8 @@ A `system_card` contains the following information.
         Options are `["transparantieverplichtingen", "geen transparantieverplichtingen"]`.
         6. `role` (OPTIONAL, enum[string]). The organization’s role in relation to the system.
         Options are `["aanbieder", "gebruiksverantwoordelijke", "aanbieder + gebruiksverantwoordelijke"]`
-        7. `conformity_assessment_body` (OPTIONAL, enum[string]). Whether the system should have a conformityassessment performed by a third party.
-        Options are `["beoordeling door derde partij"]`
+        7. `conformity_assessment_body` (OPTIONAL, enum[string]). Whether the system should have a conformity assessment
+        performed by a third party. Options are `["beoordeling door derde partij"]`
     3. `decision_tree` (OPTIONAL). This field is REQUIRED if the above fields are retrieved by traversing the decision tree.
 
         1. `version` (REQUIRED, string). The version of the decision tree.
@@ -307,26 +308,27 @@ An `task_card` contains the following information.
        Timestamp should be given, preferably in UTC (represented as `Z`), in
        [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format, i.e. `2024-04-16T16:48:14Z`.
     3. `uri` (OPTIONAL, string). URI to the tool that was used to perform the transformations.
-    4. `description` (OPTIONAL, string). The description how the task is performed. 
-    5. `document` (OPTIONAL, string). Uploaded document. 
-    6. `URI` (OPTIONAL, string). Linked URI. 
-    7. `authors` (OPTIONAL, list). 
+    4. `description` (OPTIONAL, string). The description how the task is performed.
+    5. `document` (OPTIONAL, string). Uploaded document.
+    6. `URI` (OPTIONAL, string). Linked URI.
+    7. `authors` (OPTIONAL, list).
         1. `name` (OPTIONAL, string). Name of person that initiated the transformations.
-        2. `function` (OPTIONAL, string). Function of the person that initiated the transformation (e.g. 'accountable'). 
+        2. `function` (OPTIONAL, string). Function of the person that initiated the transformation (e.g. 'accountable').
 2. `name` (REQUIRED, string). The name of the task.
 3. `urn` (OPTIONAL, string). A Uniform Resource Name (URN) of the task in the task registry.
-4. `date` (REQUIRED, string). The date at which the task is completed. Date should be given in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format, i.e. `YYYY-MM-DD`.
-5. `lifecycle` (OPTIONAL, string). The lifecycle in which the task is completed. 
-6. `links` (OPTIONAL, list). List of linked tasks or systemcard fields.  
+4. `date` (REQUIRED, string). The date at which the task is completed. Date should be given
+    in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format, i.e. `YYYY-MM-DD`.
+5. `lifecycle` (OPTIONAL, string). The lifecycle in which the task is completed.
+6. `links` (OPTIONAL, list). List of linked tasks or system card fields.  
 
-    1. `name` (OPTIONAL, string). The name of the link. 
-    2. `urn` (REQUIRED, string). The urn to the link. 
-    3. `relation` (OPTIONAL, string). The relation between the links e.g. 'partly overlap'. 
+    1. `name` (OPTIONAL, string). The name of the link.
+    2. `urn` (REQUIRED, string). The urn to the link.
+    3. `relation` (OPTIONAL, string). The relation between the links e.g. 'partly overlap'.
 7. `contents` (REQUIRED, list). List of items in content.
 
     1. `description` (REQUIRED, string). A question.
     2. `document` (OPTIONAL, string). A Uniform Resource Name (URN) of the corresponding task in the task registry.
-    3. `URI` (REQUIRED, string). An URI to a document. 
+    3. `URI` (REQUIRED, string). An URI to a document.
     4. `remarks` (OPTIONAL, string). A field to put relevant discussion remarks in.
 
 ## Example
@@ -342,13 +344,13 @@ provenance:
   author: {modification_author}
 name: {system_name}
 selected_tasks:
-  - requirements: 
+  - requirements:
     - urn: {requirement_urn}
       version: {version_task_registry}
-  - measures: 
+  - measures:
     - urn: {measure_urn}
       version: {version_task_registry}
-  - tools: 
+  - tools:
     - urn: {tool_urn}
       version: {version_task_registry}
 upl: {upl_uri}
@@ -360,12 +362,12 @@ owners:
     role: {owner_role}
 description: {system_description}
 ai_act_profile:
-    provenance: 
+    provenance:
         git_commit_hash: {git_commit_hash}
         timestamp: {modification_timestamp}
         uri: {modification_uri}
         author: {modification_author}
-    labels: 
+    labels:
       - type: {system_type}
         open_source: {open_source}
         publication_category: {publication_category}
@@ -480,9 +482,9 @@ provenance:
   description: {description}
   document: {document_path}
   URI: {URI_path}
-  author: 
-  - name: {modificator_name}
-    function: {modificator_function}
+  author:
+  - name: {modification_name}
+    function: {modification_function}
 name: {task_name}
 urn: {urn}
 date: {task_date}
@@ -503,7 +505,8 @@ contents:
 JSON schemas of the system card, model card and task card can be found on [Github](https://github.com/MinBZK/ai-validation/tree/main/docs/projects/amt/reporting-standard/schemas).
 
 ## Changelog
-- 0.1a12: restructure systemcard to accomodate for tasks instead of assessments 
+
+- 0.1a12: restructure system card to accommodate for tasks instead of assessments
 - 0.1a11: adds requirements and measures
 - 0.1a10: adds ai act profile field to system card
 - 0.1a9: adds name to model card
