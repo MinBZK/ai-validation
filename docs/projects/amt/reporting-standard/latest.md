@@ -1,4 +1,4 @@
-# :label: 0.1a11 (Latest)
+# :label: 0.1a12 (Latest)
 
 This document describes the Algorithm Management Toolkit (AMT) Reporting Standard.
 
@@ -74,15 +74,15 @@ A `system_card` contains the following information.
 
 3. `name` (OPTIONAL, string). Name used to describe the system.
 
-4. `selected_tasks` (OPTIONAL, list). List of tasks from the [task registry](https://github.com/MinBZK/task-registry) that are selected to be performed categorized in requirements, measures and tools. 
+4. `selected_tasks` (OPTIONAL, list). List of tasks from the [task registry](https://github.com/MinBZK/task-registry) that are selected to be performed. 
     1. `requirements`(OPTIONAL, list). List of selected requirements. 
         1. `urn` (OPTIONAL, string). URN of the requirement.
         2. `version` (OPTIONAL, string). Version of the task registry. 
     2. `measures` (OPTIONAL, list). List of selected measures. 
-        1. `urn` (OPTIONAL, string). URN of the measures selected.
+        1. `urn` (OPTIONAL, string). URN of the measure.
         2. `version` (OPTIONAL, string). Version of the task registry. 
     3. `tools`(OPTIONAL, list). List of selected tools. 
-        1. `urn` (OPTIONAL, string). URN of the tools selected.
+        1. `urn` (OPTIONAL, string). URN of the tool.
         2. `version` (OPTIONAL, string). Version of the task registry.
 
 5. `upl` (OPTIONAL, string). If this algorithm is part of a product offered by the Dutch Government,
@@ -126,6 +126,8 @@ A `system_card` contains the following information.
         Options are `["transparantieverplichtingen", "geen transparantieverplichtingen"]`.
         6. `role` (OPTIONAL, enum[string]). The organization’s role in relation to the system.
         Options are `["aanbieder", "gebruiksverantwoordelijke", "aanbieder + gebruiksverantwoordelijke"]`
+        7. `conformity_assessment_body` (OPTIONAL, enum[string]). Whether the system should have a conformityassessment performed by a third party.
+        Options are `["beoordeling door derde partij"]`
     3. `decision_tree` (OPTIONAL). This field is REQUIRED if the above fields are retrieved by traversing the decision tree.
 
         1. `version` (REQUIRED, string). The version of the decision tree.
@@ -337,10 +339,16 @@ provenance:
   uri: {modification_uri}
   author: {modification_author}
 name: {system_name}
-instruments:
-  - urn: {instrument_urn}
-    version: {instrument_version}
-    required: {instrument_required}
+selected_tasks:
+  - requirements: 
+    - urn: {requirement_urn}
+      version: {version_task_registry}
+  - measures: 
+    - urn: {measure_urn}
+      version: {version_task_registry}
+  - tools: 
+    - urn: {tool_urn}
+      version: {version_task_registry}
 upl: {upl_uri}
 owners:
   - oin: {oin}
@@ -350,60 +358,31 @@ owners:
     role: {owner_role}
 description: {system_description}
 ai_act_profile:
-    type: {system_type}
-    open_source: {open_source}
-    publication_category: {publication_category}
-    systemic_risk: {systemic_risk}
-    transparency_obligations: {transparency_obligations}
-    role: {role}
+    provenance: 
+        git_commit_hash: {git_commit_hash}
+        timestamp: {modification_timestamp}
+        uri: {modification_uri}
+        author: {modification_author}
+    labels: 
+      - type: {system_type}
+        open_source: {open_source}
+        publication_category: {publication_category}
+        systemic_risk: {systemic_risk}
+        transparency_obligations: {transparency_obligations}
+        role: {role}
+        conformity_assessment_body: {conformity_assessment_body}
     decision_tree:
         version: {decision_tree_version}
         path:
          - question: {question_id}
            answer: {answer}
-requirements:
-    urn: {urn}
-    state: {state}
-    version: {version}
-measures:
-    urn: {urn}
-    state: {state}
-    value: {value}
-    version: {version}
 labels:
   - name: {label_name}
     value: {label_value}
 status: {system_status}
 begin_date: {system_begin_date}
 end_date: {system_end_date}
-goal_and_impact: {system_goal_and_impact}
-considerations: {system_considerations}
-risk_management: {system_risk_management}
-human_intervention: {system_human_intervention}
-legal_base:
-  - name: {law_name}
-    link: {law_uri}
-used_data: {system_used_data}
-technical_design: {technical_design}
-external_providers:
-  - name: {name_external_provider}
-    version: {version_external_provider}
-references:
-  - {reference_uri}
-interaction_details:
-  - {system_interaction_details}
-version_requirements:
-  - {system_version_requirements}
-deployment_variants:
-  - {system_deployment_variants}
-hardware_requirements:
-  - {system_hardware_requirements}
-product_markings:
-  - {system_product_markings}
-user_interface:
-  - description: {system_user_interface}
-    link: {system_user_interface_uri}
-    snapshot: {system_user_interface_snapshot_uri}
+
 
 models:
   - !include {model_card_uri}
