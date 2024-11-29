@@ -207,7 +207,7 @@
 }
 
 .ai-val-amt-screenshot {
-    max-width: 60%;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -241,6 +241,14 @@
 
 .mdx-content-centralized_column{
     margin: 0 auto;
+}
+
+.md-search__input{
+    color: #000000 !important;
+}
+
+.md-search__icon{
+    color: #000000 !important;
 }
 
 /* cSpell: enable */
