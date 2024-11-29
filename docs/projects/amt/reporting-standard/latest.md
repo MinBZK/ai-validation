@@ -110,7 +110,8 @@ A `system_card` contains the following information.
             Timestamp should be given, preferably in UTC (represented as `Z`), in
             [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format, i.e. `2024-04-16T16:48:14Z`.
         3. `uri` (OPTIONAL, string). URI to the tool that was used to perform the transformations.
-        4. `author` (OPTIONAL, string). Name of person that assigned the ai act profile labels (with or without decisiontree).
+        4. `author` (OPTIONAL, string). Name of person that assigned the ai act profile labels
+            (with or without decision tree).
 
     2. `labels` (OPTIONAL, list).
 
@@ -134,7 +135,7 @@ A `system_card` contains the following information.
         1. `version` (REQUIRED, string). The version of the decision tree.
         2. `path` (REQUIRED). The traversed path through the decision tree.
             1. `question` (REQUIRED, string). The question id of the question.
-            2. `answer` (REQUIRED, enum[string]). The answer to the question. 
+            2. `answer` (REQUIRED, enum[string]). The answer to the question.
 
 9. `labels` (OPTIONAL, list). This field allows to store meta information about a system. There can be multiple labels.
    For each label the following fields are present.
@@ -313,8 +314,8 @@ An `task_card` contains the following information.
     6. `URI_path` (OPTIONAL, string). Linked URI.
     7. `authors` (OPTIONAL, list).
         1. `name` (OPTIONAL, string). Name of person that initiated the transformations.
-        2. `function` (OPTIONAL, string). Function of the person that initiated the transformation. 
-            Options are `["accountable", "responsible", "reviewer"]`. 
+        2. `function` (OPTIONAL, string). Function of the person that initiated the transformation.
+            Options are `["accountable", "responsible", "reviewer"]`.
 
 2. `name` (REQUIRED, string). The name of the task.
 3. `urn` (OPTIONAL, string). A Uniform Resource Name (URN) of the task in the task registry.
