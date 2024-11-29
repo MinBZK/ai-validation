@@ -243,4 +243,12 @@
     margin: 0 auto;
 }
 
+.md-search__input{
+    color: #000000 !important;
+}
+
+.md-search__icon{
+    color: #000000 !important;
+}
+
 /* cSpell: enable */
