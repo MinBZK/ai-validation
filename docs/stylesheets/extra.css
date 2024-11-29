@@ -32,7 +32,7 @@ img.round {
     align-items: flex-end;
     position: absolute;
     position: top: 10px; /* Adjust as needed */
-    right: 20%; /* Adjust as needed */;
+    right: 10%; /* Adjust as needed */;
 }
 
 /* This part is to remake the search bar which is an extension of mkdocs*/
