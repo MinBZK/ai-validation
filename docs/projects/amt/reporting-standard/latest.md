@@ -110,7 +110,7 @@ A `system_card` contains the following information.
             Timestamp should be given, preferably in UTC (represented as `Z`), in
             [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format, i.e. `2024-04-16T16:48:14Z`.
         3. `uri` (OPTIONAL, string). URI to the tool that was used to perform the transformations.
-        4. `author` (OPTIONAL, string). Name of person that initiated the transformations.
+        4. `author` (OPTIONAL, string). Name of person that assigned the ai act profile labels (with or without decisiontree).
 
     2. `labels` (OPTIONAL, list).
 
@@ -134,7 +134,7 @@ A `system_card` contains the following information.
         1. `version` (REQUIRED, string). The version of the decision tree.
         2. `path` (REQUIRED). The traversed path through the decision tree.
             1. `question` (REQUIRED, string). The question id of the question.
-            2. `answer` (REQUIRED, enum[string]). The answer to the question. The only valid values are `yes` or `no`.
+            2. `answer` (REQUIRED, enum[string]). The answer to the question. 
 
 9. `labels` (OPTIONAL, list). This field allows to store meta information about a system. There can be multiple labels.
    For each label the following fields are present.
@@ -309,11 +309,13 @@ An `task_card` contains the following information.
        [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format, i.e. `2024-04-16T16:48:14Z`.
     3. `uri` (OPTIONAL, string). URI to the tool that was used to perform the transformations.
     4. `description` (OPTIONAL, string). The description how the task is performed.
-    5. `document` (OPTIONAL, string). Uploaded document.
-    6. `URI` (OPTIONAL, string). Linked URI.
+    5. `document_path` (OPTIONAL, string). Uploaded document.
+    6. `URI_path` (OPTIONAL, string). Linked URI.
     7. `authors` (OPTIONAL, list).
         1. `name` (OPTIONAL, string). Name of person that initiated the transformations.
-        2. `function` (OPTIONAL, string). Function of the person that initiated the transformation (e.g. 'accountable').
+        2. `function` (OPTIONAL, string). Function of the person that initiated the transformation. 
+            Options are `["accountable", "responsible", "reviewer"]`. 
+
 2. `name` (REQUIRED, string). The name of the task.
 3. `urn` (OPTIONAL, string). A Uniform Resource Name (URN) of the task in the task registry.
 4. `date` (REQUIRED, string). The date at which the task is completed. Date should be given
@@ -327,8 +329,8 @@ An `task_card` contains the following information.
 7. `contents` (REQUIRED, list). List of items in content.
 
     1. `description` (REQUIRED, string). A question.
-    2. `document` (OPTIONAL, string). A Uniform Resource Name (URN) of the corresponding task in the task registry.
-    3. `URI` (REQUIRED, string). An URI to a document.
+    2. `document_path` (OPTIONAL, string). A Uniform Resource Name (URN) of the corresponding task in the task registry.
+    3. `URI_path` (REQUIRED, string). An URI to a document.
     4. `remarks` (OPTIONAL, string). A field to put relevant discussion remarks in.
 
 ## Example
@@ -480,8 +482,8 @@ provenance:
   timestamp: {modification_timestamp}
   uri: {modification_uri}
   description: {description}
-  document: {document_path}
-  URI: {URI_path}
+  document_path: {document_path}
+  URI_path: {URI_path}
   author:
   - name: {modification_name}
     function: {modification_function}
@@ -495,8 +497,8 @@ links:
       relation: {relation_type}
 contents:
   - description: {description_text}
-    document: {document_path}
-    URI: {URI_path}
+    document_path: {document_path}
+    URI_path: {URI_path}
     remarks: {remark_text}
 ```
 
