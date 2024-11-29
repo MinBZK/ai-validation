@@ -32,18 +32,13 @@ img.round {
     align-items: flex-end;
     position: absolute;
     position: top: 10px; /* Adjust as needed */
-    right: 20%; /* Adjust as needed */;
+    right: 10%; /* Adjust as needed */;
 }
 
 /* This part is to remake the search bar which is an extension of mkdocs*/
 .md-search__form {
     background: #F8F8F8 !important;
 
-}
-
-.md-search__options {
-    width: 0;
-    padding: 0;
 }
 
 .md-search__suggest {
