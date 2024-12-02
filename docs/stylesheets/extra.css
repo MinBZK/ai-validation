@@ -1,3 +1,68 @@
 img.round {
   border-radius: 50%;
 }
+
+.rvo-logo {
+    align-items:center;
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+    max-width:206px
+}
+
+.rvo-logo__emblem{
+    align-self: flex-start;
+    height:80px;
+    min-width:40px;
+    width:40px
+}
+
+.rvo-header__logo-wrapper{
+    margin-inline-start:calc(50% - 20px)
+}
+
+.md-header__inner{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.md-header__extra{
+    display:flex;
+    align-items: flex-end;
+    position: absolute;
+    position: top: 10px; /* Adjust as needed */
+    right: 10%; /* Adjust as needed */;
+}
+
+/* This part is to remake the search bar which is an extension of mkdocs*/
+.md-search__form {
+    background: #F8F8F8 !important;
+
+}
+
+.md-search__suggest {
+    width: 0;
+    padding: 0;
+}
+
+ .md-search__inner {
+     width: 2.1rem;
+ }
+
+.md-search__input::placeholder {
+    color: transparent !important; /*  Hide the Search placeholder*/
+}
+
+.md-header__source {
+    margin-left: 0 !important;
+}
+
+.md-header {
+    background: #F8F8F8 !important;
+}
+
+.md-tabs {
+    border-bottom: none !important;
+    background: #F8F8F8 !important;
+}

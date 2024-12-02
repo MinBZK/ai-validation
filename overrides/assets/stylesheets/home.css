@@ -1,0 +1,254 @@
+/* cSpell: disable */
+.md-typeset :target {
+    --md-scroll-margin: 5.2rem
+}
+
+.md-main__inner {
+    margin: 0
+}
+
+.md-content__inner {
+    margin-bottom: 0;
+}
+
+.mdx-parallax__group{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.mdx-parallax__group:first-child{
+    padding-top: calc(4rem + 52.8px); /* Add the height of the navigation to the first parallax */
+}
+
+.md-content__inner:before {
+    display: none
+}
+
+.md-content header {
+    transition: opacity .75s
+}
+
+.js .md-content header[hidden] {
+    opacity: 0
+}
+
+.md-header:not(.md-header--shadow) {
+    background-color: initial;
+    transition: background-color 125ms, transform 125ms cubic-bezier(.1, .7, .1, 1), box-shadow 0ms
+}
+
+.md-header--shadow {
+    transition: background-color .25s, transform .25s cubic-bezier(.1, .7, .1, 1), box-shadow .25s
+}
+
+:root {
+    --md-parallax-perspective: 2.5rem
+}
+
+.mdx-parallax {
+    height: 100vh;
+    margin-top: -2.4rem;
+    overflow: hidden auto;
+    overscroll-behavior-y: none;
+    perspective: var(--md-parallax-perspective);
+    scroll-behavior: smooth;
+    width: 100vw
+}
+
+.mdx-parallax__group {
+    background-color: var(--md-default-bg-color);
+    color: var(--md-typeset-color);
+    display: block;
+    position: relative;
+    transform-style: preserve-3d
+}
+
+.mdx-content__column {
+    max-width: 50%;
+}
+
+.mdx-content-amt__column {
+    max-width: 60%;
+}
+
+@media screen and (min-width: 60em) {
+    .mdx-content__inner {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 6.4rem
+    }
+
+    .mdx-content__column {
+        margin-top: 0
+    }
+
+    .mdx-content__column:first-child {
+        flex: 2 0
+    }
+}
+
+.mdx-ai-val {
+    display: block;
+    transition: transform .75s cubic-bezier(.075, .85, .175, 1) 125ms, opacity .75s 125ms
+}
+
+.mdx-ai-val-trust-hover__link:hover{
+    color: #EF6312 !important;
+}
+
+.mdx-ai-val-trust-black__link:link, .mdx-ai-val-trust-black__link:visited {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.mdx-ai-val-trust-white__link:link, .mdx-ai-val-trust-white__link:visited {
+    color: #F8F8F8;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.js .mdx-ai-val[hidden] {
+    opacity: 0;
+    transform: translateY(1.6rem)
+}
+
+.mdx-parallax-ai-val-trust-in-algorithms{
+    background: #F8F8F8;
+}
+
+.ai-val-trust-in-algorithms-content{
+    color: #000000;
+}
+
+.ai-val-trust-in-algorithms-content > h1{
+    color: #000000;
+    font-weight: bold;
+}
+
+.ai-val-ai-act-tree-content{
+    color: #000000;
+}
+
+.ai-val-ai-act-tree-content > h1{
+    color: #000000;
+    font-weight: bold;
+}
+
+.ai-val-team-content{
+    color: #F8F8F8;
+}
+
+.ai-val-team-content > h1{
+    color: #F8F8F8;
+    font-weight: bold;
+}
+
+.ai-val-wow-content{
+    color: #000000;
+}
+
+.ai-val-wow-content > h1{
+    color: #000000;
+    font-weight: bold;
+}
+
+.mdx-parallax-ai-val-amt{
+    background: #000000;
+    color: #F8F8F8;
+}
+
+.ai-val-amt-content{
+    color: #F8F8F8;
+    text-align: center;
+}
+
+.ai-val-amt-content > h1{
+    color: #F8F8F8;
+    font-weight: bold;
+}
+
+.mdx-parallax-ai-val-ai-act-tree{
+    background: #F8F8F8;
+    color: #000000;
+}
+
+.mdx-parallax-ai-val-team{
+    background: #000000;
+    color: #F8F8F8;
+    text-align: center;
+}
+
+.mdx-parallax-ai-val-wow{
+    background: #F8F8F8;
+    color: #000000;
+    text-align: center;
+}
+
+@media screen and (min-width: 60em) {
+    .md-sidebar--secondary {
+        display: none
+    }
+}
+
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+        display: none
+    }
+}
+
+.ai-val-team-page-person-circles-container {
+  display: flex; /* Plaats de cirkels naast elkaar */
+  justify-content: center; /* Centreer de cirkels horizontaal */
+  align-items: center; /* Centreer de cirkels verticaal */
+  height: 200px; /* Pas de hoogte van de container aan */
+}
+
+.ai-val-amt-screenshot {
+    max-width: 80%;
+    margin: auto;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Maakt de div elementen rond */
+    margin: 0 -20px; /* Overlap van 20px aan elke kant */
+}
+
+
+.md-tabs__item--active {
+    font-weight: bold;
+}
+
+.ai-val-ada-logo{
+    max-width: 60% !important;
+}
+
+.ai-val-h1{
+    font-size: 3em !important;
+}
+
+.ai-val-h2{
+    font-size: 2.5em !important;
+}
+
+.md-typeset h1 {
+    margin: 0 0 0.5em !important;
+}
+
+.mdx-content-centralized_column{
+    margin: 0 auto;
+}
+
+.md-search__input{
+    color: #000000 !important;
+}
+
+.md-search__icon{
+    color: #000000 !important;
+}
+
+/* cSpell: enable */

@@ -45,6 +45,7 @@ Friese
 geen
 gettext
 gebruiksverantwoordelijke
+Gilde
 glightbox
 Granian
 GUI
@@ -53,6 +54,7 @@ Haitsma
 Hanze
 Hartog
 hoog
+htmltitle
 HTMX
 HUIDERIA
 IAMA
@@ -111,6 +113,7 @@ ROOS
 rubenrouwhof
 RVO
 Schuth
+scrollwrap
 SENSUS
 serverside
 SHAP
