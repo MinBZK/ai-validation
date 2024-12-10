@@ -128,9 +128,14 @@ There can be multiple instruments. For each instrument the following fields are 
         2. `state` (REQUIRED, string).
         3. `value` (REQUIRED, string). Description on how the measure is implemented.
         4. `version` (OPTIONAL, string). The version of the Algoritmekader.
-        5. `responsible` (OPTIONAL, list). The people responsible for execution of this measure.
-        6. `reviewer` (OPTIONAL, list). The people who review the responsible people on the execution.
-        7. `accountable` (OPTIONAL, list). The people who are accountable for the implementation of the measure.
+        5. `responsible_names` (OPTIONAL, list). The names of the people responsible for execution of this measure.
+        6. `responsible_uuids` (OPTIONAL, list). The uuids of the people responsible for execution of this measure.
+        7. `reviewer_names` (OPTIONAL, list). The names of the people who review the responsible people on the execution.
+        8. `reviewer_uuids` (OPTIONAL, list). The uuids of the people who review the responsible people on the execution.
+        9. `accountable_names` (OPTIONAL, list). The names of the people who are accountable for the implementation of
+the measure.
+        10. `accountable_uuids` (OPTIONAL, list). The uuids of the people who are accountable for the implementation of
+the measure.
 11. `labels` (OPTIONAL, list). This field allows to store meta information about a system. There can be multiple labels.
    For each label the following fields are present.
 
