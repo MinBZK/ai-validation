@@ -122,9 +122,9 @@ There can be multiple instruments. For each instrument the following fields are 
 
 9. `requirements` (OPTIONAL, list). To store the applicable requirements.
 
-        1. `urn` (REQUIRED, string). The URN of the requirement (from Algoritmekader).
-        2. `state` (REQUIRED, string). The state of the requirement.
-        3. `version` (OPTIONAL, string). The version of the Algoritmekader.
+    1. `urn` (REQUIRED, string). The URN of the requirement (from Algoritmekader).
+    2. `state` (REQUIRED, string). The state of the requirement.
+    3. `version` (OPTIONAL, string). The version of the Algoritmekader.
 
 10. `measures` (OPTIONAL, list). To store the applicable measures.
 
