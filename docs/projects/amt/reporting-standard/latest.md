@@ -119,25 +119,35 @@ There can be multiple instruments. For each instrument the following fields are 
         2. `path` (REQUIRED). The traversed path through the decision tree.
             1. `question` (REQUIRED, string). The question id of the question.
             2. `answer` (REQUIRED, enum[string]). The answer to the question. The only valid values are `yes` or `no`.
+
 9. `requirements` (OPTIONAL, list). To store the applicable requirements.
+
         1. `urn` (REQUIRED, string). The URN of the requirement (from Algoritmekader).
         2. `state` (REQUIRED, string). The state of the requirement.
         3. `version` (OPTIONAL, string). The version of the Algoritmekader.
+
 10. `measures` (OPTIONAL, list). To store the applicable measures.
-        1. `urn` (REQUIRED, string). The URN of the measure (from Algoritmekader).
-        2. `state` (REQUIRED, string).
-        3. `value` (REQUIRED, string). Description on how the measure is implemented.
-        4. `version` (OPTIONAL, string). The version of the Algoritmekader.
-        5. `accountable_persons` (OPTIONAL, list). The persons who are accountable for the implementation of this
-measure.
-            1. `name` (REQUIRED, string). The name of the person.
-            2. `uuid` (REQUIRED, string). The uuid of the person.
-        6. `responsible_persons` (OPTIONAL, list). The persons responsible for the execution of this measure.
-            1. `name` (REQUIRED, string). The name of the person.
-            2. `uuid` (REQUIRED, string). The uuid of the person.
-        7. `reviewer_persons` (OPTIONAL, list). The persons who review the responsible people on the execution.
-            1. `name` (REQUIRED, string). The name of the person.
-            2. `uuid` (REQUIRED, string). The uuid of the person.
+
+    1. `urn` (REQUIRED, string). The URN of the measure (from Algoritmekader).
+    2. `state` (REQUIRED, string).
+    3. `value` (REQUIRED, string). Description on how the measure is implemented.
+    4. `version` (OPTIONAL, string). The version of the Algoritmekader.
+
+    5. `accountable_persons` (OPTIONAL, list). The persons who are accountable for the implementation of this measure.
+
+        1. `name` (REQUIRED, string). The name of the person.
+        2. `uuid` (REQUIRED, string). The uuid of the person.
+
+    6. `responsible_persons` (OPTIONAL, list). The persons responsible for the execution of this measure.
+
+        1. `name` (REQUIRED, string). The name of the person.
+        2. `uuid` (REQUIRED, string). The uuid of the person.
+
+    7. `reviewer_persons` (OPTIONAL, list). The persons who review the responsible people on the execution.
+
+        1. `name` (REQUIRED, string). The name of the person.
+        2. `uuid` (REQUIRED, string). The uuid of the person.
+
 11. `labels` (OPTIONAL, list). This field allows to store meta information about a system. There can be multiple labels.
    For each label the following fields are present.
 
@@ -404,14 +414,24 @@ ai_act_profile:
          - question: {question_id}
            answer: {answer}
 requirements:
-    urn: {urn}
+  - urn: {urn}
     state: {state}
     version: {version}
 measures:
-    urn: {urn}
+  - urn: {urn}
     state: {state}
     value: {value}
     version: {version}
+    accountable_persons:
+      - name: {name}
+        uuid: {uuid}
+    responsible_persons:
+      - name: {name}
+        uuid: {uuid}
+    reviewer_persons:
+      - name: {name}
+        uuid: {uuid}
+
 labels:
   - name: {label_name}
     value: {label_value}
@@ -558,6 +578,7 @@ JSON schemas of the system card, model card and assessment card can be found on 
 
 ## Changelog
 
+- 0.1a12: adds authors to measures
 - 0.1a11: adds requirements and measures
 - 0.1a10: adds ai act profile field to system card
 - 0.1a9: adds name to model card
