@@ -571,6 +571,8 @@
       
         
       
+        
+      
     
     
       
@@ -638,6 +640,33 @@
     
   
     🏷 0.1a12 (Latest)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0.1a11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    🏷 0.1a11
   
 
     
@@ -2604,38 +2633,54 @@ Options are <code>["aanbieder", "gebruiksverantwoordelijke", "aanbieder + gebrui
 <li><code>answer</code> (REQUIRED, enum[string]). The answer to the question. The only valid values are <code>yes</code> or <code>no</code>.</li>
 </ol>
 </li>
-<li><code>requirements</code> (OPTIONAL, list). To store the applicable requirements.</li>
-<li><code>urn</code> (REQUIRED, string). The URN of the requirement (from Algoritmekader).</li>
-<li><code>state</code> (REQUIRED, string). The state of the requirement.</li>
-<li><code>version</code> (OPTIONAL, string). The version of the Algoritmekader.</li>
-<li><code>measures</code> (OPTIONAL, list). To store the applicable measures.</li>
-<li><code>urn</code> (REQUIRED, string). The URN of the measure (from Algoritmekader).</li>
-<li><code>state</code> (REQUIRED, string).</li>
-<li><code>value</code> (REQUIRED, string). Description on how the measure is implemented.</li>
-<li><code>version</code> (OPTIONAL, string). The version of the Algoritmekader.</li>
-<li><code>accountable_persons</code> (OPTIONAL, list). The persons who are accountable for the implementation of this
-measure.<ol>
-<li><code>name</code> (REQUIRED, string). The name of the person.</li>
-<li><code>uuid</code> (REQUIRED, string). The uuid of the person.</li>
 </ol>
 </li>
-<li><code>responsible_persons</code> (OPTIONAL, list). The persons responsible for the execution of this measure.<ol>
-<li><code>name</code> (REQUIRED, string). The name of the person.</li>
-<li><code>uuid</code> (REQUIRED, string). The uuid of the person.</li>
-</ol>
-</li>
-<li><code>reviewer_persons</code> (OPTIONAL, list). The persons who review the responsible people on the execution.<ol>
-<li><code>name</code> (REQUIRED, string). The name of the person.</li>
-<li><code>uuid</code> (REQUIRED, string). The uuid of the person.</li>
-</ol>
-</li>
-<li><code>labels</code> (OPTIONAL, list). This field allows to store meta information about a system. There can be multiple labels.
-   For each label the following fields are present.</li>
 </ol>
 </li>
 <li>
-<p><code>name</code> (OPTIONAL, string). Name of the label.</p>
+<p><code>requirements</code> (OPTIONAL, list). To store the applicable requirements.</p>
+<div class="language-text highlight"><pre><span></span><code>1. `urn` (REQUIRED, string). The URN of the requirement (from Algoritmekader).
+2. `state` (REQUIRED, string). The state of the requirement.
+3. `version` (OPTIONAL, string). The version of the Algoritmekader.
+</code></pre></div>
 </li>
+<li>
+<p><code>measures</code> (OPTIONAL, list). To store the applicable measures.</p>
+<ol>
+<li><code>urn</code> (REQUIRED, string). The URN of the measure (from Algoritmekader).</li>
+<li><code>state</code> (REQUIRED, string).</li>
+<li><code>value</code> (REQUIRED, string). Description on how the measure is implemented.</li>
+<li>
+<p><code>version</code> (OPTIONAL, string). The version of the Algoritmekader.</p>
+</li>
+<li>
+<p><code>accountable_persons</code> (OPTIONAL, list). The persons who are accountable for the implementation of this measure.</p>
+<ol>
+<li><code>name</code> (REQUIRED, string). The name of the person.</li>
+<li><code>uuid</code> (REQUIRED, string). The uuid of the person.</li>
+</ol>
+</li>
+<li>
+<p><code>responsible_persons</code> (OPTIONAL, list). The persons responsible for the execution of this measure.</p>
+<ol>
+<li><code>name</code> (REQUIRED, string). The name of the person.</li>
+<li><code>uuid</code> (REQUIRED, string). The uuid of the person.</li>
+</ol>
+</li>
+<li>
+<p><code>reviewer_persons</code> (OPTIONAL, list). The persons who review the responsible people on the execution.</p>
+<ol>
+<li><code>name</code> (REQUIRED, string). The name of the person.</li>
+<li><code>uuid</code> (REQUIRED, string). The uuid of the person.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p><code>labels</code> (OPTIONAL, list). This field allows to store meta information about a system. There can be multiple labels.
+   For each label the following fields are present.</p>
+<ol>
+<li><code>name</code> (OPTIONAL, string). Name of the label.</li>
 <li><code>value</code> (OPTIONAL, string). Value of the label.</li>
 </ol>
 </li>
@@ -2970,54 +3015,64 @@ measure.<ol>
 </span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">         </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">question</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">question_id</span><span class="p p-Indicator">}</span>
 </span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">           </span><span class="nt">answer</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">answer</span><span class="p p-Indicator">}</span>
 </span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="nt">requirements</span><span class="p">:</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">    </span><span class="nt">urn</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">urn</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">urn</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">urn</span><span class="p p-Indicator">}</span>
 </span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">    </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">state</span><span class="p p-Indicator">}</span>
 </span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">version</span><span class="p p-Indicator">}</span>
 </span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="nt">measures</span><span class="p">:</span>
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">    </span><span class="nt">urn</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">urn</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">urn</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">urn</span><span class="p p-Indicator">}</span>
 </span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">    </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">state</span><span class="p p-Indicator">}</span>
 </span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">value</span><span class="p p-Indicator">}</span>
 </span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">version</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="nt">labels</span><span class="p">:</span>
-</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_name</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_value</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_status</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="nt">begin_date</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_begin_date</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_end_date</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="nt">goal_and_impact</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_goal_and_impact</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="nt">considerations</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_considerations</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="nt">risk_management</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_risk_management</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="nt">human_intervention</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_human_intervention</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="nt">legal_base</span><span class="p">:</span>
-</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">law_name</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a><span class="w">    </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">law_uri</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a><span class="nt">used_data</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_used_data</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="nt">technical_design</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">technical_design</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a><span class="nt">external_providers</span><span class="p">:</span>
-</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">name_external_provider</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">version_external_provider</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a><span class="nt">references</span><span class="p">:</span>
-</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">reference_uri</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a><span class="nt">interaction_details</span><span class="p">:</span>
-</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_interaction_details</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a><span class="nt">version_requirements</span><span class="p">:</span>
-</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_version_requirements</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a><span class="nt">deployment_variants</span><span class="p">:</span>
-</span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_deployment_variants</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a><span class="nt">hardware_requirements</span><span class="p">:</span>
-</span><span id="__span-0-68"><a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_hardware_requirements</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-69"><a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a><span class="nt">product_markings</span><span class="p">:</span>
-</span><span id="__span-0-70"><a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_product_markings</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-71"><a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a><span class="nt">user_interface</span><span class="p">:</span>
-</span><span id="__span-0-72"><a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-73"><a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a><span class="w">    </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface_uri</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-74"><a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a><span class="w">    </span><span class="nt">snapshot</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface_snapshot_uri</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-75"><a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a>
-</span><span id="__span-0-76"><a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a><span class="nt">models</span><span class="p">:</span>
-</span><span id="__span-0-77"><a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="kt">!include</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_card_uri</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-78"><a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a>
-</span><span id="__span-0-79"><a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a><span class="nt">assessments</span><span class="p">:</span>
-</span><span id="__span-0-80"><a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="kt">!include</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">assessment_card_uri</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">    </span><span class="nt">accountable_persons</span><span class="p">:</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">name</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">        </span><span class="nt">uuid</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">uuid</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="w">    </span><span class="nt">responsible_persons</span><span class="p">:</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">name</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="w">        </span><span class="nt">uuid</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">uuid</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="w">    </span><span class="nt">reviewer_persons</span><span class="p">:</span>
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">name</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="w">        </span><span class="nt">uuid</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">uuid</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="nt">labels</span><span class="p">:</span>
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_name</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a><span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">label_value</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a><span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_status</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="nt">begin_date</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_begin_date</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a><span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_end_date</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a><span class="nt">goal_and_impact</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_goal_and_impact</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="nt">considerations</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_considerations</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a><span class="nt">risk_management</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_risk_management</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a><span class="nt">human_intervention</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_human_intervention</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a><span class="nt">legal_base</span><span class="p">:</span>
+</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">law_name</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a><span class="w">    </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">law_uri</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a><span class="nt">used_data</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_used_data</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a><span class="nt">technical_design</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">technical_design</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a><span class="nt">external_providers</span><span class="p">:</span>
+</span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">name_external_provider</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-68"><a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a><span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">version_external_provider</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-69"><a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a><span class="nt">references</span><span class="p">:</span>
+</span><span id="__span-0-70"><a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">reference_uri</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-71"><a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a><span class="nt">interaction_details</span><span class="p">:</span>
+</span><span id="__span-0-72"><a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_interaction_details</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-73"><a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a><span class="nt">version_requirements</span><span class="p">:</span>
+</span><span id="__span-0-74"><a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_version_requirements</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-75"><a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a><span class="nt">deployment_variants</span><span class="p">:</span>
+</span><span id="__span-0-76"><a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_deployment_variants</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-77"><a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a><span class="nt">hardware_requirements</span><span class="p">:</span>
+</span><span id="__span-0-78"><a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_hardware_requirements</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-79"><a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a><span class="nt">product_markings</span><span class="p">:</span>
+</span><span id="__span-0-80"><a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_product_markings</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-81"><a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a><span class="nt">user_interface</span><span class="p">:</span>
+</span><span id="__span-0-82"><a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-83"><a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a><span class="w">    </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface_uri</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-84"><a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a><span class="w">    </span><span class="nt">snapshot</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface_snapshot_uri</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-85"><a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a>
+</span><span id="__span-0-86"><a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a><span class="nt">models</span><span class="p">:</span>
+</span><span id="__span-0-87"><a id="__codelineno-0-87" name="__codelineno-0-87" href="#__codelineno-0-87"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="kt">!include</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_card_uri</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-88"><a id="__codelineno-0-88" name="__codelineno-0-88" href="#__codelineno-0-88"></a>
+</span><span id="__span-0-89"><a id="__codelineno-0-89" name="__codelineno-0-89" href="#__codelineno-0-89"></a><span class="nt">assessments</span><span class="p">:</span>
+</span><span id="__span-0-90"><a id="__codelineno-0-90" name="__codelineno-0-90" href="#__codelineno-0-90"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="kt">!include</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">assessment_card_uri</span><span class="p p-Indicator">}</span>
 </span></code></pre></div>
 <h3 id="model-card">Model Card</h3>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">provenance</span><span class="p">:</span>
@@ -3115,6 +3170,7 @@ measure.<ol>
 <p>JSON schemas of the system card, model card and assessment card can be found on <a href="https://github.com/MinBZK/ai-validation/tree/main/docs/projects/amt/reporting-standard/schemas">Github</a>.</p>
 <h2 id="changelog">Changelog</h2>
 <ul>
+<li>0.1a12: adds authors to measures</li>
 <li>0.1a11: adds requirements and measures</li>
 <li>0.1a10: adds ai act profile field to system card</li>
 <li>0.1a9: adds name to model card</li>
