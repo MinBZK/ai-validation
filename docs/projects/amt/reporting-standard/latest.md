@@ -178,10 +178,10 @@ There can be multiple instruments. For each instrument the following fields are 
     1. `name` (REQUIRED, string). Name of the external provider.
     2. `version` (OPTIONAL, string). Version of the external provider reflecting its relation to previous versions.
 
-23. `references` (OPTIONAL, list). This field allows to store references to the system. 
+23. `references` (OPTIONAL, list). This field allows to store references to the system.
 
-    1. `name` (REQUIRED, string). Name of the reference. 
-    2. `link` (OPTIONAL, string). Link or URI to the reference. 
+    1. `name` (REQUIRED, string). Name of the reference.
+    2. `link` (OPTIONAL, string). Link or URI to the reference.
 
 24. `interaction_details` (OPTIONAL, list[string]). Explain how the AI system interacts with hardware or software,
     including other AI systems, or how the AI system can be used to interact with hardware or software.
@@ -582,7 +582,7 @@ JSON schemas of the system card, model card and assessment card can be found on 
 
 ## Changelog
 
-- 0.1a13: adjust references to name-value 
+- 0.1a13: adjust references to name-value
 - 0.1a12: adds authors to measures
 - 0.1a11: adds requirements and measures
 - 0.1a10: adds ai act profile field to system card
