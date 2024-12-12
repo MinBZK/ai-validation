@@ -2,238 +2,242 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://minbzk.github.io/ai-validation/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/about/contact/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/about/team/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/adrs/0001-adrs/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/adrs/0002-code-platform/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/adrs/0003-ci-cd/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/adrs/0004-software-hosting-platform/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/adrs/0005-python-tooling/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/adrs/0006-agile-tooling/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/adrs/0007-commit-convention/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/adrs/0008-architectural-diagram-tooling/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/adrs/0010-container-registry/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/adrs/0011-researcher-in-residence/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/adrs/0012-dictionary-for-spelling/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/adrs/0013-date-time-representation/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/adrs/0014-written-language/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/adrs/0016-government-cloud-comparison/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/comparison/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/adrs/0001-adrs/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/adrs/0002-amt-reporting-standard/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/adrs/0003-amt-tool/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/adrs/0004-software-stack/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/adrs/0005-ai-verify-technical-tests/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/adrs/0006-extend-system-card-EU-AI-Act/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/adrs/0007-front-end-components-implementation/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/adrs/0008-systemcard-storage/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/existing-tools/checklists/ai_assesment_tool_checklist/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/existing-tools/checklists/aiverify_checklist/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/existing-tools/checklists/holisticai_checklist/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/existing-tools/checklists/ibm_360_research_toolkit_checklist/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/existing-tools/checklists/verifyml_checklist/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/existing-tools/comparison/requirements/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/existing-tools/comparison/tools/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/existing-tools/comparison/tools_comparison/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/reporting-standard/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/reporting-standard/0.1a1/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/reporting-standard/0.1a10/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/reporting-standard/0.1a11/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
+    </url>
+    <url>
+         <loc>https://minbzk.github.io/ai-validation/projects/amt/reporting-standard/0.1a12/</loc>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/reporting-standard/0.1a2/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/reporting-standard/0.1a3/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/reporting-standard/0.1a4/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/reporting-standard/0.1a5/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/reporting-standard/0.1a6/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/reporting-standard/0.1a7/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/reporting-standard/0.1a8/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/reporting-standard/0.1a9/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/amt/reporting-standard/latest/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/projects/llm-benchmarks/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/way-of-working/code-reviews/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/way-of-working/contributing/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/way-of-working/decision-log/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/way-of-working/off-boarding/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/way-of-working/principles/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/way-of-working/ubiquitous_language/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/way-of-working/workplace-security/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/way-of-working/onboarding/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/way-of-working/onboarding/accounts/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://minbzk.github.io/ai-validation/way-of-working/onboarding/dev-machine/</loc>
-         <lastmod>2024-12-11</lastmod>
+         <lastmod>2024-12-12</lastmod>
     </url>
 </urlset>

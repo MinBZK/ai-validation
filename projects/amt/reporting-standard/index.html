@@ -573,6 +573,8 @@
       
         
       
+        
+      
     
     
       
@@ -640,6 +642,33 @@
     
   
     🏷 0.1a12 (Latest)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0.1a12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    🏷 0.1a12
   
 
     
@@ -2681,7 +2710,7 @@ Options are <code>["aanbieder", "gebruiksverantwoordelijke", "aanbieder + gebrui
 <p><code>labels</code> (OPTIONAL, list). This field allows to store meta information about a system. There can be multiple labels.
    For each label the following fields are present.</p>
 <ol>
-<li><code>name</code> (OPTIONAL, string). Name of the label.</li>
+<li><code>name</code> (REQUIRED, string). Name of the label.</li>
 <li><code>value</code> (OPTIONAL, string). Value of the label.</li>
 </ol>
 </li>
@@ -2701,7 +2730,7 @@ Options are <code>["aanbieder", "gebruiksverantwoordelijke", "aanbieder + gebrui
     can be filled in with the relevant laws. There can be multiple legal bases. For each legal base the following fields
     are present.</p>
 <ol>
-<li><code>name</code> (OPTIONAL, string). Name of the law.</li>
+<li><code>name</code> (REQUIRED, string). Name of the law.</li>
 <li><code>link</code> (OPTIONAL, string). URI pointing towards the contents of the law.</li>
 </ol>
 </li>
@@ -2713,16 +2742,21 @@ Options are <code>["aanbieder", "gebruiksverantwoordelijke", "aanbieder + gebrui
 <p><code>external_providers</code> (OPTIONAL, list). If relevant, these fields allow to store information on external providers.
     There can be multiple external providers.</p>
 <ol>
-<li><code>name</code> (OPTIONAL, string). Name of the external provider.</li>
+<li><code>name</code> (REQUIRED, string). Name of the external provider.</li>
 <li><code>version</code> (OPTIONAL, string). Version of the external provider reflecting its relation to previous versions.</li>
 </ol>
 </li>
 <li>
-<p><code>references</code> (OPTIONAL, list[string]). Additional reference URI's that point information about the system and are
-    relevant.</p>
+<p><code>references</code> (OPTIONAL, list). This field allows to store references to the system.</p>
+<ol>
+<li><code>name</code> (REQUIRED, string). Name of the reference.</li>
+<li><code>link</code> (OPTIONAL, string). Link or URI to the reference.</li>
+</ol>
 </li>
-<li><code>interaction_details</code> (OPTIONAL, list[string]). Explain how the AI system interacts with hardware or software,
-    including other AI systems, or how the AI system can be used to interact with hardware or software.</li>
+<li>
+<p><code>interaction_details</code> (OPTIONAL, list[string]). Explain how the AI system interacts with hardware or software,
+    including other AI systems, or how the AI system can be used to interact with hardware or software.</p>
+</li>
 <li><code>version_requirements</code> (OPTIONAL, list[string]). Describe the versions of the relevant software or firmware, and any
     requirements related to version updates.</li>
 <li><code>deployment_variants</code> (OPTIONAL, list[string]). Description of all the forms in which the AI system is placed on the
@@ -3053,27 +3087,28 @@ Options are <code>["aanbieder", "gebruiksverantwoordelijke", "aanbieder + gebrui
 </span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">name_external_provider</span><span class="p p-Indicator">}</span>
 </span><span id="__span-0-68"><a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a><span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">version_external_provider</span><span class="p p-Indicator">}</span>
 </span><span id="__span-0-69"><a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a><span class="nt">references</span><span class="p">:</span>
-</span><span id="__span-0-70"><a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">reference_uri</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-71"><a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a><span class="nt">interaction_details</span><span class="p">:</span>
-</span><span id="__span-0-72"><a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_interaction_details</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-73"><a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a><span class="nt">version_requirements</span><span class="p">:</span>
-</span><span id="__span-0-74"><a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_version_requirements</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-75"><a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a><span class="nt">deployment_variants</span><span class="p">:</span>
-</span><span id="__span-0-76"><a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_deployment_variants</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-77"><a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a><span class="nt">hardware_requirements</span><span class="p">:</span>
-</span><span id="__span-0-78"><a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_hardware_requirements</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-79"><a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a><span class="nt">product_markings</span><span class="p">:</span>
-</span><span id="__span-0-80"><a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_product_markings</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-81"><a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a><span class="nt">user_interface</span><span class="p">:</span>
-</span><span id="__span-0-82"><a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-83"><a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a><span class="w">    </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface_uri</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-84"><a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a><span class="w">    </span><span class="nt">snapshot</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface_snapshot_uri</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-85"><a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a>
-</span><span id="__span-0-86"><a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a><span class="nt">models</span><span class="p">:</span>
-</span><span id="__span-0-87"><a id="__codelineno-0-87" name="__codelineno-0-87" href="#__codelineno-0-87"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="kt">!include</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_card_uri</span><span class="p p-Indicator">}</span>
-</span><span id="__span-0-88"><a id="__codelineno-0-88" name="__codelineno-0-88" href="#__codelineno-0-88"></a>
-</span><span id="__span-0-89"><a id="__codelineno-0-89" name="__codelineno-0-89" href="#__codelineno-0-89"></a><span class="nt">assessments</span><span class="p">:</span>
-</span><span id="__span-0-90"><a id="__codelineno-0-90" name="__codelineno-0-90" href="#__codelineno-0-90"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="kt">!include</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">assessment_card_uri</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-70"><a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">reference_name</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-71"><a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a><span class="w">    </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">reference_link</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-72"><a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a><span class="nt">interaction_details</span><span class="p">:</span>
+</span><span id="__span-0-73"><a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_interaction_details</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-74"><a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a><span class="nt">version_requirements</span><span class="p">:</span>
+</span><span id="__span-0-75"><a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_version_requirements</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-76"><a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a><span class="nt">deployment_variants</span><span class="p">:</span>
+</span><span id="__span-0-77"><a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_deployment_variants</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-78"><a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a><span class="nt">hardware_requirements</span><span class="p">:</span>
+</span><span id="__span-0-79"><a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_hardware_requirements</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-80"><a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a><span class="nt">product_markings</span><span class="p">:</span>
+</span><span id="__span-0-81"><a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_product_markings</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-82"><a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a><span class="nt">user_interface</span><span class="p">:</span>
+</span><span id="__span-0-83"><a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-84"><a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a><span class="w">    </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface_uri</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-85"><a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a><span class="w">    </span><span class="nt">snapshot</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">system_user_interface_snapshot_uri</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-86"><a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a>
+</span><span id="__span-0-87"><a id="__codelineno-0-87" name="__codelineno-0-87" href="#__codelineno-0-87"></a><span class="nt">models</span><span class="p">:</span>
+</span><span id="__span-0-88"><a id="__codelineno-0-88" name="__codelineno-0-88" href="#__codelineno-0-88"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="kt">!include</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">model_card_uri</span><span class="p p-Indicator">}</span>
+</span><span id="__span-0-89"><a id="__codelineno-0-89" name="__codelineno-0-89" href="#__codelineno-0-89"></a>
+</span><span id="__span-0-90"><a id="__codelineno-0-90" name="__codelineno-0-90" href="#__codelineno-0-90"></a><span class="nt">assessments</span><span class="p">:</span>
+</span><span id="__span-0-91"><a id="__codelineno-0-91" name="__codelineno-0-91" href="#__codelineno-0-91"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="kt">!include</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">assessment_card_uri</span><span class="p p-Indicator">}</span>
 </span></code></pre></div>
 <h3 id="model-card">Model Card</h3>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">provenance</span><span class="p">:</span>
@@ -3171,6 +3206,7 @@ Options are <code>["aanbieder", "gebruiksverantwoordelijke", "aanbieder + gebrui
 <p>JSON schemas of the system card, model card and assessment card can be found on <a href="https://github.com/MinBZK/ai-validation/tree/main/docs/projects/amt/reporting-standard/schemas">Github</a>.</p>
 <h2 id="changelog">Changelog</h2>
 <ul>
+<li>0.1a13: adjust references to name-value</li>
 <li>0.1a12: adds authors to measures</li>
 <li>0.1a11: adds requirements and measures</li>
 <li>0.1a10: adds ai act profile field to system card</li>
@@ -3233,7 +3269,7 @@ Options are <code>["aanbieder", "gebruiksverantwoordelijke", "aanbieder + gebrui
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 11, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 12, 2024</span>
   </span>
 
     
@@ -3243,7 +3279,7 @@ Options are <code>["aanbieder", "gebruiksverantwoordelijke", "aanbieder + gebrui
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 11, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 12, 2024</span>
   </span>
 
     
