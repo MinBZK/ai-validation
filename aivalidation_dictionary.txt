@@ -16,6 +16,7 @@ architecting
 argparse
 assessmentcard
 automerge
+beoordeling
 berrydenhartog
 bestuursrecht
 Blendle
@@ -28,11 +29,13 @@ CODEOWNER
 Colab
 Dalex
 Deepseek
+derde
 Design
 devcontainer
 DICTU
 Digilab
 Digitoegankelijk
+distributeur
 doeleinden
 Drempelvrij
 dtype
@@ -61,6 +64,7 @@ IAMA
 ICTU
 identificatienummer
 impactvol
+importeur
 interpretability
 ITerm
 jsonschema
@@ -88,6 +92,7 @@ onnx
 Opensource
 Organisatie
 overheid
+partij
 Pleio
 protobuf
 Pydantic
@@ -136,6 +141,7 @@ toepassing
 toolkits
 TPRM
 traineeship
+transparantieverplichting
 transparantieverplichtingen
 twemoji
 Uittenbroek
