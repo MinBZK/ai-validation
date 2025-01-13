@@ -13,17 +13,17 @@ we will streamline our design process and collaborate with other governmental in
 * The NL Design System will continue to evolve and remain supported.
 * Our team has the capacity and expertise to contribute to the NL Design System when needed.
 * The existing components in the NL Design System will cover the majority of our design needs.
-* We will develop custom components when needed, if they are not yet addressed by the NL Design System.
 
 ## Decision
 
 We will adopt the NL Design System as the foundation for our GUI implementation.
 For any special requirements not covered by the system, we will develop our own components and
-contribute them back to the NL Design System community where applicable.
+contribute them back to the NL Design System community where applicable. We will not adopt our
+own NL Design System but rather always contribute to the existing ones.
 
-We also establish links to the ROOS Design System from RVO and, in the future,
-to the Rijkshuisstijl community, ensuring that our contributions and customizations are in line
-with broader governmental design standards.
+We make use of the following NL Design Systems; ROOS Design System from RVO, Utrecht Design System
+from municipality of Utrecht and, in the future, to the Rijkshuisstijl community, ensuring that our
+contributions and customizations are in line with broader governmental design standards.
 
 ## Risks
 
