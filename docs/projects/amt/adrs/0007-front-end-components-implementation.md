@@ -21,9 +21,9 @@ For any special requirements not covered by the system, we will develop our own 
 contribute them back to the NL Design System community where applicable. We will not adopt our
 own NL Design System but rather always contribute to the existing ones.
 
-We make use of the following NL Design Systems; ROOS Design System from RVO, Utrecht Design System
-from municipality of Utrecht and, in the future, to the Rijkshuisstijl community, ensuring that our
-contributions and customizations are in line with broader governmental design standards.
+We make use of the following NL Design Systems: ROOS Design System from RVO, Utrecht Design System
+from the municipality of Utrecht. In the future, we will also align with the Rijkshuisstijl community,
+ensuring that our contributions and customizations adhere to broader governmental design standards.
 
 ## Risks
 
