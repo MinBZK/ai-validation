@@ -118,7 +118,7 @@
                 },
                 "risk_group": {
                     "type": "string",
-                    "description": "The publication category of the system",
+                    "description": "The risk category of the system",
                     "enum": [
                         "hoog-risico AI",
                         "geen hoog-risico AI",
