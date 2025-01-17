@@ -178,7 +178,7 @@
                                     },
                                     "answer": {
                                         "type": "string",
-                                        "description": "Answer to the question",
+                                        "description": "Answer to the question"
                                     }
                                 },
                                 "required": ["question", "answer"]
