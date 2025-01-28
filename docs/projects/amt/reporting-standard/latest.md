@@ -120,7 +120,7 @@ There can be multiple instruments. For each instrument the following fields are 
         1. `version` (REQUIRED, string). The version of the decision tree.
         2. `path` (REQUIRED). The traversed path through the decision tree.
             1. `question` (REQUIRED, string). The question id of the question.
-            2. `answer` (REQUIRED, enum[string]). The answer to the question. The only valid values are `yes` or `no`.
+            2. `answer` (REQUIRED, string). The answer to the question.
 
 9. `requirements` (OPTIONAL, list). To store the applicable requirements.
 
