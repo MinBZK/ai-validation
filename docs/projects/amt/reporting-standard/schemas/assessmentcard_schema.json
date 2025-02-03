@@ -1,71 +1,72 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/MinBZK/ai-validatie/main/docs/projects/amt/reporting-standard/schemas",
-    "title": "Model card schema",
-    "description": "JSON schema for model card",
+    "title": "Assessment card schema",
+    "description": "JSON schema for assessment card",
     "type": "object",
     "properties": {
         "provenance": {
             "type": "object",
-            "properties":{
-                "git_commit_hash":{
+            "properties": {
+                "git_commit_hash": {
                     "type": "string",
                     "description": "Git commit hash of the commit which contains the transformation file used to create this card"
                 },
-                "timestamp":{
+                "timestamp": {
                     "type": "string",
                     "format": "date-time",
                     "description": "A timestamp of the date, time and timezone of generation of this Assessment Card in ISO 8601 format"
                 },
                 "uri": {
-                    "type": "uri",
+                    "type": "string",
                     "description": "URI to the tool that was used to perform the transformations"
                 },
-                "author":{
+                "author": {
                     "type": "string",
                     "description": "Name of person that initiated the transformations"
                 }
             }
         },
-        "name":{
+        "name": {
             "type": "string",
             "description": "Name of the assessment"
         },
-        "urn":{
+        "urn": {
             "type": "string",
             "description": "A Uniform Resource Name (URN) of the instrument in the task registry"
         },
-        "date":{
-            "type": "date",
+        "date": {
+            "type": "string",
+            "format": "date",
             "description": "The date at which the assessment is completed"
         },
-        "contents":{
-            "type":  "array",
+        "contents": {
+            "type": "array",
             "items": {
                 "type": "object",
+                "required": ["question", "answer"],
                 "properties": {
-                    "question":{
+                    "question": {
                         "type": "string",
                         "description": "A question"
                     },
-                    "urn":{
+                    "urn": {
                         "type": "string",
-                        "description":  "A Uniform Resource Name (URN) of the corresponding task in the task registry"
+                        "description": "A Uniform Resource Name (URN) of the corresponding task in the task registry"
                     },
-                    "answer":{
+                    "answer": {
                         "type": "string",
                         "description": "An answer"
-
                     },
-                    "remarks":{
+                    "remarks": {
                         "type": "string",
                         "description": "A field to put relevant discussion remarks in"
                     },
-                    "authors":{
+                    "authors": {
                         "type": "array",
                         "items": {
                             "type": "object",
-                            "properties":{
+                            "properties": {
                                 "name": {
                                     "type": "string",
                                     "description": "Name of the author of the question"
@@ -73,14 +74,13 @@
                             }
                         }
                     },
-                    "timestamp":{
-                        "type": "date-time",
+                    "timestamp": {
+                        "type": "string",
+                        "format": "date-time",
                         "description": "A timestamp of the date, time and timezone of generation of the answer ISO 8601 format"
-
                     }
                 }
-            },
-            "required": ["question", "answer"]
+            }
         }
     },
     "required": ["name", "date", "contents"]
