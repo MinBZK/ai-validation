@@ -56,9 +56,6 @@ theme:
 # Plugins
 plugins:
   - awesome-pages
-  - meta
-  - search:
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - git-committers:
       repository: minbzk/ai-validation
       branch: main
@@ -66,6 +63,7 @@ plugins:
       enable_creation_date: true
   - glightbox
   - material-plausible
+  - meta
   - privacy
   - search
 
