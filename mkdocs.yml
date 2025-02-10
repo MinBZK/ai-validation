@@ -64,7 +64,9 @@ plugins:
   - glightbox
   - material-plausible
   - meta
-  - privacy
+  - privacy:
+      assets_exclude:
+        - plausible.la-suite.apps.digilab.network/*
   - search
 
 extra_css:
