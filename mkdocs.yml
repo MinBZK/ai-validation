@@ -16,7 +16,7 @@ extra:
       link: https://github.com/MinBZK/ai-validation
   analytics:
     provider: plausible
-    domain: minbzk.github.io/ai-validation
+    domain: minbzk.github.io
     src: https://plausible.la-suite.apps.digilab.network/js/script.js
 
 extra_templates:
