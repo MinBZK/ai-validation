@@ -7,12 +7,12 @@
     "properties": {
         "provenance": {
             "type": "object",
-            "properties":{
-                "git_commit_hash":{
+            "properties": {
+                "git_commit_hash": {
                     "type": "string",
                     "description": "Git commit hash of the commit which contains the transformation file used to create this card"
                 },
-                "timestamp":{
+                "timestamp": {
                     "type": "string",
                     "format": "date-time",
                     "description": "A timestamp of the date, time and timezone of generation of this Model Card in ISO 8601 format"
@@ -21,13 +21,13 @@
                     "type": "string",
                     "description": "URI to the tool that was used to perform the transformations"
                 },
-                "author":{
+                "author": {
                     "type": "string",
                     "description": "Name of person that initiated the transformations"
                 }
             }
         },
-        "name":{
+        "name": {
             "type": "string",
             "description": "Name of the model"
         },
@@ -35,59 +35,67 @@
             "type": "array",
             "description": "The natural languages the model supports in ISO 639",
             "items": {
-              "type": "string"
+                "type": "string"
             }
         },
         "license": {
             "type": "object",
-            "properties":{
-                "license_name":{
+            "properties": {
+                "license_name": {
                     "type": "string",
                     "description": "Any license from the open source license list"
                 },
-                "license_link":{
+                "license_link": {
                     "type": "string",
                     "description": "A link to a file of that name inside the repo, or a URL to a remote file containing the license contents"
                 }
             },
             "required": ["license_name"]
         },
-        "tags":{
+        "tags": {
             "type": "array",
             "description": "Tags with keywords to describe the project",
             "items": {
-              "type": "string"
+                "type": "string"
             }
         },
-        "owners":  {
+        "owners": {
             "type": "array",
             "items": {
-              "type": "object",
-              "properties": {
-                "oin": {
-                    "type": "string",
-                    "description": "If applicable the Organisatie-identificatienummer (OIN)"
+                "type": "object",
+                "properties": {
+                    "oin": {
+                        "type": "string",
+                        "description": "If applicable the Organisatie-identificatienummer (OIN)"
+                    },
+                    "organization": {
+                        "type": "string",
+                        "description": "Name of the organization that owns the model"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Name of a contact person within the organization"
+                    },
+                    "email": {
+                        "type": "string",
+                        "description": "Email address of the contact person or organization"
+                    },
+                    "role": {
+                        "type": "string",
+                        "description": "Role of the contact person. This field should only be set when the name field is set"
+                    }
                 },
-                "organization": {
-                    "type": "string",
-                    "description": "Name of the organization that owns the model. If ion is NOT provided this field is REQUIRED"
-                },
-                "name": {
-                    "type": "string",
-                    "description": "Name of a contact person within the organization"
-                },
-                "email": {
-                    "type": "string",
-                    "description": "Email address of the contact person or organization"
-                },
-                "role": {
-                    "type": "string",
-                    "description": "Role of the contact person. This field should only be set when the name field is set"
-                }
-              }
+                "oneOf": [
+                    {
+                        "required": ["oin"]
+                    },
+                    {
+                        "required": ["organization"]
+                    }
+                ]
             }
         },
-        "model_index":{
+        "model_index": {
             "type": "array",
             "items": {
                 "type": "object",
@@ -98,281 +106,281 @@
                     },
                     "model": {
                         "type": "string",
-                        "description":"A URI pointing to a repository containing the model file"
+                        "description": "A URI pointing to a repository containing the model file"
                     },
-                    "artifacts":{
+                    "artifacts": {
                         "type": "array",
                         "items": {
-                          "type": "object",
-                          "properties": {
-                            "uri": {
-                              "type": "string",
-                              "description": "The URI of the model artifact"
-                            },
-                            "content-type": {
-                              "type": "string",
-                              "description": "The content type of the model artifact. Recognized values are 'application/onnx', to refer to an ONNX representation of the model"
-                            },
-                            "md5-checksum": {
-                              "type": "string",
-                              "description": "Optional checksum for the content of the file"
+                            "type": "object",
+                            "properties": {
+                                "uri": {
+                                    "type": "string",
+                                    "description": "The URI of the model artifact"
+                                },
+                                "content-type": {
+                                    "type": "string",
+                                    "description": "The content type of the model artifact. Recognized values are 'application/onnx', to refer to an ONNX representation of the model"
+                                },
+                                "md5-checksum": {
+                                    "type": "string",
+                                    "description": "Optional checksum for the content of the file"
+                                }
                             }
-                        }
                         }
                     },
                     "parameters": {
                         "type": "array",
-                        "items":{
+                        "items": {
+                            "type": "object",
                             "properties": {
                                 "name": {
-                                  "type": "string",
-                                  "description": "The name of the parameter."
+                                    "type": "string",
+                                    "description": "The name of the parameter"
                                 },
                                 "dtype": {
-                                  "type": "string",
-                                  "description": "The data type of the parameter."
+                                    "type": "string",
+                                    "description": "The data type of the parameter"
                                 },
                                 "value": {
-                                  "type": "string",
-                                  "description": "The value of the parameter."
+                                    "type": "string",
+                                    "description": "The value of the parameter"
                                 },
                                 "labels": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "name": {
-                                        "type": "string",
-                                        "description": "The name of the label."
-                                      },
-                                      "dtype": {
-                                        "type": "string",
-                                        "description": "The data type of the label."
-                                      },
-                                      "value": {
-                                        "type": "string",
-                                        "description": "The value of the label."
-                                      }
-                                    },
-                                    "required": ["name", "dtype", "value"]
-                                  }
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": "string",
+                                                "description": "The name of the label"
+                                            },
+                                            "dtype": {
+                                                "type": "string",
+                                                "description": "The data type of the label"
+                                            },
+                                            "value": {
+                                                "type": "string",
+                                                "description": "The value of the label"
+                                            }
+                                        },
+                                        "required": ["name", "dtype", "value"]
+                                    }
                                 }
-                              },
-                              "required": ["name"]
-                            }
+                            },
+                            "required": ["name"]
+                        }
                     },
                     "results": {
                         "type": "array",
                         "items": {
-                          "type": "object",
-                          "properties": {
-                            "task": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "type": {
-                                    "type": "string",
-                                    "description": "The task of the model"
-                                  },
-                                  "name": {
-                                    "type": "string",
-                                    "description": "The (pretty) name for the model tasks"
-                                  }
-                                },
-                                "required": ["type"]
-                              }
-                            },
-                            "datasets": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "type": {
-                                    "type": "string",
-                                    "description": "The type of the dataset"
-                                  },
-                                  "name": {
-                                    "type": "string",
-                                    "description": "The name of the dataset"
-                                  },
-                                  "split": {
-                                    "type": "string",
-                                    "description": "The dataset split (e.g., train, test, validation)."
-                                  },
-                                  "features": {
+                            "type": "object",
+                            "properties": {
+                                "task": {
                                     "type": "array",
                                     "items": {
-                                      "type": "string",
-                                      "description": "List of feature names"
-                                    }
-                                  },
-                                  "revision": {
-                                    "type": "string",
-                                    "description": "Version of the dataset"
-                                  }
-                                },
-                                "required": ["type", "name"]
-                              }
-                            },
-                            "metrics": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "type": {
-                                    "type": "string",
-                                    "description": "Metric-id from Hugging Face Metrics"
-                                  },
-                                  "name": {
-                                    "type": "string",
-                                    "description": "A descriptive name of the metric."
-                                  },
-                                  "dtype": {
-                                    "type": "string",
-                                    "description": "The data type of the metric"
-                                  },
-                                  "value": {
-
-                                    "oneOf": [
-                                        { "type": "string" },
-                                        { "type": "integer" },
-                                        { "type": "number" }
-                                    ],
-                                    "description": "The value of the metric"
-                                  },
-                                  "labels": {
-                                    "type": "array",
-                                    "description": "This field allows to store meta information about a metric",
-                                    "items": {
-                                      "type": "object",
-                                      "properties": {
-                                        "name": {
-                                          "type": "string",
-                                          "description": "The name of the feature"
-                                        },
-                                        "type": {
-                                          "type": "string",
-                                          "description": "The type of the label"
-                                        },
-                                        "dtype": {
-                                          "type": "string",
-                                          "description": "The data type of the feature"
-                                        },
-                                        "value": {
-                                          "type": "string",
-                                          "description": "The value of the feature."
-                                        }
-                                      }
-                                    }
-                                  }
-                                },
-                                "required": ["type", "name", "dtype", "value"]
-                              }
-                            },
-                            "measurements": {
-                              "type": "object",
-                              "properties": {
-                                "bar_plots": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "type": {
-                                        "type": "string",
-                                        "description": "The type of the bar plot"
-                                      },
-                                      "name": {
-                                        "type": "string",
-                                        "description": "A (pretty) name for the plot"
-                                      },
-                                      "results": {
-                                        "type": "array",
-                                        "items": {
-                                          "type": "object",
-                                          "properties": {
+                                        "type": "object",
+                                        "properties": {
+                                            "type": {
+                                                "type": "string",
+                                                "description": "The task of the model"
+                                            },
                                             "name": {
-                                              "type": "string",
-                                              "description": "The name of the bar"
+                                                "type": "string",
+                                                "description": "The (pretty) name for the model tasks"
+                                            }
+                                        },
+                                        "required": ["type"]
+                                    }
+                                },
+                                "datasets": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "type": {
+                                                "type": "string",
+                                                "description": "The type of the dataset"
+                                            },
+                                            "name": {
+                                                "type": "string",
+                                                "description": "The name of the dataset"
+                                            },
+                                            "split": {
+                                                "type": "string",
+                                                "description": "The dataset split (e.g., train, test, validation)"
+                                            },
+                                            "features": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string",
+                                                    "description": "List of feature names"
+                                                }
+                                            },
+                                            "revision": {
+                                                "type": "string",
+                                                "description": "Version of the dataset"
+                                            }
+                                        },
+                                        "required": ["type", "name"]
+                                    }
+                                },
+                                "metrics": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "type": {
+                                                "type": "string",
+                                                "description": "Metric-id from Hugging Face Metrics"
+                                            },
+                                            "name": {
+                                                "type": "string",
+                                                "description": "A descriptive name of the metric"
+                                            },
+                                            "dtype": {
+                                                "type": "string",
+                                                "description": "The data type of the metric"
                                             },
                                             "value": {
-                                              "type": "number",
-                                              "description": "The value of the corresponding bar"
+                                                "oneOf": [
+                                                    {"type": "string"},
+                                                    {"type": "integer"},
+                                                    {"type": "number"}
+                                                ],
+                                                "description": "The value of the metric"
+                                            },
+                                            "labels": {
+                                                "type": "array",
+                                                "description": "This field allows to store meta information about a metric",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "name": {
+                                                            "type": "string",
+                                                            "description": "The name of the feature"
+                                                        },
+                                                        "type": {
+                                                            "type": "string",
+                                                            "description": "The type of the label"
+                                                        },
+                                                        "dtype": {
+                                                            "type": "string",
+                                                            "description": "The data type of the feature"
+                                                        },
+                                                        "value": {
+                                                            "type": "string",
+                                                            "description": "The value of the feature"
+                                                        }
+                                                    },
+                                                    "required": ["name", "type", "dtype", "value"]
+                                                }
                                             }
-                                          },
-                                          "required": ["name", "value"]
-                                        }
-                                      }
-                                    },
-                                    "required": ["type", "results"]
-                                  }
+                                        },
+                                        "required": ["type", "name", "dtype", "value"]
+                                    }
                                 },
-                                "graph_plots": {
-                                  "type": "array",
-                                  "items": {
+                                "measurements": {
                                     "type": "object",
                                     "properties": {
-                                      "type": {
-                                        "type": "string",
-                                        "description": "The type of the graph plot"
-                                      },
-                                      "name": {
-                                        "type": "string",
-                                        "description": "A (pretty) name of the graph"
-                                      },
-                                      "results": {
-                                        "type": "array",
-                                        "items": {
-                                          "type": "object",
-                                          "properties": {
-                                            "class": {
-                                                "oneOf": [
-                                                    { "type": "string" },
-                                                    { "type": "integer" },
-                                                    { "type": "number" },
-                                                    { "type": "boolean" }
-                                                  ],
-                                              "description": "The output class name that the graph corresponds to"
-                                            },
-                                            "feature": {
-                                              "type": "string",
-                                              "description": "The feature the graph corresponds to"
-                                            },
-                                            "data": {
-                                              "type": "array",
-                                              "items": {
+                                        "bar_plots": {
+                                            "type": "array",
+                                            "items": {
                                                 "type": "object",
                                                 "properties": {
-                                                  "x_value": {
-                                                    "type": "number",
-                                                    "description": "The x-value of the graph"
-                                                  },
-                                                  "y_value": {
-                                                    "type": "number",
-                                                    "description": "The y-value of the graph"
-                                                  }
+                                                    "type": {
+                                                        "type": "string",
+                                                        "description": "The type of the bar plot"
+                                                    },
+                                                    "name": {
+                                                        "type": "string",
+                                                        "description": "A (pretty) name for the plot"
+                                                    },
+                                                    "results": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "name": {
+                                                                    "type": "string",
+                                                                    "description": "The name of the bar"
+                                                                },
+                                                                "value": {
+                                                                    "type": "number",
+                                                                    "description": "The value of the corresponding bar"
+                                                                }
+                                                            },
+                                                            "required": ["name", "value"]
+                                                        }
+                                                    }
                                                 },
-                                                "required": ["x_value", "y_value"]
-                                              }
+                                                "required": ["type", "results"]
                                             }
-                                          },
-                                          "required": ["feature", "data"]
+                                        },
+                                        "graph_plots": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "type": {
+                                                        "type": "string",
+                                                        "description": "The type of the graph plot"
+                                                    },
+                                                    "name": {
+                                                        "type": "string",
+                                                        "description": "A (pretty) name of the graph"
+                                                    },
+                                                    "results": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "class": {
+                                                                    "oneOf": [
+                                                                        {"type": "string"},
+                                                                        {"type": "integer"},
+                                                                        {"type": "number"},
+                                                                        {"type": "boolean"}
+                                                                    ],
+                                                                    "description": "The output class name that the graph corresponds to"
+                                                                },
+                                                                "feature": {
+                                                                    "type": "string",
+                                                                    "description": "The feature the graph corresponds to"
+                                                                },
+                                                                "data": {
+                                                                    "type": "array",
+                                                                    "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "x_value": {
+                                                                                "type": "number",
+                                                                                "description": "The x-value of the graph"
+                                                                            },
+                                                                            "y_value": {
+                                                                                "type": "number",
+                                                                                "description": "The y-value of the graph"
+                                                                            }
+                                                                        },
+                                                                        "required": ["x_value", "y_value"]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "required": ["feature", "data"]
+                                                        }
+                                                    }
+                                                },
+                                                "required": ["type", "results"]
+                                            }
                                         }
-                                      }
-                                    },
-                                    "required": ["type", "results"]
-                                  }
+                                    }
                                 }
-                              }
-                            }
-                          },
-                          "required": ["task", "datasets", "metrics", "measurements"]
+                            },
+                            "required": ["task", "datasets", "metrics", "measurements"]
                         }
-                      }
-                    },
-                    "required": ["results"]
-                    },
+                    }
+                },
                 "required": ["name", "model"]
+            }
         }
     },
     "required": ["license", "model_index"]
