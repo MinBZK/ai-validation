@@ -5,18 +5,18 @@
     "description": "JSON schema for system card",
     "type": "object",
     "properties": {
-        "version":{
+        "schema_version": {
             "type": "string",
             "description": "The version of the schema used"
         },
         "provenance": {
             "type": "object",
-            "properties":{
-                "git_commit_hash":{
+            "properties": {
+                "git_commit_hash": {
                     "type": "string",
                     "description": "Git commit hash of the commit which contains the transformation file used to create this card"
                 },
-                "timestamp":{
+                "timestamp": {
                     "type": "string",
                     "format": "date-time",
                     "description": "A timestamp of the date, time and timezone of generation of this System Card in ISO 8601 format"
@@ -25,7 +25,7 @@
                     "type": "string",
                     "description": "URI to the tool that was used to perform the transformations"
                 },
-                "author":{
+                "author": {
                     "type": "string",
                     "description": "Name of person that initiated the transformations"
                 }
@@ -35,12 +35,12 @@
             "type": "string",
             "description": "Name used to describe the system"
         },
-        "instruments":{
+        "instruments": {
             "type": "array",
             "description": "List of instruments from the task registry that must be executed to fill this system card",
             "items": {
                 "type": "object",
-                "properties":{
+                "properties": {
                     "urn": {
                         "type": "string",
                         "description": "Uniform Resource Names of the instrument"
@@ -50,64 +50,65 @@
                         "description": "Version of the instrument"
                     },
                     "required": {
-                        "type": "string",
+                        "type": "boolean",
                         "description": "Specifies whether the instrument is required to be executed or not"
                     }
                 },
                 "required": ["urn"]
             }
-
         },
         "upl": {
             "type": "string",
             "description": "If this algorithm is part of a product offered by the Dutch Government, it should contain a URI from the Uniform Product List"
         },
-        "owners":  {
+        "owners": {
             "type": "array",
             "items": {
-              "type": "object",
-              "properties": {
-                "oin": {
-                    "type": "string",
-                    "description": "If applicable the Organisatie-identificatienummer (OIN)"
-                },
-                "organization": {
-                    "type": "string",
-                    "description": "Name of the organization that owns the model. If ion is NOT provided this field is REQUIRED"
-                },
-                "name": {
-                    "type": "string",
-                    "description": "Name of a contact person within the organization"
-                },
-                "email": {
-                    "type": "string",
-                    "description": "Email address of the contact person or organization"
-                },
-                "role": {
-                    "type": "string",
-                    "description": "Role of the contact person. This field should only be set when the name field is set"
+                "type": "object",
+                "properties": {
+                    "oin": {
+                        "type": "string",
+                        "description": "If applicable the Organisatie-identificatienummer (OIN)"
+                    },
+                    "organization": {
+                        "type": "string",
+                        "description": "Name of the organization that owns the model. If ion is NOT provided this field is REQUIRED"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Name of a contact person within the organization"
+                    },
+                    "email": {
+                        "type": "string",
+                        "description": "Email address of the contact person or organization"
+                    },
+                    "role": {
+                        "type": "string",
+                        "description": "Role of the contact person. This field should only be set when the name field is set"
+                    }
                 }
-              }
             }
         },
-        "description":{
+        "description": {
             "type": "string",
             "description": "A short description of the system"
-            },
+        },
         "ai_act_profile": {
             "type": "object",
-            "properties":{
-                "type":{
+            "properties": {
+                "type": {
                     "type": "string",
                     "description": "System type",
                     "enum": [
                         "AI-systeem",
                         "AI-systeem voor algemene doeleinden",
                         "AI-model voor algemene doeleinden",
-                        "geen algoritme"
+                        "geen algoritme",
+                        "impactvol algoritme",
+                        "niet-impactvol algoritme"
                     ]
                 },
-                "open_source":{
+                "open_source": {
                     "type": "string",
                     "description": "Whether the system is open source or not",
                     "enum": [
@@ -115,19 +116,17 @@
                         "geen open-source"
                     ]
                 },
-                "publication_category":{
+                "risk_group": {
                     "type": "string",
-                    "description": "Publication category of the system",
+                    "description": "The risk category of the system",
                     "enum": [
-                        "impactvol algoritme",
-                        "niet-impactvol algoritme",
                         "hoog-risico AI",
                         "geen hoog-risico AI",
                         "verboden AI",
                         "uitzondering van toepassing"
                     ]
                 },
-                "systemic_risk":{
+                "systemic_risk": {
                     "type": "string",
                     "description": "Whether the system is classified as having a systemic risk",
                     "enum": [
@@ -135,21 +134,29 @@
                         "geen systeemrisico"
                     ]
                 },
-                "transparency_obligations":{
+                "transparency_obligations": {
                     "type": "string",
-                    "description": "Whether the system faces transparency obligations.",
+                    "description": "Whether the system faces transparency obligations",
                     "enum": [
-                        "transparantieverplichtingen",
-                        "geen transparantieverplichtingen"
+                        "transparantieverplichting",
+                        "geen transparantieverplichting"
                     ]
                 },
-                "role":{
+                "role": {
                     "type": "string",
-                    "description": "The organizations role in relation to the system.",
+                    "description": "The organizations role in relation to the system",
                     "enum": [
                         "aanbieder",
                         "gebruiksverantwoordelijke",
-                        "aanbieder + gebruiksverantwoordelijke"
+                        "distributeur",
+                        "importeur"
+                    ]
+                },
+                "conformity_assessment_body": {
+                    "type": "string",
+                    "description": "Whether the conformity assessment should be conducted by a conformity assessment body",
+                    "enum": [
+                        "beoordeling door derde partij"
                     ]
                 },
                 "decision_tree": {
@@ -158,73 +165,174 @@
                         "version": {
                             "type": "string",
                             "description": "The version of the decision tree"
-                            }
                         },
                         "path": {
                             "type": "array",
                             "description": "The traversed path in the decision tree",
                             "items": {
                                 "type": "object",
-                                "properties":{
+                                "properties": {
                                     "question": {
                                         "type": "string",
                                         "description": "Question ID"
                                     },
-                                    "answer":{
+                                    "answer": {
                                         "type": "string",
-                                        "description": "Answer to the question",
-                                        "enum": [
-                                            "Ja",
-                                            "Nee"
-                                        ]
+                                        "description": "Answer to the question"
                                     }
-                                }
+                                },
+                                "required": ["question", "answer"]
                             }
                         }
-                    }
+                    },
+                    "required": ["version", "path"]
                 }
-            },
+            }
+        },
+        "requirements": {
+            "type": "array",
+            "description": "To store the applicable requirements",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "urn": {
+                        "type": "string",
+                        "description": "The URN of the requirement (from Algoritmekader)"
+                    },
+                    "state": {
+                        "type": "string",
+                        "description": "The state of the requirement"
+                    },
+                    "version": {
+                        "type": "string",
+                        "description": "The version of the Algoritmekader"
+                    }
+                },
+                "required": ["urn", "state"]
+            }
+        },
+        "measures": {
+            "type": "array",
+            "description": "To store the applicable measures",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "urn": {
+                        "type": "string",
+                        "description": "The URN of the measure (from Algoritmekader)"
+                    },
+                    "state": {
+                        "type": "string",
+                        "description": "The state of the measure"
+                    },
+                    "value": {
+                        "type": "string",
+                        "description": "Description on how the measure is implemented"
+                    },
+                    "version": {
+                        "type": "string",
+                        "description": "The version of the Algoritmekader"
+                    },
+                    "accountable_persons": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "description": "The name of the person"
+                                },
+                                "uuid": {
+                                    "type": "string",
+                                    "description": "The uuid of the person"
+                                }
+                            },
+                            "required": ["name", "uuid"]
+                        }
+                    },
+                    "responsible_persons": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "description": "The name of the person"
+                                },
+                                "uuid": {
+                                    "type": "string",
+                                    "description": "The uuid of the person"
+                                }
+                            },
+                            "required": ["name", "uuid"]
+                        }
+                    },
+                    "reviewer_persons": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "description": "The name of the person"
+                                },
+                                "uuid": {
+                                    "type": "string",
+                                    "description": "The uuid of the person"
+                                }
+                            },
+                            "required": ["name", "uuid"]
+                        }
+                    }
+                },
+                "required": ["urn", "state", "value"]
+            }
+        },
         "labels": {
             "type": "array",
             "description": "Labels to store meta information about the system",
             "items": {
-              "type": "object",
-              "properties": {
-                "name": {
-                  "type": "string",
-                  "description": "Name of the label"
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name of the label"
+                    },
+                    "value": {
+                        "type": "string",
+                        "description": "Value of the label"
+                    }
                 },
-                "value": {
-                  "type": "string",
-                  "description": "Value of the label"
-                }
-              }
-          },
-        "status":{
+                "required": ["name"]
+            }
+        },
+        "status": {
             "type": "string",
             "description": "Status of the system"
         },
         "begin_date": {
-            "type": "date",
-            "description": "The first date the system was used, in ISO 8601 format, i.e. YYYY-MM-DD. Left out if not yet in use."
+            "type": "string",
+            "format": "date",
+            "description": "The first date the system was used, in ISO 8601 format, i.e. YYYY-MM-DD"
         },
         "end_date": {
-            "type": "date",
-            "description": "The last date the system was used, in ISO 8601 format, i.e. YYYY-MM-DD. Left out if still in use."
+            "type": "string",
+            "format": "date",
+            "description": "The last date the system was used, in ISO 8601 format, i.e. YYYY-MM-DD"
         },
         "goal_and_impact": {
             "type": "string",
             "description": "The purpose of the system and the impact it has on citizens and companies"
         },
-        "considerations":{
+        "considerations": {
             "type": "string",
             "description": "The pro's and con's of using the system"
         },
-        "risk_management":{
+        "risk_management": {
             "type": "string",
             "description": "Description of the risks associated with the system"
         },
-        "human_intervention":{
+        "human_intervention": {
             "type": "string",
             "description": "A description to want extend there is human involvement in the system"
         },
@@ -232,105 +340,118 @@
             "type": "array",
             "description": "Relevant laws for the process the system is embedded in",
             "items": {
-              "type": "object",
-              "properties": {
-                "name": {
-                  "type": "string",
-                  "description": "Name of the law"
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name of the law"
+                    },
+                    "link": {
+                        "type": "string",
+                        "description": "URI pointing towards the contents of the law"
+                    }
                 },
-                "link": {
-                  "type": "string",
-                  "description": "URI pointing towards the contents of the law"
-                }
-              }
+                "required": ["name"]
             }
         },
-        "used_data":{
+        "used_data": {
             "type": "string",
             "description": "An overview of the data that is used in the system"
         },
-        "technical_design":{
+        "technical_design": {
             "type": "string",
             "description": "Description on how the system works"
         },
-        "external_providers":{
+        "external_providers": {
             "type": "array",
             "description": "Information on external providers",
             "items": {
-              "type": "object",
-              "properties": {
-                "name": {
-                  "type": "string",
-                  "description": "Name of the external provider"
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name of the external provider"
+                    },
+                    "version": {
+                        "type": "string",
+                        "description": "Version of the external provider reflecting its relation to previous versions"
+                    }
                 },
-                "version": {
-                  "type": "string",
-                  "description": "Version of the external provider reflecting its relation to previous versions"
-                }
-              }
+                "required": ["name"]
             }
         },
-        "references":{
+        "references": {
             "type": "array",
-            "description": "Additional reference URI's that point information about the system and are relevant",
+            "description": "Additional reference URI's that point information about the system",
             "items": {
-                "type": "string"
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name of the reference"
+                    },
+                    "link": {
+                        "type": "string",
+                        "description": "Link or URI to the reference"
+                    }
+                },
+                "required": ["name"]
             }
         },
         "interaction_details": {
             "type": "array",
             "description": "How the AI system interacts with hardware or software, including other AI systems",
             "items": {
-              "type": "string"
+                "type": "string"
             }
         },
-        "version_requirements":{
+        "version_requirements": {
             "type": "array",
             "description": "The versions of the relevant software or firmware, and any requirements related to version updates",
             "items": {
-              "type": "string"
+                "type": "string"
             }
         },
-        "deployment_variants":{
+        "deployment_variants": {
             "type": "array",
-            "description": "All the forms in which the AI system is placed on the market or put into service, such as software packages embedded into hardware, downloads, or APIs",
+            "description": "All the forms in which the AI system is placed on the market or put into service",
             "items": {
-              "type": "string"
+                "type": "string"
             }
         },
-        "hardware_requirements":{
+        "hardware_requirements": {
             "type": "array",
             "description": "Description of the hardware on which the AI system must be run",
             "items": {
-              "type": "string"
+                "type": "string"
             }
         },
-        "product_markings":{
+        "product_markings": {
             "type": "array",
             "description": "If the AI system is a component of products, photos, or illustrations, the external features, markings, and internal layout of those products",
             "items": {
-              "type": "string"
+                "type": "string"
             }
         },
-        "user_interface":{
+        "user_interface": {
             "type": "array",
             "description": "Information on the user interface provided to the user responsible for its operation",
             "items": {
-              "type": "object",
-              "properties": {
-                "description": {
-                  "type": "string",
-                  "description": "A description of the provided user interface"
-                },
-                "link": {
-                  "type": "string",
-                  "description": "A link to the user interface can be included"
-                },
-                "snapshot":{
-                  "type": "string",
-                  "description": "A snapshot/screenshot of the user interface can be included with the use of a hyperlink"
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "type": "string",
+                        "description": "A description of the provided user interface"
+                    },
+                    "link": {
+                        "type": "string",
+                        "description": "A link to the user interface can be included"
+                    },
+                    "snapshot": {
+                        "type": "string",
+                        "description": "A snapshot/screenshot of the user interface can be included with the use of a hyperlink"
+                    }
                 }
-              }
             }
         },
         "models": {
@@ -340,7 +461,7 @@
                 "$ref": "modelcard_schema.json"
             }
         },
-        "assessments":{
+        "assessments": {
             "type": "array",
             "description": "A list of assessment cards",
             "items": {
@@ -348,6 +469,5 @@
             }
         }
     },
-    "required": ["version"]
-}
+    "required": ["schema_version"]
 }
