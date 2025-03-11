@@ -2,9 +2,9 @@ venv
 .venv
 build
 site
-.idea/
+.idea
 .cache
-
+.vscode
 
 # MacOS
 *.DS_Store

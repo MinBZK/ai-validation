@@ -22,39 +22,20 @@
 
     [:fontawesome-brands-linkedin: Robbert Bos](https://www.linkedin.com/in/robbertbos/)
 
--   ### Berry den Hartog
+-   ### Ravi Meijer
 
-    Engineer
-
-    ----
-
-    ![Berry den Hartog](../img/berry.jpeg){: .round }
-
-    Berry is a software engineer passionate about problem-solving and system optimization, with expertise in Go,
-    Python, and C++. Specialized in architecting high-volume data processing systems and implementing Lean-Agile and
-    DevOps practices. Experienced in managing end-to-end processes from hardware provisioning to software deployment
-    and release.
-
-    [:fontawesome-brands-github: berrydenhartog](https://github.com/berrydenhartog)
-
-    [:fontawesome-brands-linkedin: Berry den Hartog](https://www.linkedin.com/in/berry-denhartog)
-
--   ### Anne Schuth
-
-    Engineering Manager
+    Product Researcher
 
     ----
 
-    ![Anne Schuth](../img/anne.png){: .round }
+    ![Ravi Meijer](../img/ravi.jpg){: .round }
 
-    Anne used to be a Machine Learning Engineering Manager at Spotify and previously held roles at DPG Media, Blendle,
-    and Google AI. He holds a PhD from the University of Amsterdam.
+    Ravi is an accomplished data scientist with expertise in machine learning, responsible AI, and the data science lifecycle.
+    Her background in AI fuels her passion for solving complex problems and driving innovation for positive social impact.
 
-    [:fontawesome-brands-github: anneschuth](https://github.com/anneschuth)
+    [:fontawesome-brands-github: ravimeijerrig](https://github.com/ravimeijerrig)
 
-    [:fontawesome-brands-linkedin: Anne Schuth](https://linkedin.com/in/AnneSchuth)
-
-    [:octicons-link-24: anneschuth.nl](https://anneschuth.nl)
+    [:fontawesome-brands-linkedin: Ravi Meijer](https://www.linkedin.com/in/ravi-meijer)
 
 -   ### Christopher Spelt
 
@@ -89,22 +70,6 @@
 
     [:fontawesome-brands-linkedin: Robbert Uittenbroek](https://www.linkedin.com/in/robbert-uittenbroek-48a215/)
 
--   ### Laurens Weijs
-
-    Engineer
-
-    ----
-
-    ![Laurens Weijs](../img/laurens.jpeg){: .round }
-
-    Laurens is a passionate guy with a love for innovation and doing things differently. With a background in
-    Econometrics and Computer Science he loves to tackle the IT challenges of the Government by helping other people
-    through extensive knowledge sharing on stage, building neural networks himself, or building a strong community.
-
-    [:fontawesome-brands-github: laurensWe](https://github.com/laurensWe)
-
-    [:fontawesome-brands-linkedin: Laurens Weijs](https://www.linkedin.com/in/laurensweijs)
-
 -   ### Ruben Rouwhof
 
     UX/UI Designer
@@ -121,21 +86,6 @@
     [:fontawesome-brands-linkedin: Ruben Rouwhof](https://www.linkedin.com/in/rubenrouwhof)
 
     [:octicons-link-24: rubenrouwhof.nl](https://rubenrouwhof.nl)
-
--   ### Ravi Meijer
-
-    Product Researcher
-
-    ----
-
-    ![Ravi Meijer](../img/ravi.jpg){: .round }
-
-    Ravi is an accomplished data scientist with expertise in machine learning, responsible AI, and the data science lifecycle.
-    Her background in AI fuels her passion for solving complex problems and driving innovation for positive social impact.
-
-    [:fontawesome-brands-github: ravimeijerrig](https://github.com/ravimeijerrig)
-
-    [:fontawesome-brands-linkedin: Ravi Meijer](https://www.linkedin.com/in/ravi-meijer)
 
 -   ### Renate Burema
 
@@ -157,36 +107,55 @@
 
 <div class="grid cards" markdown>
 
--   ### Willy Tadema
+-   ### Anne Schuth
 
-    AI Ethics Lead
-
-    ----
-
-    ![Willy Tadema](../img/willy.png){: .round }
-
-    Willy specializes in AI governance, AI risk management, AI assurance and ethics-by-design.
-    She is an advocate of AI standards and a member of several ethics committees.
-
-    [:fontawesome-brands-github: FrieseWoudloper](https://github.com/FrieseWoudloper)
-
-    [:fontawesome-brands-linkedin: Willy Tadema](https://www.linkedin.com/in/willytadema/)
-
--   ### Lucas Haitsma
-
-    Researcher in Residence
+    Engineering Manager
 
     ----
 
-    ![Lucas Haitsma](../img/lucas.jpeg){: .round }
+    ![Anne Schuth](../img/anne.png){: .round }
 
-    Lucas is PhD candidate conducting research into the regulation and governance of algorithmic discrimination by
-    supervision and enforcement organizations. Lucas is our
-    [Researcher in Residence](../adrs/0011-researcher-in-residence.md).
+    Anne used to be a Machine Learning Engineering Manager at Spotify and previously held roles at DPG Media, Blendle,
+    and Google AI. He holds a PhD from the University of Amsterdam.
 
-    [:fontawesome-brands-linkedin: Lucas Haitsma](https://www.linkedin.com/in/lucas-h-779375139/)
+    [:fontawesome-brands-github: anneschuth](https://github.com/anneschuth)
 
-    [:octicons-link-24: rug.nl](https://www.rug.nl/staff/l.m.haitsma/?lang=en)
+    [:fontawesome-brands-linkedin: Anne Schuth](https://linkedin.com/in/AnneSchuth)
+
+    [:octicons-link-24: anneschuth.nl](https://anneschuth.nl)
+
+-   ### Laurens Weijs
+
+    Engineer
+
+    ----
+
+    ![Laurens Weijs](../img/laurens.jpeg){: .round }
+
+    Laurens is a passionate guy with a love for innovation and doing things differently. With a background in
+    Econometrics and Computer Science he loves to tackle the IT challenges of the Government by helping other people
+    through extensive knowledge sharing on stage, building neural networks himself, or building a strong community.
+
+    [:fontawesome-brands-github: laurensWe](https://github.com/laurensWe)
+
+    [:fontawesome-brands-linkedin: Laurens Weijs](https://www.linkedin.com/in/laurensweijs)
+
+-   ### Berry den Hartog
+
+    Engineer
+
+    ----
+
+    ![Berry den Hartog](../img/berry.jpeg){: .round }
+
+    Berry is a software engineer passionate about problem-solving and system optimization, with expertise in Go,
+    Python, and C++. Specialized in architecting high-volume data processing systems and implementing Lean-Agile and
+    DevOps practices. Experienced in managing end-to-end processes from hardware provisioning to software deployment
+    and release.
+
+    [:fontawesome-brands-github: berrydenhartog](https://github.com/berrydenhartog)
+
+    [:fontawesome-brands-linkedin: Berry den Hartog](https://www.linkedin.com/in/berry-denhartog)
 
 -   ### Guusje Juijn
 
