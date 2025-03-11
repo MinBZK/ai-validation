@@ -14,6 +14,10 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/MinBZK/ai-validation
+  analytics:
+    provider: plausible
+    domain: minbzk.github.io
+    src: https://plausible.la-suite.apps.digilab.network/js/script.js
 
 extra_templates:
   - .well-known/security.txt
@@ -52,16 +56,17 @@ theme:
 # Plugins
 plugins:
   - awesome-pages
-  - meta
-  - search:
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - git-committers:
       repository: minbzk/ai-validation
       branch: main
   - git-revision-date-localized:
       enable_creation_date: true
   - glightbox
-  - privacy
+  - material-plausible
+  - meta
+  - privacy:
+      assets_exclude:
+        - plausible.la-suite.apps.digilab.network/*
   - search
 
 extra_css:
