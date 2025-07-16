@@ -1,11 +1,13 @@
-# Our Team
+# Former team members
 
-## Current team members
+The AI Validation team operated from May 2024 through March 2025. Following this period, a dedicated smaller group
+from the original team has continued to ensure the operation of our tools.
+
 <!-- markdownlint-disable MD030 MD033 -->
 
 <div class="grid cards" markdown>
 
--   ### Robbert Bos
+-   ## Robbert Bos
 
     Product Owner
 
@@ -22,7 +24,7 @@
 
     [:fontawesome-brands-linkedin: Robbert Bos](https://www.linkedin.com/in/robbertbos/)
 
--   ### Ravi Meijer
+-   ## Ravi Meijer
 
     Product Researcher
 
@@ -37,7 +39,7 @@
 
     [:fontawesome-brands-linkedin: Ravi Meijer](https://www.linkedin.com/in/ravi-meijer)
 
--   ### Christopher Spelt
+-   ## Christopher Spelt
 
     Engineer
 
@@ -53,7 +55,7 @@
 
     [:fontawesome-brands-linkedin: Christopher Spelt](https://www.linkedin.com/in/christopher-spelt-27b39357/)
 
--   ### Robbert Uittenbroek
+-   ## Robbert Uittenbroek
 
     Engineer
 
@@ -70,7 +72,7 @@
 
     [:fontawesome-brands-linkedin: Robbert Uittenbroek](https://www.linkedin.com/in/robbert-uittenbroek-48a215/)
 
--   ### Ruben Rouwhof
+-   ## Ruben Rouwhof
 
     UX/UI Designer
 
@@ -89,25 +91,19 @@
 
 -   ### Renate Burema
 
-    Intern
+     Intern
 
-    ----
+     ----
 
-    ![Renate Burema](../img/renate.jpg){: .round }
+     ![Renate Burema](../img/renate.jpg){: .round }
 
-    Renate is a master student Artificial Intelligence at Utrecht University.
-    She is an intern writing her master thesis.
-    Furthermore, she is passionate for the topics natural language processing and fairness.
+     Renate is a master student Artificial Intelligence at Utrecht University.
+     She is an intern writing her master thesis.
+     Furthermore, she is passionate for the topics natural language processing and fairness.
 
-    [:fontawesome-brands-linkedin: Renate Burema](https://linkedin.com/in/renate-burema-047b26211)
+     [:fontawesome-brands-linkedin: Renate Burema](https://linkedin.com/in/renate-burema-047b26211)
 
-</div>
-
-## Our Alumni
-
-<div class="grid cards" markdown>
-
--   ### Anne Schuth
+-   ## Anne Schuth
 
     Engineering Manager
 
@@ -124,7 +120,7 @@
 
     [:octicons-link-24: anneschuth.nl](https://anneschuth.nl)
 
--   ### Laurens Weijs
+-   ## Laurens Weijs
 
     Engineer
 
@@ -140,7 +136,7 @@
 
     [:fontawesome-brands-linkedin: Laurens Weijs](https://www.linkedin.com/in/laurensweijs)
 
--   ### Berry den Hartog
+-   ## Berry den Hartog
 
     Engineer
 
@@ -157,7 +153,7 @@
 
     [:fontawesome-brands-linkedin: Berry den Hartog](https://www.linkedin.com/in/berry-denhartog)
 
--   ### Guusje Juijn
+-   ## Guusje Juijn
 
     Trainee
 

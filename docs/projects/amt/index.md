@@ -9,10 +9,12 @@ and data remain transparent, controlled, and validated over time. The definition
 [Algoritmeregister](https://algoritmes.overheid.nl/nl/footer/over-algoritmes).
 
 One of the goals of the AMT is providing a standardized format of reporting on an algorithmic
-system by developing a [Reporting Standard](reporting-standard/index.md). This Reporting Standard consists out of a
-[System Card](reporting-standard/index.md#system_card) which contains
-[Model Cards](reporting-standard/index.md#model_card) and
-[Assessment Cards](reporting-standard/index.md#assessment_card).
+system by developing a [Reporting Standard](https://github.com/MinBZK/algorithm-reporting-standard/blob/main/reporting-standard/latest.md).
+This Reporting Standard consists out of a
+[System Card](https://github.com/MinBZK/algorithm-reporting-standard/blob/main/reporting-standard/latest.md#system_card)
+which contains
+[Model Cards](https://github.com/MinBZK/algorithm-reporting-standard/blob/main/reporting-standard/latest.md#model_card) and
+[Assessment Cards](https://github.com/MinBZK/algorithm-reporting-standard/blob/main/reporting-standard/latest.md#assessment_card).
 
 The final result of the AMT is producing System, Model and Assessment Cards with performance metrics, (regulatory)
 assessments on the system where the specific algorithm resides, and descriptive information about the system.

@@ -53,6 +53,7 @@ glightbox
 Granian
 GUI
 Guusje
+Grondwet
 Haitsma
 Hanze
 Hartog
@@ -83,6 +84,7 @@ mmmd
 modelcard
 multiclass
 nargs
+Nederlandse
 niet
 NL
 nldesignsystem
