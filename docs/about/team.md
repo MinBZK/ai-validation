@@ -1,7 +1,6 @@
 # Former team members
 
-The AI Validation team operated from May 2024 through March 2025. Following this period, a dedicated smaller group
-from the original team has continued to ensure the operation of our tools.
+The AI Validation team operated from August 2023 through March 2025.
 
 <!-- markdownlint-disable MD030 MD033 -->
 

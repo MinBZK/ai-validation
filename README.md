@@ -8,3 +8,6 @@ In this repository, we document the processes of the AI Validation Team at the M
 Relations (Min BZK) in The Netherlands.
 
 This repository is deployed here: [https://minbzk.github.io/ai-validation/](https://minbzk.github.io/ai-validation/)
+
+The AI Validation team is no longer active. We operated from from August 2023 through March 2025. This documentation is
+no longer maintained and is only available for historical purposes.
