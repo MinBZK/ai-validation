@@ -23,15 +23,3 @@ updates:
     labels:
       - "pip"
       - "dependencies"
-
-  - package-ecosystem: "devcontainers"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "08:00"
-      timezone: "Europe/Amsterdam"
-    open-pull-requests-limit: 5
-    labels:
-      - "devcontainers"
-      - "dependencies"

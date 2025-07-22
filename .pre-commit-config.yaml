@@ -34,7 +34,6 @@ repos:
                --exclude=launch.json,
                --exclude=dependabot.yml,
                --exclude=security.txt,
-               --exclude=devcontainer.json,
                --exclude=cspell.config.yaml,
                --exclude=aivalidation_dictionary.txt
         ]

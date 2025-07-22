@@ -5,5 +5,4 @@
 poetry.lock
 pyproject.toml
 .github/workflows/*
-.devcontainer/devcontainer.json
 .pre-commit-config.yaml
