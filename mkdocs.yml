@@ -58,11 +58,7 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
   - glightbox
-  # - material-plausible
-  # - meta
-  # - privacy:
-      # assets_exclude:
-        # - plausible.la-suite.apps.digilab.network/*
+  - privacy
   - search
 
 extra_css:
