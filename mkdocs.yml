@@ -110,14 +110,16 @@ markdown_extensions:
 nav:
   - AI Validation Team: index.md
   - Projects:
-    - AMT:
+    - Algorithm Management Toolkit:
       - projects/amt/index.md
       - ADRs for AMT:
         - ... | flat | projects/amt/adrs/*
-      - Existing tools:
+      - Research existing tools:
         - ... | flat | projects/amt/existing-tools/comparison/*
         - Checklist:
           - ... | flat | projects/amt/existing-tools/checklists/*
+    - Algorithm Reporting Standard:
+      - projects/algorithm-reporting-standard/index.md
     - LLM Benchmarks:
       - projects/llm-benchmarks/index.md
   - About us:
