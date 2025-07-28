@@ -31,7 +31,6 @@ Dalex
 Deepseek
 derde
 Design
-devcontainer
 DICTU
 Digilab
 Digitoegankelijk

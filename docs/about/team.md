@@ -1,7 +1,6 @@
 # Former team members
 
-The AI Validation team operated from May 2024 through March 2025. Following this period, a dedicated smaller group
-from the original team has continued to ensure the operation of our tools.
+The AI Validation team operated from August 2023 through March 2025.
 
 <!-- markdownlint-disable MD030 MD033 -->
 
@@ -89,19 +88,19 @@ from the original team has continued to ensure the operation of our tools.
 
     [:octicons-link-24: rubenrouwhof.nl](https://rubenrouwhof.nl)
 
--   ### Renate Burema
+-   ## Renate Burema
 
-     Intern
+    Intern
 
-     ----
+    ----
 
-     ![Renate Burema](../img/renate.jpg){: .round }
+    ![Renate Burema](../img/renate.jpg){: .round }
 
-     Renate is a master student Artificial Intelligence at Utrecht University.
-     She is an intern writing her master thesis.
-     Furthermore, she is passionate for the topics natural language processing and fairness.
+    Renate is a master student Artificial Intelligence at Utrecht University.
+    She is an intern writing her master thesis.
+    Furthermore, she is passionate for the topics natural language processing and fairness.
 
-     [:fontawesome-brands-linkedin: Renate Burema](https://linkedin.com/in/renate-burema-047b26211)
+    [:fontawesome-brands-linkedin: Renate Burema](https://linkedin.com/in/renate-burema-047b26211)
 
 -   ## Anne Schuth
 

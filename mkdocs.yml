@@ -26,7 +26,6 @@ theme:
   name: material
   custom_dir: overrides
   features:
-    - announce.dismiss
     - content.action.edit
     - content.action.view
     - content.code.annotate
@@ -59,11 +58,7 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
   - glightbox
-  # - material-plausible
-  # - meta
-  # - privacy:
-      # assets_exclude:
-        # - plausible.la-suite.apps.digilab.network/*
+  - privacy
   - search
 
 extra_css:
@@ -115,14 +110,16 @@ markdown_extensions:
 nav:
   - AI Validation Team: index.md
   - Projects:
-    - AMT:
+    - Algorithm Management Toolkit:
       - projects/amt/index.md
       - ADRs for AMT:
         - ... | flat | projects/amt/adrs/*
-      - Existing tools:
+      - Research existing tools:
         - ... | flat | projects/amt/existing-tools/comparison/*
         - Checklist:
           - ... | flat | projects/amt/existing-tools/checklists/*
+    - Algorithm Reporting Standard:
+      - projects/algorithm-reporting-standard/index.md
     - LLM Benchmarks:
       - projects/llm-benchmarks/index.md
   - About us:
