@@ -31,7 +31,6 @@ Dalex
 Deepseek
 derde
 Design
-devcontainer
 DICTU
 Digilab
 Digitoegankelijk
@@ -53,6 +52,7 @@ glightbox
 Granian
 GUI
 Guusje
+Grondwet
 Haitsma
 Hanze
 Hartog
@@ -83,6 +83,7 @@ mmmd
 modelcard
 multiclass
 nargs
+Nederlandse
 niet
 NL
 nldesignsystem

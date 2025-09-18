@@ -45,13 +45,13 @@ GitHub as our Project Management.
 
 Although many attempts by previous cabinets, Dutch is not the official language in the Netherlands according to the
 Dutch constitution. See the following
-[link](https://www.denederlandsegrondwet.nl/id/viivckl8ibxx/nederlandse_taal_in_de_grondwet).
+[Nederlandse Grondwet website](https://www.denederlandsegrondwet.nl/id/viivckl8ibxx/nederlandse_taal_in_de_grondwet).
 
 According to the [website of the Government of the Netherlands](https://www.rijksoverheid.nl/onderwerpen/erkende-talen/vraag-en-antwoord/erkende-talen-nederland)
 the Dutch language is the official recognized language. This means that in combination with the law `Algemene wet bestuursrecht`
 on [wetten.overheid.nl](https://wetten.overheid.nl/BWBR0005537/2024-01-01) governing bodies and their employees
 need to communicate in Dutch unless stated differently elsewhere. It is stated
-[here](https://wetten.overheid.nl/jci1.3:c:BWBR0005537&hoofdstuk=2&afdeling=2.2&artikel=2:6&z=2024-01-01&g=2024-01-01)
+[in article 2:6 of the law](https://wetten.overheid.nl/jci1.3:c:BWBR0005537&hoofdstuk=2&afdeling=2.2&artikel=2:6&z=2024-01-01&g=2024-01-01)
 that communicating in another language than Dutch is permitted if the goal of communicating in another language than
 Dutch is sufficiently justified and if other parties are not effected disproportionately by the usage of another
 language.

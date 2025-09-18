@@ -5,7 +5,7 @@
 We are considering tooling for organizations to get more grip on their algorithms.
 Tooling for, for instance bias and fairness tests, and assessments (like [IAMA](https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes)).
 
-Transparency, we think, can be fostered by sharing reports from such a tool in a [standardized way](../reporting-standard/latest.md).
+Transparency, we think, can be fostered by sharing reports from such a tool in a [standardized way](https://github.com/MinBZK/algorithm-reporting-standard/).
 
 There are several existing open source
 [tools](../existing-tools/comparison/tools.md) which

@@ -14,10 +14,6 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/MinBZK/ai-validation
-  analytics:
-    provider: plausible
-    domain: minbzk.github.io
-    src: https://plausible.la-suite.apps.digilab.network/js/script.js
 
 extra_templates:
   - .well-known/security.txt
@@ -62,11 +58,7 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
   - glightbox
-  - material-plausible
-  - meta
-  - privacy:
-      assets_exclude:
-        - plausible.la-suite.apps.digilab.network/*
+  - privacy
   - search
 
 extra_css:
@@ -118,40 +110,17 @@ markdown_extensions:
 nav:
   - AI Validation Team: index.md
   - Projects:
-    - AMT:
+    - Algorithm Management Toolkit:
       - projects/amt/index.md
-      - Reporting Standard:
-        - projects/amt/reporting-standard/index.md
-        - projects/amt/reporting-standard/latest.md
-        - projects/amt/reporting-standard/0.1a13.md
-        - projects/amt/reporting-standard/0.1a12.md
-        - projects/amt/reporting-standard/0.1a11.md
-        - projects/amt/reporting-standard/0.1a10.md
-        - projects/amt/reporting-standard/0.1a9.md
-        - projects/amt/reporting-standard/0.1a8.md
-        - projects/amt/reporting-standard/0.1a7.md
-        - projects/amt/reporting-standard/0.1a6.md
-        - projects/amt/reporting-standard/0.1a5.md
-        - projects/amt/reporting-standard/0.1a4.md
-        - projects/amt/reporting-standard/0.1a3.md
-        - projects/amt/reporting-standard/0.1a2.md
-        - projects/amt/reporting-standard/0.1a1.md
-        - projects/amt/comparison.md
       - ADRs for AMT:
         - ... | flat | projects/amt/adrs/*
-      - Existing tools:
+      - Research existing tools:
         - ... | flat | projects/amt/existing-tools/comparison/*
         - Checklist:
           - ... | flat | projects/amt/existing-tools/checklists/*
+    - Algorithm Reporting Standard:
+      - projects/algorithm-reporting-standard/index.md
     - LLM Benchmarks:
-      - projects/LLM-Benchmarks/index.md
-  - Way of Working:
-    - way-of-working/principles.md
-    - way-of-working/contributing.md
-    - ... | flat | way-of-working/*
-    - Onboarding:
-      - ... | flat | way-of-working/onboarding/*
-    - way-of-working/off-boarding.md
-    - way-of-working/decision-log.md
+      - projects/llm-benchmarks/index.md
   - About us:
     - ... | about/*

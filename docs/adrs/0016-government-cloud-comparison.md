@@ -75,8 +75,8 @@ can be used by the Dutch Government.
     - Pros:
         - It is very easy to set-up infrastructure with the big international cloud providers.
     - Cons:
-        - With our team we decided that we prefer open source solutions.
-[principles.md](..%2Fway-of-working%2Fprinciples.md). So if we use some managed solutions of the big cloud providers
+        - With our team we decided that we prefer open source solutions. So if we use some managed solutions of the big
+cloud providers
 we would not be following our principles.
 - [DICTU](https://www.dictu.nl/)
     - Description:

@@ -54,7 +54,7 @@ efficacy, robustness, privacy and explainability.
 **Why interesting?** Although it is not entirely clear what exactly this tool does (see Remarks)
 it does seem (according to their website) to provide reports on bias and fairness. The Github rep
 does not seem to include any report generating code, but mainly technical tests.
-[Here](https://holisticai.readthedocs.io/en/latest/tutorials/measuring_bias_tutorials/measuring_bias_classification.html)
+[This tutorial](https://holisticai.readthedocs.io/en/latest/tutorials/measuring_bias_tutorials/measuring_bias_classification.html)
 is an example in which bias is measured in a classification model.
 
 **Remarks** Website seems to suggest the possibility to generate reports, but this is not directly
