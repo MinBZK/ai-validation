@@ -1,2 +1,2 @@
 -r requirements.txt
-pre-commit~=4.3
+pre-commit~=4.4
