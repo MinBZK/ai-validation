@@ -22,7 +22,7 @@ community looks forward to your contributions. 🎉
 This project and everyone participating in it is governed by the
 [Code of Conduct](https://minbzk.github.io/ai-validation/blob/main/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable behavior
-to **[ai-validatie@minbzk.nl](mailto:ai-validatie@minbzk.nl)**.
+to **[digigilde@rijksoverheid.nl](mailto:digigilde@rijksoverheid.nl)**.
 
 ## I Have a Question
 
@@ -62,7 +62,7 @@ is not already a bug report existing for your bug or error in the [bug tracker](
 
 > You must never report security related issues, vulnerabilities or bugs including sensitive information to the issue
 tracker, or elsewhere in public. Instead sensitive bugs must be sent by email to
-**[ai-validatie@minbzk.nl](mailto:ai-validatie@minbzk.nl)**.
+**[digigilde@rijksoverheid.nl](mailto:digigilde@rijksoverheid.nl)**.
 
 We use GitHub issues to track bugs and errors. If you run into an issue with the project:
 

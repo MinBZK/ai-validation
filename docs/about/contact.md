@@ -1,3 +1,3 @@
 # Contact
 
-Contact us at [ai-validatie@minbzk.nl](mailto:ai-validatie@minbzk.nl).
+Contact us at [digigilde@rijksoverheid.nl](mailto:digigilde@rijksoverheid.nl).
