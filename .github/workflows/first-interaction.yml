@@ -8,12 +8,12 @@ jobs:
     steps:
     - uses: actions/first-interaction@v3
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: |
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        issue_message: |
               Welcome to our community :hugs: and thank you for your first contribution.
 
               As a first time contributor please make sure to review our [contribution guidelines](https://github.com/MinBZK/ai-validation/blob/main/CONTRIBUTING.md) :heart:
-        pr-message: |
+        pr_message: |
               Welcome to our community :hugs: and thank you for your first contribution.
 
               As a first time contributor please make sure to review our [contribution guidelines](https://github.com/MinBZK/ai-validation/blob/main/CONTRIBUTING.md) :heart:
