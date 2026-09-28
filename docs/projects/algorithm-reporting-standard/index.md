@@ -18,7 +18,8 @@ More information about the Algorithm Reporting Standard can be found on the GitH
 also find information about the definition of the
 [System Card](https://github.com/MinBZK/algorithm-reporting-standard/blob/main/reporting-standard/latest.md#system_card)
 which contains
-[Model Cards](https://github.com/MinBZK/algorithm-reporting-standard/blob/main/reporting-standard/latest.md#model_card) and
+[Model Cards](https://github.com/MinBZK/algorithm-reporting-standard/blob/main/reporting-standard/latest.md#model_card)
+and
 [Assessment Cards](https://github.com/MinBZK/algorithm-reporting-standard/blob/main/reporting-standard/latest.md#assessment_card).
 
 [Algorithm Reporting Standard on GitHUB](https://github.com/MinBZK/algorithm-reporting-standard/){ .md-button }

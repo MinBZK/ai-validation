@@ -36,12 +36,12 @@ total_score = 20
 ## Reliability
 
 | Requirement                                                                                                                            | Priority | Fulfilled | Comments |
-|:---------------------------------------------------------------------------------------------------------------------------------------|:---------|-----------|---------|
-| The tool operates consistently and reliably, meaning it delivers the same expected results every time you use it.                      | M        | 1         |         |
-| The tool recovers automatically from common failures.                                                                                  | S        | 1         |         |
-| The tool recovers from failures quickly, minimizing data loss, for example by automatically saving intermediate test progress results. | S        | 1         |         |
-| The tool handles errors gracefully and informs users of any issues.                                                                    | S        | 1         |         |
-| The tool provides clear error messages and instructions for troubleshooting.                                                           | S        | 1         |         |
+|:---------------------------------------------------------------------------------------------------------------------------------------|:---------|-----------|----------|
+| The tool operates consistently and reliably, meaning it delivers the same expected results every time you use it.                      | M        | 1         |          |
+| The tool recovers automatically from common failures.                                                                                  | S        | 1         |          |
+| The tool recovers from failures quickly, minimizing data loss, for example by automatically saving intermediate test progress results. | S        | 1         |          |
+| The tool handles errors gracefully and informs users of any issues.                                                                    | S        | 1         |          |
+| The tool provides clear error messages and instructions for troubleshooting.                                                           | S        | 1         |          |
 
 total_score = 16
 
@@ -121,9 +121,9 @@ total_score = 14
 
 ## Accessibility
 
-| Requirement                                                                                                                                                                        | Priority | Fulfilled | Comments |
-|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------|-----------|----------|
-| The tool is accessible to users with disabilities, following relevant accessibility standards (e.g., [WCAG](https://www.digitoegankelijk.nl/toegankelijkheid/en-301-549-en-wcag)). | S        | 0         | You need to be a programmer to use it, and that is not your typical user with disabilities         |
+| Requirement                                                                                                                                                                        | Priority | Fulfilled | Comments                                                                                   |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------|-----------|--------------------------------------------------------------------------------------------|
+| The tool is accessible to users with disabilities, following relevant accessibility standards (e.g., [WCAG](https://www.digitoegankelijk.nl/toegankelijkheid/en-301-549-en-wcag)). | S        | 0         | You need to be a programmer to use it, and that is not your typical user with disabilities |
 
 total_score = 0
 

@@ -12,6 +12,7 @@ CVSS (Common Vulnerability Scoring System) v4.0 Rating:
 
 ## Reporting a Vulnerability
 
-Please report (suspected) security vulnerabilities to **[ai-validatie@minbzk.nl](mailto:ai-validatie@minbzk.nl)**. You
-will receive a response from us within 5 working days. If the issue is confirmed, we will release a patch as soon as
+Please report (suspected) security vulnerabilities to
+**[digigilde@rijksoverheid.nl](mailto:digigilde@rijksoverheid.nl)**. You will receive a response from us within 5
+working days. If the issue is confirmed, we will release a patch as soon as
 possible depending on complexity but usually within a few days.
